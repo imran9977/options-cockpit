@@ -1,66 +1,36 @@
 function SpotPriceCard() {
     return (
-        <div className="metric-card spot-price-card">
+        <section className="section section-blue">
+        <div className="section-title">1 • MARKET HEALTH</div>
 
-            <div className="metric-header">
-                <h3 className="metric-title">
-                    Spot Price
-                </h3>
+        <div className="grid-3">
 
-                <span className="metric-status">
-                    LIVE
-                </span>
+            <div className="card">
+                <div className="info">i</div>
+                <div className="label">NIFTY SPOT</div>
+                <div className="value">25,245.65</div>
+                <div className="sub green">+42.30 (+0.17%)</div>
+                <div className="caption">ABOVE VWAP</div>
             </div>
 
-            <div className="metric-body">
-
-                <div className="metric-row">
-
-                    <span className="metric-label">
-                        NIFTY
-                    </span>
-
-                    <span className="metric-value">
-                        25,245.65
-                    </span>
-
-                </div>
-
-                <div className="metric-row">
-
-                    <span className="metric-label">
-                        Change
-                    </span>
-
-                    <span className="metric-value positive">
-                        +42.30
-                    </span>
-
-                </div>
-
-                <div className="metric-row">
-
-                    <span className="metric-label">
-                        Change %
-                    </span>
-
-                    <span className="metric-value positive">
-                        +0.17%
-                    </span>
-
-                </div>
-
+            <div className="card">
+                <div className="info">i</div>
+                <div className="label">SENSEX SPOT</div>
+                <div className="value">82,410.20</div>
+                <div className="sub green">+128.45 (+0.16%)</div>
+                <div className="caption">ABOVE VWAP</div>
             </div>
 
-            <div className="metric-footer">
-
-                <span className="metric-footer-text">
-                    Last Updated : --:--:--
-                </span>
-
+            <div className="card">
+                <div className="info">i</div>
+                <div className="label">INDIA VIX</div>
+                <div className="value">13.82</div>
+                <div className="sub red">-0.24 (-1.70%)</div>
+                <div className="caption">COOLING</div>
             </div>
 
         </div>
+    </section>
     );
 }
 

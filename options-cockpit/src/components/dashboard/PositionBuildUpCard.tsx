@@ -1,92 +1,45 @@
 function PositionBuildUpCard() {
     return (
-        <div className="metric-card position-build-up-card">
+ <section className="section section-pink">
+        <div className="section-title">4 • POSITION BUILD-UP</div>
 
-            <div className="metric-header">
+        <div className="grid-4">
 
-                <h3 className="metric-title">
-                    Position Build-up
-                </h3>
-
-                <span className="metric-status">
-                    LIVE
-                </span>
-
+            <div className="card">
+                <div className="info">i</div>
+                <div className="label">SHORT COVERING</div>
+                <div className="status">Moderate</div>
+                <div className="sub green">Price ↑ OI ↓</div>
+                <div className="caption">DETECTED</div>
             </div>
 
-            <div className="metric-body">
-
-                <div className="metric-row">
-
-                    <span className="metric-label">
-                        Long Build-up
-                    </span>
-
-                    <span className="metric-value">
-                        Active
-                    </span>
-
-                </div>
-
-                <div className="metric-row">
-
-                    <span className="metric-label">
-                        Short Build-up
-                    </span>
-
-                    <span className="metric-value">
-                        Weak
-                    </span>
-
-                </div>
-
-                <div className="metric-row">
-
-                    <span className="metric-label">
-                        Long Unwinding
-                    </span>
-
-                    <span className="metric-value">
-                        Low
-                    </span>
-
-                </div>
-
-                <div className="metric-row">
-
-                    <span className="metric-label">
-                        Short Covering
-                    </span>
-
-                    <span className="metric-value">
-                        Moderate
-                    </span>
-
-                </div>
-
-                <div className="metric-row">
-
-                    <span className="metric-label">
-                        Dominant
-                    </span>
-
-                    <span className="metric-value">
-                        Long Build-up
-                    </span>
-
-                </div>
-
+            <div className="card">
+                <div className="info">i</div>
+                <div className="label">LONG BUILD-UP</div>
+                <div className="status">Strong</div>
+                <div className="sub green">Price ↑ OI ↑</div>
+                <div className="caption">CONFIRMED</div>
             </div>
 
-            <div className="metric-footer">
+            <div className="card">
+                <div className="info">i</div>
+                <div className="label">LONG UNWINDING</div>
+                <div className="status">Low</div>
+                <div className="sub">Price ↓ OI ↓</div>
+                <div className="caption">IDLE</div>
+            </div>
 
-                <span className="metric-footer-text">
-                    Last Updated : --:--:--
-                </span>
-
+            <div className="card">
+                <div className="info">i</div>
+                <div className="label">SHORT BUILD-UP</div>
+                <div className="status">Low</div>
+                <div className="sub">Price ↓ OI ↑</div>
+                <div className="caption">IDLE</div>
             </div>
 
         </div>
+    </section>
+
     );
 }
 

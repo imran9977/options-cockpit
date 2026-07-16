@@ -1,92 +1,66 @@
 function OptionChainCard() {
     return (
-        <div className="metric-card option-chain-card">
+   <section className="section section-yellow">
+        <div className="section-title">3 • OPTION CHAIN INTELLIGENCE</div>
 
-            <div className="metric-header">
+        <div className="grid-4">
 
-                <h3 className="metric-title">
-                    Option Chain
-                </h3>
-
-                <span className="metric-status">
-                    LIVE
-                </span>
-
+            <div className="card">
+                <div className="info">i</div>
+                <div className="label">ATM STRIKE</div>
+                <div className="value">25,250 CE/PE</div>
+                <div className="caption">Nearest to spot</div>
             </div>
 
-            <div className="metric-body">
-
-                <div className="metric-row">
-
-                    <span className="metric-label">
-                        PCR
-                    </span>
-
-                    <span className="metric-value">
-                        0.98
-                    </span>
-
-                </div>
-
-                <div className="metric-row">
-
-                    <span className="metric-label">
-                        ATM Strike
-                    </span>
-
-                    <span className="metric-value">
-                        25250
-                    </span>
-
-                </div>
-
-                <div className="metric-row">
-
-                    <span className="metric-label">
-                        Support
-                    </span>
-
-                    <span className="metric-value">
-                        25100 PE
-                    </span>
-
-                </div>
-
-                <div className="metric-row">
-
-                    <span className="metric-label">
-                        Resistance
-                    </span>
-
-                    <span className="metric-value">
-                        25300 CE
-                    </span>
-
-                </div>
-
-                <div className="metric-row">
-
-                    <span className="metric-label">
-                        Max Pain
-                    </span>
-
-                    <span className="metric-value">
-                        25200
-                    </span>
-
-                </div>
-
+            <div className="card">
+                <div className="info">i</div>
+                <div className="label">CALL OI</div>
+                <div className="value">1.24 Cr</div>
+                <div className="caption">Max @ 25,300</div>
             </div>
 
-            <div className="metric-footer">
+            <div className="card">
+                <div className="info">i</div>
+                <div className="label">PUT OI</div>
+                <div className="value">1.41 Cr</div>
+                <div className="caption">Max @ 25,200</div>
+            </div>
 
-                <span className="metric-footer-text">
-                    Last Updated : --:--:--
-                </span>
+            <div className="card">
+                <div className="info">i</div>
+                <div className="label">CHANGE IN CALL OI</div>
+                <div className="value">+8.42 L</div>
+                <div className="sub red">vs prev day</div>
+                <div className="caption">WRITING</div>
+            </div>
 
+            <div className="card">
+                <div className="info">i</div>
+                <div className="label">CHANGE IN PUT OI</div>
+                <div className="value">+12.10 L</div>
+                <div className="sub green">vs prev day</div>
+                <div className="caption">WRITING</div>
+            </div>
+
+            <div className="card">
+                <div className="info">i</div>
+                <div className="label">PCR</div>
+                <div className="value">1.08</div>
+                <div className="sub green">+0.03</div>
+                <div className="caption">INCREASING</div>
+            </div>
+
+            <div className="card">
+                <div className="info">i</div>
+                <div className="label">MAX PAIN</div>
+                <div className="value">25,250</div>
+                <div className="sub">5 pts from spot</div>
+                <div className="caption">MAGNET</div>
             </div>
 
         </div>
+    </section>
+
     );
 }
 

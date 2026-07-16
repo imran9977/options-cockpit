@@ -1,92 +1,45 @@
 function ConfirmationCard() {
     return (
-        <div className="metric-card confirmation-card">
+    <section className="section section-cyan">
+        <div className="section-title">6 • CONFIRMATION</div>
 
-            <div className="metric-header">
+        <div className="grid-4">
 
-                <h3 className="metric-title">
-                    Confirmation
-                </h3>
-
-                <span className="metric-status">
-                    LIVE
-                </span>
-
+            <div className="card">
+                <div className="info">i</div>
+                <div className="label">VOLUME</div>
+                <div className="value">112% of avg</div>
+                <div className="sub green">vs 20-day</div>
+                <div className="caption">ABOVE AVERAGE</div>
             </div>
 
-            <div className="metric-body">
-
-                <div className="metric-row">
-
-                    <span className="metric-label">
-                        Market Bias
-                    </span>
-
-                    <span className="metric-value">
-                        Bullish
-                    </span>
-
-                </div>
-
-                <div className="metric-row">
-
-                    <span className="metric-label">
-                        Momentum
-                    </span>
-
-                    <span className="metric-value">
-                        Strong
-                    </span>
-
-                </div>
-
-                <div className="metric-row">
-
-                    <span className="metric-label">
-                        Volume
-                    </span>
-
-                    <span className="metric-value">
-                        Above Average
-                    </span>
-
-                </div>
-
-                <div className="metric-row">
-
-                    <span className="metric-label">
-                        Volatility
-                    </span>
-
-                    <span className="metric-value">
-                        Moderate
-                    </span>
-
-                </div>
-
-                <div className="metric-row">
-
-                    <span className="metric-label">
-                        Confidence
-                    </span>
-
-                    <span className="metric-value">
-                        High
-                    </span>
-
-                </div>
-
+            <div className="card">
+                <div className="info">i</div>
+                <div className="label">FII ACTIVITY</div>
+                <div className="value">+₹842 Cr</div>
+                <div className="sub green">Index futures</div>
+                <div className="caption">NET LONG</div>
             </div>
 
-            <div className="metric-footer">
+            <div className="card">
+                <div className="info">i</div>
+                <div className="label">SECTOR STRENGTH</div>
+                <div className="value">7 / 11 Up</div>
+                <div className="sub green">Banks leading</div>
+                <div className="caption">BROAD</div>
+            </div>
 
-                <span className="metric-footer-text">
-                    Last Updated : --:--:--
-                </span>
-
+            <div className="card">
+                <div className="info">i</div>
+                <div className="label">ADVANCE / DECLINE</div>
+                <div className="value">1.4 : 1</div>
+                <div className="sub green">Ratio</div>
+                <div className="caption">POSITIVE</div>
             </div>
 
         </div>
+    </section>
+
     );
 }
 

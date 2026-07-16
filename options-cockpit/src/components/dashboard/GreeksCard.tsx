@@ -1,92 +1,45 @@
 function GreeksCard() {
     return (
-        <div className="metric-card greeks-card">
+  <section className="section section-purple">
+        <div className="section-title">5 • GREEKS</div>
 
-            <div className="metric-header">
+        <div className="grid-4">
 
-                <h3 className="metric-title">
-                    Greeks
-                </h3>
-
-                <span className="metric-status">
-                    LIVE
-                </span>
-
+            <div className="card">
+                <div className="info">i</div>
+                <div className="label">IV</div>
+                <div className="value">18.42</div>
+                <div className="sub red">-0.42</div>
+                <div className="caption">DECREASING</div>
             </div>
 
-            <div className="metric-body">
-
-                <div className="metric-row">
-
-                    <span className="metric-label">
-                        Delta
-                    </span>
-
-                    <span className="metric-value">
-                        0.52
-                    </span>
-
-                </div>
-
-                <div className="metric-row">
-
-                    <span className="metric-label">
-                        Gamma
-                    </span>
-
-                    <span className="metric-value">
-                        0.018
-                    </span>
-
-                </div>
-
-                <div className="metric-row">
-
-                    <span className="metric-label">
-                        Theta
-                    </span>
-
-                    <span className="metric-value">
-                        -12.45
-                    </span>
-
-                </div>
-
-                <div className="metric-row">
-
-                    <span className="metric-label">
-                        Vega
-                    </span>
-
-                    <span className="metric-value">
-                        8.92
-                    </span>
-
-                </div>
-
-                <div className="metric-row">
-
-                    <span className="metric-label">
-                        IV
-                    </span>
-
-                    <span className="metric-value">
-                        14.35%
-                    </span>
-
-                </div>
-
+            <div className="card">
+                <div className="info">i</div>
+                <div className="label">DELTA</div>
+                <div className="value">0.52</div>
+                <div className="sub">ATM Call</div>
+                <div className="caption">NEUTRAL</div>
             </div>
 
-            <div className="metric-footer">
+            <div className="card">
+                <div className="info">i</div>
+                <div className="label">GAMMA</div>
+                <div className="value">0.014</div>
+                <div className="sub">ATM</div>
+                <div className="caption">ELEVATED</div>
+            </div>
 
-                <span className="metric-footer-text">
-                    Last Updated : --:--:--
-                </span>
-
+            <div className="card">
+                <div className="info">i</div>
+                <div className="label">THETA</div>
+                <div className="value">-8.20</div>
+                <div className="sub red">per day</div>
+                <div className="caption">BLEEDING</div>
             </div>
 
         </div>
+    </section>
+
     );
 }
 

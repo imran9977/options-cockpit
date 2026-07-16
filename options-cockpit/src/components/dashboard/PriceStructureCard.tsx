@@ -1,92 +1,45 @@
 function PriceStructureCard() {
     return (
-        <div className="metric-card price-structure-card">
+          <section className="section section-green">
+        <div className="section-title">2 • PRICE STRUCTURE</div>
 
-            <div className="metric-header">
+        <div className="grid-4">
 
-                <h3 className="metric-title">
-                    Price Structure
-                </h3>
-
-                <span className="metric-status">
-                    LIVE
-                </span>
-
+            <div className="card">
+                <div className="info">i</div>
+                <div className="label">SUPPORT</div>
+                <div className="value">25,180</div>
+                <div className="sub">24 pts away</div>
+                <div className="caption">HOLDING</div>
             </div>
 
-            <div className="metric-body">
-
-                <div className="metric-row">
-
-                    <span className="metric-label">
-                        Trend
-                    </span>
-
-                    <span className="metric-value">
-                        Bullish
-                    </span>
-
-                </div>
-
-                <div className="metric-row">
-
-                    <span className="metric-label">
-                        VWAP
-                    </span>
-
-                    <span className="metric-value">
-                        Above
-                    </span>
-
-                </div>
-
-                <div className="metric-row">
-
-                    <span className="metric-label">
-                        ORB
-                    </span>
-
-                    <span className="metric-value">
-                        Breakout
-                    </span>
-
-                </div>
-
-                <div className="metric-row">
-
-                    <span className="metric-label">
-                        Day High
-                    </span>
-
-                    <span className="metric-value">
-                        25,280
-                    </span>
-
-                </div>
-
-                <div className="metric-row">
-
-                    <span className="metric-label">
-                        Day Low
-                    </span>
-
-                    <span className="metric-value">
-                        25,110
-                    </span>
-
-                </div>
-
+            <div className="card">
+                <div className="info">i</div>
+                <div className="label">RESISTANCE</div>
+                <div className="value">25,320</div>
+                <div className="sub">81 pts away</div>
+                <div className="caption">HOLDING</div>
             </div>
 
-            <div className="metric-footer">
+            <div className="card">
+                <div className="info">i</div>
+                <div className="label">VWAP</div>
+                <div className="value">25,218.40</div>
+                <div className="sub green">Price +27.25</div>
+                <div className="caption">ABOVE</div>
+            </div>
 
-                <span className="metric-footer-text">
-                    Last Updated : --:--:--
-                </span>
-
+            <div className="card">
+                <div className="info">i</div>
+                <div className="label">ORB RANGE</div>
+                <div className="status">High / Low</div>
+                <div className="sub">Range Intact</div>
+                <div className="caption">INSIDE RANGE</div>
             </div>
 
         </div>
+    </section>
+
     );
 }
 
