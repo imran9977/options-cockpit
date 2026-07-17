@@ -10,8 +10,47 @@ import { useEffect, useState } from "react";
 import { getMarketSnapshot } from "../services/dhanApi";
 import type { MarketSnapshot } from "../models/MarketSnapshot";
 import type { MarketMetrics } from "../models/MarketMetrics";
+import type { OptionAnalysis } from "../models/OptionAnalysis";
 
 function Dashboard() {
+
+  const [optionAnalysis, setOptionAnalysis] =
+    useState<OptionAnalysis>({
+      spotPrice: 0,
+      atmStrike: 0,
+      pcr: 0,
+
+      primarySupport: null,
+      secondarySupport: null,
+
+      primaryResistance: null,
+      secondaryResistance: null,
+
+      maxCallOI: 0,
+      maxCallOIStrike: null,
+
+      maxPutOI: 0,
+      maxPutOIStrike: null,
+
+      maxPain: null,
+
+      totalCallOIChange: 0,
+      totalPutOIChange: 0,
+
+      longBuildUp: "Low",
+      shortBuildUp: "Low",
+      shortCovering: "Low",
+      longUnwinding: "Low",
+
+      atmIV: 0,
+      atmDelta: 0,
+      atmGamma: 0,
+      atmTheta: 0,
+
+      marketBias: "Neutral",
+      confidence: "Low",
+    });
+
   const [marketSnapshot, setMarketSnapshot] =
     useState<MarketSnapshot>({
       niftySpot: 0,
@@ -49,6 +88,7 @@ function Dashboard() {
 
         setMarketSnapshot(response.marketSnapshot);
         setMarketMetrics(response.marketMetrics);
+        setOptionAnalysis(response.optionAnalysis);
       } catch (error) {
         console.error("Failed to load market snapshot:", error);
       }
@@ -60,7 +100,7 @@ function Dashboard() {
     // Refresh every 5 seconds
     const intervalId = setInterval(() => {
       loadMarketSnapshot();
-    }, 5000);
+    }, 500000);
 
     // Cleanup on unmount
     return () => clearInterval(intervalId);
@@ -82,6 +122,9 @@ function Dashboard() {
             niftyPreviousClose={marketSnapshot.niftyPreviousClose}
             niftyDayHigh={marketSnapshot.niftyDayHigh}
             niftyDayLow={marketSnapshot.niftyDayLow}
+            niftyDistanceFromHigh={marketMetrics.niftyDistanceFromHigh}
+            niftyDistanceFromLow={marketMetrics.niftyDistanceFromLow}
+            niftyDayRange={marketMetrics.niftyDayRange}
             niftyGap={marketMetrics.niftyGap}
 
             sensexSpot={marketSnapshot.sensexSpot}
@@ -89,6 +132,9 @@ function Dashboard() {
             sensexPreviousClose={marketSnapshot.sensexPreviousClose}
             sensexDayHigh={marketSnapshot.sensexDayHigh}
             sensexDayLow={marketSnapshot.sensexDayLow}
+            sensexDistanceFromHigh={marketMetrics.sensexDistanceFromHigh}
+            sensexDistanceFromLow={marketMetrics.sensexDistanceFromLow}
+            sensexDayRange={marketMetrics.sensexDayRange}
             sensexGap={marketMetrics.sensexGap}
 
             indiaVix={marketSnapshot.indiaVix}
@@ -98,31 +144,31 @@ function Dashboard() {
         <section >
           <h2>Price Structure</h2>
 
-          <PriceStructureCard />
+          <PriceStructureCard optionAnalysis={optionAnalysis} />
         </section>
 
         <section >
           <h2>Option Chain Intelligence</h2>
 
-          <OptionChainCard />
+          <OptionChainCard optionAnalysis={optionAnalysis} />
         </section>
 
         <section >
           <h2>Position Build-up</h2>
 
-          <PositionBuildUpCard />
+          <PositionBuildUpCard optionAnalysis={optionAnalysis} />
         </section>
 
         <section >
           <h2>Greeks</h2>
 
-          <GreeksCard />
+          <GreeksCard optionAnalysis={optionAnalysis} />
         </section>
 
         <section>
           <h2>Confirmation</h2>
 
-          <ConfirmationCard />
+          <ConfirmationCard optionAnalysis={optionAnalysis} />
         </section>
       </main>
     </>

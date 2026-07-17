@@ -4,6 +4,9 @@ type SpotPriceCardProps = {
     niftyPreviousClose: number;
     niftyDayHigh: number;
     niftyDayLow: number;
+    niftyDistanceFromHigh: number;
+    niftyDistanceFromLow: number;
+    niftyDayRange: number;
     niftyGap: number;
 
     sensexSpot: number;
@@ -11,6 +14,9 @@ type SpotPriceCardProps = {
     sensexPreviousClose: number;
     sensexDayHigh: number;
     sensexDayLow: number;
+    sensexDistanceFromHigh: number;
+    sensexDistanceFromLow: number;
+    sensexDayRange: number;
     sensexGap: number;
 
     indiaVix: number;
@@ -22,6 +28,9 @@ function SpotPriceCard({ niftySpot,
     niftyDayHigh,
     niftyDayLow,
     niftyGap,
+    niftyDistanceFromHigh,
+    niftyDistanceFromLow,
+    niftyDayRange,
 
     sensexSpot,
     sensexOpen,
@@ -29,6 +38,9 @@ function SpotPriceCard({ niftySpot,
     sensexDayHigh,
     sensexDayLow,
     sensexGap,
+    sensexDistanceFromHigh,
+    sensexDistanceFromLow,
+    sensexDayRange,
 
     indiaVix, }: SpotPriceCardProps) {
     return (
@@ -45,6 +57,9 @@ function SpotPriceCard({ niftySpot,
                     <div className="caption">Prev Close : {niftyPreviousClose.toFixed(2)}</div>
                     <div className="caption">High : {niftyDayHigh.toFixed(2)}</div>
                     <div className="caption">Low : {niftyDayLow.toFixed(2)}</div>
+                    <div className="caption">Dist. High : {niftyDistanceFromHigh.toFixed(2)}</div>
+                    <div className="caption">Dist. Low : {niftyDistanceFromLow.toFixed(2)}</div>
+                    <div className="caption">Range : {niftyDayRange.toFixed(2)}</div>
                     <div className="caption">Gap : {niftyGap.toFixed(2)}</div>
                     <div className="sub green">+42.30 (+0.17%)</div>
                     <div className="caption">ABOVE VWAP</div>
@@ -58,6 +73,9 @@ function SpotPriceCard({ niftySpot,
                     <div className="caption">Prev Close : {sensexPreviousClose.toFixed(2)}</div>
                     <div className="caption">High : {sensexDayHigh.toFixed(2)}</div>
                     <div className="caption">Low : {sensexDayLow.toFixed(2)}</div>
+                    <div className="caption">Dist. High : {sensexDistanceFromHigh.toFixed(2)}</div>
+                    <div className="caption">Dist. Low : {sensexDistanceFromLow.toFixed(2)}</div>
+                    <div className="caption">Range : {sensexDayRange.toFixed(2)}</div>
                     <div className="caption">Gap : {sensexGap.toFixed(2)}</div>
                     <div className="sub green">+128.45 (+0.16%)</div>
                     <div className="caption">ABOVE VWAP</div>

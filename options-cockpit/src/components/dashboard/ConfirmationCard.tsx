@@ -1,45 +1,78 @@
-function ConfirmationCard() {
+import type { OptionAnalysis } from "../../models/OptionAnalysis";
+
+interface ConfirmationCardProps {
+    optionAnalysis: OptionAnalysis;
+}
+
+function ConfirmationCard({
+    optionAnalysis,
+}: ConfirmationCardProps) {
     return (
-    <section className="section section-cyan">
-        <div className="section-title">6 • CONFIRMATION</div>
-
-        <div className="grid-4">
-
-            <div className="card">
-                <div className="info">i</div>
-                <div className="label">VOLUME</div>
-                <div className="value">112% of avg</div>
-                <div className="sub green">vs 20-day</div>
-                <div className="caption">ABOVE AVERAGE</div>
+        <section className="section section-cyan">
+            <div className="section-title">
+                6 • CONFIRMATION
             </div>
 
-            <div className="card">
-                <div className="info">i</div>
-                <div className="label">FII ACTIVITY</div>
-                <div className="value">+₹842 Cr</div>
-                <div className="sub green">Index futures</div>
-                <div className="caption">NET LONG</div>
+            <div className="grid-4">
+
+                <div className="card">
+                    <div className="info">i</div>
+                    <div className="label">MARKET BIAS</div>
+                    <div className="value">
+                        {optionAnalysis.marketBias}
+                    </div>
+                    <div className="sub">
+                        Option Chain
+                    </div>
+                    <div className="caption">
+                        LIVE
+                    </div>
+                </div>
+
+                <div className="card">
+                    <div className="info">i</div>
+                    <div className="label">CONFIDENCE</div>
+                    <div className="value">
+                        {optionAnalysis.confidence}
+                    </div>
+                    <div className="sub">
+                        Signal Strength
+                    </div>
+                    <div className="caption">
+                        LIVE
+                    </div>
+                </div>
+
+                <div className="card">
+                    <div className="info">i</div>
+                    <div className="label">PCR</div>
+                    <div className="value">
+                        {optionAnalysis.pcr}
+                    </div>
+                    <div className="sub">
+                        Put / Call Ratio
+                    </div>
+                    <div className="caption">
+                        LIVE
+                    </div>
+                </div>
+
+                <div className="card">
+                    <div className="info">i</div>
+                    <div className="label">ATM DELTA</div>
+                    <div className="value">
+                        {optionAnalysis.atmDelta}
+                    </div>
+                    <div className="sub">
+                        Directional Signal
+                    </div>
+                    <div className="caption">
+                        LIVE
+                    </div>
+                </div>
+
             </div>
-
-            <div className="card">
-                <div className="info">i</div>
-                <div className="label">SECTOR STRENGTH</div>
-                <div className="value">7 / 11 Up</div>
-                <div className="sub green">Banks leading</div>
-                <div className="caption">BROAD</div>
-            </div>
-
-            <div className="card">
-                <div className="info">i</div>
-                <div className="label">ADVANCE / DECLINE</div>
-                <div className="value">1.4 : 1</div>
-                <div className="sub green">Ratio</div>
-                <div className="caption">POSITIVE</div>
-            </div>
-
-        </div>
-    </section>
-
+        </section>
     );
 }
 

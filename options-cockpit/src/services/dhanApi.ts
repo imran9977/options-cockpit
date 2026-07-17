@@ -1,9 +1,11 @@
 import type { MarketSnapshot } from "../models/MarketSnapshot";
 import { MarketMetrics } from "../models/MarketMetrics";
+import type { OptionAnalysis } from "../models/OptionAnalysis";
 
 export interface MarketQuoteResponse {
     marketSnapshot: MarketSnapshot;
     marketMetrics: MarketMetrics;
+     optionAnalysis: OptionAnalysis;
 }
 
 export async function getMarketSnapshot(): Promise<MarketQuoteResponse> {
