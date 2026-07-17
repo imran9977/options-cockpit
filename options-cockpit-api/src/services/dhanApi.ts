@@ -1,7 +1,8 @@
 import { config } from "../config/config.js";
+import { INSTRUMENTS } from "../config/instruments.js";
 
 export async function getMarketQuote() {
-    const url = `${config.dhan.baseUrl}/v2/marketfeed/ltp`;
+    const url = `${config.dhan.baseUrl}/v2/marketfeed/ohlc`;
 
     const response = await fetch(url, {
         method: "POST",
@@ -12,7 +13,11 @@ export async function getMarketQuote() {
             "Accept": "application/json"
         },
         body: JSON.stringify({
-            IDX_I: [13]
+            IDX_I: [
+                INSTRUMENTS.NIFTY,
+                INSTRUMENTS.SENSEX,
+                INSTRUMENTS.INDIA_VIX,
+            ]
         })
     });
 
@@ -20,5 +25,7 @@ export async function getMarketQuote() {
         throw new Error(`Dhan API Error: ${response.status}`);
     }
 
-    return await response.json();
+    const data = await response.json();
+    // console.log('imran', JSON.stringify(data, null, 2));
+    return data;
 }

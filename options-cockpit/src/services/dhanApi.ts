@@ -1,27 +1,19 @@
-import { config } from "../config/config";
+import type { MarketSnapshot } from "../models/MarketSnapshot";
+import { MarketMetrics } from "../models/MarketMetrics";
 
-export async function getMarketQuote() {
-    const response = await fetch(
-        `${config.dhan.baseUrl}/v2/marketfeed/ltp`,
-        {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-                "Accept": "application/json",
-                "access-token": config.dhan.accessToken,
-                "client-id": config.dhan.clientId,
-            },
-            body: JSON.stringify({
-                NSE_INDEX: [
-                    /* Security ID goes here */
-                ],
-            }),
-        }
-    );
+export interface MarketQuoteResponse {
+    marketSnapshot: MarketSnapshot;
+    marketMetrics: MarketMetrics;
+}
+
+export async function getMarketSnapshot(): Promise<MarketQuoteResponse> {
+    const response = await fetch("http://localhost:3000/market-quote");
+
+    if (!response.ok) {
+        throw new Error("Failed to fetch market snapshot");
+    }
 
     const data = await response.json();
-
-    console.log(data);
 
     return data;
 }
