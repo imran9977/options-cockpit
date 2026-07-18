@@ -1,3 +1,5 @@
+import type { MarketObservation } from "./MarketObservation";
+
 export interface OptionAnalysis {
     spotPrice: number;
     atmStrike: number;
@@ -32,4 +34,6 @@ export interface OptionAnalysis {
 
     marketBias: "Bullish" | "Bearish" | "Neutral";
     confidence: "Strong" | "Moderate" | "Low";
+
+    observations: MarketObservation[];
 }

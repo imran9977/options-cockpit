@@ -11,6 +11,7 @@ import { getMarketSnapshot } from "../services/dhanApi";
 import type { MarketSnapshot } from "../models/MarketSnapshot";
 import type { MarketMetrics } from "../models/MarketMetrics";
 import type { OptionAnalysis } from "../models/OptionAnalysis";
+import MarketObservationsPanel from "../components/MarketObservationsPanel";
 
 function Dashboard() {
 
@@ -49,6 +50,8 @@ function Dashboard() {
 
       marketBias: "Neutral",
       confidence: "Low",
+
+      observations: [],
     });
 
   const [marketSnapshot, setMarketSnapshot] =
@@ -100,7 +103,7 @@ function Dashboard() {
     // Refresh every 5 seconds
     const intervalId = setInterval(() => {
       loadMarketSnapshot();
-    }, 500000);
+    }, 300000);
 
     // Cleanup on unmount
     return () => clearInterval(intervalId);
@@ -112,64 +115,78 @@ function Dashboard() {
 
       <MarketRibbon />
 
-      <main>
-        <section >
-          <h2>Market Health</h2>
+      <main className="flex gap-6 p-6">
 
-          <SpotPriceCard
-            niftySpot={marketSnapshot.niftySpot}
-            niftyOpen={marketSnapshot.niftyOpen}
-            niftyPreviousClose={marketSnapshot.niftyPreviousClose}
-            niftyDayHigh={marketSnapshot.niftyDayHigh}
-            niftyDayLow={marketSnapshot.niftyDayLow}
-            niftyDistanceFromHigh={marketMetrics.niftyDistanceFromHigh}
-            niftyDistanceFromLow={marketMetrics.niftyDistanceFromLow}
-            niftyDayRange={marketMetrics.niftyDayRange}
-            niftyGap={marketMetrics.niftyGap}
+        <div className="flex-1">
 
-            sensexSpot={marketSnapshot.sensexSpot}
-            sensexOpen={marketSnapshot.sensexOpen}
-            sensexPreviousClose={marketSnapshot.sensexPreviousClose}
-            sensexDayHigh={marketSnapshot.sensexDayHigh}
-            sensexDayLow={marketSnapshot.sensexDayLow}
-            sensexDistanceFromHigh={marketMetrics.sensexDistanceFromHigh}
-            sensexDistanceFromLow={marketMetrics.sensexDistanceFromLow}
-            sensexDayRange={marketMetrics.sensexDayRange}
-            sensexGap={marketMetrics.sensexGap}
+          <section>
+            <h2>Market Health</h2>
 
-            indiaVix={marketSnapshot.indiaVix}
+            <SpotPriceCard
+              niftySpot={marketSnapshot.niftySpot}
+              niftyOpen={marketSnapshot.niftyOpen}
+              niftyPreviousClose={marketSnapshot.niftyPreviousClose}
+              niftyDayHigh={marketSnapshot.niftyDayHigh}
+              niftyDayLow={marketSnapshot.niftyDayLow}
+              niftyDistanceFromHigh={marketMetrics.niftyDistanceFromHigh}
+              niftyDistanceFromLow={marketMetrics.niftyDistanceFromLow}
+              niftyDayRange={marketMetrics.niftyDayRange}
+              niftyGap={marketMetrics.niftyGap}
+
+              sensexSpot={marketSnapshot.sensexSpot}
+              sensexOpen={marketSnapshot.sensexOpen}
+              sensexPreviousClose={marketSnapshot.sensexPreviousClose}
+              sensexDayHigh={marketSnapshot.sensexDayHigh}
+              sensexDayLow={marketSnapshot.sensexDayLow}
+              sensexDistanceFromHigh={marketMetrics.sensexDistanceFromHigh}
+              sensexDistanceFromLow={marketMetrics.sensexDistanceFromLow}
+              sensexDayRange={marketMetrics.sensexDayRange}
+              sensexGap={marketMetrics.sensexGap}
+
+              indiaVix={marketSnapshot.indiaVix}
+            />
+          </section>
+
+          <section>
+            <h2>Price Structure</h2>
+
+            <PriceStructureCard optionAnalysis={optionAnalysis} />
+          </section>
+
+          <section>
+            <h2>Option Chain Intelligence</h2>
+
+            <OptionChainCard optionAnalysis={optionAnalysis} />
+          </section>
+
+          <section>
+            <h2>Position Build-up</h2>
+
+            <PositionBuildUpCard optionAnalysis={optionAnalysis} />
+          </section>
+
+          <section>
+            <h2>Greeks</h2>
+
+            <GreeksCard optionAnalysis={optionAnalysis} />
+          </section>
+
+          <section>
+            <h2>Confirmation</h2>
+
+            <ConfirmationCard optionAnalysis={optionAnalysis} />
+          </section>
+
+        </div>
+
+        <aside className="w-[340px] shrink-0">
+
+          <MarketObservationsPanel
+            observations={optionAnalysis.observations}
           />
-        </section>
 
-        <section >
-          <h2>Price Structure</h2>
+        </aside>
 
-          <PriceStructureCard optionAnalysis={optionAnalysis} />
-        </section>
-
-        <section >
-          <h2>Option Chain Intelligence</h2>
-
-          <OptionChainCard optionAnalysis={optionAnalysis} />
-        </section>
-
-        <section >
-          <h2>Position Build-up</h2>
-
-          <PositionBuildUpCard optionAnalysis={optionAnalysis} />
-        </section>
-
-        <section >
-          <h2>Greeks</h2>
-
-          <GreeksCard optionAnalysis={optionAnalysis} />
-        </section>
-
-        <section>
-          <h2>Confirmation</h2>
-
-          <ConfirmationCard optionAnalysis={optionAnalysis} />
-        </section>
       </main>
     </>
   );

@@ -1,6 +1,14 @@
+import type { OptionChain, OptionStrike } from "../models/OptionChain.js";
+
+import { generateMarketEvidence } from "../services/marketEvidenceGenerator.js";
+import { confirmMarketDirection } from "../services/confirmationEngine.js";
+import { qualifyObservation } from "../services/qualificationEngine.js";
+import { generateObservation } from "../services/observationGenerator.js";
+
+
 export function findATMStrike(
     spotPrice: number,
-    optionChain: Record<string, unknown>
+    optionChain: OptionChain
 ) {
     const strikes = Object.keys(optionChain).map(Number);
 
@@ -23,7 +31,7 @@ export function findATMStrike(
 }
 
 export function extractATMRange(
-    optionChain: Record<string, unknown>,
+    optionChain: OptionChain,
     atmStrike: number
 ) {
     const strikes = Object.keys(optionChain)
@@ -45,19 +53,22 @@ export function extractATMRange(
 }
 
 export function getATMRangeData(
-    optionChain: Record<string, unknown>,
+    optionChain: OptionChain,
     atmRangeStrikes: number[]
-) {
+): Array<{
+    strike: number;
+    data: OptionStrike;
+}> {
     return atmRangeStrikes.map((strike) => ({
         strike,
-        data: optionChain[strike.toFixed(6)],
+        data: optionChain[String(strike)],
     }));
 }
 
 export function calculatePCR(
     atmRangeData: Array<{
         strike: number;
-        data: any;
+        data: OptionStrike;
     }>
 ) {
     let totalPEOI = 0;
@@ -78,7 +89,7 @@ export function calculatePCR(
 export function calculateSupports(
     atmRangeData: Array<{
         strike: number;
-        data: any;
+        data: OptionStrike;
     }>
 ) {
     const supports = atmRangeData
@@ -97,7 +108,7 @@ export function calculateSupports(
 export function calculateResistances(
     atmRangeData: Array<{
         strike: number;
-        data: any;
+        data: OptionStrike;
     }>
 ) {
     const resistances = atmRangeData
@@ -116,7 +127,7 @@ export function calculateResistances(
 export function calculateMaxOI(
     atmRangeData: Array<{
         strike: number;
-        data: any;
+        data: OptionStrike;
     }>
 ) {
     const maxCall = atmRangeData
@@ -145,7 +156,7 @@ export function calculateMaxOI(
 export function calculateOIChange(
     atmRangeData: Array<{
         strike: number;
-        data: any;
+        data: OptionStrike;
     }>
 ) {
     let totalCallOIChange = 0;
@@ -170,7 +181,7 @@ export function calculateOIChange(
 export function calculatePositionBuildUp(
     atmRangeData: Array<{
         strike: number;
-        data: any;
+        data: OptionStrike;
     }>
 ) {
     let longBuildUp = 0;
@@ -178,7 +189,24 @@ export function calculatePositionBuildUp(
     let shortCovering = 0;
     let longUnwinding = 0;
 
+    const classify = (
+        priceChange: number,
+        oiChange: number
+    ) => {
+        if (priceChange > 0 && oiChange > 0) {
+            longBuildUp++;
+        } else if (priceChange < 0 && oiChange > 0) {
+            shortBuildUp++;
+        } else if (priceChange > 0 && oiChange < 0) {
+            shortCovering++;
+        } else if (priceChange < 0 && oiChange < 0) {
+            longUnwinding++;
+        }
+    };
+
     for (const item of atmRangeData) {
+
+        // CALL SIDE
         const cePriceChange =
             (item.data?.ce?.last_price ?? 0) -
             (item.data?.ce?.previous_close_price ?? 0);
@@ -187,20 +215,28 @@ export function calculatePositionBuildUp(
             (item.data?.ce?.oi ?? 0) -
             (item.data?.ce?.previous_oi ?? 0);
 
-        if (cePriceChange > 0 && ceOIChange > 0) {
-            longBuildUp++;
-        } else if (cePriceChange < 0 && ceOIChange > 0) {
-            shortBuildUp++;
-        } else if (cePriceChange > 0 && ceOIChange < 0) {
-            shortCovering++;
-        } else if (cePriceChange < 0 && ceOIChange < 0) {
-            longUnwinding++;
-        }
+        classify(cePriceChange, ceOIChange);
+
+        // PUT SIDE
+        const pePriceChange =
+            (item.data?.pe?.last_price ?? 0) -
+            (item.data?.pe?.previous_close_price ?? 0);
+
+        const peOIChange =
+            (item.data?.pe?.oi ?? 0) -
+            (item.data?.pe?.previous_oi ?? 0);
+
+        classify(pePriceChange, peOIChange);
     }
 
+    const totalObservations = atmRangeData.length * 2;
+
     const getStrength = (count: number) => {
-        if (count >= 6) return "Strong";
-        if (count >= 3) return "Moderate";
+        const percentage =
+            (count / totalObservations) * 100;
+
+        if (percentage >= 60) return "Strong";
+        if (percentage >= 30) return "Moderate";
         return "Low";
     };
 
@@ -211,9 +247,8 @@ export function calculatePositionBuildUp(
         longUnwinding: getStrength(longUnwinding),
     };
 }
-
 export function calculateMaxPain(
-    optionChain: Record<string, unknown>
+    optionChain: OptionChain
 ) {
     const strikes = Object.keys(optionChain)
         .map(Number)
@@ -226,7 +261,7 @@ export function calculateMaxPain(
         let totalPain = 0;
 
         for (const strike of strikes) {
-            const strikeData: any =
+            const strikeData: OptionStrike =
                 optionChain[strike.toFixed(6)];
 
             const callOI =
@@ -260,10 +295,10 @@ export function calculateMaxPain(
 }
 
 export function calculateATMGreeks(
-    optionChain: Record<string, unknown>,
+    optionChain: OptionChain,
     atmStrike: number
 ) {
-    const atmData: any =
+    const atmData: OptionStrike | undefined =
         optionChain[atmStrike.toFixed(6)];
 
     return {
@@ -295,35 +330,70 @@ export function calculateMarketBias(
     pcr: number,
     longBuildUp: string,
     shortBuildUp: string,
-    atmDelta: number
+    atmDelta: number,
+    primarySupport: number | null,
+    primaryResistance: number | null,
+    maxPain: number | null
 ) {
     let bullishScore = 0;
     let bearishScore = 0;
 
-    if (pcr > 1) {
-        bullishScore++;
-    } else if (pcr < 1) {
-        bearishScore++;
+    // PCR (Weight 2)
+    if (pcr >= 1.1) {
+        bullishScore += 2;
+    } else if (pcr <= 0.9) {
+        bearishScore += 2;
     }
 
+    // Spot vs ATM (Weight 1)
     if (spotPrice > atmStrike) {
-        bullishScore++;
+        bullishScore += 1;
     } else if (spotPrice < atmStrike) {
-        bearishScore++;
+        bearishScore += 1;
     }
 
+    // Position Build-up (Weight 2)
     if (longBuildUp === "Strong") {
-        bullishScore++;
+        bullishScore += 2;
+    } else if (longBuildUp === "Moderate") {
+        bullishScore += 1;
     }
 
     if (shortBuildUp === "Strong") {
-        bearishScore++;
+        bearishScore += 2;
+    } else if (shortBuildUp === "Moderate") {
+        bearishScore += 1;
     }
 
-    if (atmDelta > 0.5) {
-        bullishScore++;
-    } else if (atmDelta < 0.45) {
-        bearishScore++;
+    // ATM Delta (Weight 1)
+    if (atmDelta >= 0.55) {
+        bullishScore += 1;
+    } else if (atmDelta <= 0.45) {
+        bearishScore += 1;
+    }
+
+    // Spot vs Support / Resistance (Weight 2)
+    if (
+        primarySupport !== null &&
+        spotPrice > primarySupport
+    ) {
+        bullishScore += 2;
+    }
+
+    if (
+        primaryResistance !== null &&
+        spotPrice < primaryResistance
+    ) {
+        bearishScore += 2;
+    }
+
+    // Max Pain (Weight 1)
+    if (maxPain !== null) {
+        if (spotPrice > maxPain) {
+            bullishScore += 1;
+        } else if (spotPrice < maxPain) {
+            bearishScore += 1;
+        }
     }
 
     const difference = Math.abs(
@@ -332,9 +402,9 @@ export function calculateMarketBias(
 
     let confidence: "Strong" | "Moderate" | "Low";
 
-    if (difference >= 3) {
+    if (difference >= 5) {
         confidence = "Strong";
-    } else if (difference === 2) {
+    } else if (difference >= 2) {
         confidence = "Moderate";
     } else {
         confidence = "Low";
@@ -361,7 +431,7 @@ export function calculateMarketBias(
 
 export function analyzeOptionChain(
     spotPrice: number,
-    optionChain: Record<string, unknown>
+    optionChain: OptionChain
 ) {
     const { atmStrike } = findATMStrike(
         spotPrice,
@@ -433,8 +503,53 @@ export function analyzeOptionChain(
         pcr,
         longBuildUp,
         shortBuildUp,
-        atmDelta
+        atmDelta,
+        primarySupport,
+        primaryResistance,
+        maxPain
     );
+
+    const evidence = generateMarketEvidence({
+        spotPrice,
+        atmStrike,
+
+        pcr,
+
+        primarySupport,
+        primaryResistance,
+
+        longBuildUp,
+        shortBuildUp,
+        shortCovering,
+        longUnwinding,
+
+        atmDelta,
+
+        maxPain,
+    });
+
+    console.log("\n==================== EVIDENCE ====================");
+    console.table(evidence);
+
+    const confirmation =
+        confirmMarketDirection(evidence);
+
+    console.log("\n================= CONFIRMATION =================");
+    console.log(confirmation);
+
+    const qualified =
+        qualifyObservation(confirmation);
+
+
+    console.log("\n================ QUALIFICATION =================");
+    console.log(qualified);
+
+    const observations = qualified
+        ? [generateObservation(qualified)]
+        : [];
+
+    console.log("\n================ OBSERVATIONS ==================");
+    console.table(observations);
 
     return {
         spotPrice,
@@ -470,5 +585,7 @@ export function analyzeOptionChain(
 
         marketBias,
         confidence,
+
+        observations,
     };
 }

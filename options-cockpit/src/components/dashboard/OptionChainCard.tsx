@@ -14,16 +14,7 @@ function OptionChainCard({
             </div>
 
             <div className="grid-4">
-                <div className="card">
-                    <div className="info">i</div>
-                    <div className="label">ATM STRIKE</div>
-                    <div className="value">
-                        {optionAnalysis.atmStrike}
-                    </div>
-                    <div className="caption">
-                        Nearest to spot
-                    </div>
-                </div>
+               
 
                 <div className="card">
                     <div className="info">i</div>
@@ -38,6 +29,38 @@ function OptionChainCard({
 
                 <div className="card">
                     <div className="info">i</div>
+                    <div className="label">CHANGE IN CALL OI</div>
+                    <div className="value">
+                        {optionAnalysis.totalCallOIChange.toLocaleString()}
+                    </div>
+                    <div className="sub red">vs prev snapshot</div>
+                    <div className="caption">WRITING</div>
+                </div>
+
+                 <div className="card">
+                    <div className="info">i</div>
+                    <div className="label">ATM STRIKE</div>
+                    <div className="value">
+                        {optionAnalysis.atmStrike}
+                    </div>
+                    <div className="caption">
+                        Nearest to spot
+                    </div>
+                </div>
+
+                  <div className="card">
+                    <div className="info">i</div>
+                    <div className="label">PCR</div>
+                    <div className="value">
+                        {optionAnalysis.pcr}
+                    </div>
+                    <div className="caption">
+                        ATM ± 10 Strikes
+                    </div>
+                </div>
+
+                 <div className="card">
+                    <div className="info">i</div>
                     <div className="label">PUT OI</div>
                     <div className="value">
                         {optionAnalysis.maxPutOI.toLocaleString()}
@@ -49,33 +72,12 @@ function OptionChainCard({
 
                 <div className="card">
                     <div className="info">i</div>
-                    <div className="label">CHANGE IN CALL OI</div>
-                    <div className="value">
-                        {optionAnalysis.totalCallOIChange.toLocaleString()}
-                    </div>
-                    <div className="sub red">vs prev snapshot</div>
-                    <div className="caption">WRITING</div>
-                </div>
-
-                <div className="card">
-                    <div className="info">i</div>
                     <div className="label">CHANGE IN PUT OI</div>
                     <div className="value">
                         {optionAnalysis.totalPutOIChange.toLocaleString()}
                     </div>
                     <div className="sub green">vs prev snapshot</div>
                     <div className="caption">WRITING</div>
-                </div>
-
-                <div className="card">
-                    <div className="info">i</div>
-                    <div className="label">PCR</div>
-                    <div className="value">
-                        {optionAnalysis.pcr}
-                    </div>
-                    <div className="caption">
-                        ATM ± 10 Strikes
-                    </div>
                 </div>
 
                 <div className="card">
