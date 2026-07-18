@@ -21,11 +21,6 @@ function Header() {
           fontSize: "14px",
         }}
       >
-        <span style={{ color: "green", fontWeight: 600 }}>LIVE</span>
-
-        <span>Refresh 5s</span>
-
-        <span>14:40:00</span>
 
         <button>Learn</button>
 

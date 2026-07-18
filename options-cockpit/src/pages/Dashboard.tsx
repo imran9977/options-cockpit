@@ -113,8 +113,6 @@ function Dashboard() {
     <>
       <Header />
 
-      <MarketRibbon />
-
       <main className="flex gap-6 p-6">
 
         <div className="flex-1">
