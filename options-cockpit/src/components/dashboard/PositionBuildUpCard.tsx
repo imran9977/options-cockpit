@@ -7,10 +7,46 @@ interface PositionBuildUpCardProps {
 function PositionBuildUpCard({
     optionAnalysis,
 }: PositionBuildUpCardProps) {
+
+    const score =
+        (optionAnalysis.longBuildUpPercentage * 4) +
+        (optionAnalysis.shortCoveringPercentage * 2) -
+        (optionAnalysis.shortBuildUpPercentage * 4) -
+        (optionAnalysis.longUnwindingPercentage * 2);
+
+    let verdict = "POSITIONING BALANCED";
+    let verdictClass = "neutral";
+
+    if (score >= 40) {
+
+        verdict = "BUYERS GAINING CONTROL";
+        verdictClass = "bullish";
+
+    } else if (score <= -40) {
+
+        verdict = "SELLERS GAINING CONTROL";
+        verdictClass = "bearish";
+
+    } else {
+
+        verdict = "MARKET AWAITS DIRECTION";
+        verdictClass = "neutral";
+
+    }
+
     return (
         <section className="section section-pink">
-            <div className="section-title">
-                4 • POSITION BUILD-UP
+
+            <div className="section-header">
+
+                <div className="section-title">
+                    4 • POSITION BUILD-UP
+                </div>
+
+                <div className={`position-summary ${verdictClass}`}>
+                    {verdict}
+                </div>
+
             </div>
 
             <div className="grid-4">
@@ -22,10 +58,10 @@ function PositionBuildUpCard({
                         {optionAnalysis.shortCovering}
                     </div>
                     <div className="sub green">
-                        Price ↑ OI ↓
+                        {optionAnalysis.shortCoveringCount} Strikes
                     </div>
                     <div className="caption">
-                        DETECTED
+                        {optionAnalysis.shortCoveringPercentage}% Participation
                     </div>
                 </div>
 
@@ -36,10 +72,10 @@ function PositionBuildUpCard({
                         {optionAnalysis.longBuildUp}
                     </div>
                     <div className="sub green">
-                        Price ↑ OI ↑
+                        {optionAnalysis.longBuildUpCount} Strikes
                     </div>
                     <div className="caption">
-                        CONFIRMED
+                        {optionAnalysis.longBuildUpPercentage}% Participation
                     </div>
                 </div>
 
@@ -50,10 +86,10 @@ function PositionBuildUpCard({
                         {optionAnalysis.longUnwinding}
                     </div>
                     <div className="sub">
-                        Price ↓ OI ↓
+                        {optionAnalysis.longUnwindingCount} Strikes
                     </div>
                     <div className="caption">
-                        IDLE
+                        {optionAnalysis.longUnwindingPercentage}% Participation
                     </div>
                 </div>
 
@@ -64,10 +100,10 @@ function PositionBuildUpCard({
                         {optionAnalysis.shortBuildUp}
                     </div>
                     <div className="sub">
-                        Price ↓ OI ↑
+                        {optionAnalysis.shortBuildUpCount} Strikes
                     </div>
                     <div className="caption">
-                        IDLE
+                        {optionAnalysis.shortBuildUpPercentage}% Participation
                     </div>
                 </div>
 

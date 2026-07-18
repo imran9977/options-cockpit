@@ -61,7 +61,7 @@ export function getATMRangeData(
 }> {
     return atmRangeStrikes.map((strike) => ({
         strike,
-        data: optionChain[String(strike)],
+        data: optionChain[strike.toFixed(6)],
     }));
 }
 
@@ -189,19 +189,28 @@ export function calculatePositionBuildUp(
     let shortCovering = 0;
     let longUnwinding = 0;
 
+    let totalObservations = 0;
+
     const classify = (
         priceChange: number,
         oiChange: number
     ) => {
+
+        totalObservations++;
+
         if (priceChange > 0 && oiChange > 0) {
             longBuildUp++;
-        } else if (priceChange < 0 && oiChange > 0) {
+        }
+        else if (priceChange < 0 && oiChange > 0) {
             shortBuildUp++;
-        } else if (priceChange > 0 && oiChange < 0) {
+        }
+        else if (priceChange > 0 && oiChange < 0) {
             shortCovering++;
-        } else if (priceChange < 0 && oiChange < 0) {
+        }
+        else if (priceChange < 0 && oiChange < 0) {
             longUnwinding++;
         }
+
     };
 
     for (const item of atmRangeData) {
@@ -229,7 +238,6 @@ export function calculatePositionBuildUp(
         classify(pePriceChange, peOIChange);
     }
 
-    const totalObservations = atmRangeData.length * 2;
 
     const getStrength = (count: number) => {
         const percentage =
@@ -241,10 +249,31 @@ export function calculatePositionBuildUp(
     };
 
     return {
+
         longBuildUp: getStrength(longBuildUp),
+        longBuildUpCount: longBuildUp,
+        longBuildUpPercentage: Number(
+            ((longBuildUp / totalObservations) * 100).toFixed(1)
+        ),
+
         shortBuildUp: getStrength(shortBuildUp),
+        shortBuildUpCount: shortBuildUp,
+        shortBuildUpPercentage: Number(
+            ((shortBuildUp / totalObservations) * 100).toFixed(1)
+        ),
+
         shortCovering: getStrength(shortCovering),
+        shortCoveringCount: shortCovering,
+        shortCoveringPercentage: Number(
+            ((shortCovering / totalObservations) * 100).toFixed(1)
+        ),
+
         longUnwinding: getStrength(longUnwinding),
+        longUnwindingCount: longUnwinding,
+        longUnwindingPercentage: Number(
+            ((longUnwinding / totalObservations) * 100).toFixed(1)
+        ),
+
     };
 }
 export function calculateMaxPain(
@@ -478,10 +507,23 @@ export function analyzeOptionChain(
     } = calculateOIChange(atmRangeData);
 
     const {
+
         longBuildUp,
+        longBuildUpCount,
+        longBuildUpPercentage,
+
         shortBuildUp,
+        shortBuildUpCount,
+        shortBuildUpPercentage,
+
         shortCovering,
+        shortCoveringCount,
+        shortCoveringPercentage,
+
         longUnwinding,
+        longUnwindingCount,
+        longUnwindingPercentage,
+
     } = calculatePositionBuildUp(atmRangeData);
 
     const {
@@ -528,28 +570,30 @@ export function analyzeOptionChain(
         maxPain,
     });
 
-    console.log("\n==================== EVIDENCE ====================");
-    console.table(evidence);
+    // console.log("\n==================== EVIDENCE ====================");
+    // console.table(evidence);
 
     const confirmation =
         confirmMarketDirection(evidence);
 
-    console.log("\n================= CONFIRMATION =================");
-    console.log(confirmation);
+    // console.log("\n================= CONFIRMATION =================");
+    // console.log(confirmation);
 
     const qualified =
         qualifyObservation(confirmation);
 
 
-    console.log("\n================ QUALIFICATION =================");
-    console.log(qualified);
+    // console.log("\n================ QUALIFICATION =================");
+    // console.log(qualified);
 
     const observations = qualified
         ? [generateObservation(qualified)]
         : [];
 
-    console.log("\n================ OBSERVATIONS ==================");
-    console.table(observations);
+    // console.log("\n================ OBSERVATIONS ==================");
+    // console.table(observations);
+
+
 
     return {
         spotPrice,
@@ -574,9 +618,20 @@ export function analyzeOptionChain(
         totalPutOIChange,
 
         longBuildUp,
+        longBuildUpCount,
+        longBuildUpPercentage,
+
         shortBuildUp,
+        shortBuildUpCount,
+        shortBuildUpPercentage,
+
         shortCovering,
+        shortCoveringCount,
+        shortCoveringPercentage,
+
         longUnwinding,
+        longUnwindingCount,
+        longUnwindingPercentage,
 
         atmIV,
         atmDelta,

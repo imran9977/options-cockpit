@@ -445,3 +445,139 @@ body {
     }
 
 }
+
+/* ==========================================================
+   POSITION BUILD-UP HEADER
+   ========================================================== */
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.section-header .section-title {
+    margin-bottom: 0;
+}
+
+/* ==========================================================
+   POSITION BUILD-UP VERDICT
+   ========================================================== */
+
+.position-summary {
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    transition: all 0.2s ease;
+}
+
+/* Bullish */
+
+.position-summary.bullish {
+    background: #dcfce7;
+    color: #166534;
+    border-color: #86efac;
+}
+
+/* Bearish */
+
+.position-summary.bearish {
+    background: #fee2e2;
+    color: #991b1b;
+    border-color: #fca5a5;
+}
+
+/* Neutral */
+
+.position-summary.neutral {
+    background: #fef3c7;
+    color: #92400e;
+    border-color: #fcd34d;
+}
+
+/* ==========================
+   Metric Popover
+========================== */
+
+.metric-info {
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.metric-popover {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: -240px;
+
+    width: 240px;
+
+    padding: 12px;
+
+    border-radius: 10px;
+
+    background: #1e1e1e;
+    border: 1px solid #3b3b3b;
+
+    box-shadow: 0 8px 24px rgba(0,0,0,.35);
+
+    display: none;
+
+    z-index: 1000;
+}
+
+.metric-info:hover .metric-popover {
+    display: block;
+}
+
+.metric-popover-title {
+    font-size: 13px;
+    font-weight: 700;
+
+    margin-bottom: 6px;
+}
+
+.metric-popover-current {
+    font-size: 12px;
+    color: #bfbfbf;
+
+    margin-bottom: 10px;
+}
+
+.metric-popover-divider {
+    height: 1px;
+    background: #383838;
+    margin-bottom: 10px;
+}
+
+.metric-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 6px 8px;
+    margin-bottom: 6px;
+
+    border-radius: 6px;
+
+    font-size: 12px;
+
+    transition: all .2s ease;
+}
+
+.metric-row.active {
+    font-weight: 600;
+}
+
+.metric-row.active {
+    background: rgba(99, 102, 241, 0.18);
+    border: 1px solid rgba(99, 102, 241, 0.45);
+    font-weight: 600;
+}

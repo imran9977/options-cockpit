@@ -23,9 +23,20 @@ export interface OptionAnalysis {
     totalPutOIChange: number;
 
     longBuildUp: string;
+    longBuildUpCount: number;
+    longBuildUpPercentage: number;
+
     shortBuildUp: string;
+    shortBuildUpCount: number;
+    shortBuildUpPercentage: number;
+
     shortCovering: string;
+    shortCoveringCount: number;
+    shortCoveringPercentage: number;
+
     longUnwinding: string;
+    longUnwindingCount: number;
+    longUnwindingPercentage: number;
 
     atmIV: number;
     atmDelta: number;

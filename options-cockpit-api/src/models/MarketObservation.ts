@@ -28,7 +28,13 @@ export interface MarketObservation {
 
     driver: ObservationDriver;
 
-    message: string;
+    headline: string;
+
+    summary: string;
+
+    evidence: string[];
+
+    watchFor: string | null;
 
     timestamp: string;
 
