@@ -653,3 +653,92 @@ body {
 .oc-observation-neutral {
     color: #f59e0b;
 }
+
+/* ==========================================================
+   INFO POPOVER
+   ========================================================== */
+
+.info-popover {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: -260px;
+
+    width: 320px;
+
+    padding: 14px;
+
+    border-radius: 10px;
+
+    background: #1e1e1e;
+    border: 1px solid #3b3b3b;
+
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .35);
+
+    display: none;
+
+    z-index: 1000;
+}
+
+.metric-info:hover .info-popover {
+    display: block;
+}
+
+.info-popover-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 14px;
+}
+
+.info-popover-section {
+    margin-bottom: 14px;
+}
+
+.info-popover-section:last-child {
+    margin-bottom: 0;
+}
+
+.info-popover-section-title {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #93c5fd;
+
+    margin-bottom: 8px;
+    padding-bottom: 6px;
+
+    border-bottom: 1px solid #3b3b3b;
+}
+
+.info-popover-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 5px 0;
+
+    font-size: 12px;
+}
+
+.info-popover-label {
+    color: #bfbfbf;
+}
+
+.info-popover-value {
+    font-weight: 600;
+    text-align: right;
+}
+
+.info-popover-value.oc-observation-positive {
+    color: #22c55e;
+}
+
+.info-popover-value.oc-observation-negative {
+    color: #ef4444;
+}
+
+.info-popover-value.oc-observation-neutral {
+    color: #f59e0b;
+}

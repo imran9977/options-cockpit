@@ -79,6 +79,12 @@ export function analyzeVixHealth(
 
     if (closes.length < 2) {
         return {
+            current: 0,
+            previous: 0,
+            average20Day: 0,
+            high20Day: 0,
+            low20Day: 0,
+
             regime: "Unknown",
             momentum: "Unknown",
             premiumOutlook: "Unknown",
@@ -90,8 +96,16 @@ export function analyzeVixHealth(
     const previous = closes[closes.length - 2];
 
     const averageVix = average(closes);
+    const high20Day = Math.max(...closes);
+    const low20Day = Math.min(...closes);
 
     return {
+        current,
+        previous,
+        average20Day: averageVix,
+        high20Day,
+        low20Day,
+
         regime: determineRegime(current, averageVix),
         momentum: determineMomentum(current, previous),
         premiumOutlook: determinePremiumOutlook(current, averageVix),

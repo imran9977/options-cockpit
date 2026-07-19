@@ -127,14 +127,19 @@ function Dashboard() {
         momentum: "",
       },
     });
+  const [vixHealth, setVixHealth] =
+    useState<VixHealth>({
+      current: 0,
+      previous: 0,
+      average20Day: 0,
+      high20Day: 0,
+      low20Day: 0,
 
-    const [vixHealth, setVixHealth] =
-  useState<VixHealth>({
-    regime: "",
-    momentum: "",
-    premiumOutlook: "",
-    tradingEnvironment: "",
-  });
+      regime: "",
+      momentum: "",
+      premiumOutlook: "",
+      tradingEnvironment: "",
+    });
 
   useEffect(() => {
     async function loadMarketSnapshot() {
