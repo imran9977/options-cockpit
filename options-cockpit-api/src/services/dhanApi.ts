@@ -77,3 +77,38 @@ export async function getHistoricalVix() {
 
     return response.json();
 }
+
+export async function getCommodityQuote(
+    securityIds: number[]
+) {
+
+    const url = `${config.dhan.baseUrl}/v2/marketfeed/quote`;
+
+    const response = await fetch(url, {
+        method: "POST",
+        headers: {
+            "access-token": config.dhan.accessToken,
+            "client-id": config.dhan.clientId,
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+        },
+        body: JSON.stringify({
+            MCX_COMM: securityIds
+        })
+    });
+
+    if (!response.ok) {
+        throw new Error(
+            `Commodity Quote API Error: ${response.status}`
+        );
+    }
+
+    const data = await response.json();
+
+    console.log("========== GOLD RESPONSE ==========");
+    console.log(JSON.stringify(data, null, 2));
+
+    return data;
+
+    return response.json();
+}

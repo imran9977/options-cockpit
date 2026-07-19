@@ -13,6 +13,7 @@ import type { OptionAnalysis } from "../models/OptionAnalysis";
 import type { MarketHealth } from "../models/MarketHealth";
 import type { VixHealth } from "../models/VixHealth";
 import MarketObservationsPanel from "../components/MarketObservationsPanel";
+import MarketRibbon from "../components/MarketRibbon";
 
 function Dashboard() {
 
@@ -171,7 +172,7 @@ function Dashboard() {
   return (
     <>
       <Header />
-
+  <MarketRibbon />
       <main className="flex gap-6 p-6">
 
         <div className="flex-1">

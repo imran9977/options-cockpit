@@ -5,6 +5,7 @@ import cors from "cors";
 import { toMarketSnapshot } from "./mappers/marketSnapshotMapper.js";
 import { getMarketSnapshot } from "./services/marketSnapshotService.js";
 import { getOptionChain } from "./services/optionChainService.js";
+import {getCommodityRibbon } from "./services/commodityRibbonService.js";
 
 const PORT = config.port;
 const app = express();
@@ -39,6 +40,20 @@ res.json(data);
 
         res.status(500).json({
             error: "Failed to fetch market snapshot",
+        });
+    }
+});
+
+app.get("/commodities", async (_, res) => {
+    try {
+        const data = await getCommodityRibbon();
+
+        res.json(data);
+    } catch (error) {
+        console.error("Commodity Ribbon Error:", error);
+
+        res.status(500).json({
+            error: "Failed to fetch commodity ribbon",
         });
     }
 });

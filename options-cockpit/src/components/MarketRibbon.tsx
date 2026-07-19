@@ -1,9 +1,49 @@
+import { useEffect, useState } from "react";
+import type { CommodityRibbon } from "../models/CommodityRibbon";
+import { getCommodityRibbon } from "../services/dhanApi";
+
 function MarketRibbon() {
+
+  const [commodities, setCommodities] =
+    useState<CommodityRibbon[]>([]);
+
+  useEffect(() => {
+
+    async function loadCommodityRibbon() {
+      try {
+        const response = await getCommodityRibbon();
+        setCommodities(response.commodities);
+      } catch (error) {
+        console.error(
+          "Failed to load commodity ribbon:",
+          error
+        );
+      }
+    }
+
+    loadCommodityRibbon();
+
+    const intervalId = setInterval(
+      loadCommodityRibbon,
+      300000
+    );
+
+
+    return () => clearInterval(intervalId);
+
+  }, []);
+
   const itemStyle = {
     display: "flex",
     gap: "6px",
     alignItems: "center",
   };
+
+  function formatIndianNumber(value: number) {
+    return value.toLocaleString("en-IN", {
+      maximumFractionDigits: 2,
+    });
+  }
 
   return (
     <section
@@ -16,35 +56,29 @@ function MarketRibbon() {
         fontSize: "14px",
       }}
     >
-      <div style={itemStyle}>
-        <strong>NIFTY</strong>
-        <span>25,245.65</span>
-      </div>
+      {commodities.map((commodity) => (
+        <div
+          key={commodity.name}
+          style={itemStyle}
+        >
+          <strong>{commodity.name}</strong>
+          <span>{formatIndianNumber(commodity.ltp)}</span>
 
-      <div style={itemStyle}>
-        <strong>ATM</strong>
-        <span>25,250</span>
-      </div>
-
-      <div style={itemStyle}>
-        <strong>Support</strong>
-        <span>25,180</span>
-      </div>
-
-      <div style={itemStyle}>
-        <strong>Resistance</strong>
-        <span>25,320</span>
-      </div>
-
-      <div style={itemStyle}>
-        <strong>Day High</strong>
-        <span>25,268</span>
-      </div>
-
-      <div style={itemStyle}>
-        <strong>Day Low</strong>
-        <span>25,192</span>
-      </div>
+          <span
+            style={{
+              color:
+                commodity.change >= 0
+                  ? "green"
+                  : "red",
+            }}
+          >
+            (
+            {commodity.change >= 0 ? "+" : ""}
+            {formatIndianNumber(commodity.change)}
+            )
+          </span>
+        </div>
+      ))}
     </section>
   );
 }
