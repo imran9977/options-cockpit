@@ -1,5 +1,4 @@
 import Header from "../components/Header";
-import MarketRibbon from "../components/MarketRibbon";
 import SpotPriceCard from "../components/dashboard/SpotPriceCard";
 import PriceStructureCard from "../components/dashboard/PriceStructureCard";
 import OptionChainCard from "../components/dashboard/OptionChainCard";
@@ -11,6 +10,8 @@ import { getMarketSnapshot } from "../services/dhanApi";
 import type { MarketSnapshot } from "../models/MarketSnapshot";
 import type { MarketMetrics } from "../models/MarketMetrics";
 import type { OptionAnalysis } from "../models/OptionAnalysis";
+import type { MarketHealth } from "../models/MarketHealth";
+import type { VixHealth } from "../models/VixHealth";
 import MarketObservationsPanel from "../components/MarketObservationsPanel";
 
 function Dashboard() {
@@ -109,6 +110,32 @@ function Dashboard() {
       sensexGap: 0,
     });
 
+  const [marketHealth, setMarketHealth] =
+    useState<MarketHealth>({
+      nifty: {
+        trend: "",
+        opening: "",
+        structure: "",
+        rangeState: "",
+        momentum: "",
+      },
+      sensex: {
+        trend: "",
+        opening: "",
+        structure: "",
+        rangeState: "",
+        momentum: "",
+      },
+    });
+
+    const [vixHealth, setVixHealth] =
+  useState<VixHealth>({
+    regime: "",
+    momentum: "",
+    premiumOutlook: "",
+    tradingEnvironment: "",
+  });
+
   useEffect(() => {
     async function loadMarketSnapshot() {
       try {
@@ -116,6 +143,8 @@ function Dashboard() {
 
         setMarketSnapshot(response.marketSnapshot);
         setMarketMetrics(response.marketMetrics);
+        setMarketHealth(response.marketHealth);
+        setVixHealth(response.vixHealth);
         setOptionAnalysis(response.optionAnalysis);
       } catch (error) {
         console.error("Failed to load market snapshot:", error);
@@ -167,6 +196,8 @@ function Dashboard() {
               sensexGap={marketMetrics.sensexGap}
 
               indiaVix={marketSnapshot.indiaVix}
+              marketHealth={marketHealth}
+              vixHealth={vixHealth}
             />
           </section>
 

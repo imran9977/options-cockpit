@@ -13,7 +13,7 @@ function ConfirmationCard({
                 6 • CONFIRMATION
             </div>
 
-            <div className="grid-4">
+            <div className="grid-2">
 
                 <div className="card">
                     <div className="info">i</div>
@@ -42,34 +42,7 @@ function ConfirmationCard({
                         LIVE
                     </div>
                 </div>
-
-                <div className="card">
-                    <div className="info">i</div>
-                    <div className="label">PCR</div>
-                    <div className="value">
-                        {optionAnalysis.pcr}
-                    </div>
-                    <div className="sub">
-                        Put / Call Ratio
-                    </div>
-                    <div className="caption">
-                        LIVE
-                    </div>
-                </div>
-
-                <div className="card">
-                    <div className="info">i</div>
-                    <div className="label">ATM DELTA</div>
-                    <div className="value">
-                        {optionAnalysis.atmDelta}
-                    </div>
-                    <div className="sub">
-                        Directional Signal
-                    </div>
-                    <div className="caption">
-                        LIVE
-                    </div>
-                </div>
+       
 
             </div>
         </section>

@@ -732,10 +732,10 @@ export function analyzeOptionChain(
         maxPutOIExitStrike,
 
         callNetFlow,
-putNetFlow,
+        putNetFlow,
 
-callContribution,
-putContribution,
+        callContribution,
+        putContribution,
 
         longBuildUp,
         longBuildUpCount,

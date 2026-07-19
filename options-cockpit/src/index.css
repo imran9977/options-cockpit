@@ -76,6 +76,13 @@ body {
     color: #1f2937;
 }
 
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+
 .grid-3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -526,7 +533,7 @@ body {
     background: #1e1e1e;
     border: 1px solid #3b3b3b;
 
-    box-shadow: 0 8px 24px rgba(0,0,0,.35);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .35);
 
     display: none;
 
@@ -605,4 +612,44 @@ body {
 
 .flow-status.gray {
     color: #9ca3af;
+}
+
+/* ==========================================================
+   OBSERVATION ENGINE V1
+   Shared observation row styling
+   ========================================================== */
+
+.oc-observation-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+    font-size: 0.82rem;
+    line-height: 1.25;
+}
+
+.oc-observation-label {
+    color: #94a3b8;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.oc-observation-value {
+    font-weight: 700;
+    text-align: right;
+    white-space: nowrap;
+}
+
+/* Semantic colors */
+
+.oc-observation-positive {
+    color: #22c55e;
+}
+
+.oc-observation-negative {
+    color: #ef4444;
+}
+
+.oc-observation-neutral {
+    color: #f59e0b;
 }
