@@ -153,28 +153,112 @@ export function calculateMaxOI(
     };
 }
 
-export function calculateOIChange(
+
+export function calculateOIFlow(
     atmRangeData: Array<{
         strike: number;
         data: OptionStrike;
     }>
 ) {
+    let maxCallOIAddition = 0;
+    let maxCallOIAdditionStrike: number | null = null;
+
+    let maxCallOIExit = 0;
+    let maxCallOIExitStrike: number | null = null;
+
+    let maxPutOIAddition = 0;
+    let maxPutOIAdditionStrike: number | null = null;
+
+    let maxPutOIExit = 0;
+    let maxPutOIExitStrike: number | null = null;
+
     let totalCallOIChange = 0;
     let totalPutOIChange = 0;
 
     for (const item of atmRangeData) {
-        totalCallOIChange +=
+
+        const callOIChange =
             (item.data?.ce?.oi ?? 0) -
             (item.data?.ce?.previous_oi ?? 0);
+        totalCallOIChange += callOIChange;
 
-        totalPutOIChange +=
+        if (callOIChange > 0 && callOIChange > maxCallOIAddition) {
+            maxCallOIAddition = callOIChange;
+            maxCallOIAdditionStrike = item.strike;
+        }
+
+        if (callOIChange < 0 && callOIChange < maxCallOIExit) {
+            maxCallOIExit = callOIChange;
+            maxCallOIExitStrike = item.strike;
+        }
+
+        const putOIChange =
             (item.data?.pe?.oi ?? 0) -
             (item.data?.pe?.previous_oi ?? 0);
+        totalPutOIChange += putOIChange;
+
+        if (putOIChange > 0 && putOIChange > maxPutOIAddition) {
+            maxPutOIAddition = putOIChange;
+            maxPutOIAdditionStrike = item.strike;
+        }
+
+        if (putOIChange < 0 && putOIChange < maxPutOIExit) {
+            maxPutOIExit = putOIChange;
+            maxPutOIExitStrike = item.strike;
+        }
     }
 
     return {
         totalCallOIChange,
         totalPutOIChange,
+
+        maxCallOIAddition,
+        maxCallOIAdditionStrike,
+
+        maxCallOIExit,
+        maxCallOIExitStrike,
+
+        maxPutOIAddition,
+        maxPutOIAdditionStrike,
+
+        maxPutOIExit,
+        maxPutOIExitStrike,
+
+        callNetFlow:
+            totalCallOIChange > 0
+                ? "Building"
+                : totalCallOIChange < 0
+                    ? "Unwinding"
+                    : "Balanced",
+
+        putNetFlow:
+            totalPutOIChange > 0
+                ? "Building"
+                : totalPutOIChange < 0
+                    ? "Unwinding"
+                    : "Balanced",
+
+        callContribution:
+            totalCallOIChange !== 0
+                ? Number(
+                    (
+                        Math.abs(maxCallOIAddition) /
+                        Math.abs(totalCallOIChange) *
+                        100
+                    ).toFixed(1)
+                )
+                : 0,
+
+        putContribution:
+            totalPutOIChange !== 0
+                ? Number(
+                    (
+                        Math.abs(maxPutOIAddition) /
+                        Math.abs(totalPutOIChange) *
+                        100
+                    ).toFixed(1)
+                )
+                : 0,
     };
 }
 
@@ -504,7 +588,25 @@ export function analyzeOptionChain(
     const {
         totalCallOIChange,
         totalPutOIChange,
-    } = calculateOIChange(atmRangeData);
+
+        maxCallOIAddition,
+        maxCallOIAdditionStrike,
+
+        maxCallOIExit,
+        maxCallOIExitStrike,
+
+        maxPutOIAddition,
+        maxPutOIAdditionStrike,
+
+        maxPutOIExit,
+        maxPutOIExitStrike,
+
+        callNetFlow,
+        putNetFlow,
+
+        callContribution,
+        putContribution,
+    } = calculateOIFlow(atmRangeData);
 
     const {
 
@@ -616,6 +718,24 @@ export function analyzeOptionChain(
 
         totalCallOIChange,
         totalPutOIChange,
+
+        maxCallOIAddition,
+        maxCallOIAdditionStrike,
+
+        maxCallOIExit,
+        maxCallOIExitStrike,
+
+        maxPutOIAddition,
+        maxPutOIAdditionStrike,
+
+        maxPutOIExit,
+        maxPutOIExitStrike,
+
+        callNetFlow,
+putNetFlow,
+
+callContribution,
+putContribution,
 
         longBuildUp,
         longBuildUpCount,

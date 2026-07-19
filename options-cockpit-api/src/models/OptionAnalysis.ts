@@ -22,6 +22,18 @@ export interface OptionAnalysis {
     totalCallOIChange: number;
     totalPutOIChange: number;
 
+    maxCallOIAddition: number;
+    maxCallOIAdditionStrike: number | null;
+
+    maxCallOIExit: number;
+    maxCallOIExitStrike: number | null;
+
+    maxPutOIAddition: number;
+    maxPutOIAdditionStrike: number | null;
+
+    maxPutOIExit: number;
+    maxPutOIExitStrike: number | null;
+
     longBuildUp: string;
     longBuildUpCount: number;
     longBuildUpPercentage: number;

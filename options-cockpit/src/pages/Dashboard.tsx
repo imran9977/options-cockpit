@@ -37,11 +37,36 @@ function Dashboard() {
 
       totalCallOIChange: 0,
       totalPutOIChange: 0,
+      maxCallOIAddition: 0,
+      maxCallOIAdditionStrike: null,
+      maxCallOIExit: 0,
+      maxCallOIExitStrike: null,
+      maxPutOIAddition: 0,
+      maxPutOIAdditionStrike: null,
+      maxPutOIExit: 0,
+      maxPutOIExitStrike: null,
+
+      callNetFlow: "Balanced",
+      putNetFlow: "Balanced",
+
+      callContribution: 0,
+      putContribution: 0,
 
       longBuildUp: "Low",
+      longBuildUpCount: 0,
+      longBuildUpPercentage: 0,
+
       shortBuildUp: "Low",
+      shortBuildUpCount: 0,
+      shortBuildUpPercentage: 0,
+
       shortCovering: "Low",
+      shortCoveringCount: 0,
+      shortCoveringPercentage: 0,
+
       longUnwinding: "Low",
+      longUnwindingCount: 0,
+      longUnwindingPercentage: 0,
 
       atmIV: 0,
       atmDelta: 0,

@@ -581,3 +581,28 @@ body {
     border: 1px solid rgba(99, 102, 241, 0.45);
     font-weight: 600;
 }
+
+.flow-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.flow-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: currentColor;
+}
+
+.flow-status.green {
+    color: #22c55e;
+}
+
+.flow-status.red {
+    color: #ef4444;
+}
+
+.flow-status.gray {
+    color: #9ca3af;
+}

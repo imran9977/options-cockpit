@@ -22,6 +22,24 @@ export interface OptionAnalysis {
     totalCallOIChange: number;
     totalPutOIChange: number;
 
+    maxCallOIAddition: number;
+    maxCallOIAdditionStrike: number | null;
+
+    maxCallOIExit: number;
+    maxCallOIExitStrike: number | null;
+
+    maxPutOIAddition: number;
+    maxPutOIAdditionStrike: number | null;
+
+    maxPutOIExit: number;
+    maxPutOIExitStrike: number | null;
+
+    callNetFlow: "Building" | "Unwinding" | "Balanced";
+    putNetFlow: "Building" | "Unwinding" | "Balanced";
+
+    callContribution: number;
+    putContribution: number;
+
     longBuildUp: string;
     longBuildUpCount: number;
     longBuildUpPercentage: number;
