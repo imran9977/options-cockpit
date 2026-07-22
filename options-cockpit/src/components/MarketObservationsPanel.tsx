@@ -34,7 +34,14 @@ export default function MarketObservationsPanel({
                 <div>
 
                     <div className="observations-title">
-                        Market Observations
+                        Market Observations <div className="observations-chip">{observations.length}</div>
+                         <div className="observations-live">
+
+                    <span className="live-dot"></span>
+
+                    LIVE
+
+                </div>
                     </div>
 
                     <div className="observations-subtitle">
@@ -43,23 +50,17 @@ export default function MarketObservationsPanel({
 
                 </div>
 
-                <div className="observations-live">
-
-                    <span className="live-dot"></span>
-
-                    LIVE
-
-                </div>
+               
 
             </div>
 
-            <div className="observations-summary">
+            {/* <div className="observations-summary">
 
                 <div className="observations-count">
                     {observations.length} Active
                 </div>
 
-            </div>
+            </div> */}
 
             <div className="observations-body">
 
@@ -131,13 +132,6 @@ export default function MarketObservationsPanel({
                         <div className="observation-indicator"></div>
 
                         <div className="observation-content">
-
-                            <div className="observation-message">
-
-                                {observation.message}
-
-                            </div>
-
                             <div className="observation-footer">
 
                                 <div className="observation-driver">
@@ -153,6 +147,13 @@ export default function MarketObservationsPanel({
                                 </div>
 
                             </div>
+                            <div className="observation-message">
+
+                                {observation.message}
+
+                            </div>
+
+
 
                         </div>
 

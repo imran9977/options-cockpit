@@ -22,10 +22,11 @@
 }
 
 body {
-    font-family: Inter, Segoe UI, Arial, sans-serif;
-    background: #f8fafc;
+    /* font-family: Inter, Segoe UI, Arial, sans-serif; */
+    font-family: "Instrument Sans", sans-serif;
+    background: #FBFCFE;
     color: var(--text);
-    padding: 24px;
+    padding: 0;
 }
 
 .container {
@@ -66,6 +67,11 @@ body {
     border-radius: 18px;
     padding: 20px;
     margin-bottom: 20px;
+    padding: 0px;
+    border: none;
+    background: none !important;
+    border-radius: 0px;
+    position: relative;
 }
 
 .section-title {
@@ -74,6 +80,32 @@ body {
     letter-spacing: 3px;
     margin-bottom: 20px;
     color: #1f2937;
+    display: none;
+}
+
+h2.custom-title {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #1f2937;
+    position: relative;
+}
+
+h2.custom-title span {
+    display: inline-block;
+    padding: 0 6px;
+    background: #fbfcfe;
+    position: relative;
+}
+
+h2.custom-title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 9px;
+    height: 1px;
+    background: #d9dee7;
+    width: 100%;
 }
 
 .grid-2 {
@@ -127,7 +159,7 @@ body {
 .label {
     font-size: 12px;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     color: #6b7280;
     margin-bottom: 12px;
     font-weight: 600;
@@ -238,19 +270,32 @@ body {
 }
 
 .observations-title {
-    font-size: 22px;
-    font-weight: 800;
+    margin-bottom: 0px;
+    font-weight: 600;
+    font-size: 18px;
     color: #1f2937;
+    display: flex;
+    justify-content: space-between;
 }
 
 .observations-subtitle {
-    margin-top: 6px;
+    margin-top: 2px;
     font-size: 13px;
     color: var(--muted);
 }
 
+.observations-chip {
+    background-color: #1f2937;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 3px;
+    letter-spacing: 1.4px;
+}
+
 .observations-live {
-    margin-top: 18px;
+    /* margin-top: 18px; */
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -361,8 +406,9 @@ body {
     display: flex;
     gap: 16px;
     border: 1px solid var(--border);
+    border-left: none;
     border-radius: 14px;
-    padding: 18px;
+    padding: 0 10px 0px 0;
     margin-bottom: 16px;
     background: #ffffff;
     transition: .18s;
@@ -374,9 +420,10 @@ body {
 }
 
 .observation-indicator {
-    width: 5px;
-    border-radius: 999px;
+    width: 8px;
     flex-shrink: 0;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
 }
 
 .observation-content {
@@ -384,9 +431,10 @@ body {
 }
 
 .observation-message {
-    font-size: 15px;
-    line-height: 24px;
-    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+    margin: 4px 0 8px 0;
     color: #1f2937;
 }
 
@@ -394,7 +442,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 18px;
+    margin-top: 10px;
 }
 
 .observation-driver {
@@ -462,6 +510,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 18px;
+    margin: 0;
 }
 
 .section-header .section-title {
@@ -481,6 +530,9 @@ body {
     text-transform: uppercase;
     border: 1px solid transparent;
     transition: all 0.2s ease;
+    position: absolute;
+    right: 0;
+    top: -44px;
 }
 
 /* Bullish */
@@ -530,8 +582,9 @@ body {
 
     border-radius: 10px;
 
-    background: #1e1e1e;
-    border: 1px solid #3b3b3b;
+    color: #1e1e1e;
+    border: 1px solid #d9dee7;
+    background-color:#ffffff;
 
     box-shadow: 0 8px 24px rgba(0, 0, 0, .35);
 
@@ -553,14 +606,14 @@ body {
 
 .metric-popover-current {
     font-size: 12px;
-    color: #bfbfbf;
+    color: #1e1e1e;
 
     margin-bottom: 10px;
 }
 
 .metric-popover-divider {
     height: 1px;
-    background: #383838;
+    background: #d9dee7;
     margin-bottom: 10px;
 }
 
@@ -669,8 +722,8 @@ body {
 
     border-radius: 10px;
 
-    background: #1e1e1e;
-    border: 1px solid #3b3b3b;
+    background: #ffffff;
+    border: 1px solid #d9dee7;
 
     box-shadow: 0 8px 24px rgba(0, 0, 0, .35);
 
@@ -686,7 +739,7 @@ body {
 .info-popover-title {
     font-size: 14px;
     font-weight: 700;
-    color: #ffffff;
+    color: #1e1e1e;
     margin-bottom: 14px;
 }
 
@@ -709,7 +762,7 @@ body {
     margin-bottom: 8px;
     padding-bottom: 6px;
 
-    border-bottom: 1px solid #3b3b3b;
+    border-bottom: 1px solid #d9dee7;
 }
 
 .info-popover-row {

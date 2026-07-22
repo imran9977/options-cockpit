@@ -52,12 +52,12 @@ function OptionChainCard({
                     </div>
 
                     <div className="sub">
-                        Added : {formatNumber(optionAnalysis.totalCallOIChange)} (
+                        Added : {formatNumber(optionAnalysis.maxCallOIAddition)} (
                         {optionAnalysis.maxCallOIAdditionStrike ?? "-"})
                     </div>
 
                     <div className="caption">
-                        Exited :{formatNumber(optionAnalysis.totalCallOIChange)} (
+                        Exited :{formatNumber(optionAnalysis.maxCallOIExit)} (
                         {optionAnalysis.maxCallOIExitStrike ?? "-"})
                     </div>
                 </div>

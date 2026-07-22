@@ -163,7 +163,7 @@ function Dashboard() {
     // Refresh every 5 seconds
     const intervalId = setInterval(() => {
       loadMarketSnapshot();
-    }, 300000);
+    }, 3000);
 
     // Cleanup on unmount
     return () => clearInterval(intervalId);
@@ -178,7 +178,7 @@ function Dashboard() {
         <div className="flex-1">
 
           <section>
-            <h2>Market Health</h2>
+            <h2 className="custom-title"><span>01. Market Health</span></h2>
 
             <SpotPriceCard
               niftySpot={marketSnapshot.niftySpot}
@@ -208,31 +208,31 @@ function Dashboard() {
           </section>
 
           <section>
-            <h2>Price Structure</h2>
+            <h2 className="custom-title"><span>02. Price Structure</span></h2>
 
             <PriceStructureCard optionAnalysis={optionAnalysis} />
           </section>
 
           <section>
-            <h2>Option Chain Intelligence</h2>
+            <h2 className="custom-title"><span>03. Option Chain Intelligence</span></h2>
 
             <OptionChainCard optionAnalysis={optionAnalysis} />
           </section>
 
           <section>
-            <h2>Position Build-up</h2>
+            <h2 className="custom-title"><span>04. Position Build-up</span></h2>
 
             <PositionBuildUpCard optionAnalysis={optionAnalysis} />
           </section>
 
           <section>
-            <h2>Greeks</h2>
+            <h2 className="custom-title"><span>05. Greeks</span></h2>
 
             <GreeksCard optionAnalysis={optionAnalysis} />
           </section>
 
           <section>
-            <h2>Confirmation</h2>
+            <h2 className="custom-title"><span>06. Confirmation</span></h2>
 
             <ConfirmationCard optionAnalysis={optionAnalysis} />
           </section>

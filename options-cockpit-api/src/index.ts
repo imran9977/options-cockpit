@@ -5,7 +5,8 @@ import cors from "cors";
 import { toMarketSnapshot } from "./mappers/marketSnapshotMapper.js";
 import { getMarketSnapshot } from "./services/marketSnapshotService.js";
 import { getOptionChain } from "./services/optionChainService.js";
-import {getCommodityRibbon } from "./services/commodityRibbonService.js";
+import { getCommodityRibbon } from "./services/commodityRibbonService.js";
+import { startMarketPolling } from "./services/marketPoller.js";
 
 const PORT = config.port;
 const app = express();
@@ -34,12 +35,16 @@ app.get("/market-quote", async (_, res) => {
     try {
         const data = await getMarketSnapshot();
 
-res.json(data);
+        res.json(data);
     } catch (error) {
-        console.error("Market Snapshot Error:", error);
+        console.error("========== MARKET SNAPSHOT ERROR ==========");
+console.error(error);
+console.error(error instanceof Error ? error.stack : "");
+console.error("===========================================");
 
         res.status(500).json({
-            error: "Failed to fetch market snapshot",
+            error: error instanceof Error ? error.message : String(error),
+            stack: error instanceof Error ? error.stack : undefined,
         });
     }
 });
@@ -57,7 +62,7 @@ app.get("/commodities", async (_, res) => {
         });
     }
 });
-
+startMarketPolling();
 app.listen(PORT, () => {
     console.log(`🚀 Options Cockpit API running on port ${PORT}`);
 });

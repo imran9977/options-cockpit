@@ -23,7 +23,7 @@ const COMMODITIES: CommodityConfig[] = [
     },
     {
         name: "Crude Oil",
-        securityId: 520702,
+        securityId: 560977,
     },
     {
         name: "Natural Gas",
@@ -43,12 +43,17 @@ export async function getCommodityRibbon() {
 
     const marketData = data.data.MCX_COMM;
 
-    const commodities: CommodityRibbonItem[] =
-        COMMODITIES.map((commodity) => {
+    const commodities = COMMODITIES
+        .map((commodity) => {
 
-            const quote = marketData[
-                commodity.securityId
-            ];
+            const quote = marketData[commodity.securityId];
+
+            if (!quote) {
+             console.log(
+        `[CommodityRibbon] Missing quote for ${commodity.name} (${commodity.securityId})`
+    );
+                return null;
+            }
 
             const ltp = quote.last_price;
 

@@ -158,12 +158,12 @@ function SpotPriceCard({ niftySpot,
                         </span>
                     </div>
 
-                    <div className="oc-observation-row">
+                    {/* <div className="oc-observation-row">
                         <span className="oc-observation-label">Opening</span>
                         <span className={observationClass(marketHealth.nifty.opening)}>
                             {marketHealth.nifty.opening}
                         </span>
-                    </div>
+                    </div> */}
 
                     <div className="oc-observation-row">
                         <span className="oc-observation-label">Structure</span>
@@ -172,12 +172,12 @@ function SpotPriceCard({ niftySpot,
                         </span>
                     </div>
 
-                    <div className="oc-observation-row">
+                    {/* <div className="oc-observation-row">
                         <span className="oc-observation-label">Range</span>
                         <span className={observationClass(marketHealth.nifty.rangeState)}>
                             {marketHealth.nifty.rangeState}
                         </span>
-                    </div>
+                    </div> */}
 
                     <div className="oc-observation-row">
                         <span className="oc-observation-label">Momentum</span>
@@ -264,12 +264,12 @@ function SpotPriceCard({ niftySpot,
                         </span>
                     </div>
 
-                    <div className="oc-observation-row">
+                    {/* <div className="oc-observation-row">
                         <span className="oc-observation-label">Opening</span>
                         <span className={observationClass(marketHealth.sensex.opening)}>
                             {marketHealth.sensex.opening}
                         </span>
-                    </div>
+                    </div> */}
 
                     <div className="oc-observation-row">
                         <span className="oc-observation-label">Structure</span>
@@ -278,12 +278,12 @@ function SpotPriceCard({ niftySpot,
                         </span>
                     </div>
 
-                    <div className="oc-observation-row">
+                    {/* <div className="oc-observation-row">
                         <span className="oc-observation-label">Range</span>
                         <span className={observationClass(marketHealth.sensex.rangeState)}>
                             {marketHealth.sensex.rangeState}
                         </span>
-                    </div>
+                    </div> */}
 
                     <div className="oc-observation-row">
                         <span className="oc-observation-label">Momentum</span>

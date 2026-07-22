@@ -11,7 +11,9 @@ function Header() {
         background: "#ffffff",
       }}
     >
-      <h2>Options Cockpit</h2>
+      <h2>
+        <img src="/logo.svg" alt="Logo" style={{ height: "20px", marginRight: "12px" }} />
+        Options Cockpit</h2>
 
       <div
         style={{
@@ -22,9 +24,9 @@ function Header() {
         }}
       >
 
-        <button>Learn</button>
+        {/* <button>Learn</button>
 
-        <button>⚙</button>
+        <button>⚙</button> */}
       </div>
     </header>
   );

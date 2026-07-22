@@ -37,9 +37,15 @@ export async function getMarketQuote() {
         })
     });
 
-    if (!response.ok) {
-        throw new Error(`Dhan API Error: ${response.status}`);
-    }
+   if (!response.ok) {
+    const errorBody = await response.text();
+
+    console.error("Dhan Market Quote Error");
+    console.error("Status:", response.status);
+    console.error("Body:", errorBody);
+
+    throw new Error(`Dhan API Error: ${response.status}`);
+}
 
     const data = await response.json();
     // console.log('imran', JSON.stringify(data, null, 2));
@@ -104,9 +110,6 @@ export async function getCommodityQuote(
     }
 
     const data = await response.json();
-
-    console.log("========== GOLD RESPONSE ==========");
-    console.log(JSON.stringify(data, null, 2));
 
     return data;
 
