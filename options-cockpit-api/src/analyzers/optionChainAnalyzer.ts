@@ -4,7 +4,15 @@ import { generateMarketEvidence } from "../services/marketEvidenceGenerator.js";
 import { confirmMarketDirection } from "../services/confirmationEngine.js";
 import { qualifyObservation } from "../services/qualificationEngine.js";
 import { generateObservation } from "../services/observationGenerator.js";
-
+import type { ATMOptionSnapshot } from "../models/ATMOptionSnapshot.js";
+import { addATMOptionSnapshot } from "../services/atmOptionHistory.js";
+import { analyzeOptionMomentum } from "../services/optionMomentumEngine.js";
+import { getATMOptionHistory } from "../services/atmOptionHistory.js";
+import type { StrikeSnapshot } from "../models/StrikeSnapshot.js";
+import type { StrikeWindowSnapshot } from "../models/StrikeWindowSnapshot.js";
+import { addStrikeWindowSnapshot } from "../services/strikeWindowHistory.js";
+import { analyzeStrikeWindow } from "../analyzers/strikeIntelligenceEngine.js";
+import { getStrikeWindowHistory } from "../services/strikeWindowHistory.js";
 
 export function findATMStrike(
     spotPrice: number,
@@ -29,11 +37,12 @@ export function findATMStrike(
         atmStrike,
     };
 }
-
-export function extractATMRange(
+const ACTIVE_WINDOW_SIZE = 6;
+function extractATMRange(
     optionChain: OptionChain,
     atmStrike: number
-) {
+): number[] {
+
     const strikes = Object.keys(optionChain)
         .map(Number)
         .sort((a, b) => a - b);
@@ -44,12 +53,25 @@ export function extractATMRange(
         throw new Error("ATM strike not found in option chain");
     }
 
-    const startIndex = Math.max(0, atmIndex - 10);
-    const endIndex = Math.min(strikes.length, atmIndex + 11);
+    const leftCount = Math.floor(ACTIVE_WINDOW_SIZE / 2);
+    const rightCount = ACTIVE_WINDOW_SIZE - leftCount - 1;
 
-    const atmRangeStrikes = strikes.slice(startIndex, endIndex);
+    let startIndex = atmIndex - leftCount;
+    let endIndex = atmIndex + rightCount;
 
-    return atmRangeStrikes;
+    if (startIndex < 0) {
+        endIndex += -startIndex;
+        startIndex = 0;
+    }
+
+    if (endIndex >= strikes.length) {
+        startIndex -= endIndex - strikes.length + 1;
+        endIndex = strikes.length - 1;
+    }
+
+    startIndex = Math.max(0, startIndex);
+
+    return strikes.slice(startIndex, endIndex + 1);
 }
 
 export function getATMRangeData(
@@ -437,6 +459,114 @@ export function calculateATMGreeks(
     };
 }
 
+export function extractATMOptionSnapshot(
+    optionChain: OptionChain,
+    spotPrice: number,
+    atmStrike: number
+): ATMOptionSnapshot {
+
+    const atmData =
+        optionChain[atmStrike.toFixed(6)];
+
+    return {
+        timestamp: Date.now(),
+
+        spotPrice,
+        atmStrike,
+
+        ceLastPrice: atmData?.ce?.last_price ?? 0,
+        peLastPrice: atmData?.pe?.last_price ?? 0,
+
+        ceOI: atmData?.ce?.oi ?? 0,
+        peOI: atmData?.pe?.oi ?? 0,
+
+        ceOIChange:
+            (atmData?.ce?.oi ?? 0) -
+            (atmData?.ce?.previous_oi ?? 0),
+
+        peOIChange:
+            (atmData?.pe?.oi ?? 0) -
+            (atmData?.pe?.previous_oi ?? 0),
+
+        ceIV: Number(
+            (atmData?.ce?.implied_volatility ?? 0).toFixed(2)
+        ),
+
+        peIV: Number(
+            (atmData?.pe?.implied_volatility ?? 0).toFixed(2)
+        ),
+
+        ceGamma: Number(
+            (atmData?.ce?.greeks?.gamma ?? 0).toFixed(4)
+        ),
+
+        peGamma: Number(
+            (atmData?.pe?.greeks?.gamma ?? 0).toFixed(4)
+        ),
+    };
+}
+
+export function extractStrikeWindowSnapshot(
+    atmRangeData: {
+        strike: number;
+        data: OptionStrike | undefined;
+    }[],
+    spotPrice: number,
+    atmStrike: number
+): StrikeWindowSnapshot {
+
+    const strikes: StrikeSnapshot[] = atmRangeData.map(item => ({
+
+        strike: item.strike,
+
+        ceLastPrice: item.data?.ce?.last_price ?? 0,
+        peLastPrice: item.data?.pe?.last_price ?? 0,
+
+        ceOI: item.data?.ce?.oi ?? 0,
+        peOI: item.data?.pe?.oi ?? 0,
+
+        ceOIChange:
+            (item.data?.ce?.oi ?? 0) -
+            (item.data?.ce?.previous_oi ?? 0),
+
+        peOIChange:
+            (item.data?.pe?.oi ?? 0) -
+            (item.data?.pe?.previous_oi ?? 0),
+
+        ceIV: Number(
+            (item.data?.ce?.implied_volatility ?? 0).toFixed(2)
+        ),
+
+        peIV: Number(
+            (item.data?.pe?.implied_volatility ?? 0).toFixed(2)
+        ),
+
+        ceGamma: Number(
+            (item.data?.ce?.greeks?.gamma ?? 0).toFixed(4)
+        ),
+
+        peGamma: Number(
+            (item.data?.pe?.greeks?.gamma ?? 0).toFixed(4)
+        ),
+
+        ceVolume: item.data?.ce?.volume ?? 0,
+        peVolume: item.data?.pe?.volume ?? 0
+
+    }));
+
+    return {
+
+        timestamp: Date.now(),
+
+        spotPrice,
+
+        atmStrike,
+
+        strikes
+
+    };
+}
+
 export function calculateMarketBias(
     spotPrice: number,
     atmStrike: number,
@@ -561,6 +691,74 @@ export function analyzeOptionChain(
         atmRangeStrikes
     );
 
+    const strikeWindowSnapshot =
+        extractStrikeWindowSnapshot(
+            atmRangeData,
+            spotPrice,
+            atmStrike
+        );
+
+    addStrikeWindowSnapshot(
+        strikeWindowSnapshot
+    );
+
+    const strikeHistory = getStrikeWindowHistory();
+
+    console.log(
+        "[Strike History Size]",
+        strikeHistory.length
+    );
+
+
+    if (strikeHistory.length >= 2) {
+
+        const previous =
+            strikeHistory[strikeHistory.length - 2];
+
+        const current =
+            strikeHistory[strikeHistory.length - 1];
+
+        const strikeAnalysis =
+            analyzeStrikeWindow(
+                previous,
+                current
+            );
+        // console.dir(strikeAnalysis, { depth: null });
+
+        for (const strike of strikeAnalysis.analyses) {
+
+            console.log(`
+====================================================
+Strike : ${strike.strike}
+
+Premium
+CE Δ : ${strike.delta.cePremiumChange.toFixed(2)}
+PE Δ : ${strike.delta.pePremiumChange.toFixed(2)}
+
+OI
+CE Δ : ${strike.delta.ceOIChange}
+PE Δ : ${strike.delta.peOIChange}
+
+Volume
+CE Δ : ${strike.delta.ceVolumeChange}
+PE Δ : ${strike.delta.peVolumeChange}
+
+IV
+CE Δ : ${strike.delta.ceIVChange.toFixed(2)}
+PE Δ : ${strike.delta.peIVChange.toFixed(2)}
+
+Gamma
+CE Δ : ${strike.delta.ceGammaChange.toFixed(6)}
+PE Δ : ${strike.delta.peGammaChange.toFixed(6)}
+====================================================
+`);
+            console.log("Evidence:", strike.evidence);
+            console.log("OI Strength:", strike.oiStrength);
+            console.log("Gamma Strength:", strike.gammaStrength);
+            console.log("IV Strength:", strike.ivStrength);
+        }
+    }
+
     const { pcr } = calculatePCR(
         atmRangeData
     );
@@ -636,6 +834,25 @@ export function analyzeOptionChain(
     } = calculateATMGreeks(
         optionChain,
         atmStrike
+    );
+
+    const atmOptionSnapshot = extractATMOptionSnapshot(
+        optionChain,
+        spotPrice,
+        atmStrike
+    );
+
+    addATMOptionSnapshot(atmOptionSnapshot);
+
+    const optionMomentum = analyzeOptionMomentum(
+        getATMOptionHistory()
+    );
+
+    console.log(
+        `[Momentum] CE V:${optionMomentum.ceVelocity.toFixed(2)} ` +
+        `CE A:${optionMomentum.ceAcceleration.toFixed(2)} | ` +
+        `PE V:${optionMomentum.peVelocity.toFixed(2)} ` +
+        `PE A:${optionMomentum.peAcceleration.toFixed(2)}`
     );
 
     const {

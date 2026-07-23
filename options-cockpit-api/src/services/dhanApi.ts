@@ -19,7 +19,7 @@ function getHistoricalDateRange(days: number) {
 
 export async function getMarketQuote() {
     const url = `${config.dhan.baseUrl}/v2/marketfeed/ohlc`;
-
+console.log("[getMarketQuote] Called", new Date().toISOString());
     const response = await fetch(url, {
         method: "POST",
         headers: {
@@ -48,7 +48,7 @@ export async function getMarketQuote() {
 }
 
     const data = await response.json();
-    // console.log('imran', JSON.stringify(data, null, 2));
+console.log("[getMarketQuote] Success");
     return data;
 }
 

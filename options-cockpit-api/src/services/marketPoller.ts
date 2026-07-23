@@ -1,7 +1,10 @@
 import type { MarketSnapshotResponse } from "../models/MarketSnapshotResponse.js";
 import { buildMarketSnapshot } from "./marketSnapshotService.js";
+import { analyzeSpotMotion } from "./historyEngine.js";
 
 let latestSnapshot: MarketSnapshotResponse | null = null;
+const snapshotHistory: MarketSnapshotResponse[] = [];
+const MAX_HISTORY = 60;
 let isRefreshing = false;
 let pollingStarted = false;
 
@@ -16,7 +19,19 @@ async function refreshSnapshot(): Promise<void> {
 
     try {
         latestSnapshot = await buildMarketSnapshot();
-      
+
+        snapshotHistory.push(latestSnapshot);
+
+        if (snapshotHistory.length > MAX_HISTORY) {
+            snapshotHistory.shift();
+        }
+
+        const spotMotion = analyzeSpotMotion(snapshotHistory);
+
+        console.log(
+            `[Motion] Velocity: ${spotMotion.velocity.toFixed(2)}, Acceleration: ${spotMotion.acceleration.toFixed(2)}`
+        );
+
     } catch (error) {
         console.error("[MarketPoller] Refresh failed:", error);
     } finally {
@@ -44,4 +59,12 @@ export function startMarketPolling(): void {
 
 export function getLatestSnapshot(): MarketSnapshotResponse | null {
     return latestSnapshot;
+}
+
+export function getSnapshotHistory(): readonly MarketSnapshotResponse[] {
+    return snapshotHistory;
+}
+
+export function getHistorySize(): number {
+    return snapshotHistory.length;
 }

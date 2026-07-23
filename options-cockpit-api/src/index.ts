@@ -5,7 +5,7 @@ import cors from "cors";
 import { toMarketSnapshot } from "./mappers/marketSnapshotMapper.js";
 import { getMarketSnapshot } from "./services/marketSnapshotService.js";
 import { getOptionChain } from "./services/optionChainService.js";
-import { getCommodityRibbon } from "./services/commodityRibbonService.js";
+// import { getCommodityRibbon } from "./services/commodityRibbonService.js";
 import { startMarketPolling } from "./services/marketPoller.js";
 
 const PORT = config.port;
@@ -38,9 +38,9 @@ app.get("/market-quote", async (_, res) => {
         res.json(data);
     } catch (error) {
         console.error("========== MARKET SNAPSHOT ERROR ==========");
-console.error(error);
-console.error(error instanceof Error ? error.stack : "");
-console.error("===========================================");
+        console.error(error);
+        console.error(error instanceof Error ? error.stack : "");
+        console.error("===========================================");
 
         res.status(500).json({
             error: error instanceof Error ? error.message : String(error),
@@ -49,19 +49,19 @@ console.error("===========================================");
     }
 });
 
-app.get("/commodities", async (_, res) => {
-    try {
-        const data = await getCommodityRibbon();
+// app.get("/commodities", async (_, res) => {
+//     try {
+//         const data = await getCommodityRibbon();
 
-        res.json(data);
-    } catch (error) {
-        console.error("Commodity Ribbon Error:", error);
+//         res.json(data);
+//     } catch (error) {
+//         console.error("Commodity Ribbon Error:", error);
 
-        res.status(500).json({
-            error: "Failed to fetch commodity ribbon",
-        });
-    }
-});
+//         res.status(500).json({
+//             error: "Failed to fetch commodity ribbon",
+//         });
+//     }
+// });
 startMarketPolling();
 app.listen(PORT, () => {
     console.log(`🚀 Options Cockpit API running on port ${PORT}`);

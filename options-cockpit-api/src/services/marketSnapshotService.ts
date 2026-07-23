@@ -52,12 +52,11 @@ export async function buildMarketSnapshot(): Promise<MarketSnapshotResponse> {
         optionAnalysis,
     };
 }
-
 export async function getMarketSnapshot(): Promise<MarketSnapshotResponse> {
     const snapshot = getLatestSnapshot();
 
     if (!snapshot) {
-        return await buildMarketSnapshot();
+        throw new Error("Market snapshot is initializing. Please retry shortly.");
     }
 
     return snapshot;
