@@ -8,23 +8,52 @@ export function analyzeVolume(
     const ceVolume = delta.ceVolumeChange;
     const peVolume = delta.peVolumeChange;
 
+    const ceIncreasing = ceVolume > 0;
+    const peIncreasing = peVolume > 0;
+
     let strength = 0;
 
-    // Strong CE participation
-    if (ceVolume > peVolume) {
-        strength += 2;
-        evidence.push("CE volume dominant");
+    // ---------------------------------------------------------
+    // Participation Analysis
+    // ---------------------------------------------------------
+
+    if (ceIncreasing && peIncreasing) {
+
+        strength = 3;
+
+        if (ceVolume > peVolume) {
+            evidence.push("Participation increasing on both sides (CE leading)");
+        }
+        else if (peVolume > ceVolume) {
+            evidence.push("Participation increasing on both sides (PE leading)");
+        }
+        else {
+            evidence.push("Participation increasing equally on both sides");
+        }
     }
 
-    // Strong PE participation
-    else if (peVolume > ceVolume) {
-        strength += 2;
-        evidence.push("PE volume dominant");
+    else if (ceIncreasing) {
+
+        strength = 2;
+        evidence.push("Call participation increasing");
     }
 
-    // Balanced participation
+    else if (peIncreasing) {
+
+        strength = 2;
+        evidence.push("Put participation increasing");
+    }
+
     else {
-        evidence.push("Balanced volume");
+
+        strength = 0;
+
+        if (ceVolume < 0 && peVolume < 0) {
+            evidence.push("Participation weakening");
+        }
+        else {
+            evidence.push("Low participation");
+        }
     }
 
     return strength;

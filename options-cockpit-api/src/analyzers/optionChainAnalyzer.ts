@@ -13,6 +13,7 @@ import type { StrikeWindowSnapshot } from "../models/StrikeWindowSnapshot.js";
 import { addStrikeWindowSnapshot } from "../services/strikeWindowHistory.js";
 import { analyzeStrikeWindow } from "../analyzers/strikeIntelligenceEngine.js";
 import { getStrikeWindowHistory } from "../services/strikeWindowHistory.js";
+import { buildStrikeObservations } from "../services/strikeObservationEngine.js";
 
 export function findATMStrike(
     spotPrice: number,
@@ -710,6 +711,8 @@ export function analyzeOptionChain(
     );
 
 
+    let strikeObservations: ReturnType<typeof buildStrikeObservations> = [];
+
     if (strikeHistory.length >= 2) {
 
         const previous =
@@ -723,40 +726,18 @@ export function analyzeOptionChain(
                 previous,
                 current
             );
-        // console.dir(strikeAnalysis, { depth: null });
 
-        for (const strike of strikeAnalysis.analyses) {
+        strikeObservations =
+            buildStrikeObservations(
+                strikeAnalysis
+            );
 
-            console.log(`
-====================================================
-Strike : ${strike.strike}
-
-Premium
-CE Δ : ${strike.delta.cePremiumChange.toFixed(2)}
-PE Δ : ${strike.delta.pePremiumChange.toFixed(2)}
-
-OI
-CE Δ : ${strike.delta.ceOIChange}
-PE Δ : ${strike.delta.peOIChange}
-
-Volume
-CE Δ : ${strike.delta.ceVolumeChange}
-PE Δ : ${strike.delta.peVolumeChange}
-
-IV
-CE Δ : ${strike.delta.ceIVChange.toFixed(2)}
-PE Δ : ${strike.delta.peIVChange.toFixed(2)}
-
-Gamma
-CE Δ : ${strike.delta.ceGammaChange.toFixed(6)}
-PE Δ : ${strike.delta.peGammaChange.toFixed(6)}
-====================================================
-`);
-            console.log("Evidence:", strike.evidence);
-            console.log("OI Strength:", strike.oiStrength);
-            console.log("Gamma Strength:", strike.gammaStrength);
-            console.log("IV Strength:", strike.ivStrength);
-        }
+        // Keep this during development.
+        // Remove later when the UI consumes it.
+        console.dir(
+            strikeObservations,
+            { depth: null }
+        );
     }
 
     const { pcr } = calculatePCR(
@@ -849,10 +830,10 @@ PE Δ : ${strike.delta.peGammaChange.toFixed(6)}
     );
 
     console.log(
-        `[Momentum] CE V:${optionMomentum.ceVelocity.toFixed(2)} ` +
-        `CE A:${optionMomentum.ceAcceleration.toFixed(2)} | ` +
-        `PE V:${optionMomentum.peVelocity.toFixed(2)} ` +
-        `PE A:${optionMomentum.peAcceleration.toFixed(2)}`
+        // `[Momentum] CE V:${optionMomentum.ceVelocity.toFixed(2)} ` +
+        // `CE A:${optionMomentum.ceAcceleration.toFixed(2)} | ` +
+        // `PE V:${optionMomentum.peVelocity.toFixed(2)} ` +
+        // `PE A:${optionMomentum.peAcceleration.toFixed(2)}`
     );
 
     const {

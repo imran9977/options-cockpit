@@ -17,11 +17,11 @@ export function qualifyObservation(
 
     }
 
-    if (confirmation.confidence < 50) {
+  const MINIMUM_CONFIDENCE = 60;
 
-        return null;
-
-    }
+if (confirmation.confidence < MINIMUM_CONFIDENCE) {
+    return null;
+}
 
     return {
 

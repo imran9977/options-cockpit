@@ -49,12 +49,24 @@ export function confirmMarketDirection(
 
     const total = bullishScore + bearishScore;
 
-    const confidence =
-        total === 0
-            ? 0
-            : Math.round(
-                  (Math.max(bullishScore, bearishScore) / total) * 100
-              );
+    let confidence = 0;
+
+    if (total > 0) {
+
+        // How dominant is the winning side?
+        const dominance =
+            Math.max(bullishScore, bearishScore) / total;
+
+        // How much evidence exists overall?
+        // Saturates at 100 total strength.
+        const participation =
+            Math.min(total, 100) / 100;
+
+        confidence = Math.round(
+            dominance * participation * 100
+        );
+
+    }
 
     return {
 

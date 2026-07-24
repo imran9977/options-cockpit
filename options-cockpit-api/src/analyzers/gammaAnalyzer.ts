@@ -5,41 +5,55 @@ export function analyzeGamma(
     evidence: string[]
 ): number {
 
-    const ceGammaRaw = delta.ceGammaChange;
-    const peGammaRaw = delta.peGammaChange;
+    const ceGamma = delta.ceGammaChange;
+    const peGamma = delta.peGammaChange;
 
-    const ceGamma = Math.abs(ceGammaRaw);
-    const peGamma = Math.abs(peGammaRaw);
+    const ceIncreasing = ceGamma > 0;
+    const peIncreasing = peGamma > 0;
 
     let strength = 0;
 
-    if (ceGamma === 0 && peGamma === 0) {
-        evidence.push("No Gamma change");
-        return strength;
+    // ---------------------------------------------------------
+    // Gamma Change Analysis
+    // ---------------------------------------------------------
+
+    if (ceIncreasing && peIncreasing) {
+
+        strength = 3;
+
+        if (ceGamma > peGamma) {
+            evidence.push("Gamma increasing on both sides (CE leading)");
+        }
+        else if (peGamma > ceGamma) {
+            evidence.push("Gamma increasing on both sides (PE leading)");
+        }
+        else {
+            evidence.push("Gamma increasing equally on both sides");
+        }
     }
 
-    if (ceGamma !== 0 && peGamma === 0) {
-        strength += 2;
-        evidence.push(`Only CE Gamma changed (${ceGammaRaw.toFixed(6)})`);
-        return strength;
+    else if (ceIncreasing) {
+
+        strength = 2;
+        evidence.push("Call gamma increasing");
     }
 
-    if (peGamma !== 0 && ceGamma === 0) {
-        strength += 2;
-        evidence.push(`Only PE Gamma changed (${peGammaRaw.toFixed(6)})`);
-        return strength;
+    else if (peIncreasing) {
+
+        strength = 2;
+        evidence.push("Put gamma increasing");
     }
 
-    if (ceGamma > peGamma) {
-        strength += 2;
-        evidence.push(`CE Gamma dominant (${ceGammaRaw.toFixed(6)})`);
-    }
-    else if (peGamma > ceGamma) {
-        strength += 2;
-        evidence.push(`PE Gamma dominant (${peGammaRaw.toFixed(6)})`);
-    }
     else {
-        evidence.push("Balanced Gamma");
+
+        strength = 0;
+
+        if (ceGamma < 0 && peGamma < 0) {
+            evidence.push("Gamma reducing on both sides");
+        }
+        else {
+            evidence.push("Stable gamma");
+        }
     }
 
     return strength;
