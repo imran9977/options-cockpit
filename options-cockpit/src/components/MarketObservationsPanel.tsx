@@ -2,10 +2,12 @@ import type { MarketObservation } from "../models/MarketObservation";
 
 interface MarketObservationsPanelProps {
     observations: MarketObservation[];
+    strikeObservations: MarketObservation[];
 }
 
 export default function MarketObservationsPanel({
     observations,
+    strikeObservations,
 }: MarketObservationsPanelProps) {
 
     const getObservationTypeClass = (
@@ -35,13 +37,13 @@ export default function MarketObservationsPanel({
 
                     <div className="observations-title">
                         Market Observations <div className="observations-chip">{observations.length}</div>
-                         <div className="observations-live">
+                        <div className="observations-live">
 
-                    <span className="live-dot"></span>
+                            <span className="live-dot"></span>
 
-                    LIVE
+                            LIVE
 
-                </div>
+                        </div>
                     </div>
 
                     <div className="observations-subtitle">
@@ -50,14 +52,14 @@ export default function MarketObservationsPanel({
 
                 </div>
 
-               
+
 
             </div>
 
             {/* <div className="observations-summary">
 
                 <div className="observations-count">
-                    {observations.length} Active
+                    {allObservations.length} Active
                 </div>
 
             </div> */}

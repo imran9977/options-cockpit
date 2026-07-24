@@ -65,4 +65,5 @@ export interface OptionAnalysis {
     confidence: "Strong" | "Moderate" | "Low";
 
     observations: MarketObservation[];
+       strikeObservations: MarketObservation[];
 }

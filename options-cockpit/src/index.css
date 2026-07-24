@@ -795,3 +795,13 @@ h2.custom-title::before {
 .info-popover-value.oc-observation-neutral {
     color: #f59e0b;
 }
+
+.observation-source {
+    display: inline-block;
+    margin-right: 8px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+}

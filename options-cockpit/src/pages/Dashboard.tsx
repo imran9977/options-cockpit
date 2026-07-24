@@ -79,6 +79,7 @@ function Dashboard() {
       confidence: "Low",
 
       observations: [],
+      strikeObservations: [],
     });
 
   const [marketSnapshot, setMarketSnapshot] =
@@ -243,6 +244,7 @@ function Dashboard() {
 
           <MarketObservationsPanel
             observations={optionAnalysis.observations}
+             strikeObservations={optionAnalysis.strikeObservations}
           />
 
         </aside>

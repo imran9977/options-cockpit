@@ -960,5 +960,6 @@ export function analyzeOptionChain(
         confidence,
 
         observations,
+        strikeObservations,
     };
 }
