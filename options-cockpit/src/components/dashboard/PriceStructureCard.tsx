@@ -7,10 +7,51 @@ interface PriceStructureCardProps {
 function PriceStructureCard({
     optionAnalysis,
 }: PriceStructureCardProps) {
+    const spot = optionAnalysis.spotPrice;
+    const support = optionAnalysis.primarySupport;
+    const resistance = optionAnalysis.primaryResistance;
+    const atm = optionAnalysis.atmStrike;
+
+    let verdict = "Inside Trading Range";
+    let verdictClass = "neutral";
+
+    if (
+        support != null &&
+        resistance != null &&
+        spot != null
+    ) {
+        const range = resistance - support;
+        const breakoutBuffer = range * 0.10;
+
+        if (spot <= support + breakoutBuffer) {
+            verdict = "Holding Above Support";
+            verdictClass = "bullish";
+        } else if (spot >= resistance - breakoutBuffer) {
+            verdict = "Testing Resistance";
+            verdictClass = "bearish";
+        } else if (
+            atm != null &&
+            Math.abs(spot - atm) <= 25
+        ) {
+            verdict = "Near ATM";
+            verdictClass = "neutral";
+        } else {
+            verdict = "Structure Awaits Breakout";
+            verdictClass = "neutral";
+        }
+    }
     return (
         <section className="section section-green">
-            <div className="section-title">
-                2 • PRICE STRUCTURE
+            <div className="section-header">
+
+                <div className="section-title">
+                    2 • PRICE STRUCTURE
+                </div>
+
+                <div className={`position-summary ${verdictClass}`}>
+                    {verdict}
+                </div>
+
             </div>
 
             <div className="grid-4">

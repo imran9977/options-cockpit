@@ -91,10 +91,39 @@ const THETA_GUIDE = [
 function GreeksCard({
     optionAnalysis,
 }: GreeksCardProps) {
+
+    let verdict = "Greeks Balanced";
+    let verdictClass = "neutral";
+
+    if (optionAnalysis.atmGamma >= 0.006) {
+        verdict = "Gamma Expansion";
+        verdictClass = "bullish";
+    }
+    else if (Math.abs(optionAnalysis.atmTheta) >= 40) {
+        verdict = "Theta Dominating";
+        verdictClass = "bearish";
+    }
+    else if (optionAnalysis.atmIV >= 25) {
+        verdict = "Premium Expansion";
+        verdictClass = "bullish";
+    }
+    else if (optionAnalysis.atmIV <= 12) {
+        verdict = "Premium Compression";
+        verdictClass = "neutral";
+    }
+
     return (
         <section className="section section-purple">
-            <div className="section-title">
-                5 • GREEKS
+            <div className="section-header">
+
+                <div className="section-title">
+                    5 • GREEKS
+                </div>
+
+                <div className={`position-summary ${verdictClass}`}>
+                    {verdict}
+                </div>
+
             </div>
 
             <div className="grid-4">

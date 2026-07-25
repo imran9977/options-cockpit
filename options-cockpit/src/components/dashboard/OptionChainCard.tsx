@@ -9,13 +9,50 @@ interface OptionChainCardProps {
 function OptionChainCard({
     optionAnalysis,
 }: OptionChainCardProps) {
+    let verdict = "Balanced Positioning";
+    let verdictClass = "neutral";
+
+    const callFlow = Number(optionAnalysis.callNetFlow ?? 0);
+    const putFlow = Number(optionAnalysis.putNetFlow ?? 0);
+
+    const threshold = 50000;
+
+    if (
+        putFlow > threshold &&
+        putFlow > callFlow
+    ) {
+        verdict = "Put Writers Active";
+        verdictClass = "bullish";
+    }
+    else if (
+        callFlow > threshold &&
+        callFlow > putFlow
+    ) {
+        verdict = "Call Writers Active";
+        verdictClass = "bearish";
+    }
+    else if (
+        Math.abs(callFlow) < threshold &&
+        Math.abs(putFlow) < threshold
+    ) {
+        verdict = "Low Writer Activity";
+        verdictClass = "neutral";
+    }
     return (
         <section className="section section-yellow">
-            <div className="section-title">
-                3 • OPTION CHAIN INTELLIGENCE
+            <div className="section-header">
+
+                <div className="section-title">
+                    3 • OPTION CHAIN INTELLIGENCE
+                </div>
+
+                <div className={`position-summary ${verdictClass}`}>
+                    {verdict}
+                </div>
+
             </div>
 
-            <div className="grid-4">
+            <div className="grid-3">
 
 
                 <div className="card">
@@ -73,7 +110,7 @@ function OptionChainCard({
                     </div>
                 </div>
 
-                <div className="card">
+                {/* <div className="card">
                     <div className="info">i</div>
                     <div className="label">PCR</div>
                     <div className="value">
@@ -82,7 +119,7 @@ function OptionChainCard({
                     <div className="caption">
                         ATM ± 10 Strikes
                     </div>
-                </div>
+                </div> */}
 
                 <div className="card">
                     <div className="info">i</div>
