@@ -25,11 +25,11 @@ export function generateObservation(
     let type: ObservationType;
     let priority: ObservationPriority;
     let driver: ObservationDriver;
-    let message: string;
 
     if (qualified.direction === "bullish") {
 
         type = "bullish";
+
         if (qualified.confidence >= 80) {
 
             priority = "critical";
@@ -43,16 +43,11 @@ export function generateObservation(
             priority = "medium";
 
         }
-        driver = "MARKET_BIAS";
-
-        message =
-            qualified.confidence >= 80
-                ? "Strong bullish confirmation across multiple market signals."
-                : "Bullish market bias confirmed.";
 
     } else {
 
         type = "bearish";
+
         if (qualified.confidence >= 80) {
 
             priority = "critical";
@@ -66,14 +61,18 @@ export function generateObservation(
             priority = "medium";
 
         }
-        driver = "MARKET_BIAS";
-
-        message =
-            qualified.confidence >= 80
-                ? "Strong bearish confirmation across multiple market signals."
-                : "Bearish market bias confirmed.";
 
     }
+
+    driver = "MARKET_BIAS";
+
+    const headline =
+        qualified.direction === "bullish"
+            ? "Bullish Market Bias"
+            : "Bearish Market Bias";
+
+    const summary =
+        `${qualified.direction === "bullish" ? "Bullish" : "Bearish"} bias confirmed with ${qualified.confidence}% confidence based on ${qualified.evidenceCount} supporting signal${qualified.evidenceCount === 1 ? "" : "s"}.`;
 
     return {
 
@@ -85,7 +84,13 @@ export function generateObservation(
 
         driver,
 
-        message,
+        headline,
+
+        summary,
+
+        evidence: qualified.supportingReasons,
+
+        watchFor: null,
 
         timestamp,
 

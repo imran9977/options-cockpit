@@ -36,7 +36,12 @@ export default function MarketObservationsPanel({
                 <div>
 
                     <div className="observations-title">
-                        Market Observations <div className="observations-chip">{observations.length}</div>
+                        Market Observations <div className="observations-chip">{
+                            observations.filter(
+                                observation =>
+                                    new Date(observation.expiresAt).getTime() > Date.now()
+                            ).length
+                        }</div>
                         <div className="observations-live">
 
                             <span className="live-dot"></span>
@@ -55,14 +60,6 @@ export default function MarketObservationsPanel({
 
 
             </div>
-
-            {/* <div className="observations-summary">
-
-                <div className="observations-count">
-                    {allObservations.length} Active
-                </div>
-
-            </div> */}
 
             <div className="observations-body">
 
@@ -124,44 +121,151 @@ export default function MarketObservationsPanel({
 
                 )}
 
-                {observations.map((observation) => (
+                <div className="observations-section">
 
-                    <div
-                        key={observation.id}
-                        className={`observation-card ${getObservationTypeClass(observation.type)}`}
-                    >
-
-                        <div className="observation-indicator"></div>
-
-                        <div className="observation-content">
-                            <div className="observation-footer">
-
-                                <div className="observation-driver">
-
-                                    {observation.driver.replace("_", " ")}
-
-                                </div>
-
-                                <div className="observation-time">
-
-                                    {observation.timestamp}
-
-                                </div>
-
-                            </div>
-                            <div className="observation-message">
-
-                                {observation.message}
-
-                            </div>
-
-
-
-                        </div>
-
+                    <div className="observations-section-title">
+                        🧠 MARKET INTELLIGENCE
                     </div>
 
-                ))}
+                    {observations
+                        .filter(
+                            observation =>
+                                new Date(observation.expiresAt).getTime() > Date.now()
+                        )
+                        .map((observation) => (
+
+                            <div
+                                key={observation.id}
+                                className={`observation-card ${getObservationTypeClass(observation.type)}`}
+                            >
+
+                                <div className="observation-indicator"></div>
+
+                                <div className="observation-content">
+
+                                    <div className="observation-header">
+
+                                        <div className="observation-headline">
+                                            {observation.headline}
+                                        </div>
+
+                                        <div
+                                            className={`observation-priority priority-${observation.priority}`}
+                                        >
+                                            {observation.priority.toUpperCase()}
+                                        </div>
+
+                                    </div>
+
+                                    <div className="observation-summary">
+                                        {observation.summary}
+                                    </div>
+
+                                    {observation.evidence?.length > 0 && (
+                                        <div className="observation-evidence">
+
+                                            <div className="observation-evidence-title">
+                                                Evidence
+                                            </div>
+
+                                            <ul className="observation-evidence-list">
+
+                                                {observation.evidence?.map((item, index) => (
+                                                    <li key={index}>
+                                                        {item}
+                                                    </li>
+                                                ))}
+
+                                            </ul>
+
+                                        </div>
+
+
+                                    )}
+
+                                    {observation.watchFor && (
+                                        <div className="observation-watch-for">
+
+                                            <div className="observation-watch-title">
+                                                Watch For
+                                            </div>
+
+                                            <div className="observation-watch-message">
+                                                {observation.watchFor}
+                                            </div>
+
+                                        </div>
+                                    )}
+
+                                    <div className="observation-footer">
+
+                                        <div className="observation-driver">
+                                            {observation.driver.replace("_", " ")}
+                                        </div>
+
+                                        <div className="observation-time">
+                                            {observation.timestamp}
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        ))}
+
+                </div>
+
+                <div className="observations-section">
+
+                    <div className="observations-section-title">
+                        🎯 STRIKE INTELLIGENCE
+                    </div>
+
+                    {strikeObservations
+                        .filter(
+                            observation =>
+                                new Date(observation.expiresAt).getTime() > Date.now()
+                        )
+                        .map((observation) => (
+
+                            <div
+                                key={observation.id}
+                                className={`observation-card ${getObservationTypeClass(observation.type)}`}
+                            >
+
+                                <div className="observation-indicator"></div>
+
+                                <div className="observation-content">
+
+                                    <div className="observation-footer">
+
+                                        <div className="observation-driver">
+                                            {observation.driver.replace("_", " ")}
+                                        </div>
+
+                                        <div className="observation-time">
+                                            {observation.timestamp}
+                                        </div>
+
+                                    </div>
+
+                                    <div className="observation-headline">
+                                        {observation.headline}
+                                    </div>
+
+                                    <div className="observation-summary">
+                                        {observation.summary}
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        ))}
+
+                </div>
 
             </div>
 

@@ -805,3 +805,39 @@ h2.custom-title::before {
     font-weight: 600;
     text-transform: uppercase;
 }
+
+.observation-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.observation-priority {
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 999px;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+.priority-critical {
+    background: #ff4d4f;
+    color: #fff;
+}
+
+.priority-high {
+    background: #fa8c16;
+    color: #fff;
+}
+
+.priority-medium {
+    background: #fadb14;
+    color: #000;
+}
+
+.priority-low {
+    background: #52c41a;
+    color: #fff;
+}
