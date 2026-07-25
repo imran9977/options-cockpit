@@ -56,63 +56,69 @@ function PriceStructureCard({
 
             <div className="grid-4">
                 <div className="card">
-                    <div className="info">i</div>
+                    {/* <div className="info">i</div> */}
                     <div className="label">
                         PRIMARY SUPPORT
                     </div>
-                    <div className="value">
+                    <div className="value decision-value decision-positive">
                         {optionAnalysis.primarySupport ?? "-"}
                     </div>
-                    <div className="sub">
+                    <div className="sub text-secondary">
                         Secondary:{" "}
                         {optionAnalysis.secondarySupport ?? "-"}
                     </div>
-                    <div className="caption">
+                    <div className="caption text-muted">
                         SUPPORT ZONE
                     </div>
                 </div>
 
                 <div className="card">
-                    <div className="info">i</div>
+                    {/* <div className="info">i</div> */}
                     <div className="label">
                         PRIMARY RESISTANCE
                     </div>
-                    <div className="value">
+                    <div className="value decision-value decision-negative">
                         {optionAnalysis.primaryResistance ?? "-"}
                     </div>
-                    <div className="sub">
+
+                    <div className="sub text-secondary">
                         Secondary:{" "}
                         {optionAnalysis.secondaryResistance ?? "-"}
                     </div>
-                    <div className="caption">
+
+                    <div className="caption text-muted">
                         RESISTANCE ZONE
                     </div>
                 </div>
 
                 <div className="card">
-                    <div className="info">i</div>
+                    {/* <div className="info">i</div> */}
                     <div className="label">ATM STRIKE</div>
-                    <div className="value">
+                    <div className="value decision-value">
                         {optionAnalysis.atmStrike}
                     </div>
-                    <div className="sub">
+
+                    <div className="sub text-secondary">
                         Spot: {optionAnalysis.spotPrice}
                     </div>
-                    <div className="caption">
+
+                    <div className="caption text-muted">
                         CURRENT ATM
                     </div>
                 </div>
 
                 <div className="card">
-                    <div className="info">i</div>
+                    {/* <div className="info">i</div> */}
                     <div className="label">PCR</div>
-                    <div className="value">
+                    <div className="value decision-value">
                         {optionAnalysis.pcr}
                     </div>
-                    <div className="sub">
+
+                    <div className="sub text-secondary">
                         ATM ± 10 Strikes
                     </div>
-                    <div className="caption">
+
+                    <div className="caption text-muted">
                         PUT/CALL RATIO
                     </div>
                 </div>

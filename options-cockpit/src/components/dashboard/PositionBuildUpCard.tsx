@@ -52,57 +52,73 @@ function PositionBuildUpCard({
             <div className="grid-4">
 
                 <div className="card">
-                    <div className="info">i</div>
+                    {/* <div className="info">i</div> */}
                     <div className="label">SHORT COVERING</div>
-                    <div className="status">
+                    <div className="status decision-value decision-positive">
                         {optionAnalysis.shortCovering}
                     </div>
-                    <div className="sub green">
-                        {optionAnalysis.shortCoveringCount} Strikes
+
+                    <div className="sub text-secondary">
+                        <span className="support-value decision-positive">
+                            {optionAnalysis.shortCoveringCount} Strikes
+                        </span>
                     </div>
-                    <div className="caption">
+
+                    <div className="caption text-muted">
                         {optionAnalysis.shortCoveringPercentage}% Participation
                     </div>
                 </div>
 
                 <div className="card">
-                    <div className="info">i</div>
+                    {/* <div className="info">i</div> */}
                     <div className="label">LONG BUILD-UP</div>
-                    <div className="status">
+                    <div className="status decision-value decision-positive">
                         {optionAnalysis.longBuildUp}
                     </div>
-                    <div className="sub green">
-                        {optionAnalysis.longBuildUpCount} Strikes
+
+                    <div className="sub text-secondary">
+                        <span className="support-value decision-positive">
+                            {optionAnalysis.longBuildUpCount} Strikes
+                        </span>
                     </div>
-                    <div className="caption">
+
+                    <div className="caption text-muted">
                         {optionAnalysis.longBuildUpPercentage}% Participation
                     </div>
                 </div>
 
                 <div className="card">
-                    <div className="info">i</div>
+                    {/* <div className="info">i</div> */}
                     <div className="label">LONG UNWINDING</div>
-                    <div className="status">
+                    <div className="status decision-value decision-negative">
                         {optionAnalysis.longUnwinding}
                     </div>
-                    <div className="sub">
-                        {optionAnalysis.longUnwindingCount} Strikes
+
+                    <div className="sub text-secondary">
+                        <span className="support-value decision-negative">
+                            {optionAnalysis.longUnwindingCount} Strikes
+                        </span>
                     </div>
-                    <div className="caption">
+
+                    <div className="caption text-muted">
                         {optionAnalysis.longUnwindingPercentage}% Participation
                     </div>
                 </div>
 
                 <div className="card">
-                    <div className="info">i</div>
+                    {/* <div className="info">i</div> */}
                     <div className="label">SHORT BUILD-UP</div>
-                    <div className="status">
+                    <div className="status decision-value decision-negative">
                         {optionAnalysis.shortBuildUp}
                     </div>
-                    <div className="sub">
-                        {optionAnalysis.shortBuildUpCount} Strikes
+
+                    <div className="sub text-secondary">
+                        <span className="support-value decision-negative">
+                            {optionAnalysis.shortBuildUpCount} Strikes
+                        </span>
                     </div>
-                    <div className="caption">
+
+                    <div className="caption text-muted">
                         {optionAnalysis.shortBuildUpPercentage}% Participation
                     </div>
                 </div>

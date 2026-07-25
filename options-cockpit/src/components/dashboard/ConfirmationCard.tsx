@@ -58,7 +58,7 @@ function ConfirmationCard({
             <div className="grid-2">
 
                 <div className="card">
-                    <div className="info">i</div>
+                    {/* <div className="info">i</div> */}
                     <div className="label">MARKET BIAS</div>
                     <div className="value">
                         {optionAnalysis.marketBias}
@@ -72,7 +72,7 @@ function ConfirmationCard({
                 </div>
 
                 <div className="card">
-                    <div className="info">i</div>
+                    {/* <div className="info">i</div> */}
                     <div className="label">CONFIDENCE</div>
                     <div className="value">
                         {optionAnalysis.confidence}
@@ -89,7 +89,7 @@ function ConfirmationCard({
             </div>
 
             <div className="card confirmation-summary" style={{ marginTop: "1.2rem" }}>
-                <div className="info">i</div>
+                {/* <div className="info">i</div> */}
 
                 <div className="label">
                     FINAL CONFIRMATION

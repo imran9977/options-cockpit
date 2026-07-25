@@ -164,23 +164,18 @@ export default function MarketObservationsPanel({
                                     {observation.evidence?.length > 0 && (
                                         <div className="observation-evidence">
 
-                                            <div className="observation-evidence-title">
-                                                Evidence
-                                            </div>
+                                            {observation.evidence?.map((item, index) => (
 
-                                            <ul className="observation-evidence-list">
+                                                <span
+                                                    key={index}
+                                                    className="observation-evidence-chip"
+                                                >
+                                                    {item}
+                                                </span>
 
-                                                {observation.evidence?.map((item, index) => (
-                                                    <li key={index}>
-                                                        {item}
-                                                    </li>
-                                                ))}
-
-                                            </ul>
+                                            ))}
 
                                         </div>
-
-
                                     )}
 
                                     {observation.watchFor && (

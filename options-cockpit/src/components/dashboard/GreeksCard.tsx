@@ -139,13 +139,13 @@ function GreeksCard({
 
                     </div>
                     <div className="label">IV</div>
-                    <div className="value">
+                    <div className="value decision-value">
                         {optionAnalysis.atmIV}
                     </div>
-                    <div className="sub">
+                    <div className="sub text-secondary">
                         ATM Call IV
                     </div>
-                    <div className="caption">
+                    <div className="caption text-muted">
                         LIVE
                     </div>
                 </div>
@@ -161,13 +161,13 @@ function GreeksCard({
 
                     </div>
                     <div className="label">DELTA</div>
-                    <div className="value">
+                    <div className="value decision-value">
                         {optionAnalysis.atmDelta}
                     </div>
-                    <div className="sub">
+                    <div className="sub text-secondary">
                         ATM Call
                     </div>
-                    <div className="caption">
+                    <div className="caption text-muted">
                         LIVE
                     </div>
                 </div>
@@ -183,13 +183,13 @@ function GreeksCard({
 
                     </div>
                     <div className="label">GAMMA</div>
-                    <div className="value">
+                    <div className="value decision-value">
                         {optionAnalysis.atmGamma}
                     </div>
-                    <div className="sub">
+                    <div className="sub text-secondary">
                         ATM Call
                     </div>
-                    <div className="caption">
+                    <div className="caption text-muted">
                         LIVE
                     </div>
                 </div>
@@ -205,13 +205,13 @@ function GreeksCard({
 
                     </div>
                     <div className="label">THETA</div>
-                    <div className="value">
+                    <div className="value decision-value">
                         {optionAnalysis.atmTheta}
                     </div>
-                    <div className="sub red">
+                    <div className="sub text-secondary">
                         Per Day
                     </div>
-                    <div className="caption">
+                    <div className="caption text-muted">
                         LIVE
                     </div>
                 </div>

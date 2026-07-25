@@ -56,7 +56,7 @@ function OptionChainCard({
 
 
                 <div className="card">
-                    <div className="info">i</div>
+                    {/* <div className="info">i</div> */}
                     <div className="label">CALL OI</div>
                     <div className="value">
                         {optionAnalysis.maxCallOI.toLocaleString()}
@@ -84,23 +84,44 @@ function OptionChainCard({
 
                     <div className="label">CHANGE IN CALL OI</div>
 
-                    <div className="value">
+                    <div
+                        className={`value decision-value ${optionAnalysis.callContribution >= 0
+                            ? "decision-negative"
+                            : "decision-positive"
+                            }`}
+                    >
                         {formatNumber(optionAnalysis.totalCallOIChange)}
                     </div>
 
-                    <div className="sub">
-                        Added : {formatNumber(optionAnalysis.maxCallOIAddition)} (
-                        {optionAnalysis.maxCallOIAdditionStrike ?? "-"})
+                    <div className="sub text-secondary">
+                        Added :
+                        <span className="support-value decision-negative">
+                            {" "}
+                            {formatNumber(optionAnalysis.maxCallOIAddition)}
+                        </span>
+                        {" "}
+                        ({optionAnalysis.maxCallOIAdditionStrike ?? "-"})
                     </div>
 
-                    <div className="caption">
-                        Exited :{formatNumber(optionAnalysis.maxCallOIExit)} (
-                        {optionAnalysis.maxCallOIExitStrike ?? "-"})
+                    <div className="caption text-secondary">
+                        Exited :
+                        <span
+                            className={
+                                optionAnalysis.maxCallOIExit > optionAnalysis.maxCallOIAddition
+                                    ? "support-value decision-positive"
+                                    : "reference-value text-muted"
+                            }
+                        >
+                            {" "}
+                            {formatNumber(optionAnalysis.maxCallOIExit)}
+                        </span>
+                        {" "}
+                        ({optionAnalysis.maxCallOIExitStrike ?? "-"})
                     </div>
                 </div>
 
                 <div className="card">
-                    <div className="info">i</div>
+                    {/* <div className="info">i</div> */}
                     <div className="label">ATM STRIKE</div>
                     <div className="value">
                         {optionAnalysis.atmStrike}
@@ -122,7 +143,7 @@ function OptionChainCard({
                 </div> */}
 
                 <div className="card">
-                    <div className="info">i</div>
+                    {/* <div className="info">i</div> */}
                     <div className="label">PUT OI</div>
                     <div className="value">
                         {formatNumber(optionAnalysis.maxPutOI)}
@@ -150,23 +171,45 @@ function OptionChainCard({
 
                     <div className="label">CHANGE IN PUT OI</div>
 
-                    <div className="value">
+                    <div
+                        className={`value decision-value ${optionAnalysis.putContribution >= 0
+                                ? "decision-positive"
+                                : "decision-negative"
+                            }`}
+                    >
                         {formatNumber(optionAnalysis.totalPutOIChange)}
                     </div>
 
-                    <div className="sub">
-                        Added : {formatNumber(optionAnalysis.maxPutOIAddition ?? 0)} (
-                        {optionAnalysis.maxPutOIAdditionStrike ?? "-"})
+                    <div className="sub text-secondary">
+                        Added :
+                        <span className="support-value decision-positive">
+                            {" "}
+                            {formatNumber(optionAnalysis.maxPutOIAddition ?? 0)}
+                        </span>
+                        {" "}
+                        ({optionAnalysis.maxPutOIAdditionStrike ?? "-"})
                     </div>
 
-                    <div className="caption">
-                        Exited : {formatNumber(optionAnalysis.maxPutOIExit ?? 0)} (
-                        {optionAnalysis.maxPutOIExitStrike ?? "-"})
+                    <div className="caption text-secondary">
+                        Exited :
+                        <span
+                            className={
+                                (optionAnalysis.maxPutOIExit ?? 0) >
+                                    (optionAnalysis.maxPutOIAddition ?? 0)
+                                    ? "support-value decision-negative"
+                                    : "reference-value text-muted"
+                            }
+                        >
+                            {" "}
+                            {formatNumber(optionAnalysis.maxPutOIExit ?? 0)}
+                        </span>
+                        {" "}
+                        ({optionAnalysis.maxPutOIExitStrike ?? "-"})
                     </div>
                 </div>
 
                 <div className="card">
-                    <div className="info">i</div>
+                    {/* <div className="info">i</div> */}
                     <div className="label">MAX PAIN</div>
                     <div className="value">
                         {optionAnalysis.maxPain ?? "-"}
