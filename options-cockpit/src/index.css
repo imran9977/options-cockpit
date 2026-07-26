@@ -396,6 +396,19 @@ h2.custom-title::before {
     background: var(--section-cyan);
 }
 
+.daily-level-button{
+    background: #111827;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 6px;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
 @media(max-width:1200px) {
     .grid-5 {
         grid-template-columns: repeat(3, 1fr);

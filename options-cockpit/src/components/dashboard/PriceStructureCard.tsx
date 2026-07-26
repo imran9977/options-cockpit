@@ -1,4 +1,5 @@
 import type { OptionAnalysis } from "../../models/OptionAnalysis";
+import { getDailyLevels } from "../../services/dailyLevelsStorage";
 
 interface PriceStructureCardProps {
     optionAnalysis: OptionAnalysis;
@@ -11,6 +12,20 @@ function PriceStructureCard({
     const support = optionAnalysis.primarySupport;
     const resistance = optionAnalysis.primaryResistance;
     const atm = optionAnalysis.atmStrike;
+
+    const dailyLevels = getDailyLevels();
+
+    const displayPrimarySupport =
+        dailyLevels?.nifty.primarySupport;
+
+    const displaySecondarySupport =
+        dailyLevels?.nifty.secondarySupport;
+
+    const displayPrimaryResistance =
+        dailyLevels?.nifty.primaryResistance;
+
+    const displaySecondaryResistance =
+        dailyLevels?.nifty.secondaryResistance;
 
     let verdict = "Inside Trading Range";
     let verdictClass = "neutral";
@@ -61,11 +76,11 @@ function PriceStructureCard({
                         PRIMARY SUPPORT
                     </div>
                     <div className="value decision-value decision-positive">
-                        {optionAnalysis.primarySupport ?? "-"}
+                        {displayPrimarySupport ?? "-"}
                     </div>
                     <div className="sub text-secondary">
                         Secondary:{" "}
-                        {optionAnalysis.secondarySupport ?? "-"}
+                        {displaySecondarySupport ?? "-"}
                     </div>
                     <div className="caption text-muted">
                         SUPPORT ZONE
@@ -78,12 +93,12 @@ function PriceStructureCard({
                         PRIMARY RESISTANCE
                     </div>
                     <div className="value decision-value decision-negative">
-                        {optionAnalysis.primaryResistance ?? "-"}
+                        {displayPrimaryResistance ?? "-"}
                     </div>
 
                     <div className="sub text-secondary">
                         Secondary:{" "}
-                        {optionAnalysis.secondaryResistance ?? "-"}
+                        {displaySecondaryResistance ?? "-"}
                     </div>
 
                     <div className="caption text-muted">

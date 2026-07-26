@@ -1,0 +1,196 @@
+.daily-levels-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.daily-levels-modal {
+    width: 600px;
+    max-width: 90vw;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.daily-levels-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 24px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.daily-levels-header h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.daily-levels-close {
+    width: 36px;
+    height: 36px;
+    border: none;
+    background: transparent;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.2s ease;
+}
+
+.daily-levels-close:hover {
+    background: #f3f4f6;
+}
+
+.daily-levels-tabs {
+    display: flex;
+    padding: 16px 24px 0;
+    gap: 10px;
+}
+
+.daily-levels-tabs button {
+    padding: 10px 24px;
+    border: 1px solid #d1d5db;
+    background: #f8f9fa;
+    border-radius: 6px 6px 0 0;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.daily-levels-tabs button:hover {
+    background: #eef2f7;
+}
+
+.daily-levels-tabs button.active {
+    background: #2563eb;
+    color: #ffffff;
+    border-color: #2563eb;
+}
+
+.daily-levels-form {
+    padding: 24px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.form-group input {
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.form-group input:focus {
+    border-color: #2563eb;
+}
+
+.form-group input:disabled {
+    background: #f3f4f6;
+    cursor: not-allowed;
+}
+
+.field-error {
+    margin-top: 6px;
+    font-size: 12px;
+    color: #dc2626;
+}
+
+.daily-levels-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    padding: 18px 24px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.daily-levels-footer button {
+    min-width: 110px;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.daily-levels-footer button:first-child {
+    background: #ffffff;
+    border: 1px solid #d1d5db;
+    color: #374151;
+}
+
+.daily-levels-footer button:first-child:hover {
+    background: #f9fafb;
+}
+
+.daily-levels-footer button:last-child {
+    background: #2563eb;
+    border: none;
+    color: #ffffff;
+}
+
+.daily-levels-footer button:last-child:hover {
+    background: #1d4ed8;
+}
+
+.daily-levels-footer button:last-child:disabled {
+    background: #9ca3af;
+    cursor: not-allowed;
+}
+
+.daily-levels-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 14px;
+    border-radius: 8px;
+    background: #ebebeb;
+    color: #111827;
+    font-size: 14px;
+    font-weight: 600;
+        margin: 0px 24px;
+    margin-top: 12px;
+}
+
+.edit-levels-button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: inherit;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.daily-levels-success {
+    margin-bottom: 16px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    background: #e9f9ee;
+    color: #177245;
+    font-size: 14px;
+    font-weight: 600;
+}
