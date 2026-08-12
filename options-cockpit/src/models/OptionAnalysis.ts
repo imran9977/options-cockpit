@@ -1,4 +1,5 @@
 import type { MarketObservation } from "./MarketObservation";
+import type { EGBDResult } from "./EGBD";
 
 export interface OptionAnalysis {
     spotPrice: number;
@@ -65,5 +66,6 @@ export interface OptionAnalysis {
     confidence: "Strong" | "Moderate" | "Low";
 
     observations: MarketObservation[];
-       strikeObservations: MarketObservation[];
+    strikeObservations: MarketObservation[];
+    egbd?: EGBDResult;
 }

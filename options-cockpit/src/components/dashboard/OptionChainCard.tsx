@@ -59,7 +59,8 @@ function OptionChainCard({
                     {/* <div className="info">i</div> */}
                     <div className="label">CALL OI</div>
                     <div className="value">
-                        {optionAnalysis.maxCallOI.toLocaleString()}
+                        {/* {optionAnalysis.maxCallOI.toLocaleString()} */}
+                           {formatNumber(optionAnalysis.maxPutOI)}
                     </div>
                     <div className="caption">
                         Max @ {optionAnalysis.maxCallOIStrike ?? "-"}

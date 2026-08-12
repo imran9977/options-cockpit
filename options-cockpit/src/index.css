@@ -396,7 +396,7 @@ h2.custom-title::before {
     background: var(--section-cyan);
 }
 
-.daily-level-button{
+.daily-level-button {
     background: #111827;
     color: #ffffff;
     font-size: 14px;
@@ -404,7 +404,7 @@ h2.custom-title::before {
     padding: 8px 12px;
     border-radius: 6px;
 
-    &:hover{
+    &:hover {
         cursor: pointer;
     }
 }
@@ -707,7 +707,7 @@ h2.custom-title::before {
 .observations-section-title {
     font-size: 13px;
     font-weight: 600;
-        margin-bottom: 12px;
+    margin-bottom: 12px;
     color: var(--text-secondary);
 }
 
@@ -716,6 +716,7 @@ h2.custom-title::before {
     font-weight: 600;
     line-height: 1.3;
 }
+
 .observation-summary {
     margin-top: 6px;
     font-size: 14px;
@@ -818,7 +819,7 @@ h2.custom-title::before {
 
     color: #1e1e1e;
     border: 1px solid #d9dee7;
-    background-color:#ffffff;
+    background-color: #ffffff;
 
     box-shadow: 0 8px 24px rgba(0, 0, 0, .35);
 
@@ -1074,4 +1075,262 @@ h2.custom-title::before {
 .priority-low {
     background: #52c41a;
     color: #fff;
+}
+
+/* ==========================================================
+   EARLY GAMMA BLAST DETECTION (EGBD)
+   ========================================================== */
+
+.egbd-panel {
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.egbd-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.egbd-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-primary);
+    letter-spacing: .6px;
+}
+
+.egbd-chip-group {
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.egbd-chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 8px 14px;
+
+    border-radius: 999px;
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.egbd-chip.status {
+    background: var(--bg-info);
+    color: var(--informational);
+}
+
+.egbd-chip.confidence {
+    background: var(--bg-bullish);
+    color: var(--bullish);
+}
+
+/* ==========================================================
+   Candidate + Trigger Summary
+   ========================================================== */
+
+.egbd-summary {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 28px;
+    align-items: start;
+}
+
+.egbd-summary-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.egbd-candidate {
+    font-size: 34px;
+    font-weight: 800;
+    color: var(--text-primary);
+    line-height: 1;
+    margin-top: 6px;
+}
+
+.egbd-trigger-value {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1;
+    margin-top: 8px;
+}
+
+.egbd-divider {
+    height: 1px;
+    background: var(--border);
+}
+
+.egbd-content {
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    gap: 28px;
+    align-items: start;
+}
+
+.egbd-left-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.egbd-right-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.egbd-trigger-block {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px 16px;
+    background: #ffffff;
+}
+
+.egbd-trigger-value {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-top: 6px;
+}
+
+.egbd-candidate {
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 1;
+    margin-top: 6px;
+}
+
+.egbd-table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.egbd-table-title {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .4px;
+}
+
+.egbd-refresh {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #64748b;
+}
+
+.egbd-gamma-table {
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.egbd-gamma-header,
+.egbd-gamma-row {
+    display: grid;
+    grid-template-columns: 1fr 110px 1fr;
+    align-items: center;
+    text-align: center;
+}
+
+.egbd-gamma-header {
+    background: #f8fafc;
+    padding: 14px 18px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--border);
+}
+
+.egbd-gamma-row {
+    padding: 16px 18px;
+    border-bottom: 1px solid #eef2f7;
+}
+
+.egbd-gamma-row:last-child {
+    border-bottom: none;
+}
+
+.egbd-gamma-row.atm {
+    background: #eef6ff;
+    font-weight: 700;
+}
+
+.gamma-call {
+    color: #2563eb;
+    font-weight: 700;
+}
+
+.gamma-put {
+    color: #7c3aed;
+    font-weight: 700;
+}
+
+.gamma-strike {
+    font-weight: 700;
+    color: #111827;
+}
+
+/* ==========================================================
+
+   Lifecycle
+   */
+.egbd-lifecycle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-top: 4px;
+}
+
+.egbd-stage {
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: #f8fafc;
+    color: #64748b;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.egbd-stage.active {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+.egbd-stage-connector {
+    flex: 1;
+    height: 2px;
+    background: #dbe3ee;
+}
+
+.egbd-accordion {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition:
+        max-height 0.3s ease,
+        opacity 0.25s ease;
+}
+
+.egbd-accordion.open {
+    max-height: 1200px;
+    opacity: 1;
 }

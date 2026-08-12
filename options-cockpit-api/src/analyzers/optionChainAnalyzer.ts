@@ -14,6 +14,9 @@ import { addStrikeWindowSnapshot } from "../services/strikeWindowHistory.js";
 import { analyzeStrikeWindow } from "../analyzers/strikeIntelligenceEngine.js";
 import { getStrikeWindowHistory } from "../services/strikeWindowHistory.js";
 import { buildStrikeObservations } from "../services/strikeObservationEngine.js";
+import { analyzeStrikeMomentum } from "../services/strikeMomentumEngine.js";
+import { analyzeEGBD } from "../services/egbdEngine.js";
+import { buildEGBDObservations } from "../services/egbdObservationEngine.js";
 
 export function findATMStrike(
     spotPrice: number,
@@ -568,6 +571,32 @@ export function extractStrikeWindowSnapshot(
     };
 }
 
+function buildGammaExposureTable(
+    atmRangeData: {
+        strike: number;
+        data: OptionStrike | undefined;
+    }[],
+    atmStrike: number
+) {
+
+    return atmRangeData.map(item => ({
+
+        strike: item.strike,
+
+        callGamma: Number(
+            (item.data?.ce?.greeks?.gamma ?? 0).toFixed(4)
+        ),
+
+        putGamma: Number(
+            (item.data?.pe?.greeks?.gamma ?? 0).toFixed(4)
+        ),
+
+        isATM: item.strike === atmStrike,
+
+    }));
+
+}
+
 export function calculateMarketBias(
     spotPrice: number,
     atmStrike: number,
@@ -705,13 +734,13 @@ export function analyzeOptionChain(
 
     const strikeHistory = getStrikeWindowHistory();
 
-    console.log(
-        "[Strike History Size]",
-        strikeHistory.length
-    );
-
-
     let strikeObservations: ReturnType<typeof buildStrikeObservations> = [];
+
+    let egbd;
+
+    let egbdObservations: ReturnType<
+        typeof buildEGBDObservations
+    > = [];
 
     if (strikeHistory.length >= 2) {
 
@@ -732,12 +761,38 @@ export function analyzeOptionChain(
                 strikeAnalysis
             );
 
-        // Keep this during development.
-        // Remove later when the UI consumes it.
+        if (strikeHistory.length >= 3) {
+
+            const strikeMomentum =
+                analyzeStrikeMomentum(
+                    strikeHistory
+                );
+
+            egbd =
+                analyzeEGBD(
+                    strikeAnalysis,
+                    strikeMomentum
+                );
+
+
+            egbdObservations =
+                buildEGBDObservations(
+                    egbd
+                );
+
+        }
+
         console.dir(
             strikeObservations,
             { depth: null }
         );
+
+        if (egbd) {
+            console.dir(
+                egbd,
+                { depth: null }
+            );
+        }
     }
 
     const { pcr } = calculatePCR(
@@ -829,12 +884,6 @@ export function analyzeOptionChain(
         getATMOptionHistory()
     );
 
-    console.log(
-        // `[Momentum] CE V:${optionMomentum.ceVelocity.toFixed(2)} ` +
-        // `CE A:${optionMomentum.ceAcceleration.toFixed(2)} | ` +
-        // `PE V:${optionMomentum.peVelocity.toFixed(2)} ` +
-        // `PE A:${optionMomentum.peAcceleration.toFixed(2)}`
-    );
 
     const {
         marketBias,
@@ -870,30 +919,16 @@ export function analyzeOptionChain(
         maxPain,
     });
 
-    // console.log("\n==================== EVIDENCE ====================");
-    // console.table(evidence);
-
     const confirmation =
         confirmMarketDirection(evidence);
 
-    // console.log("\n================= CONFIRMATION =================");
-    // console.log(confirmation);
 
     const qualified =
         qualifyObservation(confirmation);
 
-
-    // console.log("\n================ QUALIFICATION =================");
-    // console.log(qualified);
-
     const observations = qualified
         ? [generateObservation(qualified)]
         : [];
-
-    // console.log("\n================ OBSERVATIONS ==================");
-    // console.table(observations);
-
-
 
     return {
         spotPrice,
@@ -959,7 +994,11 @@ export function analyzeOptionChain(
         marketBias,
         confidence,
 
-        observations,
+        observations: [
+            ...observations,
+            ...egbdObservations,
+        ],
         strikeObservations,
+        egbd,
     };
 }

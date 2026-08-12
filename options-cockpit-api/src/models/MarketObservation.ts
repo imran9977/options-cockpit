@@ -17,7 +17,8 @@ export type ObservationDriver =
     | "ATM"
     | "DELTA"
     | "MAX_PAIN"
-    | "MARKET_BIAS";
+    | "MARKET_BIAS"
+    | "EGBD";
 
 export interface MarketObservation {
     id: string;

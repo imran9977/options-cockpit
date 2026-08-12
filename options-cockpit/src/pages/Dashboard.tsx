@@ -14,6 +14,7 @@ import type { MarketHealth } from "../models/MarketHealth";
 import type { VixHealth } from "../models/VixHealth";
 import MarketObservationsPanel from "../components/MarketObservationsPanel";
 import MarketRibbon from "../components/MarketRibbon";
+import EGBDCard from "../components/dashboard/EGBDCard";
 
 function Dashboard() {
 
@@ -81,7 +82,7 @@ function Dashboard() {
       observations: [],
       strikeObservations: [],
     });
-
+  const [showEGBD, setShowEGBD] = useState(false);
   const [marketSnapshot, setMarketSnapshot] =
     useState<MarketSnapshot>({
       niftySpot: 0,
@@ -173,11 +174,31 @@ function Dashboard() {
   return (
     <>
       <Header />
-  {/* <MarketRibbon /> */}
+      {/* <MarketRibbon /> */}
       <main className="flex gap-6 p-6">
 
         <div className="flex-1">
+          <section>
 
+            <h2
+              className="custom-title"
+              style={{ cursor: "pointer" }}
+              onClick={() => setShowEGBD(previous => !previous)}
+            >
+              <span>
+                {showEGBD ? "▼" : "▶"} 00. Early Gamma Blast Detection
+              </span>
+            </h2>
+            <div
+              className={`egbd-accordion ${showEGBD ? "open" : ""
+                }`}
+            >
+              <EGBDCard
+                optionAnalysis={optionAnalysis}
+              />
+            </div>
+
+          </section>
           <section>
             <h2 className="custom-title"><span>01. Market Health</span></h2>
 
@@ -244,7 +265,7 @@ function Dashboard() {
 
           <MarketObservationsPanel
             observations={optionAnalysis.observations}
-             strikeObservations={optionAnalysis.strikeObservations}
+            strikeObservations={optionAnalysis.strikeObservations}
           />
 
         </aside>

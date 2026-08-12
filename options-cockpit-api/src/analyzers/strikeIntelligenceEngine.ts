@@ -117,9 +117,16 @@ export function analyzeStrikeWindow(
     }
 
     return {
-        timestamp: current.timestamp,
-        spotPrice: current.spotPrice,
-        atmStrike: current.atmStrike,
-        analyses
-    };
+
+    timestamp: current.timestamp,
+
+    spotPrice: current.spotPrice,
+
+    atmStrike: current.atmStrike,
+
+    strikes: current.strikes,
+
+    analyses
+
+};
 }

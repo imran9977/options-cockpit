@@ -20,8 +20,7 @@ export interface CommodityRibbonResponse {
 export async function getMarketSnapshot(): Promise<MarketQuoteResponse> {
     const response = await fetch("http://localhost:3000/market-quote");
 // const response = await fetch(
-//   "https://worker-suits-bee-preferences.trycloudflare.com/market-quote"
-  
+//   "https://indexed-nicole-gateway-philosophy.trycloudflare.com/market-quote" 
 // );
 
     if (!response.ok) {
