@@ -1,0 +1,7597 @@
+[
+  {
+    "id": "SIGNAL_1789064837353",
+    "firedAt": 1789064837353,
+    "firedAtLabel": "10/9/2026, 11:57:17 pm",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74902.59,
+    "entryAtmStrike": 74900,
+    "checkpoints": {
+      "min5": {
+        "price": 74902.59,
+        "deltaPoints": 0,
+        "deltaPercent": 0,
+        "filledAt": 1789065141971
+      },
+      "min15": {
+        "price": 74902.59,
+        "deltaPoints": 0,
+        "deltaPercent": 0,
+        "filledAt": 1789065740144
+      },
+      "min30": {
+        "price": 74370.53,
+        "deltaPoints": -532.06,
+        "deltaPercent": -0.71,
+        "filledAt": 1789103481510
+      },
+      "min60": {
+        "price": 74370.53,
+        "deltaPoints": -532.06,
+        "deltaPercent": -0.71,
+        "filledAt": 1789103481510
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789064859196",
+    "firedAt": 1789064859196,
+    "firedAtLabel": "10/9/2026, 11:57:39 pm",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74902.59,
+    "entryAtmStrike": 74900,
+    "checkpoints": {
+      "min5": {
+        "price": 74902.59,
+        "deltaPoints": 0,
+        "deltaPercent": 0,
+        "filledAt": 1789065162716
+      },
+      "min15": {
+        "price": 74902.59,
+        "deltaPoints": 0,
+        "deltaPercent": 0,
+        "filledAt": 1789065761217
+      },
+      "min30": {
+        "price": 74370.53,
+        "deltaPoints": -532.06,
+        "deltaPercent": -0.71,
+        "filledAt": 1789103481510
+      },
+      "min60": {
+        "price": 74370.53,
+        "deltaPoints": -532.06,
+        "deltaPercent": -0.71,
+        "filledAt": 1789103481510
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789064863473",
+    "firedAt": 1789064863473,
+    "firedAtLabel": "10/9/2026, 11:57:43 pm",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74902.59,
+    "entryAtmStrike": 74900,
+    "checkpoints": {
+      "min5": {
+        "price": 74902.59,
+        "deltaPoints": 0,
+        "deltaPercent": 0,
+        "filledAt": 1789065167949
+      },
+      "min15": {
+        "price": 74902.59,
+        "deltaPoints": 0,
+        "deltaPercent": 0,
+        "filledAt": 1789065766439
+      },
+      "min30": {
+        "price": 74370.53,
+        "deltaPoints": -532.06,
+        "deltaPercent": -0.71,
+        "filledAt": 1789103481510
+      },
+      "min60": {
+        "price": 74370.53,
+        "deltaPoints": -532.06,
+        "deltaPercent": -0.71,
+        "filledAt": 1789103481510
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789105465199",
+    "firedAt": 1789105465199,
+    "firedAtLabel": "11/9/2026, 11:14:25 am",
+    "direction": "bullish",
+    "confidence": 62,
+    "entrySpotPrice": 74502.52,
+    "entryAtmStrike": 74500,
+    "checkpoints": {
+      "min5": {
+        "price": 74503.89,
+        "deltaPoints": 1.37,
+        "deltaPercent": 0.002,
+        "filledAt": 1789105766264
+      },
+      "min15": {
+        "price": 74525.58,
+        "deltaPoints": 23.06,
+        "deltaPercent": 0.031,
+        "filledAt": 1789106369620
+      },
+      "min30": {
+        "price": 74570.27,
+        "deltaPoints": 67.75,
+        "deltaPercent": 0.091,
+        "filledAt": 1789107265919
+      },
+      "min60": {
+        "price": 74468.2,
+        "deltaPoints": -34.32,
+        "deltaPercent": -0.046,
+        "filledAt": 1789109066857
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789105475595",
+    "firedAt": 1789105475595,
+    "firedAtLabel": "11/9/2026, 11:14:35 am",
+    "direction": "bullish",
+    "confidence": 62,
+    "entrySpotPrice": 74506.05,
+    "entryAtmStrike": 74500,
+    "checkpoints": {
+      "min5": {
+        "price": 74500.5,
+        "deltaPoints": -5.55,
+        "deltaPercent": -0.007,
+        "filledAt": 1789105776560
+      },
+      "min15": {
+        "price": 74525.5,
+        "deltaPoints": 19.45,
+        "deltaPercent": 0.026,
+        "filledAt": 1789106379944
+      },
+      "min30": {
+        "price": 74563.62,
+        "deltaPoints": 57.57,
+        "deltaPercent": 0.077,
+        "filledAt": 1789107276171
+      },
+      "min60": {
+        "price": 74477.91,
+        "deltaPoints": -28.14,
+        "deltaPercent": -0.038,
+        "filledAt": 1789109077173
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789105501609",
+    "firedAt": 1789105501609,
+    "firedAtLabel": "11/9/2026, 11:15:01 am",
+    "direction": "bullish",
+    "confidence": 62,
+    "entrySpotPrice": 74501.44,
+    "entryAtmStrike": 74500,
+    "checkpoints": {
+      "min5": {
+        "price": 74504.76,
+        "deltaPoints": 3.32,
+        "deltaPercent": 0.004,
+        "filledAt": 1789105802486
+      },
+      "min15": {
+        "price": 74526.41,
+        "deltaPoints": 24.97,
+        "deltaPercent": 0.034,
+        "filledAt": 1789106405884
+      },
+      "min30": {
+        "price": 74562.93,
+        "deltaPoints": 61.49,
+        "deltaPercent": 0.083,
+        "filledAt": 1789107301968
+      },
+      "min60": {
+        "price": 74482,
+        "deltaPoints": -19.44,
+        "deltaPercent": -0.026,
+        "filledAt": 1789109102867
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789105631119",
+    "firedAt": 1789105631119,
+    "firedAtLabel": "11/9/2026, 11:17:11 am",
+    "direction": "bullish",
+    "confidence": 62,
+    "entrySpotPrice": 74504.68,
+    "entryAtmStrike": 74500,
+    "checkpoints": {
+      "min5": {
+        "price": 74504.78,
+        "deltaPoints": 0.1,
+        "deltaPercent": 0,
+        "filledAt": 1789105932059
+      },
+      "min15": {
+        "price": 74510.93,
+        "deltaPoints": 6.25,
+        "deltaPercent": 0.008,
+        "filledAt": 1789106535340
+      },
+      "min30": {
+        "price": 74572.27,
+        "deltaPoints": 67.59,
+        "deltaPercent": 0.091,
+        "filledAt": 1789107431121
+      },
+      "min60": {
+        "price": 74488.04,
+        "deltaPoints": -16.64,
+        "deltaPercent": -0.022,
+        "filledAt": 1789109231587
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789105792123",
+    "firedAt": 1789105792123,
+    "firedAtLabel": "11/9/2026, 11:19:52 am",
+    "direction": "bullish",
+    "confidence": 62,
+    "entrySpotPrice": 74501.42,
+    "entryAtmStrike": 74500,
+    "checkpoints": {
+      "min5": {
+        "price": 74541.68,
+        "deltaPoints": 40.26,
+        "deltaPercent": 0.054,
+        "filledAt": 1789106094944
+      },
+      "min15": {
+        "price": 74553.05,
+        "deltaPoints": 51.63,
+        "deltaPercent": 0.069,
+        "filledAt": 1789106695957
+      },
+      "min30": {
+        "price": 74518.47,
+        "deltaPoints": 17.05,
+        "deltaPercent": 0.023,
+        "filledAt": 1789107596745
+      },
+      "min60": {
+        "price": 74507.94,
+        "deltaPoints": 6.52,
+        "deltaPercent": 0.009,
+        "filledAt": 1789109396480
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789105875057",
+    "firedAt": 1789105875057,
+    "firedAtLabel": "11/9/2026, 11:21:15 am",
+    "direction": "bullish",
+    "confidence": 62,
+    "entrySpotPrice": 74501.04,
+    "entryAtmStrike": 74500,
+    "checkpoints": {
+      "min5": {
+        "price": 74537.06,
+        "deltaPoints": 36.02,
+        "deltaPercent": 0.048,
+        "filledAt": 1789106177890
+      },
+      "min15": {
+        "price": 74538.33,
+        "deltaPoints": 37.29,
+        "deltaPercent": 0.05,
+        "filledAt": 1789106778238
+      },
+      "min30": {
+        "price": 74529.87,
+        "deltaPoints": 28.83,
+        "deltaPercent": 0.039,
+        "filledAt": 1789107679454
+      },
+      "min60": {
+        "price": 74485.86,
+        "deltaPoints": -15.18,
+        "deltaPercent": -0.02,
+        "filledAt": 1789109478796
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789106063244",
+    "firedAt": 1789106063244,
+    "firedAtLabel": "11/9/2026, 11:24:23 am",
+    "direction": "bullish",
+    "confidence": 62,
+    "entrySpotPrice": 74548.63,
+    "entryAtmStrike": 74500,
+    "checkpoints": {
+      "min5": {
+        "price": 74531.94,
+        "deltaPoints": -16.69,
+        "deltaPercent": -0.022,
+        "filledAt": 1789106364467
+      },
+      "min15": {
+        "price": 74544.21,
+        "deltaPoints": -4.42,
+        "deltaPercent": -0.006,
+        "filledAt": 1789106964145
+      },
+      "min30": {
+        "price": 74523.59,
+        "deltaPoints": -25.04,
+        "deltaPercent": -0.034,
+        "filledAt": 1789107868334
+      },
+      "min60": {
+        "price": 74511.28,
+        "deltaPoints": -37.35,
+        "deltaPercent": -0.05,
+        "filledAt": 1789109664357
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789106162371",
+    "firedAt": 1789106162371,
+    "firedAtLabel": "11/9/2026, 11:26:02 am",
+    "direction": "bullish",
+    "confidence": 62,
+    "entrySpotPrice": 74547.27,
+    "entryAtmStrike": 74500,
+    "checkpoints": {
+      "min5": {
+        "price": 74518.95,
+        "deltaPoints": -28.32,
+        "deltaPercent": -0.038,
+        "filledAt": 1789106462751
+      },
+      "min15": {
+        "price": 74555.42,
+        "deltaPoints": 8.15,
+        "deltaPercent": 0.011,
+        "filledAt": 1789107062463
+      },
+      "min30": {
+        "price": 74530.32,
+        "deltaPoints": -16.95,
+        "deltaPercent": -0.023,
+        "filledAt": 1789107966627
+      },
+      "min60": {
+        "price": 74503.98,
+        "deltaPoints": -43.29,
+        "deltaPercent": -0.058,
+        "filledAt": 1789109762784
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789106716516",
+    "firedAt": 1789106716516,
+    "firedAtLabel": "11/9/2026, 11:35:16 am",
+    "direction": "bullish",
+    "confidence": 62,
+    "entrySpotPrice": 74549.99,
+    "entryAtmStrike": 74500,
+    "checkpoints": {
+      "min5": {
+        "price": 74550.25,
+        "deltaPoints": 0.26,
+        "deltaPercent": 0,
+        "filledAt": 1789107021067
+      },
+      "min15": {
+        "price": 74517.61,
+        "deltaPoints": -32.38,
+        "deltaPercent": -0.043,
+        "filledAt": 1789107617392
+      },
+      "min30": {
+        "price": 74547.49,
+        "deltaPoints": -2.5,
+        "deltaPercent": -0.003,
+        "filledAt": 1789108519283
+      },
+      "min60": {
+        "price": 74525.1,
+        "deltaPoints": -24.89,
+        "deltaPercent": -0.033,
+        "filledAt": 1789110320645
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789106871061",
+    "firedAt": 1789106871061,
+    "firedAtLabel": "11/9/2026, 11:37:51 am",
+    "direction": "bullish",
+    "confidence": 62,
+    "entrySpotPrice": 74549.52,
+    "entryAtmStrike": 74500,
+    "checkpoints": {
+      "min5": {
+        "price": 74549.13,
+        "deltaPoints": -0.39,
+        "deltaPercent": -0.001,
+        "filledAt": 1789107172994
+      },
+      "min15": {
+        "price": 74518.07,
+        "deltaPoints": -31.45,
+        "deltaPercent": -0.042,
+        "filledAt": 1789107775469
+      },
+      "min30": {
+        "price": 74538.46,
+        "deltaPoints": -11.06,
+        "deltaPercent": -0.015,
+        "filledAt": 1789108673935
+      },
+      "min60": {
+        "price": 74546.9,
+        "deltaPoints": -2.62,
+        "deltaPercent": -0.004,
+        "filledAt": 1789110475826
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789115066350",
+    "firedAt": 1789115066350,
+    "firedAtLabel": "11/9/2026, 1:54:26 pm",
+    "direction": "bullish",
+    "confidence": 62,
+    "entrySpotPrice": 74630.53,
+    "entryAtmStrike": 74600,
+    "checkpoints": {
+      "min5": {
+        "price": 74690.02,
+        "deltaPoints": 59.49,
+        "deltaPercent": 0.08,
+        "filledAt": 1789115368224
+      },
+      "min15": {
+        "price": 74781.76,
+        "deltaPoints": 151.23,
+        "deltaPercent": 0.203,
+        "filledAt": 1789442213479
+      },
+      "min30": {
+        "price": 74781.76,
+        "deltaPoints": 151.23,
+        "deltaPercent": 0.203,
+        "filledAt": 1789442213479
+      },
+      "min60": {
+        "price": 74781.76,
+        "deltaPoints": 151.23,
+        "deltaPercent": 0.203,
+        "filledAt": 1789442213479
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789115130802",
+    "firedAt": 1789115130802,
+    "firedAtLabel": "11/9/2026, 1:55:30 pm",
+    "direction": "bullish",
+    "confidence": 62,
+    "entrySpotPrice": 74602.4,
+    "entryAtmStrike": 74600,
+    "checkpoints": {
+      "min5": {
+        "price": 74700.58,
+        "deltaPoints": 98.18,
+        "deltaPercent": 0.132,
+        "filledAt": 1789115433627
+      },
+      "min15": {
+        "price": 74781.76,
+        "deltaPoints": 179.36,
+        "deltaPercent": 0.24,
+        "filledAt": 1789442213479
+      },
+      "min30": {
+        "price": 74781.76,
+        "deltaPoints": 179.36,
+        "deltaPercent": 0.24,
+        "filledAt": 1789442213479
+      },
+      "min60": {
+        "price": 74781.76,
+        "deltaPoints": 179.36,
+        "deltaPercent": 0.24,
+        "filledAt": 1789442213479
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789115171576",
+    "firedAt": 1789115171576,
+    "firedAtLabel": "11/9/2026, 1:56:11 pm",
+    "direction": "bullish",
+    "confidence": 62,
+    "entrySpotPrice": 74646.7,
+    "entryAtmStrike": 74600,
+    "checkpoints": {
+      "min5": {
+        "price": 74719.83,
+        "deltaPoints": 73.13,
+        "deltaPercent": 0.098,
+        "filledAt": 1789115474086
+      },
+      "min15": {
+        "price": 74781.76,
+        "deltaPoints": 135.06,
+        "deltaPercent": 0.181,
+        "filledAt": 1789442213479
+      },
+      "min30": {
+        "price": 74781.76,
+        "deltaPoints": 135.06,
+        "deltaPercent": 0.181,
+        "filledAt": 1789442213479
+      },
+      "min60": {
+        "price": 74781.76,
+        "deltaPoints": 135.06,
+        "deltaPercent": 0.181,
+        "filledAt": 1789442213479
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789115433626",
+    "firedAt": 1789115433626,
+    "firedAtLabel": "11/9/2026, 2:00:33 pm",
+    "direction": "bullish",
+    "confidence": 80,
+    "entrySpotPrice": 74700.58,
+    "entryAtmStrike": 74700,
+    "checkpoints": {
+      "min5": {
+        "price": 74781.76,
+        "deltaPoints": 81.18,
+        "deltaPercent": 0.109,
+        "filledAt": 1789442213479
+      },
+      "min15": {
+        "price": 74781.76,
+        "deltaPoints": 81.18,
+        "deltaPercent": 0.109,
+        "filledAt": 1789442213479
+      },
+      "min30": {
+        "price": 74781.76,
+        "deltaPoints": 81.18,
+        "deltaPercent": 0.109,
+        "filledAt": 1789442213479
+      },
+      "min60": {
+        "price": 74781.76,
+        "deltaPoints": 81.18,
+        "deltaPercent": 0.109,
+        "filledAt": 1789442213479
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789443013829",
+    "firedAt": 1789443013829,
+    "firedAtLabel": "15/9/2026, 9:00:13 am",
+    "direction": "bearish",
+    "confidence": 70,
+    "entrySpotPrice": 75076.07,
+    "entryAtmStrike": 75100,
+    "checkpoints": {
+      "min5": {
+        "price": 75120.52,
+        "deltaPoints": 44.45,
+        "deltaPercent": 0.059,
+        "filledAt": 1789443314764
+      },
+      "min15": {
+        "price": 75216.75,
+        "deltaPoints": 140.68,
+        "deltaPercent": 0.187,
+        "filledAt": 1789443915379
+      },
+      "min30": {
+        "price": 75021.17,
+        "deltaPoints": -54.9,
+        "deltaPercent": -0.073,
+        "filledAt": 1789444815083
+      },
+      "min60": {
+        "price": 74811.41,
+        "deltaPoints": -264.66,
+        "deltaPercent": -0.353,
+        "filledAt": 1789446615560
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789443020242",
+    "firedAt": 1789443020242,
+    "firedAtLabel": "15/9/2026, 9:00:20 am",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74801.11,
+    "entryAtmStrike": 74800,
+    "checkpoints": {
+      "min5": {
+        "price": 75116.59,
+        "deltaPoints": 315.48,
+        "deltaPercent": 0.422,
+        "filledAt": 1789443321102
+      },
+      "min15": {
+        "price": 75213.97,
+        "deltaPoints": 412.86,
+        "deltaPercent": 0.552,
+        "filledAt": 1789443921781
+      },
+      "min30": {
+        "price": 75019.26,
+        "deltaPoints": 218.15,
+        "deltaPercent": 0.292,
+        "filledAt": 1789444821453
+      },
+      "min60": {
+        "price": 74799.83,
+        "deltaPoints": -1.28,
+        "deltaPercent": -0.002,
+        "filledAt": 1789446622024
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789443033018",
+    "firedAt": 1789443033018,
+    "firedAtLabel": "15/9/2026, 9:00:33 am",
+    "direction": "bullish",
+    "confidence": 70,
+    "entrySpotPrice": 74425.65,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 75163.62,
+        "deltaPoints": 737.97,
+        "deltaPercent": 0.992,
+        "filledAt": 1789443334061
+      },
+      "min15": {
+        "price": 75171.38,
+        "deltaPoints": 745.73,
+        "deltaPercent": 1.002,
+        "filledAt": 1789443934561
+      },
+      "min30": {
+        "price": 75024.75,
+        "deltaPoints": 599.1,
+        "deltaPercent": 0.805,
+        "filledAt": 1789444834181
+      },
+      "min60": {
+        "price": 74795.04,
+        "deltaPoints": 369.39,
+        "deltaPercent": 0.496,
+        "filledAt": 1789446634762
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789443045717",
+    "firedAt": 1789443045717,
+    "firedAtLabel": "15/9/2026, 9:00:45 am",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74934.79,
+    "entryAtmStrike": 74900,
+    "checkpoints": {
+      "min5": {
+        "price": 75152.65,
+        "deltaPoints": 217.86,
+        "deltaPercent": 0.291,
+        "filledAt": 1789443346728
+      },
+      "min15": {
+        "price": 75179.23,
+        "deltaPoints": 244.44,
+        "deltaPercent": 0.326,
+        "filledAt": 1789443947238
+      },
+      "min30": {
+        "price": 75031.33,
+        "deltaPoints": 96.54,
+        "deltaPercent": 0.129,
+        "filledAt": 1789444846961
+      },
+      "min60": {
+        "price": 74788.17,
+        "deltaPoints": -146.62,
+        "deltaPercent": -0.196,
+        "filledAt": 1789446647521
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789443077489",
+    "firedAt": 1789443077489,
+    "firedAtLabel": "15/9/2026, 9:01:17 am",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74947.46,
+    "entryAtmStrike": 74900,
+    "checkpoints": {
+      "min5": {
+        "price": 75244.45,
+        "deltaPoints": 296.99,
+        "deltaPercent": 0.396,
+        "filledAt": 1789443378777
+      },
+      "min15": {
+        "price": 75186,
+        "deltaPoints": 238.54,
+        "deltaPercent": 0.318,
+        "filledAt": 1789443979115
+      },
+      "min30": {
+        "price": 75020.31,
+        "deltaPoints": 72.85,
+        "deltaPercent": 0.097,
+        "filledAt": 1789444878610
+      },
+      "min60": {
+        "price": 74776.47,
+        "deltaPoints": -170.99,
+        "deltaPercent": -0.228,
+        "filledAt": 1789446679343
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789443119595",
+    "firedAt": 1789443119595,
+    "firedAtLabel": "15/9/2026, 9:01:59 am",
+    "direction": "bearish",
+    "confidence": 70,
+    "entrySpotPrice": 75073.23,
+    "entryAtmStrike": 75100,
+    "checkpoints": {
+      "min5": {
+        "price": 75262.54,
+        "deltaPoints": 189.31,
+        "deltaPercent": 0.252,
+        "filledAt": 1789443420965
+      },
+      "min15": {
+        "price": 75195.32,
+        "deltaPoints": 122.09,
+        "deltaPercent": 0.163,
+        "filledAt": 1789444020685
+      },
+      "min30": {
+        "price": 74993.57,
+        "deltaPoints": -79.66,
+        "deltaPercent": -0.106,
+        "filledAt": 1789444920267
+      },
+      "min60": {
+        "price": 74782.3,
+        "deltaPoints": -290.93,
+        "deltaPercent": -0.388,
+        "filledAt": 1789446720752
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789444525053",
+    "firedAt": 1789444525053,
+    "firedAtLabel": "15/9/2026, 9:25:25 am",
+    "direction": "bullish",
+    "confidence": 68,
+    "entrySpotPrice": 75044.47,
+    "entryAtmStrike": 75000,
+    "checkpoints": {
+      "min5": {
+        "price": 75033.27,
+        "deltaPoints": -11.2,
+        "deltaPercent": -0.015,
+        "filledAt": 1789444827810
+      },
+      "min15": {
+        "price": 75018.73,
+        "deltaPoints": -25.74,
+        "deltaPercent": -0.034,
+        "filledAt": 1789445425989
+      },
+      "min30": {
+        "price": 74812.56,
+        "deltaPoints": -231.91,
+        "deltaPercent": -0.309,
+        "filledAt": 1789446325749
+      },
+      "min60": {
+        "price": 74769.47,
+        "deltaPoints": -275,
+        "deltaPercent": -0.366,
+        "filledAt": 1789448126902
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789444534565",
+    "firedAt": 1789444534565,
+    "firedAtLabel": "15/9/2026, 9:25:34 am",
+    "direction": "bullish",
+    "confidence": 68,
+    "entrySpotPrice": 75045.47,
+    "entryAtmStrike": 75000,
+    "checkpoints": {
+      "min5": {
+        "price": 75031.02,
+        "deltaPoints": -14.45,
+        "deltaPercent": -0.019,
+        "filledAt": 1789444837391
+      },
+      "min15": {
+        "price": 75014.9,
+        "deltaPoints": -30.57,
+        "deltaPercent": -0.041,
+        "filledAt": 1789445435507
+      },
+      "min30": {
+        "price": 74799.39,
+        "deltaPoints": -246.08,
+        "deltaPercent": -0.328,
+        "filledAt": 1789446335443
+      },
+      "min60": {
+        "price": 74764.6,
+        "deltaPoints": -280.87,
+        "deltaPercent": -0.374,
+        "filledAt": 1789448136412
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789444553719",
+    "firedAt": 1789444553719,
+    "firedAtLabel": "15/9/2026, 9:25:53 am",
+    "direction": "bullish",
+    "confidence": 68,
+    "entrySpotPrice": 75044.39,
+    "entryAtmStrike": 75000,
+    "checkpoints": {
+      "min5": {
+        "price": 75021.1,
+        "deltaPoints": -23.29,
+        "deltaPercent": -0.031,
+        "filledAt": 1789444856535
+      },
+      "min15": {
+        "price": 75018.7,
+        "deltaPoints": -25.69,
+        "deltaPercent": -0.034,
+        "filledAt": 1789445454763
+      },
+      "min30": {
+        "price": 74803.93,
+        "deltaPoints": -240.46,
+        "deltaPercent": -0.32,
+        "filledAt": 1789446354557
+      },
+      "min60": {
+        "price": 74759.44,
+        "deltaPoints": -284.95,
+        "deltaPercent": -0.38,
+        "filledAt": 1789448155507
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789444572945",
+    "firedAt": 1789444572945,
+    "firedAtLabel": "15/9/2026, 9:26:12 am",
+    "direction": "bullish",
+    "confidence": 68,
+    "entrySpotPrice": 75032.34,
+    "entryAtmStrike": 75000,
+    "checkpoints": {
+      "min5": {
+        "price": 75024.83,
+        "deltaPoints": -7.51,
+        "deltaPercent": -0.01,
+        "filledAt": 1789444875439
+      },
+      "min15": {
+        "price": 75003.94,
+        "deltaPoints": -28.4,
+        "deltaPercent": -0.038,
+        "filledAt": 1789445474047
+      },
+      "min30": {
+        "price": 74809.1,
+        "deltaPoints": -223.24,
+        "deltaPercent": -0.298,
+        "filledAt": 1789446373916
+      },
+      "min60": {
+        "price": 74759.78,
+        "deltaPoints": -272.56,
+        "deltaPercent": -0.363,
+        "filledAt": 1789448174722
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789444948825",
+    "firedAt": 1789444948825,
+    "firedAtLabel": "15/9/2026, 9:32:28 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74981.55,
+    "entryAtmStrike": 75000,
+    "checkpoints": {
+      "min5": {
+        "price": 74992.58,
+        "deltaPoints": 11.03,
+        "deltaPercent": 0.015,
+        "filledAt": 1789445250800
+      },
+      "min15": {
+        "price": 74976.59,
+        "deltaPoints": -4.96,
+        "deltaPercent": -0.007,
+        "filledAt": 1789445849358
+      },
+      "min30": {
+        "price": 74795.74,
+        "deltaPoints": -185.81,
+        "deltaPercent": -0.248,
+        "filledAt": 1789446749386
+      },
+      "min60": {
+        "price": 74701.57,
+        "deltaPoints": -279.98,
+        "deltaPercent": -0.373,
+        "filledAt": 1789448549137
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789444964577",
+    "firedAt": 1789444964577,
+    "firedAtLabel": "15/9/2026, 9:32:44 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74999.71,
+    "entryAtmStrike": 75000,
+    "checkpoints": {
+      "min5": {
+        "price": 74982.56,
+        "deltaPoints": -17.15,
+        "deltaPercent": -0.023,
+        "filledAt": 1789445266721
+      },
+      "min15": {
+        "price": 74964.81,
+        "deltaPoints": -34.9,
+        "deltaPercent": -0.047,
+        "filledAt": 1789445865462
+      },
+      "min30": {
+        "price": 74803.93,
+        "deltaPoints": -195.78,
+        "deltaPercent": -0.261,
+        "filledAt": 1789446765362
+      },
+      "min60": {
+        "price": 74702.94,
+        "deltaPoints": -296.77,
+        "deltaPercent": -0.396,
+        "filledAt": 1789448565006
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789444999436",
+    "firedAt": 1789444999436,
+    "firedAtLabel": "15/9/2026, 9:33:19 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74989.18,
+    "entryAtmStrike": 75000,
+    "checkpoints": {
+      "min5": {
+        "price": 74983.9,
+        "deltaPoints": -5.28,
+        "deltaPercent": -0.007,
+        "filledAt": 1789445301758
+      },
+      "min15": {
+        "price": 74959.29,
+        "deltaPoints": -29.89,
+        "deltaPercent": -0.04,
+        "filledAt": 1789445900953
+      },
+      "min30": {
+        "price": 74805.74,
+        "deltaPoints": -183.44,
+        "deltaPercent": -0.245,
+        "filledAt": 1789446800439
+      },
+      "min60": {
+        "price": 74718.16,
+        "deltaPoints": -271.02,
+        "deltaPercent": -0.361,
+        "filledAt": 1789448599940
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789445037699",
+    "firedAt": 1789445037699,
+    "firedAtLabel": "15/9/2026, 9:33:57 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74997.01,
+    "entryAtmStrike": 75000,
+    "checkpoints": {
+      "min5": {
+        "price": 74969.68,
+        "deltaPoints": -27.33,
+        "deltaPercent": -0.036,
+        "filledAt": 1789445339958
+      },
+      "min15": {
+        "price": 74941.81,
+        "deltaPoints": -55.2,
+        "deltaPercent": -0.074,
+        "filledAt": 1789445939728
+      },
+      "min30": {
+        "price": 74776.53,
+        "deltaPoints": -220.48,
+        "deltaPercent": -0.294,
+        "filledAt": 1789446838724
+      },
+      "min60": {
+        "price": 74723.09,
+        "deltaPoints": -273.92,
+        "deltaPercent": -0.365,
+        "filledAt": 1789448638211
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789445168196",
+    "firedAt": 1789445168196,
+    "firedAtLabel": "15/9/2026, 9:36:08 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74998.91,
+    "entryAtmStrike": 75000,
+    "checkpoints": {
+      "min5": {
+        "price": 75006.19,
+        "deltaPoints": 7.28,
+        "deltaPercent": 0.01,
+        "filledAt": 1789445470907
+      },
+      "min15": {
+        "price": 74912.21,
+        "deltaPoints": -86.7,
+        "deltaPercent": -0.116,
+        "filledAt": 1789446069021
+      },
+      "min30": {
+        "price": 74807.09,
+        "deltaPoints": -191.82,
+        "deltaPercent": -0.256,
+        "filledAt": 1789446969350
+      },
+      "min60": {
+        "price": 74737.91,
+        "deltaPoints": -261,
+        "deltaPercent": -0.348,
+        "filledAt": 1789448770578
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789445483841",
+    "firedAt": 1789445483841,
+    "firedAtLabel": "15/9/2026, 9:41:23 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74998.23,
+    "entryAtmStrike": 75000,
+    "checkpoints": {
+      "min5": {
+        "price": 74979.24,
+        "deltaPoints": -18.99,
+        "deltaPercent": -0.025,
+        "filledAt": 1789445786243
+      },
+      "min15": {
+        "price": 74790.25,
+        "deltaPoints": -207.98,
+        "deltaPercent": -0.277,
+        "filledAt": 1789446386837
+      },
+      "min30": {
+        "price": 74771.12,
+        "deltaPoints": -227.11,
+        "deltaPercent": -0.303,
+        "filledAt": 1789447284125
+      },
+      "min60": {
+        "price": 74727.32,
+        "deltaPoints": -270.91,
+        "deltaPercent": -0.361,
+        "filledAt": 1789449085205
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789445628496",
+    "firedAt": 1789445628496,
+    "firedAtLabel": "15/9/2026, 9:43:48 am",
+    "direction": "bearish",
+    "confidence": 73,
+    "entrySpotPrice": 75050.39,
+    "entryAtmStrike": 75100,
+    "checkpoints": {
+      "min5": {
+        "price": 74928.89,
+        "deltaPoints": -121.5,
+        "deltaPercent": -0.162,
+        "filledAt": 1789445929980
+      },
+      "min15": {
+        "price": 74765.01,
+        "deltaPoints": -285.38,
+        "deltaPercent": -0.38,
+        "filledAt": 1789446528981
+      },
+      "min30": {
+        "price": 74811.01,
+        "deltaPoints": -239.38,
+        "deltaPercent": -0.319,
+        "filledAt": 1789447430859
+      },
+      "min60": {
+        "price": 74689.22,
+        "deltaPoints": -361.17,
+        "deltaPercent": -0.481,
+        "filledAt": 1789449231169
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789445660666",
+    "firedAt": 1789445660666,
+    "firedAtLabel": "15/9/2026, 9:44:20 am",
+    "direction": "bearish",
+    "confidence": 73,
+    "entrySpotPrice": 75052.41,
+    "entryAtmStrike": 75100,
+    "checkpoints": {
+      "min5": {
+        "price": 74929.8,
+        "deltaPoints": -122.61,
+        "deltaPercent": -0.163,
+        "filledAt": 1789445962522
+      },
+      "min15": {
+        "price": 74796.16,
+        "deltaPoints": -256.25,
+        "deltaPercent": -0.341,
+        "filledAt": 1789446561266
+      },
+      "min30": {
+        "price": 74804.75,
+        "deltaPoints": -247.66,
+        "deltaPercent": -0.33,
+        "filledAt": 1789447462828
+      },
+      "min60": {
+        "price": 74697.72,
+        "deltaPoints": -354.69,
+        "deltaPercent": -0.473,
+        "filledAt": 1789449263140
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789445702499",
+    "firedAt": 1789445702499,
+    "firedAtLabel": "15/9/2026, 9:45:02 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74994.12,
+    "entryAtmStrike": 75000,
+    "checkpoints": {
+      "min5": {
+        "price": 74898.7,
+        "deltaPoints": -95.42,
+        "deltaPercent": -0.127,
+        "filledAt": 1789446004563
+      },
+      "min15": {
+        "price": 74823.09,
+        "deltaPoints": -171.03,
+        "deltaPercent": -0.228,
+        "filledAt": 1789446602638
+      },
+      "min30": {
+        "price": 74789.72,
+        "deltaPoints": -204.4,
+        "deltaPercent": -0.273,
+        "filledAt": 1789447504232
+      },
+      "min60": {
+        "price": 74692.84,
+        "deltaPoints": -301.28,
+        "deltaPercent": -0.402,
+        "filledAt": 1789449304654
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789445894449",
+    "firedAt": 1789445894449,
+    "firedAtLabel": "15/9/2026, 9:48:14 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74958.27,
+    "entryAtmStrike": 75000,
+    "checkpoints": {
+      "min5": {
+        "price": 74879.57,
+        "deltaPoints": -78.7,
+        "deltaPercent": -0.105,
+        "filledAt": 1789446195720
+      },
+      "min15": {
+        "price": 74810.54,
+        "deltaPoints": -147.73,
+        "deltaPercent": -0.197,
+        "filledAt": 1789446797169
+      },
+      "min30": {
+        "price": 74786.05,
+        "deltaPoints": -172.22,
+        "deltaPercent": -0.23,
+        "filledAt": 1789447695916
+      },
+      "min60": {
+        "price": 74674.54,
+        "deltaPoints": -283.73,
+        "deltaPercent": -0.379,
+        "filledAt": 1789449494559
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789446169707",
+    "firedAt": 1789446169707,
+    "firedAtLabel": "15/9/2026, 9:52:49 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74890.92,
+    "entryAtmStrike": 74900,
+    "checkpoints": {
+      "min5": {
+        "price": 74780.04,
+        "deltaPoints": -110.88,
+        "deltaPercent": -0.148,
+        "filledAt": 1789446470616
+      },
+      "min15": {
+        "price": 74788.61,
+        "deltaPoints": -102.31,
+        "deltaPercent": -0.137,
+        "filledAt": 1789447069951
+      },
+      "min30": {
+        "price": 74777.14,
+        "deltaPoints": -113.78,
+        "deltaPercent": -0.152,
+        "filledAt": 1789447970507
+      },
+      "min60": {
+        "price": 74621.63,
+        "deltaPoints": -269.29,
+        "deltaPercent": -0.36,
+        "filledAt": 1789449769816
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789446406312",
+    "firedAt": 1789446406312,
+    "firedAtLabel": "15/9/2026, 9:56:46 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74794.93,
+    "entryAtmStrike": 74800,
+    "checkpoints": {
+      "min5": {
+        "price": 74777.85,
+        "deltaPoints": -17.08,
+        "deltaPercent": -0.023,
+        "filledAt": 1789446708092
+      },
+      "min15": {
+        "price": 74790.74,
+        "deltaPoints": -4.19,
+        "deltaPercent": -0.006,
+        "filledAt": 1789447306361
+      },
+      "min30": {
+        "price": 74771.68,
+        "deltaPoints": -23.25,
+        "deltaPercent": -0.031,
+        "filledAt": 1789448206609
+      },
+      "min60": {
+        "price": 74619.86,
+        "deltaPoints": -175.07,
+        "deltaPercent": -0.234,
+        "filledAt": 1789450006949
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789446432228",
+    "firedAt": 1789446432228,
+    "firedAtLabel": "15/9/2026, 9:57:12 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74772.33,
+    "entryAtmStrike": 74800,
+    "checkpoints": {
+      "min5": {
+        "price": 74793,
+        "deltaPoints": 20.67,
+        "deltaPercent": 0.028,
+        "filledAt": 1789446733538
+      },
+      "min15": {
+        "price": 74807.32,
+        "deltaPoints": 34.99,
+        "deltaPercent": 0.047,
+        "filledAt": 1789447335165
+      },
+      "min30": {
+        "price": 74777.69,
+        "deltaPoints": 5.36,
+        "deltaPercent": 0.007,
+        "filledAt": 1789448235286
+      },
+      "min60": {
+        "price": 74607.85,
+        "deltaPoints": -164.48,
+        "deltaPercent": -0.22,
+        "filledAt": 1789450032766
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789446541905",
+    "firedAt": 1789446541905,
+    "firedAtLabel": "15/9/2026, 9:59:01 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74782.77,
+    "entryAtmStrike": 74800,
+    "checkpoints": {
+      "min5": {
+        "price": 74775.36,
+        "deltaPoints": -7.41,
+        "deltaPercent": -0.01,
+        "filledAt": 1789446845061
+      },
+      "min15": {
+        "price": 74817.37,
+        "deltaPoints": 34.6,
+        "deltaPercent": 0.046,
+        "filledAt": 1789447443710
+      },
+      "min30": {
+        "price": 74734.89,
+        "deltaPoints": -47.88,
+        "deltaPercent": -0.064,
+        "filledAt": 1789448343714
+      },
+      "min60": {
+        "price": 74626.63,
+        "deltaPoints": -156.14,
+        "deltaPercent": -0.209,
+        "filledAt": 1789450142905
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789446551656",
+    "firedAt": 1789446551656,
+    "firedAtLabel": "15/9/2026, 9:59:11 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74782.68,
+    "entryAtmStrike": 74800,
+    "checkpoints": {
+      "min5": {
+        "price": 74768.06,
+        "deltaPoints": -14.62,
+        "deltaPercent": -0.02,
+        "filledAt": 1789446854623
+      },
+      "min15": {
+        "price": 74810.77,
+        "deltaPoints": 28.09,
+        "deltaPercent": 0.038,
+        "filledAt": 1789447453300
+      },
+      "min30": {
+        "price": 74727.3,
+        "deltaPoints": -55.38,
+        "deltaPercent": -0.074,
+        "filledAt": 1789448353284
+      },
+      "min60": {
+        "price": 74630.55,
+        "deltaPoints": -152.13,
+        "deltaPercent": -0.203,
+        "filledAt": 1789450152546
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789446561264",
+    "firedAt": 1789446561264,
+    "firedAtLabel": "15/9/2026, 9:59:21 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74796.16,
+    "entryAtmStrike": 74800,
+    "checkpoints": {
+      "min5": {
+        "price": 74777.11,
+        "deltaPoints": -19.05,
+        "deltaPercent": -0.025,
+        "filledAt": 1789446864205
+      },
+      "min15": {
+        "price": 74804.75,
+        "deltaPoints": 8.59,
+        "deltaPercent": 0.011,
+        "filledAt": 1789447462828
+      },
+      "min30": {
+        "price": 74724.56,
+        "deltaPoints": -71.6,
+        "deltaPercent": -0.096,
+        "filledAt": 1789448362835
+      },
+      "min60": {
+        "price": 74622.63,
+        "deltaPoints": -173.53,
+        "deltaPercent": -0.232,
+        "filledAt": 1789450162340
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789446622022",
+    "firedAt": 1789446622022,
+    "firedAtLabel": "15/9/2026, 10:00:22 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74799.83,
+    "entryAtmStrike": 74800,
+    "checkpoints": {
+      "min5": {
+        "price": 74803.65,
+        "deltaPoints": 3.82,
+        "deltaPercent": 0.005,
+        "filledAt": 1789446924732
+      },
+      "min15": {
+        "price": 74793.41,
+        "deltaPoints": -6.42,
+        "deltaPercent": -0.009,
+        "filledAt": 1789447523630
+      },
+      "min30": {
+        "price": 74693.01,
+        "deltaPoints": -106.82,
+        "deltaPercent": -0.143,
+        "filledAt": 1789448423624
+      },
+      "min60": {
+        "price": 74648.48,
+        "deltaPoints": -151.35,
+        "deltaPercent": -0.202,
+        "filledAt": 1789450224096
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789446644253",
+    "firedAt": 1789446644253,
+    "firedAtLabel": "15/9/2026, 10:00:44 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74787.24,
+    "entryAtmStrike": 74800,
+    "checkpoints": {
+      "min5": {
+        "price": 74803.37,
+        "deltaPoints": 16.13,
+        "deltaPercent": 0.022,
+        "filledAt": 1789446947102
+      },
+      "min15": {
+        "price": 74770.48,
+        "deltaPoints": -16.76,
+        "deltaPercent": -0.022,
+        "filledAt": 1789447545962
+      },
+      "min30": {
+        "price": 74701.21,
+        "deltaPoints": -86.03,
+        "deltaPercent": -0.115,
+        "filledAt": 1789448446097
+      },
+      "min60": {
+        "price": 74636.31,
+        "deltaPoints": -150.93,
+        "deltaPercent": -0.202,
+        "filledAt": 1789450246721
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789446714383",
+    "firedAt": 1789446714383,
+    "firedAtLabel": "15/9/2026, 10:01:54 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74778.94,
+    "entryAtmStrike": 74800,
+    "checkpoints": {
+      "min5": {
+        "price": 74778.39,
+        "deltaPoints": -0.55,
+        "deltaPercent": -0.001,
+        "filledAt": 1789447015697
+      },
+      "min15": {
+        "price": 74770.65,
+        "deltaPoints": -8.29,
+        "deltaPercent": -0.011,
+        "filledAt": 1789447616174
+      },
+      "min30": {
+        "price": 74717.86,
+        "deltaPoints": -61.08,
+        "deltaPercent": -0.082,
+        "filledAt": 1789448517130
+      },
+      "min60": {
+        "price": 74684.29,
+        "deltaPoints": -94.65,
+        "deltaPercent": -0.127,
+        "filledAt": 1789450314411
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789446746272",
+    "firedAt": 1789446746272,
+    "firedAtLabel": "15/9/2026, 10:02:26 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74790.35,
+    "entryAtmStrike": 74800,
+    "checkpoints": {
+      "min5": {
+        "price": 74790.42,
+        "deltaPoints": 0.07,
+        "deltaPercent": 0,
+        "filledAt": 1789447047649
+      },
+      "min15": {
+        "price": 74753.29,
+        "deltaPoints": -37.06,
+        "deltaPercent": -0.05,
+        "filledAt": 1789447648026
+      },
+      "min30": {
+        "price": 74701.57,
+        "deltaPoints": -88.78,
+        "deltaPercent": -0.119,
+        "filledAt": 1789448549137
+      },
+      "min60": {
+        "price": 74691.42,
+        "deltaPoints": -98.93,
+        "deltaPercent": -0.132,
+        "filledAt": 1789450347004
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789446816442",
+    "firedAt": 1789446816442,
+    "firedAtLabel": "15/9/2026, 10:03:36 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74796.89,
+    "entryAtmStrike": 74800,
+    "checkpoints": {
+      "min5": {
+        "price": 74786.93,
+        "deltaPoints": -9.96,
+        "deltaPercent": -0.013,
+        "filledAt": 1789447117978
+      },
+      "min15": {
+        "price": 74798.09,
+        "deltaPoints": 1.2,
+        "deltaPercent": 0.002,
+        "filledAt": 1789447718281
+      },
+      "min30": {
+        "price": 74724.49,
+        "deltaPoints": -72.4,
+        "deltaPercent": -0.097,
+        "filledAt": 1789448619091
+      },
+      "min60": {
+        "price": 74716.31,
+        "deltaPoints": -80.58,
+        "deltaPercent": -0.108,
+        "filledAt": 1789450418356
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789446822731",
+    "firedAt": 1789446822731,
+    "firedAtLabel": "15/9/2026, 10:03:42 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74796.97,
+    "entryAtmStrike": 74800,
+    "checkpoints": {
+      "min5": {
+        "price": 74787.2,
+        "deltaPoints": -9.77,
+        "deltaPercent": -0.013,
+        "filledAt": 1789447124372
+      },
+      "min15": {
+        "price": 74800.31,
+        "deltaPoints": 3.34,
+        "deltaPercent": 0.004,
+        "filledAt": 1789447724662
+      },
+      "min30": {
+        "price": 74721.6,
+        "deltaPoints": -75.37,
+        "deltaPercent": -0.101,
+        "filledAt": 1789448625496
+      },
+      "min60": {
+        "price": 74704.12,
+        "deltaPoints": -92.85,
+        "deltaPercent": -0.124,
+        "filledAt": 1789450424854
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789446934319",
+    "firedAt": 1789446934319,
+    "firedAtLabel": "15/9/2026, 10:05:34 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74798.82,
+    "entryAtmStrike": 74800,
+    "checkpoints": {
+      "min5": {
+        "price": 74745.84,
+        "deltaPoints": -52.98,
+        "deltaPercent": -0.071,
+        "filledAt": 1789447236158
+      },
+      "min15": {
+        "price": 74776.92,
+        "deltaPoints": -21.9,
+        "deltaPercent": -0.029,
+        "filledAt": 1789447836451
+      },
+      "min30": {
+        "price": 74730.07,
+        "deltaPoints": -68.75,
+        "deltaPercent": -0.092,
+        "filledAt": 1789448734659
+      },
+      "min60": {
+        "price": 74703.12,
+        "deltaPoints": -95.7,
+        "deltaPercent": -0.128,
+        "filledAt": 1789450535050
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789446962956",
+    "firedAt": 1789446962956,
+    "firedAtLabel": "15/9/2026, 10:06:02 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74797.25,
+    "entryAtmStrike": 74800,
+    "checkpoints": {
+      "min5": {
+        "price": 74743.66,
+        "deltaPoints": -53.59,
+        "deltaPercent": -0.072,
+        "filledAt": 1789447264977
+      },
+      "min15": {
+        "price": 74755.92,
+        "deltaPoints": -41.33,
+        "deltaPercent": -0.055,
+        "filledAt": 1789447865142
+      },
+      "min30": {
+        "price": 74734.92,
+        "deltaPoints": -62.33,
+        "deltaPercent": -0.083,
+        "filledAt": 1789448763981
+      },
+      "min60": {
+        "price": 74697.9,
+        "deltaPoints": -99.35,
+        "deltaPercent": -0.133,
+        "filledAt": 1789450564505
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789446972489",
+    "firedAt": 1789446972489,
+    "firedAtLabel": "15/9/2026, 10:06:12 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74798.82,
+    "entryAtmStrike": 74800,
+    "checkpoints": {
+      "min5": {
+        "price": 74762.83,
+        "deltaPoints": -35.99,
+        "deltaPercent": -0.048,
+        "filledAt": 1789447274536
+      },
+      "min15": {
+        "price": 74746.04,
+        "deltaPoints": -52.78,
+        "deltaPercent": -0.071,
+        "filledAt": 1789447874722
+      },
+      "min30": {
+        "price": 74737.17,
+        "deltaPoints": -61.65,
+        "deltaPercent": -0.082,
+        "filledAt": 1789448773805
+      },
+      "min60": {
+        "price": 74679.87,
+        "deltaPoints": -118.95,
+        "deltaPercent": -0.159,
+        "filledAt": 1789450574179
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789446983838",
+    "firedAt": 1789446983838,
+    "firedAtLabel": "15/9/2026, 10:06:23 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74797.33,
+    "entryAtmStrike": 74800,
+    "checkpoints": {
+      "min5": {
+        "price": 74771.12,
+        "deltaPoints": -26.21,
+        "deltaPercent": -0.035,
+        "filledAt": 1789447284125
+      },
+      "min15": {
+        "price": 74735.16,
+        "deltaPoints": -62.17,
+        "deltaPercent": -0.083,
+        "filledAt": 1789447884281
+      },
+      "min30": {
+        "price": 74738.7,
+        "deltaPoints": -58.63,
+        "deltaPercent": -0.078,
+        "filledAt": 1789448786762
+      },
+      "min60": {
+        "price": 74689.97,
+        "deltaPoints": -107.36,
+        "deltaPercent": -0.144,
+        "filledAt": 1789450587091
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789447108270",
+    "firedAt": 1789447108270,
+    "firedAtLabel": "15/9/2026, 10:08:28 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74797.12,
+    "entryAtmStrike": 74800,
+    "checkpoints": {
+      "min5": {
+        "price": 74815.99,
+        "deltaPoints": 18.87,
+        "deltaPercent": 0.025,
+        "filledAt": 1789447408576
+      },
+      "min15": {
+        "price": 74754.55,
+        "deltaPoints": -42.57,
+        "deltaPercent": -0.057,
+        "filledAt": 1789448008858
+      },
+      "min30": {
+        "price": 74754.84,
+        "deltaPoints": -42.28,
+        "deltaPercent": -0.057,
+        "filledAt": 1789448909951
+      },
+      "min60": {
+        "price": 74632.62,
+        "deltaPoints": -164.5,
+        "deltaPercent": -0.22,
+        "filledAt": 1789450710511
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789447188413",
+    "firedAt": 1789447188413,
+    "firedAtLabel": "15/9/2026, 10:09:48 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74761.96,
+    "entryAtmStrike": 74800,
+    "checkpoints": {
+      "min5": {
+        "price": 74800.71,
+        "deltaPoints": 38.75,
+        "deltaPercent": 0.052,
+        "filledAt": 1789447491464
+      },
+      "min15": {
+        "price": 74772.96,
+        "deltaPoints": 11,
+        "deltaPercent": 0.015,
+        "filledAt": 1789448088536
+      },
+      "min30": {
+        "price": 74747.12,
+        "deltaPoints": -14.84,
+        "deltaPercent": -0.02,
+        "filledAt": 1789448991188
+      },
+      "min60": {
+        "price": 74640.68,
+        "deltaPoints": -121.28,
+        "deltaPercent": -0.162,
+        "filledAt": 1789450791306
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789447242614",
+    "firedAt": 1789447242614,
+    "firedAtLabel": "15/9/2026, 10:10:42 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74751.45,
+    "entryAtmStrike": 74800,
+    "checkpoints": {
+      "min5": {
+        "price": 74774.95,
+        "deltaPoints": 23.5,
+        "deltaPercent": 0.031,
+        "filledAt": 1789447542718
+      },
+      "min15": {
+        "price": 74758.73,
+        "deltaPoints": 7.28,
+        "deltaPercent": 0.01,
+        "filledAt": 1789448142788
+      },
+      "min30": {
+        "price": 74749.66,
+        "deltaPoints": -1.79,
+        "deltaPercent": -0.002,
+        "filledAt": 1789449043121
+      },
+      "min60": {
+        "price": 74634.8,
+        "deltaPoints": -116.65,
+        "deltaPercent": -0.156,
+        "filledAt": 1789450843306
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789447271290",
+    "firedAt": 1789447271290,
+    "firedAtLabel": "15/9/2026, 10:11:11 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74754.5,
+    "entryAtmStrike": 74800,
+    "checkpoints": {
+      "min5": {
+        "price": 74770.79,
+        "deltaPoints": 16.29,
+        "deltaPercent": 0.022,
+        "filledAt": 1789447571519
+      },
+      "min15": {
+        "price": 74759.31,
+        "deltaPoints": 4.81,
+        "deltaPercent": 0.006,
+        "filledAt": 1789448171455
+      },
+      "min30": {
+        "price": 74725.08,
+        "deltaPoints": -29.42,
+        "deltaPercent": -0.039,
+        "filledAt": 1789449072246
+      },
+      "min60": {
+        "price": 74644.38,
+        "deltaPoints": -110.12,
+        "deltaPercent": -0.147,
+        "filledAt": 1789450871999
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789447341527",
+    "firedAt": 1789447341527,
+    "firedAtLabel": "15/9/2026, 10:12:21 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74799.81,
+    "entryAtmStrike": 74800,
+    "checkpoints": {
+      "min5": {
+        "price": 74759.72,
+        "deltaPoints": -40.09,
+        "deltaPercent": -0.054,
+        "filledAt": 1789447641579
+      },
+      "min15": {
+        "price": 74776.82,
+        "deltaPoints": -22.99,
+        "deltaPercent": -0.031,
+        "filledAt": 1789448241575
+      },
+      "min30": {
+        "price": 74731.21,
+        "deltaPoints": -68.6,
+        "deltaPercent": -0.092,
+        "filledAt": 1789449143643
+      },
+      "min60": {
+        "price": 74671.45,
+        "deltaPoints": -128.36,
+        "deltaPercent": -0.172,
+        "filledAt": 1789450942175
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789447363829",
+    "firedAt": 1789447363829,
+    "firedAtLabel": "15/9/2026, 10:12:43 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74793.48,
+    "entryAtmStrike": 74800,
+    "checkpoints": {
+      "min5": {
+        "price": 74777.32,
+        "deltaPoints": -16.16,
+        "deltaPercent": -0.022,
+        "filledAt": 1789447664068
+      },
+      "min15": {
+        "price": 74775.68,
+        "deltaPoints": -17.8,
+        "deltaPercent": -0.024,
+        "filledAt": 1789448263973
+      },
+      "min30": {
+        "price": 74724.31,
+        "deltaPoints": -69.17,
+        "deltaPercent": -0.092,
+        "filledAt": 1789449166248
+      },
+      "min60": {
+        "price": 74665.15,
+        "deltaPoints": -128.33,
+        "deltaPercent": -0.172,
+        "filledAt": 1789450964557
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789447478717",
+    "firedAt": 1789447478717,
+    "firedAtLabel": "15/9/2026, 10:14:38 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74799.29,
+    "entryAtmStrike": 74800,
+    "checkpoints": {
+      "min5": {
+        "price": 74803.17,
+        "deltaPoints": 3.88,
+        "deltaPercent": 0.005,
+        "filledAt": 1789447778946
+      },
+      "min15": {
+        "price": 74730.71,
+        "deltaPoints": -68.58,
+        "deltaPercent": -0.092,
+        "filledAt": 1789448378730
+      },
+      "min30": {
+        "price": 74697.43,
+        "deltaPoints": -101.86,
+        "deltaPercent": -0.136,
+        "filledAt": 1789449279222
+      },
+      "min60": {
+        "price": 74677.01,
+        "deltaPoints": -122.28,
+        "deltaPercent": -0.163,
+        "filledAt": 1789451082008
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789447501103",
+    "firedAt": 1789447501103,
+    "firedAtLabel": "15/9/2026, 10:15:01 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74790.63,
+    "entryAtmStrike": 74800,
+    "checkpoints": {
+      "min5": {
+        "price": 74803.33,
+        "deltaPoints": 12.7,
+        "deltaPercent": 0.017,
+        "filledAt": 1789447801254
+      },
+      "min15": {
+        "price": 74715.58,
+        "deltaPoints": -75.05,
+        "deltaPercent": -0.1,
+        "filledAt": 1789448404169
+      },
+      "min30": {
+        "price": 74692.95,
+        "deltaPoints": -97.68,
+        "deltaPercent": -0.131,
+        "filledAt": 1789449301466
+      },
+      "min60": {
+        "price": 74667.66,
+        "deltaPoints": -122.97,
+        "deltaPercent": -0.164,
+        "filledAt": 1789451101166
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789447727901",
+    "firedAt": 1789447727901,
+    "firedAtLabel": "15/9/2026, 10:18:47 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74797.77,
+    "entryAtmStrike": 74800,
+    "checkpoints": {
+      "min5": {
+        "price": 74773.47,
+        "deltaPoints": -24.3,
+        "deltaPercent": -0.032,
+        "filledAt": 1789448028088
+      },
+      "min15": {
+        "price": 74721.76,
+        "deltaPoints": -76.01,
+        "deltaPercent": -0.102,
+        "filledAt": 1789448628632
+      },
+      "min30": {
+        "price": 74678.05,
+        "deltaPoints": -119.72,
+        "deltaPercent": -0.16,
+        "filledAt": 1789449530232
+      },
+      "min60": {
+        "price": 74635.41,
+        "deltaPoints": -162.36,
+        "deltaPercent": -0.217,
+        "filledAt": 1789451328874
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789447750205",
+    "firedAt": 1789447750205,
+    "firedAtLabel": "15/9/2026, 10:19:10 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74797.86,
+    "entryAtmStrike": 74800,
+    "checkpoints": {
+      "min5": {
+        "price": 74767.66,
+        "deltaPoints": -30.2,
+        "deltaPercent": -0.04,
+        "filledAt": 1789448050332
+      },
+      "min15": {
+        "price": 74721.8,
+        "deltaPoints": -76.06,
+        "deltaPercent": -0.102,
+        "filledAt": 1789448651102
+      },
+      "min30": {
+        "price": 74672.55,
+        "deltaPoints": -125.31,
+        "deltaPercent": -0.168,
+        "filledAt": 1789449552888
+      },
+      "min60": {
+        "price": 74624.15,
+        "deltaPoints": -173.71,
+        "deltaPercent": -0.232,
+        "filledAt": 1789451351270
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789447782186",
+    "firedAt": 1789447782186,
+    "firedAtLabel": "15/9/2026, 10:19:42 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74797.2,
+    "entryAtmStrike": 74800,
+    "checkpoints": {
+      "min5": {
+        "price": 74770.13,
+        "deltaPoints": -27.07,
+        "deltaPercent": -0.036,
+        "filledAt": 1789448085321
+      },
+      "min15": {
+        "price": 74720.95,
+        "deltaPoints": -76.25,
+        "deltaPercent": -0.102,
+        "filledAt": 1789448682932
+      },
+      "min30": {
+        "price": 74657.02,
+        "deltaPoints": -140.18,
+        "deltaPercent": -0.187,
+        "filledAt": 1789449585210
+      },
+      "min60": {
+        "price": 74617.45,
+        "deltaPoints": -179.75,
+        "deltaPercent": -0.24,
+        "filledAt": 1789451383017
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789447788577",
+    "firedAt": 1789447788577,
+    "firedAtLabel": "15/9/2026, 10:19:48 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74799.89,
+    "entryAtmStrike": 74800,
+    "checkpoints": {
+      "min5": {
+        "price": 74776.14,
+        "deltaPoints": -23.75,
+        "deltaPercent": -0.032,
+        "filledAt": 1789448091648
+      },
+      "min15": {
+        "price": 74717.84,
+        "deltaPoints": -82.05,
+        "deltaPercent": -0.11,
+        "filledAt": 1789448689316
+      },
+      "min30": {
+        "price": 74656.75,
+        "deltaPoints": -143.14,
+        "deltaPercent": -0.191,
+        "filledAt": 1789449591718
+      },
+      "min60": {
+        "price": 74612.62,
+        "deltaPoints": -187.27,
+        "deltaPercent": -0.25,
+        "filledAt": 1789451389420
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789447804548",
+    "firedAt": 1789447804548,
+    "firedAtLabel": "15/9/2026, 10:20:04 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74799.87,
+    "entryAtmStrike": 74800,
+    "checkpoints": {
+      "min5": {
+        "price": 74771.18,
+        "deltaPoints": -28.69,
+        "deltaPercent": -0.038,
+        "filledAt": 1789448104614
+      },
+      "min15": {
+        "price": 74718.2,
+        "deltaPoints": -81.67,
+        "deltaPercent": -0.109,
+        "filledAt": 1789448705240
+      },
+      "min30": {
+        "price": 74644.36,
+        "deltaPoints": -155.51,
+        "deltaPercent": -0.208,
+        "filledAt": 1789449604668
+      },
+      "min60": {
+        "price": 74621.14,
+        "deltaPoints": -178.73,
+        "deltaPercent": -0.239,
+        "filledAt": 1789451405377
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789447817287",
+    "firedAt": 1789447817287,
+    "firedAtLabel": "15/9/2026, 10:20:17 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74799.78,
+    "entryAtmStrike": 74800,
+    "checkpoints": {
+      "min5": {
+        "price": 74765.04,
+        "deltaPoints": -34.74,
+        "deltaPercent": -0.046,
+        "filledAt": 1789448120439
+      },
+      "min15": {
+        "price": 74722.99,
+        "deltaPoints": -76.79,
+        "deltaPercent": -0.103,
+        "filledAt": 1789448718008
+      },
+      "min30": {
+        "price": 74655.98,
+        "deltaPoints": -143.8,
+        "deltaPercent": -0.192,
+        "filledAt": 1789449617684
+      },
+      "min60": {
+        "price": 74616.69,
+        "deltaPoints": -183.09,
+        "deltaPercent": -0.245,
+        "filledAt": 1789451418055
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789447916111",
+    "firedAt": 1789447916111,
+    "firedAtLabel": "15/9/2026, 10:21:56 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74753.38,
+    "entryAtmStrike": 74800,
+    "checkpoints": {
+      "min5": {
+        "price": 74781.3,
+        "deltaPoints": 27.92,
+        "deltaPercent": 0.037,
+        "filledAt": 1789448216181
+      },
+      "min15": {
+        "price": 74755.47,
+        "deltaPoints": 2.09,
+        "deltaPercent": 0.003,
+        "filledAt": 1789448819237
+      },
+      "min30": {
+        "price": 74629.08,
+        "deltaPoints": -124.3,
+        "deltaPercent": -0.166,
+        "filledAt": 1789449717963
+      },
+      "min60": {
+        "price": 74610.56,
+        "deltaPoints": -142.82,
+        "deltaPercent": -0.191,
+        "filledAt": 1789451516933
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789448008855",
+    "firedAt": 1789448008855,
+    "firedAtLabel": "15/9/2026, 10:23:28 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74754.55,
+    "entryAtmStrike": 74800,
+    "checkpoints": {
+      "min5": {
+        "price": 74749.45,
+        "deltaPoints": -5.1,
+        "deltaPercent": -0.007,
+        "filledAt": 1789448311779
+      },
+      "min15": {
+        "price": 74754.84,
+        "deltaPoints": 0.29,
+        "deltaPercent": 0,
+        "filledAt": 1789448909951
+      },
+      "min30": {
+        "price": 74628.26,
+        "deltaPoints": -126.29,
+        "deltaPercent": -0.169,
+        "filledAt": 1789449811846
+      },
+      "min60": {
+        "price": 74635.4,
+        "deltaPoints": -119.15,
+        "deltaPercent": -0.159,
+        "filledAt": 1789451609374
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789448442865",
+    "firedAt": 1789448442865,
+    "firedAtLabel": "15/9/2026, 10:30:42 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74699.97,
+    "entryAtmStrike": 74700,
+    "checkpoints": {
+      "min5": {
+        "price": 74728.02,
+        "deltaPoints": 28.05,
+        "deltaPercent": 0.038,
+        "filledAt": 1789448744298
+      },
+      "min15": {
+        "price": 74688.03,
+        "deltaPoints": -11.94,
+        "deltaPercent": -0.016,
+        "filledAt": 1789449342962
+      },
+      "min30": {
+        "price": 74637.81,
+        "deltaPoints": -62.16,
+        "deltaPercent": -0.083,
+        "filledAt": 1789450243527
+      },
+      "min60": {
+        "price": 74593.2,
+        "deltaPoints": -106.77,
+        "deltaPercent": -0.143,
+        "filledAt": 1789452043279
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789448809616",
+    "firedAt": 1789448809616,
+    "firedAtLabel": "15/9/2026, 10:36:49 am",
+    "direction": "bearish",
+    "confidence": 83,
+    "entrySpotPrice": 74753.08,
+    "entryAtmStrike": 74800,
+    "checkpoints": {
+      "min5": {
+        "price": 74745.42,
+        "deltaPoints": -7.66,
+        "deltaPercent": -0.01,
+        "filledAt": 1789449111272
+      },
+      "min15": {
+        "price": 74636.29,
+        "deltaPoints": -116.79,
+        "deltaPercent": -0.156,
+        "filledAt": 1789449711495
+      },
+      "min30": {
+        "price": 74686.69,
+        "deltaPoints": -66.39,
+        "deltaPercent": -0.089,
+        "filledAt": 1789450609822
+      },
+      "min60": {
+        "price": 74661.96,
+        "deltaPoints": -91.12,
+        "deltaPercent": -0.122,
+        "filledAt": 1789452409852
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789448874443",
+    "firedAt": 1789448874443,
+    "firedAtLabel": "15/9/2026, 10:37:54 am",
+    "direction": "bearish",
+    "confidence": 83,
+    "entrySpotPrice": 74750.8,
+    "entryAtmStrike": 74800,
+    "checkpoints": {
+      "min5": {
+        "price": 74730.21,
+        "deltaPoints": -20.59,
+        "deltaPercent": -0.028,
+        "filledAt": 1789449175976
+      },
+      "min15": {
+        "price": 74625.49,
+        "deltaPoints": -125.31,
+        "deltaPercent": -0.168,
+        "filledAt": 1789449776213
+      },
+      "min30": {
+        "price": 74645.95,
+        "deltaPoints": -104.85,
+        "deltaPercent": -0.14,
+        "filledAt": 1789450674643
+      },
+      "min60": {
+        "price": 74661.81,
+        "deltaPoints": -88.99,
+        "deltaPercent": -0.119,
+        "filledAt": 1789452476943
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789448880908",
+    "firedAt": 1789448880908,
+    "firedAtLabel": "15/9/2026, 10:38:00 am",
+    "direction": "bearish",
+    "confidence": 83,
+    "entrySpotPrice": 74755.82,
+    "entryAtmStrike": 74800,
+    "checkpoints": {
+      "min5": {
+        "price": 74730.29,
+        "deltaPoints": -25.53,
+        "deltaPercent": -0.034,
+        "filledAt": 1789449182437
+      },
+      "min15": {
+        "price": 74626.29,
+        "deltaPoints": -129.53,
+        "deltaPercent": -0.173,
+        "filledAt": 1789449782830
+      },
+      "min30": {
+        "price": 74645.37,
+        "deltaPoints": -110.45,
+        "deltaPercent": -0.148,
+        "filledAt": 1789450681211
+      },
+      "min60": {
+        "price": 74663.81,
+        "deltaPoints": -92.01,
+        "deltaPercent": -0.123,
+        "filledAt": 1789452483433
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789448903441",
+    "firedAt": 1789448903441,
+    "firedAtLabel": "15/9/2026, 10:38:23 am",
+    "direction": "bearish",
+    "confidence": 83,
+    "entrySpotPrice": 74755.83,
+    "entryAtmStrike": 74800,
+    "checkpoints": {
+      "min5": {
+        "price": 74710.46,
+        "deltaPoints": -45.37,
+        "deltaPercent": -0.061,
+        "filledAt": 1789449205035
+      },
+      "min15": {
+        "price": 74624.76,
+        "deltaPoints": -131.07,
+        "deltaPercent": -0.175,
+        "filledAt": 1789449805370
+      },
+      "min30": {
+        "price": 74643.67,
+        "deltaPoints": -112.16,
+        "deltaPercent": -0.15,
+        "filledAt": 1789450704014
+      },
+      "min60": {
+        "price": 74680.96,
+        "deltaPoints": -74.87,
+        "deltaPercent": -0.1,
+        "filledAt": 1789452505848
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789448929529",
+    "firedAt": 1789448929529,
+    "firedAtLabel": "15/9/2026, 10:38:49 am",
+    "direction": "bearish",
+    "confidence": 83,
+    "entrySpotPrice": 74750.68,
+    "entryAtmStrike": 74800,
+    "checkpoints": {
+      "min5": {
+        "price": 74689.22,
+        "deltaPoints": -61.46,
+        "deltaPercent": -0.082,
+        "filledAt": 1789449231169
+      },
+      "min15": {
+        "price": 74622.08,
+        "deltaPoints": -128.6,
+        "deltaPercent": -0.172,
+        "filledAt": 1789449831216
+      },
+      "min30": {
+        "price": 74641.02,
+        "deltaPoints": -109.66,
+        "deltaPercent": -0.147,
+        "filledAt": 1789450729790
+      },
+      "min60": {
+        "price": 74688.74,
+        "deltaPoints": -61.94,
+        "deltaPercent": -0.083,
+        "filledAt": 1789452531511
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789448978041",
+    "firedAt": 1789448978041,
+    "firedAtLabel": "15/9/2026, 10:39:38 am",
+    "direction": "bearish",
+    "confidence": 83,
+    "entrySpotPrice": 74751.59,
+    "entryAtmStrike": 74800,
+    "checkpoints": {
+      "min5": {
+        "price": 74697.43,
+        "deltaPoints": -54.16,
+        "deltaPercent": -0.072,
+        "filledAt": 1789449279222
+      },
+      "min15": {
+        "price": 74642.62,
+        "deltaPoints": -108.97,
+        "deltaPercent": -0.146,
+        "filledAt": 1789449879825
+      },
+      "min30": {
+        "price": 74639.1,
+        "deltaPoints": -112.49,
+        "deltaPercent": -0.15,
+        "filledAt": 1789450778301
+      },
+      "min60": {
+        "price": 74689.04,
+        "deltaPoints": -62.55,
+        "deltaPercent": -0.084,
+        "filledAt": 1789452579781
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789448994423",
+    "firedAt": 1789448994423,
+    "firedAtLabel": "15/9/2026, 10:39:54 am",
+    "direction": "bearish",
+    "confidence": 83,
+    "entrySpotPrice": 74750.28,
+    "entryAtmStrike": 74800,
+    "checkpoints": {
+      "min5": {
+        "price": 74689,
+        "deltaPoints": -61.28,
+        "deltaPercent": -0.082,
+        "filledAt": 1789449295068
+      },
+      "min15": {
+        "price": 74630.77,
+        "deltaPoints": -119.51,
+        "deltaPercent": -0.16,
+        "filledAt": 1789449896011
+      },
+      "min30": {
+        "price": 74638.32,
+        "deltaPoints": -111.96,
+        "deltaPercent": -0.15,
+        "filledAt": 1789450794462
+      },
+      "min60": {
+        "price": 74688.63,
+        "deltaPoints": -61.65,
+        "deltaPercent": -0.082,
+        "filledAt": 1789452595623
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789449323769",
+    "firedAt": 1789449323769,
+    "firedAtLabel": "15/9/2026, 10:45:23 am",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74689.85,
+    "entryAtmStrike": 74700,
+    "checkpoints": {
+      "min5": {
+        "price": 74658.34,
+        "deltaPoints": -31.51,
+        "deltaPercent": -0.042,
+        "filledAt": 1789449624021
+      },
+      "min15": {
+        "price": 74648.48,
+        "deltaPoints": -41.37,
+        "deltaPercent": -0.055,
+        "filledAt": 1789450224096
+      },
+      "min30": {
+        "price": 74690.39,
+        "deltaPoints": 0.54,
+        "deltaPercent": 0.001,
+        "filledAt": 1789451124278
+      },
+      "min60": {
+        "price": 74668.96,
+        "deltaPoints": -20.89,
+        "deltaPercent": -0.028,
+        "filledAt": 1789452924254
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789449611232",
+    "firedAt": 1789449611232,
+    "firedAtLabel": "15/9/2026, 10:50:11 am",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74651.58,
+    "entryAtmStrike": 74700,
+    "checkpoints": {
+      "min5": {
+        "price": 74628.89,
+        "deltaPoints": -22.69,
+        "deltaPercent": -0.03,
+        "filledAt": 1789449912084
+      },
+      "min15": {
+        "price": 74707.72,
+        "deltaPoints": 56.14,
+        "deltaPercent": 0.075,
+        "filledAt": 1789450512446
+      },
+      "min30": {
+        "price": 74611.18,
+        "deltaPoints": -40.4,
+        "deltaPercent": -0.054,
+        "filledAt": 1789451411690
+      },
+      "min60": {
+        "price": 74643.07,
+        "deltaPoints": -8.51,
+        "deltaPercent": -0.011,
+        "filledAt": 1789453214009
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789450298328",
+    "firedAt": 1789450298328,
+    "firedAtLabel": "15/9/2026, 11:01:38 am",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74650.83,
+    "entryAtmStrike": 74700,
+    "checkpoints": {
+      "min5": {
+        "price": 74683.51,
+        "deltaPoints": 32.68,
+        "deltaPercent": 0.044,
+        "filledAt": 1789450600019
+      },
+      "min15": {
+        "price": 74671.65,
+        "deltaPoints": 20.82,
+        "deltaPercent": 0.028,
+        "filledAt": 1789451200923
+      },
+      "min30": {
+        "price": 74603.24,
+        "deltaPoints": -47.59,
+        "deltaPercent": -0.064,
+        "filledAt": 1789452100689
+      },
+      "min60": {
+        "price": 74700.15,
+        "deltaPoints": 49.32,
+        "deltaPercent": 0.066,
+        "filledAt": 1789454000985
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789450363229",
+    "firedAt": 1789450363229,
+    "firedAtLabel": "15/9/2026, 11:02:43 am",
+    "direction": "bearish",
+    "confidence": 71,
+    "entrySpotPrice": 74700.87,
+    "entryAtmStrike": 74700,
+    "checkpoints": {
+      "min5": {
+        "price": 74653.27,
+        "deltaPoints": -47.6,
+        "deltaPercent": -0.064,
+        "filledAt": 1789450664904
+      },
+      "min15": {
+        "price": 74643.79,
+        "deltaPoints": -57.08,
+        "deltaPercent": -0.076,
+        "filledAt": 1789451264893
+      },
+      "min30": {
+        "price": 74618.72,
+        "deltaPoints": -82.15,
+        "deltaPercent": -0.11,
+        "filledAt": 1789452164467
+      },
+      "min60": {
+        "price": 74700.15,
+        "deltaPoints": -0.72,
+        "deltaPercent": -0.001,
+        "filledAt": 1789454000985
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789450398999",
+    "firedAt": 1789450398999,
+    "firedAtLabel": "15/9/2026, 11:03:18 am",
+    "direction": "bearish",
+    "confidence": 71,
+    "entrySpotPrice": 74721.46,
+    "entryAtmStrike": 74700,
+    "checkpoints": {
+      "min5": {
+        "price": 74640.4,
+        "deltaPoints": -81.06,
+        "deltaPercent": -0.108,
+        "filledAt": 1789450700688
+      },
+      "min15": {
+        "price": 74637.79,
+        "deltaPoints": -83.67,
+        "deltaPercent": -0.112,
+        "filledAt": 1789451300163
+      },
+      "min30": {
+        "price": 74610.39,
+        "deltaPoints": -111.07,
+        "deltaPercent": -0.149,
+        "filledAt": 1789452199574
+      },
+      "min60": {
+        "price": 74700.15,
+        "deltaPoints": -21.31,
+        "deltaPercent": -0.029,
+        "filledAt": 1789454000985
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789450405361",
+    "firedAt": 1789450405361,
+    "firedAtLabel": "15/9/2026, 11:03:25 am",
+    "direction": "bearish",
+    "confidence": 71,
+    "entrySpotPrice": 74716.67,
+    "entryAtmStrike": 74700,
+    "checkpoints": {
+      "min5": {
+        "price": 74635.06,
+        "deltaPoints": -81.61,
+        "deltaPercent": -0.109,
+        "filledAt": 1789450707202
+      },
+      "min15": {
+        "price": 74641.52,
+        "deltaPoints": -75.15,
+        "deltaPercent": -0.101,
+        "filledAt": 1789451306513
+      },
+      "min30": {
+        "price": 74624.38,
+        "deltaPoints": -92.29,
+        "deltaPercent": -0.124,
+        "filledAt": 1789452205995
+      },
+      "min60": {
+        "price": 74702.48,
+        "deltaPoints": -14.19,
+        "deltaPercent": -0.019,
+        "filledAt": 1789454008160
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789450437820",
+    "firedAt": 1789450437820,
+    "firedAtLabel": "15/9/2026, 11:03:57 am",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74699.65,
+    "entryAtmStrike": 74700,
+    "checkpoints": {
+      "min5": {
+        "price": 74641.84,
+        "deltaPoints": -57.81,
+        "deltaPercent": -0.077,
+        "filledAt": 1789450739495
+      },
+      "min15": {
+        "price": 74636.37,
+        "deltaPoints": -63.28,
+        "deltaPercent": -0.085,
+        "filledAt": 1789451338363
+      },
+      "min30": {
+        "price": 74619.31,
+        "deltaPoints": -80.34,
+        "deltaPercent": -0.108,
+        "filledAt": 1789452237822
+      },
+      "min60": {
+        "price": 74710.3,
+        "deltaPoints": 10.65,
+        "deltaPercent": 0.014,
+        "filledAt": 1789454040455
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789450454101",
+    "firedAt": 1789450454101,
+    "firedAtLabel": "15/9/2026, 11:04:14 am",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74697.77,
+    "entryAtmStrike": 74700,
+    "checkpoints": {
+      "min5": {
+        "price": 74642.84,
+        "deltaPoints": -54.93,
+        "deltaPercent": -0.074,
+        "filledAt": 1789450755662
+      },
+      "min15": {
+        "price": 74623.21,
+        "deltaPoints": -74.56,
+        "deltaPercent": -0.1,
+        "filledAt": 1789451354384
+      },
+      "min30": {
+        "price": 74632.48,
+        "deltaPoints": -65.29,
+        "deltaPercent": -0.087,
+        "filledAt": 1789452257109
+      },
+      "min60": {
+        "price": 74708.45,
+        "deltaPoints": 10.68,
+        "deltaPercent": 0.014,
+        "filledAt": 1789454055976
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789450489702",
+    "firedAt": 1789450489702,
+    "firedAtLabel": "15/9/2026, 11:04:49 am",
+    "direction": "bearish",
+    "confidence": 71,
+    "entrySpotPrice": 74706.78,
+    "entryAtmStrike": 74700,
+    "checkpoints": {
+      "min5": {
+        "price": 74640.68,
+        "deltaPoints": -66.1,
+        "deltaPercent": -0.088,
+        "filledAt": 1789450791306
+      },
+      "min15": {
+        "price": 74617.49,
+        "deltaPoints": -89.29,
+        "deltaPercent": -0.12,
+        "filledAt": 1789451392542
+      },
+      "min30": {
+        "price": 74628.45,
+        "deltaPoints": -78.33,
+        "deltaPercent": -0.105,
+        "filledAt": 1789452292134
+      },
+      "min60": {
+        "price": 74708.78,
+        "deltaPoints": 2,
+        "deltaPercent": 0.003,
+        "filledAt": 1789454090224
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789450551328",
+    "firedAt": 1789450551328,
+    "firedAtLabel": "15/9/2026, 11:05:51 am",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74698.49,
+    "entryAtmStrike": 74700,
+    "checkpoints": {
+      "min5": {
+        "price": 74633.51,
+        "deltaPoints": -64.98,
+        "deltaPercent": -0.087,
+        "filledAt": 1789450853067
+      },
+      "min15": {
+        "price": 74600.19,
+        "deltaPoints": -98.3,
+        "deltaPercent": -0.132,
+        "filledAt": 1789451453200
+      },
+      "min30": {
+        "price": 74634.11,
+        "deltaPoints": -64.38,
+        "deltaPercent": -0.086,
+        "filledAt": 1789452352693
+      },
+      "min60": {
+        "price": 74721.1,
+        "deltaPoints": 22.61,
+        "deltaPercent": 0.03,
+        "filledAt": 1789454151574
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789450745917",
+    "firedAt": 1789450745917,
+    "firedAtLabel": "15/9/2026, 11:09:05 am",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74650.8,
+    "entryAtmStrike": 74700,
+    "checkpoints": {
+      "min5": {
+        "price": 74663.4,
+        "deltaPoints": 12.6,
+        "deltaPercent": 0.017,
+        "filledAt": 1789451048688
+      },
+      "min15": {
+        "price": 74640.68,
+        "deltaPoints": -10.12,
+        "deltaPercent": -0.014,
+        "filledAt": 1789451647618
+      },
+      "min30": {
+        "price": 74687.51,
+        "deltaPoints": 36.71,
+        "deltaPercent": 0.049,
+        "filledAt": 1789452547896
+      },
+      "min60": {
+        "price": 74704.89,
+        "deltaPoints": 54.09,
+        "deltaPercent": 0.072,
+        "filledAt": 1789454348346
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789450875118",
+    "firedAt": 1789450875118,
+    "firedAtLabel": "15/9/2026, 11:11:15 am",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74650.01,
+    "entryAtmStrike": 74700,
+    "checkpoints": {
+      "min5": {
+        "price": 74695.12,
+        "deltaPoints": 45.11,
+        "deltaPercent": 0.06,
+        "filledAt": 1789451175280
+      },
+      "min15": {
+        "price": 74612.37,
+        "deltaPoints": -37.64,
+        "deltaPercent": -0.05,
+        "filledAt": 1789451775314
+      },
+      "min30": {
+        "price": 74671.24,
+        "deltaPoints": 21.23,
+        "deltaPercent": 0.028,
+        "filledAt": 1789452675288
+      },
+      "min60": {
+        "price": 74696.24,
+        "deltaPoints": 46.23,
+        "deltaPercent": 0.062,
+        "filledAt": 1789454477854
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789451021797",
+    "firedAt": 1789451021797,
+    "firedAtLabel": "15/9/2026, 11:13:41 am",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74652.39,
+    "entryAtmStrike": 74700,
+    "checkpoints": {
+      "min5": {
+        "price": 74640.17,
+        "deltaPoints": -12.22,
+        "deltaPercent": -0.016,
+        "filledAt": 1789451322472
+      },
+      "min15": {
+        "price": 74597.97,
+        "deltaPoints": -54.42,
+        "deltaPercent": -0.073,
+        "filledAt": 1789451921876
+      },
+      "min30": {
+        "price": 74659.37,
+        "deltaPoints": 6.98,
+        "deltaPercent": 0.009,
+        "filledAt": 1789452821997
+      },
+      "min60": {
+        "price": 74667.22,
+        "deltaPoints": 14.83,
+        "deltaPercent": 0.02,
+        "filledAt": 1789454621910
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789451038153",
+    "firedAt": 1789451038153,
+    "firedAtLabel": "15/9/2026, 11:13:58 am",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74650.34,
+    "entryAtmStrike": 74700,
+    "checkpoints": {
+      "min5": {
+        "price": 74636.37,
+        "deltaPoints": -13.97,
+        "deltaPercent": -0.019,
+        "filledAt": 1789451338363
+      },
+      "min15": {
+        "price": 74585.86,
+        "deltaPoints": -64.48,
+        "deltaPercent": -0.086,
+        "filledAt": 1789451941033
+      },
+      "min30": {
+        "price": 74666.16,
+        "deltaPoints": 15.82,
+        "deltaPercent": 0.021,
+        "filledAt": 1789452841057
+      },
+      "min60": {
+        "price": 74666.74,
+        "deltaPoints": 16.4,
+        "deltaPercent": 0.022,
+        "filledAt": 1789454640994
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789451159406",
+    "firedAt": 1789451159406,
+    "firedAtLabel": "15/9/2026, 11:15:59 am",
+    "direction": "bearish",
+    "confidence": 83,
+    "entrySpotPrice": 74699.98,
+    "entryAtmStrike": 74700,
+    "checkpoints": {
+      "min5": {
+        "price": 74598.98,
+        "deltaPoints": -101,
+        "deltaPercent": -0.135,
+        "filledAt": 1789451459604
+      },
+      "min15": {
+        "price": 74587.73,
+        "deltaPoints": -112.25,
+        "deltaPercent": -0.15,
+        "filledAt": 1789452062428
+      },
+      "min30": {
+        "price": 74676.56,
+        "deltaPoints": -23.42,
+        "deltaPercent": -0.031,
+        "filledAt": 1789452962173
+      },
+      "min60": {
+        "price": 74658.05,
+        "deltaPoints": -41.93,
+        "deltaPercent": -0.056,
+        "filledAt": 1789454762158
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789451175276",
+    "firedAt": 1789451175276,
+    "firedAtLabel": "15/9/2026, 11:16:15 am",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74695.12,
+    "entryAtmStrike": 74700,
+    "checkpoints": {
+      "min5": {
+        "price": 74601.75,
+        "deltaPoints": -93.37,
+        "deltaPercent": -0.125,
+        "filledAt": 1789451475468
+      },
+      "min15": {
+        "price": 74597.69,
+        "deltaPoints": -97.43,
+        "deltaPercent": -0.13,
+        "filledAt": 1789452078381
+      },
+      "min30": {
+        "price": 74678.57,
+        "deltaPoints": -16.55,
+        "deltaPercent": -0.022,
+        "filledAt": 1789452978185
+      },
+      "min60": {
+        "price": 74662.7,
+        "deltaPoints": -32.42,
+        "deltaPercent": -0.043,
+        "filledAt": 1789454778086
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789451226655",
+    "firedAt": 1789451226655,
+    "firedAtLabel": "15/9/2026, 11:17:06 am",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74652.45,
+    "entryAtmStrike": 74700,
+    "checkpoints": {
+      "min5": {
+        "price": 74619.36,
+        "deltaPoints": -33.09,
+        "deltaPercent": -0.044,
+        "filledAt": 1789451529699
+      },
+      "min15": {
+        "price": 74598.51,
+        "deltaPoints": -53.94,
+        "deltaPercent": -0.072,
+        "filledAt": 1789452129498
+      },
+      "min30": {
+        "price": 74666.8,
+        "deltaPoints": 14.35,
+        "deltaPercent": 0.019,
+        "filledAt": 1789453029446
+      },
+      "min60": {
+        "price": 74666.98,
+        "deltaPoints": 14.53,
+        "deltaPercent": 0.019,
+        "filledAt": 1789454829410
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789451245743",
+    "firedAt": 1789451245743,
+    "firedAtLabel": "15/9/2026, 11:17:25 am",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74653.77,
+    "entryAtmStrike": 74700,
+    "checkpoints": {
+      "min5": {
+        "price": 74630.55,
+        "deltaPoints": -23.22,
+        "deltaPercent": -0.031,
+        "filledAt": 1789451548807
+      },
+      "min15": {
+        "price": 74619.01,
+        "deltaPoints": -34.76,
+        "deltaPercent": -0.047,
+        "filledAt": 1789452148580
+      },
+      "min30": {
+        "price": 74671.57,
+        "deltaPoints": 17.8,
+        "deltaPercent": 0.024,
+        "filledAt": 1789453048488
+      },
+      "min60": {
+        "price": 74676.43,
+        "deltaPoints": 22.66,
+        "deltaPercent": 0.03,
+        "filledAt": 1789454848855
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789451456398",
+    "firedAt": 1789451456398,
+    "firedAtLabel": "15/9/2026, 11:20:56 am",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74597.34,
+    "entryAtmStrike": 74600,
+    "checkpoints": {
+      "min5": {
+        "price": 74611.23,
+        "deltaPoints": 13.89,
+        "deltaPercent": 0.019,
+        "filledAt": 1789451759315
+      },
+      "min15": {
+        "price": 74635.9,
+        "deltaPoints": 38.56,
+        "deltaPercent": 0.052,
+        "filledAt": 1789452359038
+      },
+      "min30": {
+        "price": 74641.84,
+        "deltaPoints": 44.5,
+        "deltaPercent": 0.06,
+        "filledAt": 1789453258579
+      },
+      "min60": {
+        "price": 74638.87,
+        "deltaPoints": 41.53,
+        "deltaPercent": 0.056,
+        "filledAt": 1789455057823
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789451481822",
+    "firedAt": 1789451481822,
+    "firedAtLabel": "15/9/2026, 11:21:21 am",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74598.09,
+    "entryAtmStrike": 74600,
+    "checkpoints": {
+      "min5": {
+        "price": 74615.56,
+        "deltaPoints": 17.47,
+        "deltaPercent": 0.023,
+        "filledAt": 1789451784871
+      },
+      "min15": {
+        "price": 74647.3,
+        "deltaPoints": 49.21,
+        "deltaPercent": 0.066,
+        "filledAt": 1789452384472
+      },
+      "min30": {
+        "price": 74648.34,
+        "deltaPoints": 50.25,
+        "deltaPercent": 0.067,
+        "filledAt": 1789453284119
+      },
+      "min60": {
+        "price": 74646.85,
+        "deltaPoints": 48.76,
+        "deltaPercent": 0.065,
+        "filledAt": 1789455083939
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789451494486",
+    "firedAt": 1789451494486,
+    "firedAtLabel": "15/9/2026, 11:21:34 am",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74594.54,
+    "entryAtmStrike": 74600,
+    "checkpoints": {
+      "min5": {
+        "price": 74617.22,
+        "deltaPoints": 22.68,
+        "deltaPercent": 0.03,
+        "filledAt": 1789451797596
+      },
+      "min15": {
+        "price": 74651.55,
+        "deltaPoints": 57.01,
+        "deltaPercent": 0.076,
+        "filledAt": 1789452397211
+      },
+      "min30": {
+        "price": 74653.83,
+        "deltaPoints": 59.29,
+        "deltaPercent": 0.079,
+        "filledAt": 1789453296901
+      },
+      "min60": {
+        "price": 74646.08,
+        "deltaPoints": 51.54,
+        "deltaPercent": 0.069,
+        "filledAt": 1789455096895
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789451816593",
+    "firedAt": 1789451816593,
+    "firedAtLabel": "15/9/2026, 11:26:56 am",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74599.83,
+    "entryAtmStrike": 74600,
+    "checkpoints": {
+      "min5": {
+        "price": 74598.28,
+        "deltaPoints": -1.55,
+        "deltaPercent": -0.002,
+        "filledAt": 1789452116675
+      },
+      "min15": {
+        "price": 74671.88,
+        "deltaPoints": 72.05,
+        "deltaPercent": 0.097,
+        "filledAt": 1789452716725
+      },
+      "min30": {
+        "price": 74638.21,
+        "deltaPoints": 38.38,
+        "deltaPercent": 0.051,
+        "filledAt": 1789453618395
+      },
+      "min60": {
+        "price": 74647.64,
+        "deltaPoints": 47.81,
+        "deltaPercent": 0.064,
+        "filledAt": 1789455417086
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789451845383",
+    "firedAt": 1789451845383,
+    "firedAtLabel": "15/9/2026, 11:27:25 am",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74589.18,
+    "entryAtmStrike": 74600,
+    "checkpoints": {
+      "min5": {
+        "price": 74612.19,
+        "deltaPoints": 23.01,
+        "deltaPercent": 0.031,
+        "filledAt": 1789452145453
+      },
+      "min15": {
+        "price": 74660.46,
+        "deltaPoints": 71.28,
+        "deltaPercent": 0.096,
+        "filledAt": 1789452745501
+      },
+      "min30": {
+        "price": 74640.23,
+        "deltaPoints": 51.05,
+        "deltaPercent": 0.068,
+        "filledAt": 1789453647194
+      },
+      "min60": {
+        "price": 74651.59,
+        "deltaPoints": 62.41,
+        "deltaPercent": 0.084,
+        "filledAt": 1789455446009
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789451899622",
+    "firedAt": 1789451899622,
+    "firedAtLabel": "15/9/2026, 11:28:19 am",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74599.95,
+    "entryAtmStrike": 74600,
+    "checkpoints": {
+      "min5": {
+        "price": 74622.7,
+        "deltaPoints": 22.75,
+        "deltaPercent": 0.03,
+        "filledAt": 1789452202762
+      },
+      "min15": {
+        "price": 74656.39,
+        "deltaPoints": 56.44,
+        "deltaPercent": 0.076,
+        "filledAt": 1789452799722
+      },
+      "min30": {
+        "price": 74652.38,
+        "deltaPoints": 52.43,
+        "deltaPercent": 0.07,
+        "filledAt": 1789453701122
+      },
+      "min60": {
+        "price": 74651.16,
+        "deltaPoints": 51.21,
+        "deltaPercent": 0.069,
+        "filledAt": 1789455500168
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789451918684",
+    "firedAt": 1789451918684,
+    "firedAtLabel": "15/9/2026, 11:28:38 am",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74598.2,
+    "entryAtmStrike": 74600,
+    "checkpoints": {
+      "min5": {
+        "price": 74617.69,
+        "deltaPoints": 19.49,
+        "deltaPercent": 0.026,
+        "filledAt": 1789452218726
+      },
+      "min15": {
+        "price": 74658.81,
+        "deltaPoints": 60.61,
+        "deltaPercent": 0.081,
+        "filledAt": 1789452818809
+      },
+      "min30": {
+        "price": 74664.01,
+        "deltaPoints": 65.81,
+        "deltaPercent": 0.088,
+        "filledAt": 1789453720215
+      },
+      "min60": {
+        "price": 74655.88,
+        "deltaPoints": 57.68,
+        "deltaPercent": 0.077,
+        "filledAt": 1789455519210
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789452036872",
+    "firedAt": 1789452036872,
+    "firedAtLabel": "15/9/2026, 11:30:36 am",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74597.28,
+    "entryAtmStrike": 74600,
+    "checkpoints": {
+      "min5": {
+        "price": 74637.09,
+        "deltaPoints": 39.81,
+        "deltaPercent": 0.053,
+        "filledAt": 1789452339940
+      },
+      "min15": {
+        "price": 74671.21,
+        "deltaPoints": 73.93,
+        "deltaPercent": 0.099,
+        "filledAt": 1789452936952
+      },
+      "min30": {
+        "price": 74700.15,
+        "deltaPoints": 102.87,
+        "deltaPercent": 0.138,
+        "filledAt": 1789454000985
+      },
+      "min60": {
+        "price": 74646.62,
+        "deltaPoints": 49.34,
+        "deltaPercent": 0.066,
+        "filledAt": 1789455638976
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789452116671",
+    "firedAt": 1789452116671,
+    "firedAtLabel": "15/9/2026, 11:31:56 am",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74598.28,
+    "entryAtmStrike": 74600,
+    "checkpoints": {
+      "min5": {
+        "price": 74663.91,
+        "deltaPoints": 65.63,
+        "deltaPercent": 0.088,
+        "filledAt": 1789452419411
+      },
+      "min15": {
+        "price": 74665.73,
+        "deltaPoints": 67.45,
+        "deltaPercent": 0.09,
+        "filledAt": 1789453019735
+      },
+      "min30": {
+        "price": 74700.15,
+        "deltaPoints": 101.87,
+        "deltaPercent": 0.137,
+        "filledAt": 1789454000985
+      },
+      "min60": {
+        "price": 74610.18,
+        "deltaPoints": 11.9,
+        "deltaPercent": 0.016,
+        "filledAt": 1789455719537
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789452126221",
+    "firedAt": 1789452126221,
+    "firedAtLabel": "15/9/2026, 11:32:06 am",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74598.94,
+    "entryAtmStrike": 74600,
+    "checkpoints": {
+      "min5": {
+        "price": 74665.81,
+        "deltaPoints": 66.87,
+        "deltaPercent": 0.09,
+        "filledAt": 1789452429111
+      },
+      "min15": {
+        "price": 74666.8,
+        "deltaPoints": 67.86,
+        "deltaPercent": 0.091,
+        "filledAt": 1789453029446
+      },
+      "min30": {
+        "price": 74700.15,
+        "deltaPoints": 101.21,
+        "deltaPercent": 0.136,
+        "filledAt": 1789454000985
+      },
+      "min60": {
+        "price": 74607.02,
+        "deltaPoints": 8.08,
+        "deltaPercent": 0.011,
+        "filledAt": 1789455729192
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789452390834",
+    "firedAt": 1789452390834,
+    "firedAtLabel": "15/9/2026, 11:36:30 am",
+    "direction": "bearish",
+    "confidence": 71,
+    "entrySpotPrice": 74647.59,
+    "entryAtmStrike": 74600,
+    "checkpoints": {
+      "min5": {
+        "price": 74677.27,
+        "deltaPoints": 29.68,
+        "deltaPercent": 0.04,
+        "filledAt": 1789452691245
+      },
+      "min15": {
+        "price": 74654.82,
+        "deltaPoints": 7.23,
+        "deltaPercent": 0.01,
+        "filledAt": 1789453293736
+      },
+      "min30": {
+        "price": 74695.44,
+        "deltaPoints": 47.85,
+        "deltaPercent": 0.064,
+        "filledAt": 1789454193650
+      },
+      "min60": {
+        "price": 74651.47,
+        "deltaPoints": 3.88,
+        "deltaPercent": 0.005,
+        "filledAt": 1789455991800
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789452397209",
+    "firedAt": 1789452397209,
+    "firedAtLabel": "15/9/2026, 11:36:37 am",
+    "direction": "bearish",
+    "confidence": 83,
+    "entrySpotPrice": 74651.55,
+    "entryAtmStrike": 74700,
+    "checkpoints": {
+      "min5": {
+        "price": 74671.5,
+        "deltaPoints": 19.95,
+        "deltaPercent": 0.027,
+        "filledAt": 1789452697626
+      },
+      "min15": {
+        "price": 74651.37,
+        "deltaPoints": -0.18,
+        "deltaPercent": 0,
+        "filledAt": 1789453300153
+      },
+      "min30": {
+        "price": 74684.99,
+        "deltaPoints": 33.44,
+        "deltaPercent": 0.045,
+        "filledAt": 1789454200080
+      },
+      "min60": {
+        "price": 74648.72,
+        "deltaPoints": -2.83,
+        "deltaPercent": -0.004,
+        "filledAt": 1789455998215
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789457051267",
+    "firedAt": 1789457051267,
+    "firedAtLabel": "15/9/2026, 12:54:11 pm",
+    "direction": "bearish",
+    "confidence": 83,
+    "entrySpotPrice": 74651.72,
+    "entryAtmStrike": 74700,
+    "checkpoints": {
+      "min5": {
+        "price": 74581.5,
+        "deltaPoints": -70.22,
+        "deltaPercent": -0.094,
+        "filledAt": 1789457351850
+      },
+      "min15": {
+        "price": 74575.22,
+        "deltaPoints": -76.5,
+        "deltaPercent": -0.102,
+        "filledAt": 1789457951895
+      },
+      "min30": {
+        "price": 74500.16,
+        "deltaPoints": -151.56,
+        "deltaPercent": -0.203,
+        "filledAt": 1789458852379
+      },
+      "min60": {
+        "price": 74259.34,
+        "deltaPoints": -392.38,
+        "deltaPercent": -0.526,
+        "filledAt": 1789462327563
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789457074035",
+    "firedAt": 1789457074035,
+    "firedAtLabel": "15/9/2026, 12:54:34 pm",
+    "direction": "bearish",
+    "confidence": 83,
+    "entrySpotPrice": 74650.05,
+    "entryAtmStrike": 74700,
+    "checkpoints": {
+      "min5": {
+        "price": 74581.81,
+        "deltaPoints": -68.24,
+        "deltaPercent": -0.091,
+        "filledAt": 1789457374761
+      },
+      "min15": {
+        "price": 74574.08,
+        "deltaPoints": -75.97,
+        "deltaPercent": -0.102,
+        "filledAt": 1789457974551
+      },
+      "min30": {
+        "price": 74510.15,
+        "deltaPoints": -139.9,
+        "deltaPercent": -0.187,
+        "filledAt": 1789458874829
+      },
+      "min60": {
+        "price": 74259.34,
+        "deltaPoints": -390.71,
+        "deltaPercent": -0.523,
+        "filledAt": 1789462327563
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789457080499",
+    "firedAt": 1789457080499,
+    "firedAtLabel": "15/9/2026, 12:54:40 pm",
+    "direction": "bearish",
+    "confidence": 83,
+    "entrySpotPrice": 74652.26,
+    "entryAtmStrike": 74700,
+    "checkpoints": {
+      "min5": {
+        "price": 74580.31,
+        "deltaPoints": -71.95,
+        "deltaPercent": -0.096,
+        "filledAt": 1789457381201
+      },
+      "min15": {
+        "price": 74574.1,
+        "deltaPoints": -78.16,
+        "deltaPercent": -0.105,
+        "filledAt": 1789457981200
+      },
+      "min30": {
+        "price": 74509.14,
+        "deltaPoints": -143.12,
+        "deltaPercent": -0.192,
+        "filledAt": 1789458881177
+      },
+      "min60": {
+        "price": 74259.34,
+        "deltaPoints": -392.92,
+        "deltaPercent": -0.526,
+        "filledAt": 1789462327563
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789457154784",
+    "firedAt": 1789457154784,
+    "firedAtLabel": "15/9/2026, 12:55:54 pm",
+    "direction": "bearish",
+    "confidence": 83,
+    "entrySpotPrice": 74650.08,
+    "entryAtmStrike": 74700,
+    "checkpoints": {
+      "min5": {
+        "price": 74609.07,
+        "deltaPoints": -41.01,
+        "deltaPercent": -0.055,
+        "filledAt": 1789457455800
+      },
+      "min15": {
+        "price": 74575.49,
+        "deltaPoints": -74.59,
+        "deltaPercent": -0.1,
+        "filledAt": 1789458055708
+      },
+      "min30": {
+        "price": 74502.24,
+        "deltaPoints": -147.84,
+        "deltaPercent": -0.198,
+        "filledAt": 1789458954858
+      },
+      "min60": {
+        "price": 74259.34,
+        "deltaPoints": -390.74,
+        "deltaPercent": -0.523,
+        "filledAt": 1789462327563
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789457167817",
+    "firedAt": 1789457167817,
+    "firedAtLabel": "15/9/2026, 12:56:07 pm",
+    "direction": "bearish",
+    "confidence": 83,
+    "entrySpotPrice": 74650.54,
+    "entryAtmStrike": 74700,
+    "checkpoints": {
+      "min5": {
+        "price": 74598.9,
+        "deltaPoints": -51.64,
+        "deltaPercent": -0.069,
+        "filledAt": 1789457468799
+      },
+      "min15": {
+        "price": 74562.72,
+        "deltaPoints": -87.82,
+        "deltaPercent": -0.118,
+        "filledAt": 1789458068718
+      },
+      "min30": {
+        "price": 74505.12,
+        "deltaPoints": -145.42,
+        "deltaPercent": -0.195,
+        "filledAt": 1789458970968
+      },
+      "min60": {
+        "price": 74259.34,
+        "deltaPoints": -391.2,
+        "deltaPercent": -0.524,
+        "filledAt": 1789462327563
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789457264521",
+    "firedAt": 1789457264521,
+    "firedAtLabel": "15/9/2026, 12:57:44 pm",
+    "direction": "bearish",
+    "confidence": 71,
+    "entrySpotPrice": 74631.54,
+    "entryAtmStrike": 74600,
+    "checkpoints": {
+      "min5": {
+        "price": 74571.93,
+        "deltaPoints": -59.61,
+        "deltaPercent": -0.08,
+        "filledAt": 1789457565096
+      },
+      "min15": {
+        "price": 74540.53,
+        "deltaPoints": -91.01,
+        "deltaPercent": -0.122,
+        "filledAt": 1789458166019
+      },
+      "min30": {
+        "price": 74531.44,
+        "deltaPoints": -100.1,
+        "deltaPercent": -0.134,
+        "filledAt": 1789459066714
+      },
+      "min60": {
+        "price": 74259.34,
+        "deltaPoints": -372.2,
+        "deltaPercent": -0.499,
+        "filledAt": 1789462327563
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789458276172",
+    "firedAt": 1789458276172,
+    "firedAtLabel": "15/9/2026, 1:14:36 pm",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74550.12,
+    "entryAtmStrike": 74600,
+    "checkpoints": {
+      "min5": {
+        "price": 74554.04,
+        "deltaPoints": 3.92,
+        "deltaPercent": 0.005,
+        "filledAt": 1789458577709
+      },
+      "min15": {
+        "price": 74519.41,
+        "deltaPoints": -30.71,
+        "deltaPercent": -0.041,
+        "filledAt": 1789459178132
+      },
+      "min30": {
+        "price": 74432.4,
+        "deltaPoints": -117.72,
+        "deltaPercent": -0.158,
+        "filledAt": 1789460079028
+      },
+      "min60": {
+        "price": 74259.34,
+        "deltaPoints": -290.78,
+        "deltaPercent": -0.39,
+        "filledAt": 1789462327563
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789458564596",
+    "firedAt": 1789458564596,
+    "firedAtLabel": "15/9/2026, 1:19:24 pm",
+    "direction": "bearish",
+    "confidence": 62,
+    "entrySpotPrice": 74549.55,
+    "entryAtmStrike": 74500,
+    "checkpoints": {
+      "min5": {
+        "price": 74513.15,
+        "deltaPoints": -36.4,
+        "deltaPercent": -0.049,
+        "filledAt": 1789458865220
+      },
+      "min15": {
+        "price": 74457.69,
+        "deltaPoints": -91.86,
+        "deltaPercent": -0.123,
+        "filledAt": 1789459465393
+      },
+      "min30": {
+        "price": 74446.31,
+        "deltaPoints": -103.24,
+        "deltaPercent": -0.138,
+        "filledAt": 1789460366517
+      },
+      "min60": {
+        "price": 74259.34,
+        "deltaPoints": -290.21,
+        "deltaPercent": -0.389,
+        "filledAt": 1789462327563
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789458606840",
+    "firedAt": 1789458606840,
+    "firedAtLabel": "15/9/2026, 1:20:06 pm",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74550.75,
+    "entryAtmStrike": 74600,
+    "checkpoints": {
+      "min5": {
+        "price": 74506.49,
+        "deltaPoints": -44.26,
+        "deltaPercent": -0.059,
+        "filledAt": 1789458909980
+      },
+      "min15": {
+        "price": 74462.33,
+        "deltaPoints": -88.42,
+        "deltaPercent": -0.119,
+        "filledAt": 1789459506848
+      },
+      "min30": {
+        "price": 74456.79,
+        "deltaPoints": -93.96,
+        "deltaPercent": -0.126,
+        "filledAt": 1789460407859
+      },
+      "min60": {
+        "price": 74259.34,
+        "deltaPoints": -291.41,
+        "deltaPercent": -0.391,
+        "filledAt": 1789462327563
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789458613307",
+    "firedAt": 1789458613307,
+    "firedAtLabel": "15/9/2026, 1:20:13 pm",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74550.49,
+    "entryAtmStrike": 74600,
+    "checkpoints": {
+      "min5": {
+        "price": 74509.66,
+        "deltaPoints": -40.83,
+        "deltaPercent": -0.055,
+        "filledAt": 1789458916464
+      },
+      "min15": {
+        "price": 74453.52,
+        "deltaPoints": -96.97,
+        "deltaPercent": -0.13,
+        "filledAt": 1789459516372
+      },
+      "min30": {
+        "price": 74459.91,
+        "deltaPoints": -90.58,
+        "deltaPercent": -0.122,
+        "filledAt": 1789460414245
+      },
+      "min60": {
+        "price": 74259.34,
+        "deltaPoints": -291.15,
+        "deltaPercent": -0.391,
+        "filledAt": 1789462327563
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789458626519",
+    "firedAt": 1789458626519,
+    "firedAtLabel": "15/9/2026, 1:20:26 pm",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74551.07,
+    "entryAtmStrike": 74600,
+    "checkpoints": {
+      "min5": {
+        "price": 74506.6,
+        "deltaPoints": -44.47,
+        "deltaPercent": -0.06,
+        "filledAt": 1789458929314
+      },
+      "min15": {
+        "price": 74457.6,
+        "deltaPoints": -93.47,
+        "deltaPercent": -0.125,
+        "filledAt": 1789459529022
+      },
+      "min30": {
+        "price": 74459.64,
+        "deltaPoints": -91.43,
+        "deltaPercent": -0.123,
+        "filledAt": 1789460427031
+      },
+      "min60": {
+        "price": 74259.34,
+        "deltaPoints": -291.73,
+        "deltaPercent": -0.391,
+        "filledAt": 1789462327563
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789458717140",
+    "firedAt": 1789458717140,
+    "firedAtLabel": "15/9/2026, 1:21:57 pm",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74499.86,
+    "entryAtmStrike": 74500,
+    "checkpoints": {
+      "min5": {
+        "price": 74520.37,
+        "deltaPoints": 20.51,
+        "deltaPercent": 0.028,
+        "filledAt": 1789459018693
+      },
+      "min15": {
+        "price": 74489.3,
+        "deltaPoints": -10.56,
+        "deltaPercent": -0.014,
+        "filledAt": 1789459618519
+      },
+      "min30": {
+        "price": 74463.53,
+        "deltaPoints": -36.33,
+        "deltaPercent": -0.049,
+        "filledAt": 1789460519450
+      },
+      "min60": {
+        "price": 74259.34,
+        "deltaPoints": -240.52,
+        "deltaPercent": -0.323,
+        "filledAt": 1789462327563
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789458727020",
+    "firedAt": 1789458727020,
+    "firedAtLabel": "15/9/2026, 1:22:07 pm",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74498.78,
+    "entryAtmStrike": 74500,
+    "checkpoints": {
+      "min5": {
+        "price": 74534.31,
+        "deltaPoints": 35.53,
+        "deltaPercent": 0.048,
+        "filledAt": 1789459028389
+      },
+      "min15": {
+        "price": 74486.61,
+        "deltaPoints": -12.17,
+        "deltaPercent": -0.016,
+        "filledAt": 1789459628202
+      },
+      "min30": {
+        "price": 74463.89,
+        "deltaPoints": -34.89,
+        "deltaPercent": -0.047,
+        "filledAt": 1789460528978
+      },
+      "min60": {
+        "price": 74259.34,
+        "deltaPoints": -239.44,
+        "deltaPercent": -0.321,
+        "filledAt": 1789462327563
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789458746560",
+    "firedAt": 1789458746560,
+    "firedAtLabel": "15/9/2026, 1:22:26 pm",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74499.56,
+    "entryAtmStrike": 74500,
+    "checkpoints": {
+      "min5": {
+        "price": 74541.45,
+        "deltaPoints": 41.89,
+        "deltaPercent": 0.056,
+        "filledAt": 1789459047519
+      },
+      "min15": {
+        "price": 74482.15,
+        "deltaPoints": -17.41,
+        "deltaPercent": -0.023,
+        "filledAt": 1789459647533
+      },
+      "min30": {
+        "price": 74259.34,
+        "deltaPoints": -240.22,
+        "deltaPercent": -0.322,
+        "filledAt": 1789462327563
+      },
+      "min60": {
+        "price": 74263.77,
+        "deltaPoints": -235.79,
+        "deltaPercent": -0.316,
+        "filledAt": 1789462349640
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789458756447",
+    "firedAt": 1789458756447,
+    "firedAtLabel": "15/9/2026, 1:22:36 pm",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74497.07,
+    "entryAtmStrike": 74500,
+    "checkpoints": {
+      "min5": {
+        "price": 74535.43,
+        "deltaPoints": 38.36,
+        "deltaPercent": 0.051,
+        "filledAt": 1789459057161
+      },
+      "min15": {
+        "price": 74469.2,
+        "deltaPoints": -27.87,
+        "deltaPercent": -0.037,
+        "filledAt": 1789459657386
+      },
+      "min30": {
+        "price": 74259.34,
+        "deltaPoints": -237.73,
+        "deltaPercent": -0.319,
+        "filledAt": 1789462327563
+      },
+      "min60": {
+        "price": 74271.27,
+        "deltaPoints": -225.8,
+        "deltaPercent": -0.303,
+        "filledAt": 1789462359286
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789458766075",
+    "firedAt": 1789458766075,
+    "firedAtLabel": "15/9/2026, 1:22:46 pm",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74498.32,
+    "entryAtmStrike": 74500,
+    "checkpoints": {
+      "min5": {
+        "price": 74531.44,
+        "deltaPoints": 33.12,
+        "deltaPercent": 0.044,
+        "filledAt": 1789459066714
+      },
+      "min15": {
+        "price": 74469.3,
+        "deltaPoints": -29.02,
+        "deltaPercent": -0.039,
+        "filledAt": 1789459667109
+      },
+      "min30": {
+        "price": 74259.34,
+        "deltaPoints": -238.98,
+        "deltaPercent": -0.321,
+        "filledAt": 1789462327563
+      },
+      "min60": {
+        "price": 74274.72,
+        "deltaPoints": -223.6,
+        "deltaPercent": -0.3,
+        "filledAt": 1789462368680
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789458788704",
+    "firedAt": 1789458788704,
+    "firedAtLabel": "15/9/2026, 1:23:08 pm",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74499.05,
+    "entryAtmStrike": 74500,
+    "checkpoints": {
+      "min5": {
+        "price": 74530.88,
+        "deltaPoints": 31.83,
+        "deltaPercent": 0.043,
+        "filledAt": 1789459088951
+      },
+      "min15": {
+        "price": 74475.49,
+        "deltaPoints": -23.56,
+        "deltaPercent": -0.032,
+        "filledAt": 1789459689778
+      },
+      "min30": {
+        "price": 74259.34,
+        "deltaPoints": -239.71,
+        "deltaPercent": -0.322,
+        "filledAt": 1789462327563
+      },
+      "min60": {
+        "price": 74286.59,
+        "deltaPoints": -212.46,
+        "deltaPercent": -0.285,
+        "filledAt": 1789462390610
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789458798288",
+    "firedAt": 1789458798288,
+    "firedAtLabel": "15/9/2026, 1:23:18 pm",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74498.47,
+    "entryAtmStrike": 74500,
+    "checkpoints": {
+      "min5": {
+        "price": 74530.78,
+        "deltaPoints": 32.31,
+        "deltaPercent": 0.043,
+        "filledAt": 1789459098422
+      },
+      "min15": {
+        "price": 74473.09,
+        "deltaPoints": -25.38,
+        "deltaPercent": -0.034,
+        "filledAt": 1789459699604
+      },
+      "min30": {
+        "price": 74259.34,
+        "deltaPoints": -239.13,
+        "deltaPercent": -0.321,
+        "filledAt": 1789462327563
+      },
+      "min60": {
+        "price": 74280.35,
+        "deltaPoints": -218.12,
+        "deltaPercent": -0.293,
+        "filledAt": 1789462399935
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789458842845",
+    "firedAt": 1789458842845,
+    "firedAtLabel": "15/9/2026, 1:24:02 pm",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74499.98,
+    "entryAtmStrike": 74500,
+    "checkpoints": {
+      "min5": {
+        "price": 74519.26,
+        "deltaPoints": 19.28,
+        "deltaPercent": 0.026,
+        "filledAt": 1789459143009
+      },
+      "min15": {
+        "price": 74458.85,
+        "deltaPoints": -41.13,
+        "deltaPercent": -0.055,
+        "filledAt": 1789459744795
+      },
+      "min30": {
+        "price": 74259.34,
+        "deltaPoints": -240.64,
+        "deltaPercent": -0.323,
+        "filledAt": 1789462327563
+      },
+      "min60": {
+        "price": 74271.81,
+        "deltaPoints": -228.17,
+        "deltaPercent": -0.306,
+        "filledAt": 1789462445032
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789459044391",
+    "firedAt": 1789459044391,
+    "firedAtLabel": "15/9/2026, 1:27:24 pm",
+    "direction": "bearish",
+    "confidence": 71,
+    "entrySpotPrice": 74541.11,
+    "entryAtmStrike": 74500,
+    "checkpoints": {
+      "min5": {
+        "price": 74450.79,
+        "deltaPoints": -90.32,
+        "deltaPercent": -0.121,
+        "filledAt": 1789459347017
+      },
+      "min15": {
+        "price": 74431.5,
+        "deltaPoints": -109.61,
+        "deltaPercent": -0.147,
+        "filledAt": 1789459944569
+      },
+      "min30": {
+        "price": 74259.34,
+        "deltaPoints": -281.77,
+        "deltaPercent": -0.378,
+        "filledAt": 1789462327563
+      },
+      "min60": {
+        "price": 74256.8,
+        "deltaPoints": -284.31,
+        "deltaPercent": -0.381,
+        "filledAt": 1789462646071
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789459209836",
+    "firedAt": 1789459209836,
+    "firedAtLabel": "15/9/2026, 1:30:09 pm",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74492.43,
+    "entryAtmStrike": 74500,
+    "checkpoints": {
+      "min5": {
+        "price": 74457.53,
+        "deltaPoints": -34.9,
+        "deltaPercent": -0.047,
+        "filledAt": 1789459509966
+      },
+      "min15": {
+        "price": 74429.01,
+        "deltaPoints": -63.42,
+        "deltaPercent": -0.085,
+        "filledAt": 1789460111217
+      },
+      "min30": {
+        "price": 74259.34,
+        "deltaPoints": -233.09,
+        "deltaPercent": -0.313,
+        "filledAt": 1789462327563
+      },
+      "min60": {
+        "price": 74246.19,
+        "deltaPoints": -246.24,
+        "deltaPercent": -0.331,
+        "filledAt": 1789462809930
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789459337518",
+    "firedAt": 1789459337518,
+    "firedAtLabel": "15/9/2026, 1:32:17 pm",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74451.43,
+    "entryAtmStrike": 74500,
+    "checkpoints": {
+      "min5": {
+        "price": 74485.65,
+        "deltaPoints": 34.22,
+        "deltaPercent": 0.046,
+        "filledAt": 1789459637864
+      },
+      "min15": {
+        "price": 74443.32,
+        "deltaPoints": -8.11,
+        "deltaPercent": -0.011,
+        "filledAt": 1789460238703
+      },
+      "min30": {
+        "price": 74259.34,
+        "deltaPoints": -192.09,
+        "deltaPercent": -0.258,
+        "filledAt": 1789462327563
+      },
+      "min60": {
+        "price": 74255.55,
+        "deltaPoints": -195.88,
+        "deltaPercent": -0.263,
+        "filledAt": 1789462938860
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789459347013",
+    "firedAt": 1789459347013,
+    "firedAtLabel": "15/9/2026, 1:32:27 pm",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74450.79,
+    "entryAtmStrike": 74500,
+    "checkpoints": {
+      "min5": {
+        "price": 74482.15,
+        "deltaPoints": 31.36,
+        "deltaPercent": 0.042,
+        "filledAt": 1789459647533
+      },
+      "min15": {
+        "price": 74442.87,
+        "deltaPoints": -7.92,
+        "deltaPercent": -0.011,
+        "filledAt": 1789460248256
+      },
+      "min30": {
+        "price": 74259.34,
+        "deltaPoints": -191.45,
+        "deltaPercent": -0.257,
+        "filledAt": 1789462327563
+      },
+      "min60": {
+        "price": 74245.81,
+        "deltaPoints": -204.98,
+        "deltaPercent": -0.275,
+        "filledAt": 1789462948349
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789459359809",
+    "firedAt": 1789459359809,
+    "firedAtLabel": "15/9/2026, 1:32:39 pm",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74453.75,
+    "entryAtmStrike": 74500,
+    "checkpoints": {
+      "min5": {
+        "price": 74472.69,
+        "deltaPoints": 18.94,
+        "deltaPercent": 0.025,
+        "filledAt": 1789459660619
+      },
+      "min15": {
+        "price": 74443.17,
+        "deltaPoints": -10.58,
+        "deltaPercent": -0.014,
+        "filledAt": 1789460261013
+      },
+      "min30": {
+        "price": 74259.34,
+        "deltaPoints": -194.41,
+        "deltaPercent": -0.261,
+        "filledAt": 1789462327563
+      },
+      "min60": {
+        "price": 74239.25,
+        "deltaPoints": -214.5,
+        "deltaPercent": -0.288,
+        "filledAt": 1789462961117
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789459826337",
+    "firedAt": 1789459826337,
+    "firedAtLabel": "15/9/2026, 1:40:26 pm",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74455.07,
+    "entryAtmStrike": 74500,
+    "checkpoints": {
+      "min5": {
+        "price": 74439.95,
+        "deltaPoints": -15.12,
+        "deltaPercent": -0.02,
+        "filledAt": 1789460127213
+      },
+      "min15": {
+        "price": 74259.34,
+        "deltaPoints": -195.73,
+        "deltaPercent": -0.263,
+        "filledAt": 1789462327563
+      },
+      "min30": {
+        "price": 74259.34,
+        "deltaPoints": -195.73,
+        "deltaPercent": -0.263,
+        "filledAt": 1789462327563
+      },
+      "min60": {
+        "price": 74273.92,
+        "deltaPoints": -181.15,
+        "deltaPercent": -0.243,
+        "filledAt": 1789463426751
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789459836028",
+    "firedAt": 1789459836028,
+    "firedAtLabel": "15/9/2026, 1:40:36 pm",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74450.37,
+    "entryAtmStrike": 74500,
+    "checkpoints": {
+      "min5": {
+        "price": 74443.64,
+        "deltaPoints": -6.73,
+        "deltaPercent": -0.009,
+        "filledAt": 1789460136698
+      },
+      "min15": {
+        "price": 74259.34,
+        "deltaPoints": -191.03,
+        "deltaPercent": -0.257,
+        "filledAt": 1789462327563
+      },
+      "min30": {
+        "price": 74259.34,
+        "deltaPoints": -191.03,
+        "deltaPercent": -0.257,
+        "filledAt": 1789462327563
+      },
+      "min60": {
+        "price": 74279.83,
+        "deltaPoints": -170.54,
+        "deltaPercent": -0.229,
+        "filledAt": 1789463436395
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789460388751",
+    "firedAt": 1789460388751,
+    "firedAtLabel": "15/9/2026, 1:49:48 pm",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74451.19,
+    "entryAtmStrike": 74500,
+    "checkpoints": {
+      "min5": {
+        "price": 74259.34,
+        "deltaPoints": -191.85,
+        "deltaPercent": -0.258,
+        "filledAt": 1789462327563
+      },
+      "min15": {
+        "price": 74259.34,
+        "deltaPoints": -191.85,
+        "deltaPercent": -0.258,
+        "filledAt": 1789462327563
+      },
+      "min30": {
+        "price": 74259.34,
+        "deltaPoints": -191.85,
+        "deltaPercent": -0.258,
+        "filledAt": 1789462327563
+      },
+      "min60": {
+        "price": 74003.82,
+        "deltaPoints": -447.37,
+        "deltaPercent": -0.601,
+        "filledAt": 1789478202336
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789460398266",
+    "firedAt": 1789460398266,
+    "firedAtLabel": "15/9/2026, 1:49:58 pm",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74452.27,
+    "entryAtmStrike": 74500,
+    "checkpoints": {
+      "min5": {
+        "price": 74259.34,
+        "deltaPoints": -192.93,
+        "deltaPercent": -0.259,
+        "filledAt": 1789462327563
+      },
+      "min15": {
+        "price": 74259.34,
+        "deltaPoints": -192.93,
+        "deltaPercent": -0.259,
+        "filledAt": 1789462327563
+      },
+      "min30": {
+        "price": 74259.34,
+        "deltaPoints": -192.93,
+        "deltaPercent": -0.259,
+        "filledAt": 1789462327563
+      },
+      "min60": {
+        "price": 74003.82,
+        "deltaPoints": -448.45,
+        "deltaPercent": -0.602,
+        "filledAt": 1789478202336
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789462490242",
+    "firedAt": 1789462490242,
+    "firedAtLabel": "15/9/2026, 2:24:50 pm",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74251.4,
+    "entryAtmStrike": 74300,
+    "checkpoints": {
+      "min5": {
+        "price": 74243.25,
+        "deltaPoints": -8.15,
+        "deltaPercent": -0.011,
+        "filledAt": 1789462793482
+      },
+      "min15": {
+        "price": 74280,
+        "deltaPoints": 28.6,
+        "deltaPercent": 0.039,
+        "filledAt": 1789463391660
+      },
+      "min30": {
+        "price": 74003.82,
+        "deltaPoints": -247.58,
+        "deltaPercent": -0.333,
+        "filledAt": 1789478202336
+      },
+      "min60": {
+        "price": 74003.82,
+        "deltaPoints": -247.58,
+        "deltaPercent": -0.333,
+        "filledAt": 1789478202336
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789462496801",
+    "firedAt": 1789462496801,
+    "firedAtLabel": "15/9/2026, 2:24:56 pm",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74250.66,
+    "entryAtmStrike": 74300,
+    "checkpoints": {
+      "min5": {
+        "price": 74237.44,
+        "deltaPoints": -13.22,
+        "deltaPercent": -0.018,
+        "filledAt": 1789462796911
+      },
+      "min15": {
+        "price": 74284.51,
+        "deltaPoints": 33.85,
+        "deltaPercent": 0.046,
+        "filledAt": 1789463398086
+      },
+      "min30": {
+        "price": 74003.82,
+        "deltaPoints": -246.84,
+        "deltaPercent": -0.332,
+        "filledAt": 1789478202336
+      },
+      "min60": {
+        "price": 74003.82,
+        "deltaPoints": -246.84,
+        "deltaPercent": -0.332,
+        "filledAt": 1789478202336
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789462509750",
+    "firedAt": 1789462509750,
+    "firedAtLabel": "15/9/2026, 2:25:09 pm",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74250.21,
+    "entryAtmStrike": 74300,
+    "checkpoints": {
+      "min5": {
+        "price": 74246.19,
+        "deltaPoints": -4.02,
+        "deltaPercent": -0.005,
+        "filledAt": 1789462809930
+      },
+      "min15": {
+        "price": 74270.97,
+        "deltaPoints": 20.76,
+        "deltaPercent": 0.028,
+        "filledAt": 1789463410781
+      },
+      "min30": {
+        "price": 74003.82,
+        "deltaPoints": -246.39,
+        "deltaPercent": -0.332,
+        "filledAt": 1789478202336
+      },
+      "min60": {
+        "price": 74003.82,
+        "deltaPoints": -246.39,
+        "deltaPercent": -0.332,
+        "filledAt": 1789478202336
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789462548421",
+    "firedAt": 1789462548421,
+    "firedAtLabel": "15/9/2026, 2:25:48 pm",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74251.46,
+    "entryAtmStrike": 74300,
+    "checkpoints": {
+      "min5": {
+        "price": 74242.12,
+        "deltaPoints": -9.34,
+        "deltaPercent": -0.013,
+        "filledAt": 1789462849150
+      },
+      "min15": {
+        "price": 74291.3,
+        "deltaPoints": 39.84,
+        "deltaPercent": 0.054,
+        "filledAt": 1789463449132
+      },
+      "min30": {
+        "price": 74003.82,
+        "deltaPoints": -247.64,
+        "deltaPercent": -0.334,
+        "filledAt": 1789478202336
+      },
+      "min60": {
+        "price": 74003.82,
+        "deltaPoints": -247.64,
+        "deltaPercent": -0.334,
+        "filledAt": 1789478202336
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789462567981",
+    "firedAt": 1789462567981,
+    "firedAtLabel": "15/9/2026, 2:26:07 pm",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74250.53,
+    "entryAtmStrike": 74300,
+    "checkpoints": {
+      "min5": {
+        "price": 74242.61,
+        "deltaPoints": -7.92,
+        "deltaPercent": -0.011,
+        "filledAt": 1789462868515
+      },
+      "min15": {
+        "price": 74003.82,
+        "deltaPoints": -246.71,
+        "deltaPercent": -0.332,
+        "filledAt": 1789478202336
+      },
+      "min30": {
+        "price": 74003.82,
+        "deltaPoints": -246.71,
+        "deltaPercent": -0.332,
+        "filledAt": 1789478202336
+      },
+      "min60": {
+        "price": 74003.82,
+        "deltaPoints": -246.71,
+        "deltaPercent": -0.332,
+        "filledAt": 1789478202336
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789462603763",
+    "firedAt": 1789462603763,
+    "firedAtLabel": "15/9/2026, 2:26:43 pm",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74252.71,
+    "entryAtmStrike": 74300,
+    "checkpoints": {
+      "min5": {
+        "price": 74240.97,
+        "deltaPoints": -11.74,
+        "deltaPercent": -0.016,
+        "filledAt": 1789462906972
+      },
+      "min15": {
+        "price": 74003.82,
+        "deltaPoints": -248.89,
+        "deltaPercent": -0.335,
+        "filledAt": 1789478202336
+      },
+      "min30": {
+        "price": 74003.82,
+        "deltaPoints": -248.89,
+        "deltaPercent": -0.335,
+        "filledAt": 1789478202336
+      },
+      "min60": {
+        "price": 74003.82,
+        "deltaPoints": -248.89,
+        "deltaPercent": -0.335,
+        "filledAt": 1789478202336
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789462629774",
+    "firedAt": 1789462629774,
+    "firedAtLabel": "15/9/2026, 2:27:09 pm",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74257.61,
+    "entryAtmStrike": 74300,
+    "checkpoints": {
+      "min5": {
+        "price": 74254.44,
+        "deltaPoints": -3.17,
+        "deltaPercent": -0.004,
+        "filledAt": 1789462932402
+      },
+      "min15": {
+        "price": 74003.82,
+        "deltaPoints": -253.79,
+        "deltaPercent": -0.342,
+        "filledAt": 1789478202336
+      },
+      "min30": {
+        "price": 74003.82,
+        "deltaPoints": -253.79,
+        "deltaPercent": -0.342,
+        "filledAt": 1789478202336
+      },
+      "min60": {
+        "price": 74003.82,
+        "deltaPoints": -253.79,
+        "deltaPercent": -0.342,
+        "filledAt": 1789478202336
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789462926096",
+    "firedAt": 1789462926096,
+    "firedAtLabel": "15/9/2026, 2:32:06 pm",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74253.15,
+    "entryAtmStrike": 74300,
+    "checkpoints": {
+      "min5": {
+        "price": 74252.96,
+        "deltaPoints": -0.19,
+        "deltaPercent": 0,
+        "filledAt": 1789463229113
+      },
+      "min15": {
+        "price": 74003.82,
+        "deltaPoints": -249.33,
+        "deltaPercent": -0.336,
+        "filledAt": 1789478202336
+      },
+      "min30": {
+        "price": 74003.82,
+        "deltaPoints": -249.33,
+        "deltaPercent": -0.336,
+        "filledAt": 1789478202336
+      },
+      "min60": {
+        "price": 74003.82,
+        "deltaPoints": -249.33,
+        "deltaPercent": -0.336,
+        "filledAt": 1789478202336
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789462976964",
+    "firedAt": 1789462976964,
+    "firedAtLabel": "15/9/2026, 2:32:56 pm",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74251.68,
+    "entryAtmStrike": 74300,
+    "checkpoints": {
+      "min5": {
+        "price": 74256.12,
+        "deltaPoints": 4.44,
+        "deltaPercent": 0.006,
+        "filledAt": 1789463280188
+      },
+      "min15": {
+        "price": 74003.82,
+        "deltaPoints": -247.86,
+        "deltaPercent": -0.334,
+        "filledAt": 1789478202336
+      },
+      "min30": {
+        "price": 74003.82,
+        "deltaPoints": -247.86,
+        "deltaPercent": -0.334,
+        "filledAt": 1789478202336
+      },
+      "min60": {
+        "price": 74003.82,
+        "deltaPoints": -247.86,
+        "deltaPercent": -0.334,
+        "filledAt": 1789478202336
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789462986526",
+    "firedAt": 1789462986526,
+    "firedAtLabel": "15/9/2026, 2:33:06 pm",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74252.98,
+    "entryAtmStrike": 74300,
+    "checkpoints": {
+      "min5": {
+        "price": 74251.65,
+        "deltaPoints": -1.33,
+        "deltaPercent": -0.002,
+        "filledAt": 1789463286534
+      },
+      "min15": {
+        "price": 74003.82,
+        "deltaPoints": -249.16,
+        "deltaPercent": -0.336,
+        "filledAt": 1789478202336
+      },
+      "min30": {
+        "price": 74003.82,
+        "deltaPoints": -249.16,
+        "deltaPercent": -0.336,
+        "filledAt": 1789478202336
+      },
+      "min60": {
+        "price": 74003.82,
+        "deltaPoints": -249.16,
+        "deltaPercent": -0.336,
+        "filledAt": 1789478202336
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789463267287",
+    "firedAt": 1789463267287,
+    "firedAtLabel": "15/9/2026, 2:37:47 pm",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74251.52,
+    "entryAtmStrike": 74300,
+    "checkpoints": {
+      "min5": {
+        "price": 74003.82,
+        "deltaPoints": -247.7,
+        "deltaPercent": -0.334,
+        "filledAt": 1789478202336
+      },
+      "min15": {
+        "price": 74003.82,
+        "deltaPoints": -247.7,
+        "deltaPercent": -0.334,
+        "filledAt": 1789478202336
+      },
+      "min30": {
+        "price": 74003.82,
+        "deltaPoints": -247.7,
+        "deltaPercent": -0.334,
+        "filledAt": 1789478202336
+      },
+      "min60": {
+        "price": 74003.82,
+        "deltaPoints": -247.7,
+        "deltaPercent": -0.334,
+        "filledAt": 1789478202336
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789530534831",
+    "firedAt": 1789530534831,
+    "firedAtLabel": "16/9/2026, 9:18:54 am",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74387.14,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74403.59,
+        "deltaPoints": 16.45,
+        "deltaPercent": 0.022,
+        "filledAt": 1789530835411
+      },
+      "min15": {
+        "price": 74233.35,
+        "deltaPoints": -153.79,
+        "deltaPercent": -0.207,
+        "filledAt": 1789531437703
+      },
+      "min30": {
+        "price": 74047.79,
+        "deltaPoints": -339.35,
+        "deltaPercent": -0.456,
+        "filledAt": 1789532336249
+      },
+      "min60": {
+        "price": 74271.92,
+        "deltaPoints": -115.22,
+        "deltaPercent": -0.155,
+        "filledAt": 1789534136165
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789531698781",
+    "firedAt": 1789531698781,
+    "firedAtLabel": "16/9/2026, 9:38:18 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74153.6,
+    "entryAtmStrike": 74200,
+    "checkpoints": {
+      "min5": {
+        "price": 74028.46,
+        "deltaPoints": -125.14,
+        "deltaPercent": -0.169,
+        "filledAt": 1789532000524
+      },
+      "min15": {
+        "price": 74205.76,
+        "deltaPoints": 52.16,
+        "deltaPercent": 0.07,
+        "filledAt": 1789532601324
+      },
+      "min30": {
+        "price": 74220.83,
+        "deltaPoints": 67.23,
+        "deltaPercent": 0.091,
+        "filledAt": 1789533501741
+      },
+      "min60": {
+        "price": 74351.54,
+        "deltaPoints": 197.94,
+        "deltaPercent": 0.267,
+        "filledAt": 1789535300258
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789531836196",
+    "firedAt": 1789531836196,
+    "firedAtLabel": "16/9/2026, 9:40:36 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74070.42,
+    "entryAtmStrike": 74100,
+    "checkpoints": {
+      "min5": {
+        "price": 73992.07,
+        "deltaPoints": -78.35,
+        "deltaPercent": -0.106,
+        "filledAt": 1789532138274
+      },
+      "min15": {
+        "price": 74324.55,
+        "deltaPoints": 254.13,
+        "deltaPercent": 0.343,
+        "filledAt": 1789532736594
+      },
+      "min30": {
+        "price": 74216.08,
+        "deltaPoints": 145.66,
+        "deltaPercent": 0.197,
+        "filledAt": 1789533636746
+      },
+      "min60": {
+        "price": 74392.24,
+        "deltaPoints": 321.82,
+        "deltaPercent": 0.434,
+        "filledAt": 1789535436904
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789531894074",
+    "firedAt": 1789531894074,
+    "firedAtLabel": "16/9/2026, 9:41:34 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74052.97,
+    "entryAtmStrike": 74100,
+    "checkpoints": {
+      "min5": {
+        "price": 74046.55,
+        "deltaPoints": -6.42,
+        "deltaPercent": -0.009,
+        "filledAt": 1789532195595
+      },
+      "min15": {
+        "price": 74352.34,
+        "deltaPoints": 299.37,
+        "deltaPercent": 0.404,
+        "filledAt": 1789532797063
+      },
+      "min30": {
+        "price": 74211.4,
+        "deltaPoints": 158.43,
+        "deltaPercent": 0.214,
+        "filledAt": 1789533694345
+      },
+      "min60": {
+        "price": 74407.77,
+        "deltaPoints": 354.8,
+        "deltaPercent": 0.479,
+        "filledAt": 1789535497162
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789531906928",
+    "firedAt": 1789531906928,
+    "firedAtLabel": "16/9/2026, 9:41:46 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74057.02,
+    "entryAtmStrike": 74100,
+    "checkpoints": {
+      "min5": {
+        "price": 74047.06,
+        "deltaPoints": -9.96,
+        "deltaPercent": -0.013,
+        "filledAt": 1789532208364
+      },
+      "min15": {
+        "price": 74336.91,
+        "deltaPoints": 279.89,
+        "deltaPercent": 0.378,
+        "filledAt": 1789532809891
+      },
+      "min30": {
+        "price": 74224.44,
+        "deltaPoints": 167.42,
+        "deltaPercent": 0.226,
+        "filledAt": 1789533707414
+      },
+      "min60": {
+        "price": 74400.56,
+        "deltaPoints": 343.54,
+        "deltaPercent": 0.464,
+        "filledAt": 1789535509867
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789531913274",
+    "firedAt": 1789531913274,
+    "firedAtLabel": "16/9/2026, 9:41:53 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74052.85,
+    "entryAtmStrike": 74100,
+    "checkpoints": {
+      "min5": {
+        "price": 74044.08,
+        "deltaPoints": -8.77,
+        "deltaPercent": -0.012,
+        "filledAt": 1789532214738
+      },
+      "min15": {
+        "price": 74342.13,
+        "deltaPoints": 289.28,
+        "deltaPercent": 0.391,
+        "filledAt": 1789532816310
+      },
+      "min30": {
+        "price": 74220.92,
+        "deltaPoints": 168.07,
+        "deltaPercent": 0.227,
+        "filledAt": 1789533714000
+      },
+      "min60": {
+        "price": 74402.71,
+        "deltaPoints": 349.86,
+        "deltaPercent": 0.472,
+        "filledAt": 1789535516304
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789531926151",
+    "firedAt": 1789531926151,
+    "firedAtLabel": "16/9/2026, 9:42:06 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74050.58,
+    "entryAtmStrike": 74100,
+    "checkpoints": {
+      "min5": {
+        "price": 74063.09,
+        "deltaPoints": 12.51,
+        "deltaPercent": 0.017,
+        "filledAt": 1789532227778
+      },
+      "min15": {
+        "price": 74351.24,
+        "deltaPoints": 300.66,
+        "deltaPercent": 0.406,
+        "filledAt": 1789532829217
+      },
+      "min30": {
+        "price": 74229.41,
+        "deltaPoints": 178.83,
+        "deltaPercent": 0.241,
+        "filledAt": 1789533726806
+      },
+      "min60": {
+        "price": 74393.05,
+        "deltaPoints": 342.47,
+        "deltaPercent": 0.462,
+        "filledAt": 1789535529124
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789532217940",
+    "firedAt": 1789532217940,
+    "firedAtLabel": "16/9/2026, 9:46:57 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74050.02,
+    "entryAtmStrike": 74100,
+    "checkpoints": {
+      "min5": {
+        "price": 74151.84,
+        "deltaPoints": 101.82,
+        "deltaPercent": 0.138,
+        "filledAt": 1789532520140
+      },
+      "min15": {
+        "price": 74288.32,
+        "deltaPoints": 238.3,
+        "deltaPercent": 0.322,
+        "filledAt": 1789533120349
+      },
+      "min30": {
+        "price": 74237.13,
+        "deltaPoints": 187.11,
+        "deltaPercent": 0.253,
+        "filledAt": 1789534020478
+      },
+      "min60": {
+        "price": 74416.77,
+        "deltaPoints": 366.75,
+        "deltaPercent": 0.495,
+        "filledAt": 1789535818370
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789532349040",
+    "firedAt": 1789532349040,
+    "firedAtLabel": "16/9/2026, 9:49:09 am",
+    "direction": "bearish",
+    "confidence": 60,
+    "entrySpotPrice": 74050.25,
+    "entryAtmStrike": 74100,
+    "checkpoints": {
+      "min5": {
+        "price": 74249.76,
+        "deltaPoints": 199.51,
+        "deltaPercent": 0.269,
+        "filledAt": 1789532649817
+      },
+      "min15": {
+        "price": 74257.85,
+        "deltaPoints": 207.6,
+        "deltaPercent": 0.28,
+        "filledAt": 1789533251973
+      },
+      "min30": {
+        "price": 74275.5,
+        "deltaPoints": 225.25,
+        "deltaPercent": 0.304,
+        "filledAt": 1789534151745
+      },
+      "min60": {
+        "price": 74445.43,
+        "deltaPoints": 395.18,
+        "deltaPercent": 0.534,
+        "filledAt": 1789535949264
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789532429187",
+    "firedAt": 1789532429187,
+    "firedAtLabel": "16/9/2026, 9:50:29 am",
+    "direction": "bearish",
+    "confidence": 65,
+    "entrySpotPrice": 74151.02,
+    "entryAtmStrike": 74200,
+    "checkpoints": {
+      "min5": {
+        "price": 74340.77,
+        "deltaPoints": 189.75,
+        "deltaPercent": 0.256,
+        "filledAt": 1789532729831
+      },
+      "min15": {
+        "price": 74190.15,
+        "deltaPoints": 39.13,
+        "deltaPercent": 0.053,
+        "filledAt": 1789533332239
+      },
+      "min30": {
+        "price": 74258.42,
+        "deltaPoints": 107.4,
+        "deltaPercent": 0.145,
+        "filledAt": 1789534229808
+      },
+      "min60": {
+        "price": 74424.1,
+        "deltaPoints": 273.08,
+        "deltaPercent": 0.368,
+        "filledAt": 1789536031949
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789534426179",
+    "firedAt": 1789534426179,
+    "firedAtLabel": "16/9/2026, 10:23:46 am",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74306.39,
+    "entryAtmStrike": 74300,
+    "checkpoints": {
+      "min5": {
+        "price": 74353.46,
+        "deltaPoints": 47.07,
+        "deltaPercent": 0.063,
+        "filledAt": 1789534728315
+      },
+      "min15": {
+        "price": 74358.89,
+        "deltaPoints": 52.5,
+        "deltaPercent": 0.071,
+        "filledAt": 1789535328791
+      },
+      "min30": {
+        "price": 74435.97,
+        "deltaPoints": 129.58,
+        "deltaPercent": 0.174,
+        "filledAt": 1789536226559
+      },
+      "min60": {
+        "price": 74417.03,
+        "deltaPoints": 110.64,
+        "deltaPercent": 0.149,
+        "filledAt": 1789538027725
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789535216397",
+    "firedAt": 1789535216397,
+    "firedAtLabel": "16/9/2026, 10:36:56 am",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74405.06,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74401.64,
+        "deltaPoints": -3.42,
+        "deltaPercent": -0.005,
+        "filledAt": 1789535519424
+      },
+      "min15": {
+        "price": 74422.8,
+        "deltaPoints": 17.74,
+        "deltaPercent": 0.024,
+        "filledAt": 1789536118145
+      },
+      "min30": {
+        "price": 74435.93,
+        "deltaPoints": 30.87,
+        "deltaPercent": 0.041,
+        "filledAt": 1789537018797
+      },
+      "min60": {
+        "price": 74308.07,
+        "deltaPoints": -96.99,
+        "deltaPercent": -0.13,
+        "filledAt": 1789538817024
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789535424145",
+    "firedAt": 1789535424145,
+    "firedAtLabel": "16/9/2026, 10:40:24 am",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74402.22,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74411.46,
+        "deltaPoints": 9.24,
+        "deltaPercent": 0.012,
+        "filledAt": 1789535726035
+      },
+      "min15": {
+        "price": 74403.74,
+        "deltaPoints": 1.52,
+        "deltaPercent": 0.002,
+        "filledAt": 1789536325506
+      },
+      "min30": {
+        "price": 74415.3,
+        "deltaPoints": 13.08,
+        "deltaPercent": 0.018,
+        "filledAt": 1789537226215
+      },
+      "min60": {
+        "price": 74342.11,
+        "deltaPoints": -60.11,
+        "deltaPercent": -0.081,
+        "filledAt": 1789539027079
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789535443268",
+    "firedAt": 1789535443268,
+    "firedAtLabel": "16/9/2026, 10:40:43 am",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74402.17,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74413.13,
+        "deltaPoints": 10.96,
+        "deltaPercent": 0.015,
+        "filledAt": 1789535745098
+      },
+      "min15": {
+        "price": 74395.27,
+        "deltaPoints": -6.9,
+        "deltaPercent": -0.009,
+        "filledAt": 1789536344537
+      },
+      "min30": {
+        "price": 74428.8,
+        "deltaPoints": 26.63,
+        "deltaPercent": 0.036,
+        "filledAt": 1789537245662
+      },
+      "min60": {
+        "price": 74342.41,
+        "deltaPoints": -59.76,
+        "deltaPercent": -0.08,
+        "filledAt": 1789539045693
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789535449554",
+    "firedAt": 1789535449554,
+    "firedAtLabel": "16/9/2026, 10:40:49 am",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74401.96,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74408.8,
+        "deltaPoints": 6.84,
+        "deltaPercent": 0.009,
+        "filledAt": 1789535751529
+      },
+      "min15": {
+        "price": 74382.54,
+        "deltaPoints": -19.42,
+        "deltaPercent": -0.026,
+        "filledAt": 1789536350917
+      },
+      "min30": {
+        "price": 74429.12,
+        "deltaPoints": 27.16,
+        "deltaPercent": 0.037,
+        "filledAt": 1789537252126
+      },
+      "min60": {
+        "price": 74348.24,
+        "deltaPoints": -53.72,
+        "deltaPercent": -0.072,
+        "filledAt": 1789539051918
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789535455952",
+    "firedAt": 1789535455952,
+    "firedAtLabel": "16/9/2026, 10:40:55 am",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74404.9,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74416.4,
+        "deltaPoints": 11.5,
+        "deltaPercent": 0.015,
+        "filledAt": 1789535757971
+      },
+      "min15": {
+        "price": 74381.53,
+        "deltaPoints": -23.37,
+        "deltaPercent": -0.031,
+        "filledAt": 1789536357336
+      },
+      "min30": {
+        "price": 74426.71,
+        "deltaPoints": 21.81,
+        "deltaPercent": 0.029,
+        "filledAt": 1789537258458
+      },
+      "min60": {
+        "price": 74351.22,
+        "deltaPoints": -53.68,
+        "deltaPercent": -0.072,
+        "filledAt": 1789539058239
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789535516299",
+    "firedAt": 1789535516299,
+    "firedAtLabel": "16/9/2026, 10:41:56 am",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74402.71,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74416.77,
+        "deltaPoints": 14.06,
+        "deltaPercent": 0.019,
+        "filledAt": 1789535818370
+      },
+      "min15": {
+        "price": 74382.53,
+        "deltaPoints": -20.18,
+        "deltaPercent": -0.027,
+        "filledAt": 1789536417909
+      },
+      "min30": {
+        "price": 74419.48,
+        "deltaPoints": 16.77,
+        "deltaPercent": 0.023,
+        "filledAt": 1789537319010
+      },
+      "min60": {
+        "price": 74337.62,
+        "deltaPoints": -65.09,
+        "deltaPercent": -0.087,
+        "filledAt": 1789539117222
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789535684699",
+    "firedAt": 1789535684699,
+    "firedAtLabel": "16/9/2026, 10:44:44 am",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74401.73,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74450.48,
+        "deltaPoints": 48.75,
+        "deltaPercent": 0.066,
+        "filledAt": 1789535987409
+      },
+      "min15": {
+        "price": 74395.6,
+        "deltaPoints": -6.13,
+        "deltaPercent": -0.008,
+        "filledAt": 1789536586090
+      },
+      "min30": {
+        "price": 74394.52,
+        "deltaPoints": -7.21,
+        "deltaPercent": -0.01,
+        "filledAt": 1789537485406
+      },
+      "min60": {
+        "price": 74334.17,
+        "deltaPoints": -67.56,
+        "deltaPercent": -0.091,
+        "filledAt": 1789539285903
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789536003251",
+    "firedAt": 1789536003251,
+    "firedAtLabel": "16/9/2026, 10:50:03 am",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74446.05,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74426.29,
+        "deltaPoints": -19.76,
+        "deltaPercent": -0.027,
+        "filledAt": 1789536306408
+      },
+      "min15": {
+        "price": 74471.56,
+        "deltaPoints": 25.51,
+        "deltaPercent": 0.034,
+        "filledAt": 1789536903669
+      },
+      "min30": {
+        "price": 74380.85,
+        "deltaPoints": -65.2,
+        "deltaPercent": -0.088,
+        "filledAt": 1789537804820
+      },
+      "min60": {
+        "price": 74328.69,
+        "deltaPoints": -117.36,
+        "deltaPercent": -0.158,
+        "filledAt": 1789539604181
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789536063962",
+    "firedAt": 1789536063962,
+    "firedAtLabel": "16/9/2026, 10:51:03 am",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74405.28,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74373.67,
+        "deltaPoints": -31.61,
+        "deltaPercent": -0.042,
+        "filledAt": 1789536366935
+      },
+      "min15": {
+        "price": 74438.19,
+        "deltaPoints": 32.91,
+        "deltaPercent": 0.044,
+        "filledAt": 1789536964606
+      },
+      "min30": {
+        "price": 74364.46,
+        "deltaPoints": -40.82,
+        "deltaPercent": -0.055,
+        "filledAt": 1789537865297
+      },
+      "min60": {
+        "price": 74359.29,
+        "deltaPoints": -45.99,
+        "deltaPercent": -0.062,
+        "filledAt": 1789539666367
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789536204290",
+    "firedAt": 1789536204290,
+    "firedAtLabel": "16/9/2026, 10:53:24 am",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74447.64,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74397.01,
+        "deltaPoints": -50.63,
+        "deltaPercent": -0.068,
+        "filledAt": 1789536506827
+      },
+      "min15": {
+        "price": 74413.8,
+        "deltaPoints": -33.84,
+        "deltaPercent": -0.045,
+        "filledAt": 1789537104902
+      },
+      "min30": {
+        "price": 74395.57,
+        "deltaPoints": -52.07,
+        "deltaPercent": -0.07,
+        "filledAt": 1789538005367
+      },
+      "min60": {
+        "price": 74313.01,
+        "deltaPoints": -134.63,
+        "deltaPercent": -0.181,
+        "filledAt": 1789539806359
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789536446532",
+    "firedAt": 1789536446532,
+    "firedAtLabel": "16/9/2026, 10:57:26 am",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74401.22,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74455.74,
+        "deltaPoints": 54.52,
+        "deltaPercent": 0.073,
+        "filledAt": 1789536747047
+      },
+      "min15": {
+        "price": 74418.96,
+        "deltaPoints": 17.74,
+        "deltaPercent": 0.024,
+        "filledAt": 1789537348020
+      },
+      "min30": {
+        "price": 74329.65,
+        "deltaPoints": -71.57,
+        "deltaPercent": -0.096,
+        "filledAt": 1789538247372
+      },
+      "min60": {
+        "price": 74286.44,
+        "deltaPoints": -114.78,
+        "deltaPercent": -0.154,
+        "filledAt": 1789540049090
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789536478322",
+    "firedAt": 1789536478322,
+    "firedAtLabel": "16/9/2026, 10:57:58 am",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74400.32,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74468.71,
+        "deltaPoints": 68.39,
+        "deltaPercent": 0.092,
+        "filledAt": 1789536778784
+      },
+      "min15": {
+        "price": 74431.6,
+        "deltaPoints": 31.28,
+        "deltaPercent": 0.042,
+        "filledAt": 1789537379967
+      },
+      "min30": {
+        "price": 74309.46,
+        "deltaPoints": -90.86,
+        "deltaPercent": -0.122,
+        "filledAt": 1789538279208
+      },
+      "min60": {
+        "price": 74288.79,
+        "deltaPoints": -111.53,
+        "deltaPercent": -0.15,
+        "filledAt": 1789540080102
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789536500532",
+    "firedAt": 1789536500532,
+    "firedAtLabel": "16/9/2026, 10:58:20 am",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74401.57,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74477.59,
+        "deltaPoints": 76.02,
+        "deltaPercent": 0.102,
+        "filledAt": 1789536801289
+      },
+      "min15": {
+        "price": 74424.07,
+        "deltaPoints": 22.5,
+        "deltaPercent": 0.03,
+        "filledAt": 1789537402269
+      },
+      "min30": {
+        "price": 74322.93,
+        "deltaPoints": -78.64,
+        "deltaPercent": -0.106,
+        "filledAt": 1789538301261
+      },
+      "min60": {
+        "price": 74278.88,
+        "deltaPoints": -122.69,
+        "deltaPercent": -0.165,
+        "filledAt": 1789540101845
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789536541921",
+    "firedAt": 1789536541921,
+    "firedAtLabel": "16/9/2026, 10:59:01 am",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74401.99,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74493.52,
+        "deltaPoints": 91.53,
+        "deltaPercent": 0.123,
+        "filledAt": 1789536842814
+      },
+      "min15": {
+        "price": 74408.55,
+        "deltaPoints": 6.56,
+        "deltaPercent": 0.009,
+        "filledAt": 1789537443827
+      },
+      "min30": {
+        "price": 74309.86,
+        "deltaPoints": -92.13,
+        "deltaPercent": -0.124,
+        "filledAt": 1789538342586
+      },
+      "min60": {
+        "price": 74289.93,
+        "deltaPoints": -112.06,
+        "deltaPercent": -0.151,
+        "filledAt": 1789540142302
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789536548289",
+    "firedAt": 1789536548289,
+    "firedAtLabel": "16/9/2026, 10:59:08 am",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74403.9,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74493.76,
+        "deltaPoints": 89.86,
+        "deltaPercent": 0.121,
+        "filledAt": 1789536849142
+      },
+      "min15": {
+        "price": 74404.52,
+        "deltaPoints": 0.62,
+        "deltaPercent": 0.001,
+        "filledAt": 1789537450121
+      },
+      "min30": {
+        "price": 74300.05,
+        "deltaPoints": -103.85,
+        "deltaPercent": -0.14,
+        "filledAt": 1789538349013
+      },
+      "min60": {
+        "price": 74288.62,
+        "deltaPoints": -115.28,
+        "deltaPercent": -0.155,
+        "filledAt": 1789540148517
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789536557832",
+    "firedAt": 1789536557832,
+    "firedAtLabel": "16/9/2026, 10:59:17 am",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74405.73,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74485.88,
+        "deltaPoints": 80.15,
+        "deltaPercent": 0.108,
+        "filledAt": 1789536858775
+      },
+      "min15": {
+        "price": 74407.13,
+        "deltaPoints": 1.4,
+        "deltaPercent": 0.002,
+        "filledAt": 1789537459682
+      },
+      "min30": {
+        "price": 74302.39,
+        "deltaPoints": -103.34,
+        "deltaPercent": -0.139,
+        "filledAt": 1789538358492
+      },
+      "min60": {
+        "price": 74278.84,
+        "deltaPoints": -126.89,
+        "deltaPercent": -0.171,
+        "filledAt": 1789540160903
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789536570624",
+    "firedAt": 1789536570624,
+    "firedAtLabel": "16/9/2026, 10:59:30 am",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74400.46,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74483.12,
+        "deltaPoints": 82.66,
+        "deltaPercent": 0.111,
+        "filledAt": 1789536871554
+      },
+      "min15": {
+        "price": 74405.68,
+        "deltaPoints": 5.22,
+        "deltaPercent": 0.007,
+        "filledAt": 1789537472502
+      },
+      "min30": {
+        "price": 74304.86,
+        "deltaPoints": -95.6,
+        "deltaPercent": -0.128,
+        "filledAt": 1789538371053
+      },
+      "min60": {
+        "price": 74280.38,
+        "deltaPoints": -120.08,
+        "deltaPercent": -0.161,
+        "filledAt": 1789540173347
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789536601876",
+    "firedAt": 1789536601876,
+    "firedAtLabel": "16/9/2026, 11:00:01 am",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74400.15,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74471.56,
+        "deltaPoints": 71.41,
+        "deltaPercent": 0.096,
+        "filledAt": 1789536903669
+      },
+      "min15": {
+        "price": 74387.67,
+        "deltaPoints": -12.48,
+        "deltaPercent": -0.017,
+        "filledAt": 1789537504563
+      },
+      "min30": {
+        "price": 74294.47,
+        "deltaPoints": -105.68,
+        "deltaPercent": -0.142,
+        "filledAt": 1789538403085
+      },
+      "min60": {
+        "price": 74281.84,
+        "deltaPoints": -118.31,
+        "deltaPercent": -0.159,
+        "filledAt": 1789540204541
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789536606631",
+    "firedAt": 1789536606631,
+    "firedAtLabel": "16/9/2026, 11:00:06 am",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74408.07,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74474.57,
+        "deltaPoints": 66.5,
+        "deltaPercent": 0.089,
+        "filledAt": 1789536906795
+      },
+      "min15": {
+        "price": 74384.3,
+        "deltaPoints": -23.77,
+        "deltaPercent": -0.032,
+        "filledAt": 1789537507823
+      },
+      "min30": {
+        "price": 74297.3,
+        "deltaPoints": -110.77,
+        "deltaPercent": -0.149,
+        "filledAt": 1789538409427
+      },
+      "min60": {
+        "price": 74281.79,
+        "deltaPoints": -126.28,
+        "deltaPercent": -0.17,
+        "filledAt": 1789540207732
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789536737437",
+    "firedAt": 1789536737437,
+    "firedAtLabel": "16/9/2026, 11:02:17 am",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74447.41,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74435.4,
+        "deltaPoints": -12.01,
+        "deltaPercent": -0.016,
+        "filledAt": 1789537037946
+      },
+      "min15": {
+        "price": 74428.35,
+        "deltaPoints": -19.06,
+        "deltaPercent": -0.026,
+        "filledAt": 1789537638949
+      },
+      "min30": {
+        "price": 74331.24,
+        "deltaPoints": -116.17,
+        "deltaPercent": -0.156,
+        "filledAt": 1789538539990
+      },
+      "min60": {
+        "price": 74283.53,
+        "deltaPoints": -163.88,
+        "deltaPercent": -0.22,
+        "filledAt": 1789540338166
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789536925916",
+    "firedAt": 1789536925916,
+    "firedAtLabel": "16/9/2026, 11:05:25 am",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74447.51,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74415.3,
+        "deltaPoints": -32.21,
+        "deltaPercent": -0.043,
+        "filledAt": 1789537226215
+      },
+      "min15": {
+        "price": 74361.77,
+        "deltaPoints": -85.74,
+        "deltaPercent": -0.115,
+        "filledAt": 1789537827054
+      },
+      "min30": {
+        "price": 74321.4,
+        "deltaPoints": -126.11,
+        "deltaPercent": -0.169,
+        "filledAt": 1789538727886
+      },
+      "min60": {
+        "price": 74291.12,
+        "deltaPoints": -156.39,
+        "deltaPercent": -0.21,
+        "filledAt": 1789540527775
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789536993266",
+    "firedAt": 1789536993266,
+    "firedAtLabel": "16/9/2026, 11:06:33 am",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74445.59,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74424.05,
+        "deltaPoints": -21.54,
+        "deltaPercent": -0.029,
+        "filledAt": 1789537293574
+      },
+      "min15": {
+        "price": 74351.05,
+        "deltaPoints": -94.54,
+        "deltaPercent": -0.127,
+        "filledAt": 1789537893905
+      },
+      "min30": {
+        "price": 74312.07,
+        "deltaPoints": -133.52,
+        "deltaPercent": -0.179,
+        "filledAt": 1789538794715
+      },
+      "min60": {
+        "price": 74299.71,
+        "deltaPoints": -145.88,
+        "deltaPercent": -0.196,
+        "filledAt": 1789540596170
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789537456497",
+    "firedAt": 1789537456497,
+    "firedAtLabel": "16/9/2026, 11:14:16 am",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74403.7,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74385.93,
+        "deltaPoints": -17.77,
+        "deltaPercent": -0.024,
+        "filledAt": 1789537757028
+      },
+      "min15": {
+        "price": 74302.39,
+        "deltaPoints": -101.31,
+        "deltaPercent": -0.136,
+        "filledAt": 1789538358492
+      },
+      "min30": {
+        "price": 74339.25,
+        "deltaPoints": -64.45,
+        "deltaPercent": -0.087,
+        "filledAt": 1789539257883
+      },
+      "min60": {
+        "price": 74372.48,
+        "deltaPoints": -31.22,
+        "deltaPercent": -0.042,
+        "filledAt": 1789541058108
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789537533326",
+    "firedAt": 1789537533326,
+    "firedAtLabel": "16/9/2026, 11:15:33 am",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74400.35,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74353.48,
+        "deltaPoints": -46.87,
+        "deltaPercent": -0.063,
+        "filledAt": 1789537833418
+      },
+      "min15": {
+        "price": 74310.4,
+        "deltaPoints": -89.95,
+        "deltaPercent": -0.121,
+        "filledAt": 1789538434843
+      },
+      "min30": {
+        "price": 74323.27,
+        "deltaPoints": -77.08,
+        "deltaPercent": -0.104,
+        "filledAt": 1789539333354
+      },
+      "min60": {
+        "price": 74323.79,
+        "deltaPoints": -76.56,
+        "deltaPercent": -0.103,
+        "filledAt": 1789541136167
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789537542892",
+    "firedAt": 1789537542892,
+    "firedAtLabel": "16/9/2026, 11:15:42 am",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74403.79,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74354.26,
+        "deltaPoints": -49.53,
+        "deltaPercent": -0.067,
+        "filledAt": 1789537842970
+      },
+      "min15": {
+        "price": 74320.52,
+        "deltaPoints": -83.27,
+        "deltaPercent": -0.112,
+        "filledAt": 1789538444465
+      },
+      "min30": {
+        "price": 74322.57,
+        "deltaPoints": -81.22,
+        "deltaPercent": -0.109,
+        "filledAt": 1789539436378
+      },
+      "min60": {
+        "price": 74317.65,
+        "deltaPoints": -86.14,
+        "deltaPercent": -0.116,
+        "filledAt": 1789541145503
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789538011876",
+    "firedAt": 1789538011876,
+    "firedAtLabel": "16/9/2026, 11:23:31 am",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74401.56,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74318.48,
+        "deltaPoints": -83.08,
+        "deltaPercent": -0.112,
+        "filledAt": 1789538314020
+      },
+      "min15": {
+        "price": 74359.97,
+        "deltaPoints": -41.59,
+        "deltaPercent": -0.056,
+        "filledAt": 1789538912273
+      },
+      "min30": {
+        "price": 74310.3,
+        "deltaPoints": -91.26,
+        "deltaPercent": -0.123,
+        "filledAt": 1789539812600
+      },
+      "min60": {
+        "price": 74361.97,
+        "deltaPoints": -39.59,
+        "deltaPercent": -0.053,
+        "filledAt": 1789541612830
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789538626012",
+    "firedAt": 1789538626012,
+    "firedAtLabel": "16/9/2026, 11:33:46 am",
+    "direction": "bullish",
+    "confidence": 70,
+    "entrySpotPrice": 74347.84,
+    "entryAtmStrike": 74300,
+    "checkpoints": {
+      "min5": {
+        "price": 74353.71,
+        "deltaPoints": 5.87,
+        "deltaPercent": 0.008,
+        "filledAt": 1789538927765
+      },
+      "min15": {
+        "price": 74311.38,
+        "deltaPoints": -36.46,
+        "deltaPercent": -0.049,
+        "filledAt": 1789539526445
+      },
+      "min30": {
+        "price": 74271.82,
+        "deltaPoints": -76.02,
+        "deltaPercent": -0.102,
+        "filledAt": 1789540428227
+      },
+      "min60": {
+        "price": 74418.14,
+        "deltaPoints": 70.3,
+        "deltaPercent": 0.095,
+        "filledAt": 1789542227282
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789539744268",
+    "firedAt": 1789539744268,
+    "firedAtLabel": "16/9/2026, 11:52:24 am",
+    "direction": "bullish",
+    "confidence": 70,
+    "entrySpotPrice": 74348.49,
+    "entryAtmStrike": 74300,
+    "checkpoints": {
+      "min5": {
+        "price": 74286.97,
+        "deltaPoints": -61.52,
+        "deltaPercent": -0.083,
+        "filledAt": 1789540045958
+      },
+      "min15": {
+        "price": 74317.05,
+        "deltaPoints": -31.44,
+        "deltaPercent": -0.042,
+        "filledAt": 1789540646182
+      },
+      "min30": {
+        "price": 74347.23,
+        "deltaPoints": -1.26,
+        "deltaPercent": -0.002,
+        "filledAt": 1789541544372
+      },
+      "min60": {
+        "price": 74382.17,
+        "deltaPoints": 33.68,
+        "deltaPercent": 0.045,
+        "filledAt": 1789543345911
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789540957616",
+    "firedAt": 1789540957616,
+    "firedAtLabel": "16/9/2026, 12:12:37 pm",
+    "direction": "bullish",
+    "confidence": 70,
+    "entrySpotPrice": 74348.28,
+    "entryAtmStrike": 74300,
+    "checkpoints": {
+      "min5": {
+        "price": 74369.67,
+        "deltaPoints": 21.39,
+        "deltaPercent": 0.029,
+        "filledAt": 1789541257743
+      },
+      "min15": {
+        "price": 74336.27,
+        "deltaPoints": -12.01,
+        "deltaPercent": -0.016,
+        "filledAt": 1789541859248
+      },
+      "min30": {
+        "price": 74360.96,
+        "deltaPoints": 12.68,
+        "deltaPercent": 0.017,
+        "filledAt": 1789542760545
+      },
+      "min60": {
+        "price": 74450.02,
+        "deltaPoints": 101.74,
+        "deltaPercent": 0.137,
+        "filledAt": 1789544557960
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789541450905",
+    "firedAt": 1789541450905,
+    "firedAtLabel": "16/9/2026, 12:20:50 pm",
+    "direction": "bullish",
+    "confidence": 70,
+    "entrySpotPrice": 74348.05,
+    "entryAtmStrike": 74300,
+    "checkpoints": {
+      "min5": {
+        "price": 74356.46,
+        "deltaPoints": 8.41,
+        "deltaPercent": 0.011,
+        "filledAt": 1789541753155
+      },
+      "min15": {
+        "price": 74402.3,
+        "deltaPoints": 54.25,
+        "deltaPercent": 0.073,
+        "filledAt": 1789542352033
+      },
+      "min30": {
+        "price": 74389.67,
+        "deltaPoints": 41.62,
+        "deltaPercent": 0.056,
+        "filledAt": 1789543252469
+      },
+      "min60": {
+        "price": 74442.62,
+        "deltaPoints": 94.57,
+        "deltaPercent": 0.127,
+        "filledAt": 1789545050973
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789542202348",
+    "firedAt": 1789542202348,
+    "firedAtLabel": "16/9/2026, 12:33:22 pm",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74402.2,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74375.37,
+        "deltaPoints": -26.83,
+        "deltaPercent": -0.036,
+        "filledAt": 1789542504708
+      },
+      "min15": {
+        "price": 74398.96,
+        "deltaPoints": -3.24,
+        "deltaPercent": -0.004,
+        "filledAt": 1789543103153
+      },
+      "min30": {
+        "price": 74391.14,
+        "deltaPoints": -11.06,
+        "deltaPercent": -0.015,
+        "filledAt": 1789544002502
+      },
+      "min60": {
+        "price": 74336.28,
+        "deltaPoints": -65.92,
+        "deltaPercent": -0.089,
+        "filledAt": 1789545804490
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789542345808",
+    "firedAt": 1789542345808,
+    "firedAtLabel": "16/9/2026, 12:35:45 pm",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74401.85,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74382.75,
+        "deltaPoints": -19.1,
+        "deltaPercent": -0.026,
+        "filledAt": 1789542648069
+      },
+      "min15": {
+        "price": 74390.56,
+        "deltaPoints": -11.29,
+        "deltaPercent": -0.015,
+        "filledAt": 1789543246246
+      },
+      "min30": {
+        "price": 74416.5,
+        "deltaPoints": 14.65,
+        "deltaPercent": 0.02,
+        "filledAt": 1789544147703
+      },
+      "min60": {
+        "price": 74341.4,
+        "deltaPoints": -60.45,
+        "deltaPercent": -0.081,
+        "filledAt": 1789545946084
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789542829013",
+    "firedAt": 1789542829013,
+    "firedAtLabel": "16/9/2026, 12:43:49 pm",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74401.29,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74386.71,
+        "deltaPoints": -14.58,
+        "deltaPercent": -0.02,
+        "filledAt": 1789543131165
+      },
+      "min15": {
+        "price": 74393.71,
+        "deltaPoints": -7.58,
+        "deltaPercent": -0.01,
+        "filledAt": 1789543729697
+      },
+      "min30": {
+        "price": 74445.97,
+        "deltaPoints": 44.68,
+        "deltaPercent": 0.06,
+        "filledAt": 1789544630562
+      },
+      "min60": {
+        "price": 74277.36,
+        "deltaPoints": -123.93,
+        "deltaPercent": -0.167,
+        "filledAt": 1789546429217
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789542841483",
+    "firedAt": 1789542841483,
+    "firedAtLabel": "16/9/2026, 12:44:01 pm",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74403.95,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74389.53,
+        "deltaPoints": -14.42,
+        "deltaPercent": -0.019,
+        "filledAt": 1789543143539
+      },
+      "min15": {
+        "price": 74392,
+        "deltaPoints": -11.95,
+        "deltaPercent": -0.016,
+        "filledAt": 1789543742739
+      },
+      "min30": {
+        "price": 74446.16,
+        "deltaPoints": 42.21,
+        "deltaPercent": 0.057,
+        "filledAt": 1789544643016
+      },
+      "min60": {
+        "price": 74278.47,
+        "deltaPoints": -125.48,
+        "deltaPercent": -0.169,
+        "filledAt": 1789546441757
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789542853909",
+    "firedAt": 1789542853909,
+    "firedAtLabel": "16/9/2026, 12:44:13 pm",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74400.36,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74392.43,
+        "deltaPoints": -7.93,
+        "deltaPercent": -0.011,
+        "filledAt": 1789543155971
+      },
+      "min15": {
+        "price": 74388.95,
+        "deltaPoints": -11.41,
+        "deltaPercent": -0.015,
+        "filledAt": 1789543755184
+      },
+      "min30": {
+        "price": 74443.25,
+        "deltaPoints": 42.89,
+        "deltaPercent": 0.058,
+        "filledAt": 1789544655468
+      },
+      "min60": {
+        "price": 74279.2,
+        "deltaPoints": -121.16,
+        "deltaPercent": -0.163,
+        "filledAt": 1789546454284
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789542863253",
+    "firedAt": 1789542863253,
+    "firedAtLabel": "16/9/2026, 12:44:23 pm",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74400.26,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74396.32,
+        "deltaPoints": -3.94,
+        "deltaPercent": -0.005,
+        "filledAt": 1789543165292
+      },
+      "min15": {
+        "price": 74386.55,
+        "deltaPoints": -13.71,
+        "deltaPercent": -0.018,
+        "filledAt": 1789543764524
+      },
+      "min30": {
+        "price": 74433.3,
+        "deltaPoints": 33.04,
+        "deltaPercent": 0.044,
+        "filledAt": 1789544664809
+      },
+      "min60": {
+        "price": 74280.13,
+        "deltaPoints": -120.13,
+        "deltaPercent": -0.161,
+        "filledAt": 1789546463680
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789543417616",
+    "firedAt": 1789543417616,
+    "firedAtLabel": "16/9/2026, 12:53:37 pm",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74401.29,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74397.4,
+        "deltaPoints": -3.89,
+        "deltaPercent": -0.005,
+        "filledAt": 1789543720366
+      },
+      "min15": {
+        "price": 74461.95,
+        "deltaPoints": 60.66,
+        "deltaPercent": 0.082,
+        "filledAt": 1789544320632
+      },
+      "min30": {
+        "price": 74422.14,
+        "deltaPoints": 20.85,
+        "deltaPercent": 0.028,
+        "filledAt": 1789545220121
+      },
+      "min60": {
+        "price": 74280.84,
+        "deltaPoints": -120.45,
+        "deltaPercent": -0.162,
+        "filledAt": 1789547018049
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789543427003",
+    "firedAt": 1789543427003,
+    "firedAtLabel": "16/9/2026, 12:53:47 pm",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74402.59,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74393.71,
+        "deltaPoints": -8.88,
+        "deltaPercent": -0.012,
+        "filledAt": 1789543729697
+      },
+      "min15": {
+        "price": 74467.39,
+        "deltaPoints": 64.8,
+        "deltaPercent": 0.087,
+        "filledAt": 1789544329981
+      },
+      "min30": {
+        "price": 74423.09,
+        "deltaPoints": 20.5,
+        "deltaPercent": 0.028,
+        "filledAt": 1789545229564
+      },
+      "min60": {
+        "price": 74282.93,
+        "deltaPoints": -119.66,
+        "deltaPercent": -0.161,
+        "filledAt": 1789547027551
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789543436388",
+    "firedAt": 1789543436388,
+    "firedAtLabel": "16/9/2026, 12:53:56 pm",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74400.02,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74393.33,
+        "deltaPoints": -6.69,
+        "deltaPercent": -0.009,
+        "filledAt": 1789543739668
+      },
+      "min15": {
+        "price": 74470.77,
+        "deltaPoints": 70.75,
+        "deltaPercent": 0.095,
+        "filledAt": 1789544339362
+      },
+      "min30": {
+        "price": 74411.3,
+        "deltaPoints": 11.28,
+        "deltaPercent": 0.015,
+        "filledAt": 1789545240488
+      },
+      "min60": {
+        "price": 74278.68,
+        "deltaPoints": -121.34,
+        "deltaPercent": -0.163,
+        "filledAt": 1789547037138
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789543557883",
+    "firedAt": 1789543557883,
+    "firedAtLabel": "16/9/2026, 12:55:57 pm",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74400.03,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74380.63,
+        "deltaPoints": -19.4,
+        "deltaPercent": -0.026,
+        "filledAt": 1789543858202
+      },
+      "min15": {
+        "price": 74479.44,
+        "deltaPoints": 79.41,
+        "deltaPercent": 0.107,
+        "filledAt": 1789544459458
+      },
+      "min30": {
+        "price": 74379.56,
+        "deltaPoints": -20.47,
+        "deltaPercent": -0.028,
+        "filledAt": 1789545359982
+      },
+      "min60": {
+        "price": 74288.3,
+        "deltaPoints": -111.73,
+        "deltaPercent": -0.15,
+        "filledAt": 1789547158449
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789543573627",
+    "firedAt": 1789543573627,
+    "firedAtLabel": "16/9/2026, 12:56:13 pm",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74402.01,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74396.02,
+        "deltaPoints": -5.99,
+        "deltaPercent": -0.008,
+        "filledAt": 1789543873768
+      },
+      "min15": {
+        "price": 74477.43,
+        "deltaPoints": 75.42,
+        "deltaPercent": 0.101,
+        "filledAt": 1789544475919
+      },
+      "min30": {
+        "price": 74380.26,
+        "deltaPoints": -21.75,
+        "deltaPercent": -0.029,
+        "filledAt": 1789545375506
+      },
+      "min60": {
+        "price": 74285.19,
+        "deltaPoints": -116.82,
+        "deltaPercent": -0.157,
+        "filledAt": 1789547174409
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789543883118",
+    "firedAt": 1789543883118,
+    "firedAtLabel": "16/9/2026, 1:01:23 pm",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74402.53,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74438.71,
+        "deltaPoints": 36.18,
+        "deltaPercent": 0.049,
+        "filledAt": 1789544185401
+      },
+      "min15": {
+        "price": 74412.06,
+        "deltaPoints": 9.53,
+        "deltaPercent": 0.013,
+        "filledAt": 1789544784731
+      },
+      "min30": {
+        "price": 74326.26,
+        "deltaPoints": -76.27,
+        "deltaPercent": -0.103,
+        "filledAt": 1789545685580
+      },
+      "min60": {
+        "price": 74300.73,
+        "deltaPoints": -101.8,
+        "deltaPercent": -0.137,
+        "filledAt": 1789547483776
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789543930445",
+    "firedAt": 1789543930445,
+    "firedAtLabel": "16/9/2026, 1:02:10 pm",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74403.07,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74438.42,
+        "deltaPoints": 35.35,
+        "deltaPercent": 0.048,
+        "filledAt": 1789544232661
+      },
+      "min15": {
+        "price": 74405.14,
+        "deltaPoints": 2.07,
+        "deltaPercent": 0.003,
+        "filledAt": 1789544831620
+      },
+      "min30": {
+        "price": 74341.44,
+        "deltaPoints": -61.63,
+        "deltaPercent": -0.083,
+        "filledAt": 1789545732570
+      },
+      "min60": {
+        "price": 74314.02,
+        "deltaPoints": -89.05,
+        "deltaPercent": -0.12,
+        "filledAt": 1789547531551
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789544052772",
+    "firedAt": 1789544052772,
+    "firedAtLabel": "16/9/2026, 1:04:12 pm",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74401.42,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74476.03,
+        "deltaPoints": 74.61,
+        "deltaPercent": 0.1,
+        "filledAt": 1789544355175
+      },
+      "min15": {
+        "price": 74446.01,
+        "deltaPoints": 44.59,
+        "deltaPercent": 0.06,
+        "filledAt": 1789544953863
+      },
+      "min30": {
+        "price": 74312.24,
+        "deltaPoints": -89.18,
+        "deltaPercent": -0.12,
+        "filledAt": 1789545854548
+      },
+      "min60": {
+        "price": 74320,
+        "deltaPoints": -81.42,
+        "deltaPercent": -0.109,
+        "filledAt": 1789547653346
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789544062564",
+    "firedAt": 1789544062564,
+    "firedAtLabel": "16/9/2026, 1:04:22 pm",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74400.42,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74487.89,
+        "deltaPoints": 87.47,
+        "deltaPercent": 0.118,
+        "filledAt": 1789544364521
+      },
+      "min15": {
+        "price": 74451.85,
+        "deltaPoints": 51.43,
+        "deltaPercent": 0.069,
+        "filledAt": 1789544963220
+      },
+      "min30": {
+        "price": 74303.64,
+        "deltaPoints": -96.78,
+        "deltaPercent": -0.13,
+        "filledAt": 1789545864026
+      },
+      "min60": {
+        "price": 74322.41,
+        "deltaPoints": -78.01,
+        "deltaPercent": -0.105,
+        "filledAt": 1789547662881
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789544071884",
+    "firedAt": 1789544071884,
+    "firedAtLabel": "16/9/2026, 1:04:31 pm",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74402.44,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74494.05,
+        "deltaPoints": 91.61,
+        "deltaPercent": 0.123,
+        "filledAt": 1789544373894
+      },
+      "min15": {
+        "price": 74455.31,
+        "deltaPoints": 52.87,
+        "deltaPercent": 0.071,
+        "filledAt": 1789544972553
+      },
+      "min30": {
+        "price": 74300.65,
+        "deltaPoints": -101.79,
+        "deltaPercent": -0.137,
+        "filledAt": 1789545873368
+      },
+      "min60": {
+        "price": 74324.56,
+        "deltaPoints": -77.88,
+        "deltaPercent": -0.105,
+        "filledAt": 1789547672460
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789544548593",
+    "firedAt": 1789544548593,
+    "firedAtLabel": "16/9/2026, 1:12:28 pm",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74449.2,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74415.82,
+        "deltaPoints": -33.38,
+        "deltaPercent": -0.045,
+        "filledAt": 1789544850261
+      },
+      "min15": {
+        "price": 74362.57,
+        "deltaPoints": -86.63,
+        "deltaPercent": -0.116,
+        "filledAt": 1789545450427
+      },
+      "min30": {
+        "price": 74295.32,
+        "deltaPoints": -153.88,
+        "deltaPercent": -0.207,
+        "filledAt": 1789546350797
+      },
+      "min60": {
+        "price": 74303.97,
+        "deltaPoints": -145.23,
+        "deltaPercent": -0.195,
+        "filledAt": 1789548150498
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789544561096",
+    "firedAt": 1789544561096,
+    "firedAtLabel": "16/9/2026, 1:12:41 pm",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74449.67,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74413.42,
+        "deltaPoints": -36.25,
+        "deltaPercent": -0.049,
+        "filledAt": 1789544862711
+      },
+      "min15": {
+        "price": 74371.12,
+        "deltaPoints": -78.55,
+        "deltaPercent": -0.106,
+        "filledAt": 1789545462934
+      },
+      "min30": {
+        "price": 74287.56,
+        "deltaPoints": -162.11,
+        "deltaPercent": -0.218,
+        "filledAt": 1789546363536
+      },
+      "min60": {
+        "price": 74304.77,
+        "deltaPoints": -144.9,
+        "deltaPercent": -0.195,
+        "filledAt": 1789548163250
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789544586571",
+    "firedAt": 1789544586571,
+    "firedAtLabel": "16/9/2026, 1:13:06 pm",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74449.58,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74418.58,
+        "deltaPoints": -31,
+        "deltaPercent": -0.042,
+        "filledAt": 1789544887694
+      },
+      "min15": {
+        "price": 74356.98,
+        "deltaPoints": -92.6,
+        "deltaPercent": -0.124,
+        "filledAt": 1789545487835
+      },
+      "min30": {
+        "price": 74284.24,
+        "deltaPoints": -165.34,
+        "deltaPercent": -0.222,
+        "filledAt": 1789546388624
+      },
+      "min60": {
+        "price": 74321.63,
+        "deltaPoints": -127.95,
+        "deltaPercent": -0.172,
+        "filledAt": 1789548188911
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789544605628",
+    "firedAt": 1789544605628,
+    "firedAtLabel": "16/9/2026, 1:13:25 pm",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74447.35,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74430.21,
+        "deltaPoints": -17.14,
+        "deltaPercent": -0.023,
+        "filledAt": 1789544907110
+      },
+      "min15": {
+        "price": 74339.14,
+        "deltaPoints": -108.21,
+        "deltaPercent": -0.145,
+        "filledAt": 1789545506505
+      },
+      "min30": {
+        "price": 74281.74,
+        "deltaPoints": -165.61,
+        "deltaPercent": -0.222,
+        "filledAt": 1789546407359
+      },
+      "min60": {
+        "price": 74326.25,
+        "deltaPoints": -121.1,
+        "deltaPercent": -0.163,
+        "filledAt": 1789548207867
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789545019688",
+    "firedAt": 1789545019688,
+    "firedAtLabel": "16/9/2026, 1:20:19 pm",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74449.88,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74377.14,
+        "deltaPoints": -72.74,
+        "deltaPercent": -0.098,
+        "filledAt": 1789545322160
+      },
+      "min15": {
+        "price": 74338.5,
+        "deltaPoints": -111.38,
+        "deltaPercent": -0.15,
+        "filledAt": 1789545920883
+      },
+      "min30": {
+        "price": 74279.4,
+        "deltaPoints": -170.48,
+        "deltaPercent": -0.229,
+        "filledAt": 1789546819725
+      },
+      "min60": {
+        "price": 74327.38,
+        "deltaPoints": -122.5,
+        "deltaPercent": -0.165,
+        "filledAt": 1789548621318
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789545025998",
+    "firedAt": 1789545025998,
+    "firedAtLabel": "16/9/2026, 1:20:25 pm",
+    "direction": "bullish",
+    "confidence": 65,
+    "entrySpotPrice": 74446.58,
+    "entryAtmStrike": 74400,
+    "checkpoints": {
+      "min5": {
+        "price": 74379.42,
+        "deltaPoints": -67.16,
+        "deltaPercent": -0.09,
+        "filledAt": 1789545328676
+      },
+      "min15": {
+        "price": 74335.48,
+        "deltaPoints": -111.1,
+        "deltaPercent": -0.149,
+        "filledAt": 1789545927096
+      },
+      "min30": {
+        "price": 74278.04,
+        "deltaPoints": -168.54,
+        "deltaPercent": -0.226,
+        "filledAt": 1789546826113
+      },
+      "min60": {
+        "price": 74326.02,
+        "deltaPoints": -120.56,
+        "deltaPercent": -0.162,
+        "filledAt": 1789548627871
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789548569989",
+    "firedAt": 1789548569989,
+    "firedAtLabel": "16/9/2026, 2:19:29 pm",
+    "direction": "bullish",
+    "confidence": 70,
+    "entrySpotPrice": 74349.11,
+    "entryAtmStrike": 74300,
+    "checkpoints": {
+      "min5": {
+        "price": 74338.05,
+        "deltaPoints": -11.06,
+        "deltaPercent": -0.015,
+        "filledAt": 1789548872620
+      },
+      "min15": {
+        "price": 74297.82,
+        "deltaPoints": -51.29,
+        "deltaPercent": -0.069,
+        "filledAt": 1789549470393
+      },
+      "min30": {
+        "price": 74331.89,
+        "deltaPoints": -17.22,
+        "deltaPercent": -0.023,
+        "filledAt": 1789550372086
+      },
+      "min60": {
+        "price": 74303.16,
+        "deltaPoints": -45.95,
+        "deltaPercent": -0.062,
+        "filledAt": 1789552171431
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789550484672",
+    "firedAt": 1789550484672,
+    "firedAtLabel": "16/9/2026, 2:51:24 pm",
+    "direction": "bullish",
+    "confidence": 70,
+    "entrySpotPrice": 74349.23,
+    "entryAtmStrike": 74300,
+    "checkpoints": {
+      "min5": {
+        "price": 74377.48,
+        "deltaPoints": 28.25,
+        "deltaPercent": 0.038,
+        "filledAt": 1789550787360
+      },
+      "min15": {
+        "price": 74304.26,
+        "deltaPoints": -44.97,
+        "deltaPercent": -0.06,
+        "filledAt": 1789551384849
+      },
+      "min30": {
+        "price": 74303.16,
+        "deltaPoints": -46.07,
+        "deltaPercent": -0.062,
+        "filledAt": 1789552285996
+      },
+      "min60": {
+        "price": 74336.45,
+        "deltaPoints": -12.78,
+        "deltaPercent": -0.017,
+        "filledAt": 1789554087137
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789550589725",
+    "firedAt": 1789550589725,
+    "firedAtLabel": "16/9/2026, 2:53:09 pm",
+    "direction": "bullish",
+    "confidence": 70,
+    "entrySpotPrice": 74347.86,
+    "entryAtmStrike": 74300,
+    "checkpoints": {
+      "min5": {
+        "price": 74389.49,
+        "deltaPoints": 41.63,
+        "deltaPercent": 0.056,
+        "filledAt": 1789550892542
+      },
+      "min15": {
+        "price": 74310.78,
+        "deltaPoints": -37.08,
+        "deltaPercent": -0.05,
+        "filledAt": 1789551489908
+      },
+      "min30": {
+        "price": 74303.16,
+        "deltaPoints": -44.7,
+        "deltaPercent": -0.06,
+        "filledAt": 1789552391018
+      },
+      "min60": {
+        "price": 74336.45,
+        "deltaPoints": -11.41,
+        "deltaPercent": -0.015,
+        "filledAt": 1789554192163
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789550672668",
+    "firedAt": 1789550672668,
+    "firedAtLabel": "16/9/2026, 2:54:32 pm",
+    "direction": "bullish",
+    "confidence": 70,
+    "entrySpotPrice": 74349.5,
+    "entryAtmStrike": 74300,
+    "checkpoints": {
+      "min5": {
+        "price": 74354.04,
+        "deltaPoints": 4.54,
+        "deltaPercent": 0.006,
+        "filledAt": 1789550975352
+      },
+      "min15": {
+        "price": 74302.41,
+        "deltaPoints": -47.09,
+        "deltaPercent": -0.063,
+        "filledAt": 1789551572738
+      },
+      "min30": {
+        "price": 74303.16,
+        "deltaPoints": -46.34,
+        "deltaPercent": -0.062,
+        "filledAt": 1789552473619
+      },
+      "min60": {
+        "price": 74336.45,
+        "deltaPoints": -13.05,
+        "deltaPercent": -0.018,
+        "filledAt": 1789554274229
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789550679041",
+    "firedAt": 1789550679041,
+    "firedAtLabel": "16/9/2026, 2:54:39 pm",
+    "direction": "bullish",
+    "confidence": 70,
+    "entrySpotPrice": 74345.51,
+    "entryAtmStrike": 74300,
+    "checkpoints": {
+      "min5": {
+        "price": 74352.49,
+        "deltaPoints": 6.98,
+        "deltaPercent": 0.009,
+        "filledAt": 1789550981712
+      },
+      "min15": {
+        "price": 74304.52,
+        "deltaPoints": -40.99,
+        "deltaPercent": -0.055,
+        "filledAt": 1789551579210
+      },
+      "min30": {
+        "price": 74303.16,
+        "deltaPoints": -42.35,
+        "deltaPercent": -0.057,
+        "filledAt": 1789552480041
+      },
+      "min60": {
+        "price": 74336.45,
+        "deltaPoints": -9.06,
+        "deltaPercent": -0.012,
+        "filledAt": 1789554280567
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789550704508",
+    "firedAt": 1789550704508,
+    "firedAtLabel": "16/9/2026, 2:55:04 pm",
+    "direction": "bullish",
+    "confidence": 70,
+    "entrySpotPrice": 74347.78,
+    "entryAtmStrike": 74300,
+    "checkpoints": {
+      "min5": {
+        "price": 74319.59,
+        "deltaPoints": -28.19,
+        "deltaPercent": -0.038,
+        "filledAt": 1789551007113
+      },
+      "min15": {
+        "price": 74307.41,
+        "deltaPoints": -40.37,
+        "deltaPercent": -0.054,
+        "filledAt": 1789551604893
+      },
+      "min30": {
+        "price": 74303.16,
+        "deltaPoints": -44.62,
+        "deltaPercent": -0.06,
+        "filledAt": 1789552505408
+      },
+      "min60": {
+        "price": 74336.45,
+        "deltaPoints": -11.33,
+        "deltaPercent": -0.015,
+        "filledAt": 1789554306031
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789550720459",
+    "firedAt": 1789550720459,
+    "firedAtLabel": "16/9/2026, 2:55:20 pm",
+    "direction": "bullish",
+    "confidence": 70,
+    "entrySpotPrice": 74348.25,
+    "entryAtmStrike": 74300,
+    "checkpoints": {
+      "min5": {
+        "price": 74319.68,
+        "deltaPoints": -28.57,
+        "deltaPercent": -0.038,
+        "filledAt": 1789551023043
+      },
+      "min15": {
+        "price": 74313.87,
+        "deltaPoints": -34.38,
+        "deltaPercent": -0.046,
+        "filledAt": 1789551620808
+      },
+      "min30": {
+        "price": 74303.16,
+        "deltaPoints": -45.09,
+        "deltaPercent": -0.061,
+        "filledAt": 1789552521158
+      },
+      "min60": {
+        "price": 74336.45,
+        "deltaPoints": -11.8,
+        "deltaPercent": -0.016,
+        "filledAt": 1789554321783
+      }
+    }
+  },
+  {
+    "id": "SIGNAL_1789550968977",
+    "firedAt": 1789550968977,
+    "firedAtLabel": "16/9/2026, 2:59:28 pm",
+    "direction": "bullish",
+    "confidence": 70,
+    "entrySpotPrice": 74349.15,
+    "entryAtmStrike": 74300,
+    "checkpoints": {
+      "min5": {
+        "price": 74321.76,
+        "deltaPoints": -27.39,
+        "deltaPercent": -0.037,
+        "filledAt": 1789551270370
+      },
+      "min15": {
+        "price": 74295.1,
+        "deltaPoints": -54.05,
+        "deltaPercent": -0.073,
+        "filledAt": 1789551869080
+      },
+      "min30": {
+        "price": 74336.45,
+        "deltaPoints": -12.7,
+        "deltaPercent": -0.017,
+        "filledAt": 1789552769002
+      },
+      "min60": {
+        "price": 74336.45,
+        "deltaPoints": -12.7,
+        "deltaPercent": -0.017,
+        "filledAt": 1789554571985
+      }
+    }
+  }
+]

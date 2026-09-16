@@ -1,0 +1,5415 @@
+[
+  {
+    "kind": "LEVEL_BREAK",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "R1 broken to the downside",
+    "reasoning": [
+      "Candle closed at 23431.50, below R1 (23434.77)",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "R1",
+    "price": 23434.77,
+    "triggeredAt": 1788947700000,
+    "id": "LEVEL_BREAK_1788947700000_1",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Opening range high broken to the downside - with confluence",
+    "reasoning": [
+      "Candle closed at 23258.60, below Opening range high (23281.15)",
+      "Also sits inside an active IFVG 23275-23280 zone",
+      "Also sits inside an active IFVG 23293-23296 zone",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Opening range high",
+    "price": 23281.15,
+    "triggeredAt": 1789098300000,
+    "id": "CONFLUENCE_1789098300000_2",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Pivot broken to the downside - with confluence",
+    "reasoning": [
+      "Candle closed at 23258.60, below Pivot (23276.68)",
+      "Also sits inside an active IFVG 23275-23280 zone",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Pivot",
+    "price": 23276.68,
+    "triggeredAt": 1789098300000,
+    "id": "CONFLUENCE_1789098300000_3",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Round 23300 broken to the downside - with confluence",
+    "reasoning": [
+      "Candle closed at 23258.60, below Round 23300 (23300.00)",
+      "Also sits inside an active IFVG 23293-23296 zone",
+      "Also sits inside an active IFVG 23300-23324 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Round 23300",
+    "price": 23300,
+    "triggeredAt": 1789098300000,
+    "id": "CONFLUENCE_1789098300000_4",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Round 23250 broken to the downside - with confluence",
+    "reasoning": [
+      "Candle closed at 23248.20, below Round 23250 (23250.00)",
+      "Also sits inside an active IFVG 23252-23257 zone",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Round 23250",
+    "price": 23250,
+    "triggeredAt": 1789099800000,
+    "id": "CONFLUENCE_1789099800000_5",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Opening range low broken to the downside - with confluence",
+    "reasoning": [
+      "Candle closed at 23164.00, below Opening range low (23186.55)",
+      "Also sits inside an active OB 23119-23172 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Opening range low",
+    "price": 23186.55,
+    "triggeredAt": 1789463700000,
+    "id": "CONFLUENCE_1789463700000_6",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "RETEST_FAIL",
+    "direction": "bullish",
+    "confidence": "high",
+    "headline": "R1 break failed - likely fakeout",
+    "reasoning": [
+      "Price returned to R1 (23434.77) and closed at 23459.45, back through the level against the original break",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "R1",
+    "price": 23434.77,
+    "triggeredAt": 1789011900000,
+    "id": "RETEST_FAIL_1789011900000_7",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Round 23250 retested and held - with confluence",
+    "reasoning": [
+      "Price returned to Round 23250 (23250.00) and closed at 23246.55, staying on the breakout side",
+      "Also sits inside an active IFVG 23252-23257 zone",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Round 23250",
+    "price": 23250,
+    "triggeredAt": 1789100100000,
+    "id": "CONFLUENCE_1789100100000_8",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Opening range low retested and held - with confluence",
+    "reasoning": [
+      "Price returned to Opening range low (23186.55) and closed at 23177.75, staying on the breakout side",
+      "Also sits inside an active OB 23119-23172 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Opening range low",
+    "price": 23186.55,
+    "triggeredAt": 1789464000000,
+    "id": "CONFLUENCE_1789464000000_9",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23511-23548)",
+    "reasoning": [
+      "IFVG zone formed at 12:30, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23511-23548",
+    "price": 23529.6,
+    "triggeredAt": 1788938400000,
+    "id": "ZONE_REACTION_1788938400000_10",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23511-23548)",
+    "reasoning": [
+      "IFVG zone formed at 12:30, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23511-23548",
+    "price": 23529.6,
+    "triggeredAt": 1788942000000,
+    "id": "ZONE_REACTION_1788942000000_11",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23511-23548)",
+    "reasoning": [
+      "IFVG zone formed at 12:30, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23511-23548",
+    "price": 23529.6,
+    "triggeredAt": 1788943200000,
+    "id": "ZONE_REACTION_1788943200000_12",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23489-23511) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 12:25, price just re-entered it",
+      "Also sits inside an active IFVG 23511-23548 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23489-23511",
+    "price": 23499.85,
+    "triggeredAt": 1788944700000,
+    "id": "CONFLUENCE_1788944700000_13",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23489-23511) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 12:25, price just re-entered it",
+      "Also sits inside an active IFVG 23511-23548 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23489-23511",
+    "price": 23499.85,
+    "triggeredAt": 1789011900000,
+    "id": "CONFLUENCE_1789011900000_14",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23275-23280) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 10:05, price just re-entered it",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23275-23280",
+    "price": 23277.574999999997,
+    "triggeredAt": 1789102500000,
+    "id": "CONFLUENCE_1789102500000_15",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23275-23280) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 10:05, price just re-entered it",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23275-23280",
+    "price": 23277.574999999997,
+    "triggeredAt": 1789104300000,
+    "id": "CONFLUENCE_1789104300000_16",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23300-23324)",
+    "reasoning": [
+      "IFVG zone formed at 11:10, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23300-23324",
+    "price": 23311.699999999997,
+    "triggeredAt": 1789108800000,
+    "id": "ZONE_REACTION_1789108800000_17",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23300-23324)",
+    "reasoning": [
+      "IFVG zone formed at 11:10, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23300-23324",
+    "price": 23311.699999999997,
+    "triggeredAt": 1789112400000,
+    "id": "ZONE_REACTION_1789112400000_18",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23300-23324)",
+    "reasoning": [
+      "IFVG zone formed at 11:10, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23300-23324",
+    "price": 23311.699999999997,
+    "triggeredAt": 1789114200000,
+    "id": "ZONE_REACTION_1789114200000_19",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23390-23409)",
+    "reasoning": [
+      "IFVG zone formed at 14:00, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23390-23409",
+    "price": 23399.9,
+    "triggeredAt": 1789119000000,
+    "id": "ZONE_REACTION_1789119000000_20",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23390-23409)",
+    "reasoning": [
+      "IFVG zone formed at 14:00, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23390-23409",
+    "price": 23399.9,
+    "triggeredAt": 1789120500000,
+    "id": "ZONE_REACTION_1789120500000_21",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23489-23511) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 12:25, price just re-entered it",
+      "Also sits inside an active IFVG 23511-23548 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23489-23511",
+    "price": 23499.85,
+    "triggeredAt": 1789443900000,
+    "id": "CONFLUENCE_1789443900000_22",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23511-23548)",
+    "reasoning": [
+      "IFVG zone formed at 12:30, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23511-23548",
+    "price": 23529.6,
+    "triggeredAt": 1789443900000,
+    "id": "ZONE_REACTION_1789443900000_23",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23552-23555) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 14:00, price just re-entered it",
+      "Also sits inside an active IFVG 23511-23548 zone",
+      "Also sits inside an active OB 23551-23562 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23552-23555",
+    "price": 23553.375,
+    "triggeredAt": 1789443900000,
+    "id": "CONFLUENCE_1789443900000_24",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to OB zone (23551-23562) - with confluence",
+    "reasoning": [
+      "OB zone formed at 14:00, price just re-entered it",
+      "Also sits inside an active IFVG 23511-23548 zone",
+      "Also sits inside an active IFVG 23552-23555 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "OB 23551-23562",
+    "price": 23556.375,
+    "triggeredAt": 1789443900000,
+    "id": "CONFLUENCE_1789443900000_25",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23390-23409)",
+    "reasoning": [
+      "IFVG zone formed at 14:00, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23390-23409",
+    "price": 23399.9,
+    "triggeredAt": 1789446000000,
+    "id": "ZONE_REACTION_1789446000000_26",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23300-23324)",
+    "reasoning": [
+      "IFVG zone formed at 11:10, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23300-23324",
+    "price": 23311.699999999997,
+    "triggeredAt": 1789450800000,
+    "id": "ZONE_REACTION_1789450800000_27",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23300-23324)",
+    "reasoning": [
+      "IFVG zone formed at 11:10, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23300-23324",
+    "price": 23311.699999999997,
+    "triggeredAt": 1789453200000,
+    "id": "ZONE_REACTION_1789453200000_28",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23300-23324)",
+    "reasoning": [
+      "IFVG zone formed at 11:10, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23300-23324",
+    "price": 23311.699999999997,
+    "triggeredAt": 1789455600000,
+    "id": "ZONE_REACTION_1789455600000_29",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23293-23296) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 11:05, price just re-entered it",
+      "Also sits inside an active IFVG 23275-23280 zone",
+      "Also sits inside an active IFVG 23300-23324 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23293-23296",
+    "price": 23294.875,
+    "triggeredAt": 1789458000000,
+    "id": "CONFLUENCE_1789458000000_30",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23275-23280) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 10:05, price just re-entered it",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23275-23280",
+    "price": 23277.574999999997,
+    "triggeredAt": 1789458600000,
+    "id": "CONFLUENCE_1789458600000_31",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23252-23257) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 09:55, price just re-entered it",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23252-23257",
+    "price": 23254.8,
+    "triggeredAt": 1789459800000,
+    "id": "CONFLUENCE_1789459800000_32",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23275-23280) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 10:05, price just re-entered it",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23275-23280",
+    "price": 23277.574999999997,
+    "triggeredAt": 1789460400000,
+    "id": "CONFLUENCE_1789460400000_33",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23252-23257) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 09:55, price just re-entered it",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23252-23257",
+    "price": 23254.8,
+    "triggeredAt": 1789461600000,
+    "id": "CONFLUENCE_1789461600000_34",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23252-23257) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 09:55, price just re-entered it",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23252-23257",
+    "price": 23254.8,
+    "triggeredAt": 1789530300000,
+    "id": "CONFLUENCE_1789530300000_35",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23275-23280) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 10:05, price just re-entered it",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23275-23280",
+    "price": 23277.574999999997,
+    "triggeredAt": 1789530300000,
+    "id": "CONFLUENCE_1789530300000_36",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to OB zone (23262-23275) - with confluence",
+    "reasoning": [
+      "OB zone formed at 13:55, price just re-entered it",
+      "Also sits inside an active IFVG 23252-23257 zone",
+      "Also sits inside an active IFVG 23275-23280 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "OB 23262-23275",
+    "price": 23268.6,
+    "triggeredAt": 1789530300000,
+    "id": "CONFLUENCE_1789530300000_37",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23549-23555",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23549-23555",
+    "price": 23554.75,
+    "triggeredAt": 1788937200000,
+    "id": "SWEEP_REVERSAL_1788937200000_38",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23549-23563",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23549-23563",
+    "price": 23563.15,
+    "triggeredAt": 1788938400000,
+    "id": "SWEEP_REVERSAL_1788938400000_39",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23549-23570",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23549-23570",
+    "price": 23569.6,
+    "triggeredAt": 1788939000000,
+    "id": "SWEEP_REVERSAL_1788939000000_40",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23549-23561",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23549-23561",
+    "price": 23561.35,
+    "triggeredAt": 1788939300000,
+    "id": "SWEEP_REVERSAL_1788939300000_41",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23549-23551",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23549-23551",
+    "price": 23550.6,
+    "triggeredAt": 1788939600000,
+    "id": "SWEEP_REVERSAL_1788939600000_42",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23549-23557",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23549-23557",
+    "price": 23557.1,
+    "triggeredAt": 1788940200000,
+    "id": "SWEEP_REVERSAL_1788940200000_43",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23549-23561",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23549-23561",
+    "price": 23560.6,
+    "triggeredAt": 1788940800000,
+    "id": "SWEEP_REVERSAL_1788940800000_44",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23403-23404",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23403-23404",
+    "price": 23403.05,
+    "triggeredAt": 1789017900000,
+    "id": "SWEEP_REVERSAL_1789017900000_45",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23451-23460",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23451-23460",
+    "price": 23460.3,
+    "triggeredAt": 1789023600000,
+    "id": "SWEEP_REVERSAL_1789023600000_46",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23451-23453",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23451-23453",
+    "price": 23453,
+    "triggeredAt": 1789023900000,
+    "id": "SWEEP_REVERSAL_1789023900000_47",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23451-23456",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23451-23456",
+    "price": 23455.55,
+    "triggeredAt": 1789025100000,
+    "id": "SWEEP_REVERSAL_1789025100000_48",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23423-23423",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23423-23423",
+    "price": 23423.05,
+    "triggeredAt": 1789028700000,
+    "id": "SWEEP_REVERSAL_1789028700000_49",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23410-23423",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23410-23423",
+    "price": 23409.7,
+    "triggeredAt": 1789030200000,
+    "id": "SWEEP_REVERSAL_1789030200000_50",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23405-23405",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23405-23405",
+    "price": 23404.5,
+    "triggeredAt": 1789031100000,
+    "id": "SWEEP_REVERSAL_1789031100000_51",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23398-23405",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23398-23405",
+    "price": 23397.8,
+    "triggeredAt": 1789031400000,
+    "id": "SWEEP_REVERSAL_1789031400000_52",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23414-23423",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23414-23423",
+    "price": 23413.9,
+    "triggeredAt": 1789031700000,
+    "id": "SWEEP_REVERSAL_1789031700000_53",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23420-23423",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23420-23423",
+    "price": 23420.25,
+    "triggeredAt": 1789032000000,
+    "id": "SWEEP_REVERSAL_1789032000000_54",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23389-23423",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23389-23423",
+    "price": 23389.25,
+    "triggeredAt": 1789034100000,
+    "id": "SWEEP_REVERSAL_1789034100000_55",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23361-23361",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23361-23361",
+    "price": 23361.1,
+    "triggeredAt": 1789110600000,
+    "id": "SWEEP_REVERSAL_1789110600000_56",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23321-23324",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23321-23324",
+    "price": 23320.7,
+    "triggeredAt": 1789112400000,
+    "id": "SWEEP_REVERSAL_1789112400000_57",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23314-23324",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23314-23324",
+    "price": 23314,
+    "triggeredAt": 1789114200000,
+    "id": "SWEEP_REVERSAL_1789114200000_58",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23320-23324",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23320-23324",
+    "price": 23320.3,
+    "triggeredAt": 1789114500000,
+    "id": "SWEEP_REVERSAL_1789114500000_59",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23361-23381",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23361-23381",
+    "price": 23380.6,
+    "triggeredAt": 1789114800000,
+    "id": "SWEEP_REVERSAL_1789114800000_60",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23372-23387",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23372-23387",
+    "price": 23371.85,
+    "triggeredAt": 1789446300000,
+    "id": "SWEEP_REVERSAL_1789446300000_61",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23375-23387",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23375-23387",
+    "price": 23375.25,
+    "triggeredAt": 1789447500000,
+    "id": "SWEEP_REVERSAL_1789447500000_62",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "LEVEL_BREAK",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "R1 broken to the downside",
+    "reasoning": [
+      "Candle closed at 23431.50, below R1 (23434.77)",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "R1",
+    "price": 23434.77,
+    "triggeredAt": 1788947700000,
+    "id": "LEVEL_BREAK_1788947700000_53",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Opening range high broken to the downside - with confluence",
+    "reasoning": [
+      "Candle closed at 23258.60, below Opening range high (23281.15)",
+      "Also sits inside an active IFVG 23275-23280 zone",
+      "Also sits inside an active IFVG 23293-23296 zone",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Opening range high",
+    "price": 23281.15,
+    "triggeredAt": 1789098300000,
+    "id": "CONFLUENCE_1789098300000_54",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Pivot broken to the downside - with confluence",
+    "reasoning": [
+      "Candle closed at 23258.60, below Pivot (23276.68)",
+      "Also sits inside an active IFVG 23275-23280 zone",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Pivot",
+    "price": 23276.68,
+    "triggeredAt": 1789098300000,
+    "id": "CONFLUENCE_1789098300000_55",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Round 23300 broken to the downside - with confluence",
+    "reasoning": [
+      "Candle closed at 23258.60, below Round 23300 (23300.00)",
+      "Also sits inside an active IFVG 23293-23296 zone",
+      "Also sits inside an active IFVG 23300-23324 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Round 23300",
+    "price": 23300,
+    "triggeredAt": 1789098300000,
+    "id": "CONFLUENCE_1789098300000_56",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Round 23250 broken to the downside - with confluence",
+    "reasoning": [
+      "Candle closed at 23248.20, below Round 23250 (23250.00)",
+      "Also sits inside an active IFVG 23252-23257 zone",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Round 23250",
+    "price": 23250,
+    "triggeredAt": 1789099800000,
+    "id": "CONFLUENCE_1789099800000_57",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Opening range low broken to the downside - with confluence",
+    "reasoning": [
+      "Candle closed at 23164.00, below Opening range low (23186.55)",
+      "Also sits inside an active IFVG 23196-23212 zone",
+      "Also sits inside an active OB 23119-23172 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Opening range low",
+    "price": 23186.55,
+    "triggeredAt": 1789463700000,
+    "id": "CONFLUENCE_1789463700000_58",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "RETEST_FAIL",
+    "direction": "bullish",
+    "confidence": "high",
+    "headline": "R1 break failed - likely fakeout",
+    "reasoning": [
+      "Price returned to R1 (23434.77) and closed at 23459.45, back through the level against the original break",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "R1",
+    "price": 23434.77,
+    "triggeredAt": 1789011900000,
+    "id": "RETEST_FAIL_1789011900000_59",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Round 23250 retested and held - with confluence",
+    "reasoning": [
+      "Price returned to Round 23250 (23250.00) and closed at 23246.55, staying on the breakout side",
+      "Also sits inside an active IFVG 23252-23257 zone",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Round 23250",
+    "price": 23250,
+    "triggeredAt": 1789100100000,
+    "id": "CONFLUENCE_1789100100000_60",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Opening range low retested and held - with confluence",
+    "reasoning": [
+      "Price returned to Opening range low (23186.55) and closed at 23177.75, staying on the breakout side",
+      "Also sits inside an active IFVG 23196-23212 zone",
+      "Also sits inside an active OB 23119-23172 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Opening range low",
+    "price": 23186.55,
+    "triggeredAt": 1789464000000,
+    "id": "CONFLUENCE_1789464000000_61",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23511-23548)",
+    "reasoning": [
+      "IFVG zone formed at 12:30, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23511-23548",
+    "price": 23529.6,
+    "triggeredAt": 1788938400000,
+    "id": "ZONE_REACTION_1788938400000_62",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23511-23548)",
+    "reasoning": [
+      "IFVG zone formed at 12:30, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23511-23548",
+    "price": 23529.6,
+    "triggeredAt": 1788942000000,
+    "id": "ZONE_REACTION_1788942000000_63",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23511-23548)",
+    "reasoning": [
+      "IFVG zone formed at 12:30, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23511-23548",
+    "price": 23529.6,
+    "triggeredAt": 1788943200000,
+    "id": "ZONE_REACTION_1788943200000_64",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23489-23511) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 12:25, price just re-entered it",
+      "Also sits inside an active IFVG 23511-23548 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23489-23511",
+    "price": 23499.85,
+    "triggeredAt": 1788944700000,
+    "id": "CONFLUENCE_1788944700000_65",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23489-23511) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 12:25, price just re-entered it",
+      "Also sits inside an active IFVG 23511-23548 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23489-23511",
+    "price": 23499.85,
+    "triggeredAt": 1789011900000,
+    "id": "CONFLUENCE_1789011900000_66",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23275-23280) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 10:05, price just re-entered it",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23275-23280",
+    "price": 23277.574999999997,
+    "triggeredAt": 1789102500000,
+    "id": "CONFLUENCE_1789102500000_67",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23275-23280) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 10:05, price just re-entered it",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23275-23280",
+    "price": 23277.574999999997,
+    "triggeredAt": 1789104300000,
+    "id": "CONFLUENCE_1789104300000_68",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23300-23324)",
+    "reasoning": [
+      "IFVG zone formed at 11:10, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23300-23324",
+    "price": 23311.699999999997,
+    "triggeredAt": 1789108800000,
+    "id": "ZONE_REACTION_1789108800000_69",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23300-23324)",
+    "reasoning": [
+      "IFVG zone formed at 11:10, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23300-23324",
+    "price": 23311.699999999997,
+    "triggeredAt": 1789112400000,
+    "id": "ZONE_REACTION_1789112400000_70",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23300-23324)",
+    "reasoning": [
+      "IFVG zone formed at 11:10, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23300-23324",
+    "price": 23311.699999999997,
+    "triggeredAt": 1789114200000,
+    "id": "ZONE_REACTION_1789114200000_71",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23390-23409)",
+    "reasoning": [
+      "IFVG zone formed at 14:00, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23390-23409",
+    "price": 23399.9,
+    "triggeredAt": 1789119000000,
+    "id": "ZONE_REACTION_1789119000000_72",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23390-23409)",
+    "reasoning": [
+      "IFVG zone formed at 14:00, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23390-23409",
+    "price": 23399.9,
+    "triggeredAt": 1789120500000,
+    "id": "ZONE_REACTION_1789120500000_73",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23489-23511) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 12:25, price just re-entered it",
+      "Also sits inside an active IFVG 23511-23548 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23489-23511",
+    "price": 23499.85,
+    "triggeredAt": 1789443900000,
+    "id": "CONFLUENCE_1789443900000_74",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23511-23548)",
+    "reasoning": [
+      "IFVG zone formed at 12:30, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23511-23548",
+    "price": 23529.6,
+    "triggeredAt": 1789443900000,
+    "id": "ZONE_REACTION_1789443900000_75",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23552-23555) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 14:00, price just re-entered it",
+      "Also sits inside an active IFVG 23511-23548 zone",
+      "Also sits inside an active OB 23551-23562 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23552-23555",
+    "price": 23553.375,
+    "triggeredAt": 1789443900000,
+    "id": "CONFLUENCE_1789443900000_76",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to OB zone (23551-23562) - with confluence",
+    "reasoning": [
+      "OB zone formed at 14:00, price just re-entered it",
+      "Also sits inside an active IFVG 23511-23548 zone",
+      "Also sits inside an active IFVG 23552-23555 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "OB 23551-23562",
+    "price": 23556.375,
+    "triggeredAt": 1789443900000,
+    "id": "CONFLUENCE_1789443900000_77",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23390-23409)",
+    "reasoning": [
+      "IFVG zone formed at 14:00, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23390-23409",
+    "price": 23399.9,
+    "triggeredAt": 1789446000000,
+    "id": "ZONE_REACTION_1789446000000_78",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23300-23324)",
+    "reasoning": [
+      "IFVG zone formed at 11:10, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23300-23324",
+    "price": 23311.699999999997,
+    "triggeredAt": 1789450800000,
+    "id": "ZONE_REACTION_1789450800000_79",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23300-23324)",
+    "reasoning": [
+      "IFVG zone formed at 11:10, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23300-23324",
+    "price": 23311.699999999997,
+    "triggeredAt": 1789453200000,
+    "id": "ZONE_REACTION_1789453200000_80",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23300-23324)",
+    "reasoning": [
+      "IFVG zone formed at 11:10, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23300-23324",
+    "price": 23311.699999999997,
+    "triggeredAt": 1789455600000,
+    "id": "ZONE_REACTION_1789455600000_81",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23293-23296) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 11:05, price just re-entered it",
+      "Also sits inside an active IFVG 23275-23280 zone",
+      "Also sits inside an active IFVG 23300-23324 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23293-23296",
+    "price": 23294.875,
+    "triggeredAt": 1789458000000,
+    "id": "CONFLUENCE_1789458000000_82",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23275-23280) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 10:05, price just re-entered it",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23275-23280",
+    "price": 23277.574999999997,
+    "triggeredAt": 1789458600000,
+    "id": "CONFLUENCE_1789458600000_83",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23252-23257) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 09:55, price just re-entered it",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23252-23257",
+    "price": 23254.8,
+    "triggeredAt": 1789459800000,
+    "id": "CONFLUENCE_1789459800000_84",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23275-23280) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 10:05, price just re-entered it",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23275-23280",
+    "price": 23277.574999999997,
+    "triggeredAt": 1789460400000,
+    "id": "CONFLUENCE_1789460400000_85",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23252-23257) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 09:55, price just re-entered it",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23252-23257",
+    "price": 23254.8,
+    "triggeredAt": 1789461600000,
+    "id": "CONFLUENCE_1789461600000_86",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bullish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23220-23229) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 14:15, price just re-entered it",
+      "Also sits inside an active IFVG 23196-23212 zone",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "IFVG 23220-23229",
+    "price": 23224.775,
+    "triggeredAt": 1789463100000,
+    "id": "CONFLUENCE_1789463100000_87",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23252-23257) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 09:55, price just re-entered it",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23252-23257",
+    "price": 23254.8,
+    "triggeredAt": 1789530300000,
+    "id": "CONFLUENCE_1789530300000_88",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23275-23280) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 10:05, price just re-entered it",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23275-23280",
+    "price": 23277.574999999997,
+    "triggeredAt": 1789530300000,
+    "id": "CONFLUENCE_1789530300000_89",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to OB zone (23262-23275) - with confluence",
+    "reasoning": [
+      "OB zone formed at 13:55, price just re-entered it",
+      "Also sits inside an active IFVG 23252-23257 zone",
+      "Also sits inside an active IFVG 23275-23280 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "OB 23262-23275",
+    "price": 23268.6,
+    "triggeredAt": 1789530300000,
+    "id": "CONFLUENCE_1789530300000_90",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bullish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23220-23229) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 14:15, price just re-entered it",
+      "Also sits inside an active IFVG 23196-23212 zone",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "IFVG 23220-23229",
+    "price": 23224.775,
+    "triggeredAt": 1789530300000,
+    "id": "CONFLUENCE_1789530300000_91",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23196-23212)",
+    "reasoning": [
+      "IFVG zone formed at 14:45, price just re-entered it",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "IFVG 23196-23212",
+    "price": 23204,
+    "triggeredAt": 1789530300000,
+    "id": "ZONE_REACTION_1789530300000_92",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23549-23555",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23549-23555",
+    "price": 23554.75,
+    "triggeredAt": 1788937200000,
+    "id": "SWEEP_REVERSAL_1788937200000_93",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23549-23563",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23549-23563",
+    "price": 23563.15,
+    "triggeredAt": 1788938400000,
+    "id": "SWEEP_REVERSAL_1788938400000_94",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23549-23570",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23549-23570",
+    "price": 23569.6,
+    "triggeredAt": 1788939000000,
+    "id": "SWEEP_REVERSAL_1788939000000_95",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23549-23561",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23549-23561",
+    "price": 23561.35,
+    "triggeredAt": 1788939300000,
+    "id": "SWEEP_REVERSAL_1788939300000_96",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23549-23551",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23549-23551",
+    "price": 23550.6,
+    "triggeredAt": 1788939600000,
+    "id": "SWEEP_REVERSAL_1788939600000_97",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23549-23557",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23549-23557",
+    "price": 23557.1,
+    "triggeredAt": 1788940200000,
+    "id": "SWEEP_REVERSAL_1788940200000_98",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23549-23561",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23549-23561",
+    "price": 23560.6,
+    "triggeredAt": 1788940800000,
+    "id": "SWEEP_REVERSAL_1788940800000_99",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23403-23404",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23403-23404",
+    "price": 23403.05,
+    "triggeredAt": 1789017900000,
+    "id": "SWEEP_REVERSAL_1789017900000_100",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23451-23460",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23451-23460",
+    "price": 23460.3,
+    "triggeredAt": 1789023600000,
+    "id": "SWEEP_REVERSAL_1789023600000_101",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23451-23453",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23451-23453",
+    "price": 23453,
+    "triggeredAt": 1789023900000,
+    "id": "SWEEP_REVERSAL_1789023900000_102",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23451-23456",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23451-23456",
+    "price": 23455.55,
+    "triggeredAt": 1789025100000,
+    "id": "SWEEP_REVERSAL_1789025100000_103",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23423-23423",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23423-23423",
+    "price": 23423.05,
+    "triggeredAt": 1789028700000,
+    "id": "SWEEP_REVERSAL_1789028700000_104",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23410-23423",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23410-23423",
+    "price": 23409.7,
+    "triggeredAt": 1789030200000,
+    "id": "SWEEP_REVERSAL_1789030200000_105",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23405-23405",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23405-23405",
+    "price": 23404.5,
+    "triggeredAt": 1789031100000,
+    "id": "SWEEP_REVERSAL_1789031100000_106",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23398-23405",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23398-23405",
+    "price": 23397.8,
+    "triggeredAt": 1789031400000,
+    "id": "SWEEP_REVERSAL_1789031400000_107",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23414-23423",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23414-23423",
+    "price": 23413.9,
+    "triggeredAt": 1789031700000,
+    "id": "SWEEP_REVERSAL_1789031700000_108",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23420-23423",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23420-23423",
+    "price": 23420.25,
+    "triggeredAt": 1789032000000,
+    "id": "SWEEP_REVERSAL_1789032000000_109",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23389-23423",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23389-23423",
+    "price": 23389.25,
+    "triggeredAt": 1789034100000,
+    "id": "SWEEP_REVERSAL_1789034100000_110",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23361-23361",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23361-23361",
+    "price": 23361.1,
+    "triggeredAt": 1789110600000,
+    "id": "SWEEP_REVERSAL_1789110600000_111",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23321-23324",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23321-23324",
+    "price": 23320.7,
+    "triggeredAt": 1789112400000,
+    "id": "SWEEP_REVERSAL_1789112400000_112",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23314-23324",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23314-23324",
+    "price": 23314,
+    "triggeredAt": 1789114200000,
+    "id": "SWEEP_REVERSAL_1789114200000_113",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23320-23324",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23320-23324",
+    "price": 23320.3,
+    "triggeredAt": 1789114500000,
+    "id": "SWEEP_REVERSAL_1789114500000_114",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23361-23381",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23361-23381",
+    "price": 23380.6,
+    "triggeredAt": 1789114800000,
+    "id": "SWEEP_REVERSAL_1789114800000_115",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23372-23387",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23372-23387",
+    "price": 23371.85,
+    "triggeredAt": 1789446300000,
+    "id": "SWEEP_REVERSAL_1789446300000_116",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23375-23387",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23375-23387",
+    "price": 23375.25,
+    "triggeredAt": 1789447500000,
+    "id": "SWEEP_REVERSAL_1789447500000_117",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "LEVEL_BREAK",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "R1 broken to the downside",
+    "reasoning": [
+      "Candle closed at 23431.50, below R1 (23434.77)",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "R1",
+    "price": 23434.77,
+    "triggeredAt": 1788947700000,
+    "id": "LEVEL_BREAK_1788947700000_1",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Opening range high broken to the downside - with confluence",
+    "reasoning": [
+      "Candle closed at 23258.60, below Opening range high (23281.15)",
+      "Also sits inside an active IFVG 23275-23280 zone",
+      "Also sits inside an active IFVG 23293-23296 zone",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Opening range high",
+    "price": 23281.15,
+    "triggeredAt": 1789098300000,
+    "id": "CONFLUENCE_1789098300000_2",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Pivot broken to the downside - with confluence",
+    "reasoning": [
+      "Candle closed at 23258.60, below Pivot (23276.68)",
+      "Also sits inside an active IFVG 23275-23280 zone",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Pivot",
+    "price": 23276.68,
+    "triggeredAt": 1789098300000,
+    "id": "CONFLUENCE_1789098300000_3",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Round 23300 broken to the downside - with confluence",
+    "reasoning": [
+      "Candle closed at 23258.60, below Round 23300 (23300.00)",
+      "Also sits inside an active IFVG 23293-23296 zone",
+      "Also sits inside an active IFVG 23300-23324 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Round 23300",
+    "price": 23300,
+    "triggeredAt": 1789098300000,
+    "id": "CONFLUENCE_1789098300000_4",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Round 23250 broken to the downside - with confluence",
+    "reasoning": [
+      "Candle closed at 23248.20, below Round 23250 (23250.00)",
+      "Also sits inside an active IFVG 23252-23257 zone",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Round 23250",
+    "price": 23250,
+    "triggeredAt": 1789099800000,
+    "id": "CONFLUENCE_1789099800000_5",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Opening range low broken to the downside - with confluence",
+    "reasoning": [
+      "Candle closed at 23164.00, below Opening range low (23186.55)",
+      "Also sits inside an active IFVG 23196-23212 zone",
+      "Also sits inside an active OB 23119-23172 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Opening range low",
+    "price": 23186.55,
+    "triggeredAt": 1789463700000,
+    "id": "CONFLUENCE_1789463700000_6",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "RETEST_FAIL",
+    "direction": "bullish",
+    "confidence": "high",
+    "headline": "R1 break failed - likely fakeout",
+    "reasoning": [
+      "Price returned to R1 (23434.77) and closed at 23459.45, back through the level against the original break",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "R1",
+    "price": 23434.77,
+    "triggeredAt": 1789011900000,
+    "id": "RETEST_FAIL_1789011900000_7",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Round 23250 retested and held - with confluence",
+    "reasoning": [
+      "Price returned to Round 23250 (23250.00) and closed at 23246.55, staying on the breakout side",
+      "Also sits inside an active IFVG 23252-23257 zone",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Round 23250",
+    "price": 23250,
+    "triggeredAt": 1789100100000,
+    "id": "CONFLUENCE_1789100100000_8",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Opening range low retested and held - with confluence",
+    "reasoning": [
+      "Price returned to Opening range low (23186.55) and closed at 23177.75, staying on the breakout side",
+      "Also sits inside an active IFVG 23196-23212 zone",
+      "Also sits inside an active OB 23119-23172 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Opening range low",
+    "price": 23186.55,
+    "triggeredAt": 1789464000000,
+    "id": "CONFLUENCE_1789464000000_9",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23511-23548)",
+    "reasoning": [
+      "IFVG zone formed at 12:30, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23511-23548",
+    "price": 23529.6,
+    "triggeredAt": 1788938400000,
+    "id": "ZONE_REACTION_1788938400000_10",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23511-23548)",
+    "reasoning": [
+      "IFVG zone formed at 12:30, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23511-23548",
+    "price": 23529.6,
+    "triggeredAt": 1788942000000,
+    "id": "ZONE_REACTION_1788942000000_11",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23511-23548)",
+    "reasoning": [
+      "IFVG zone formed at 12:30, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23511-23548",
+    "price": 23529.6,
+    "triggeredAt": 1788943200000,
+    "id": "ZONE_REACTION_1788943200000_12",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23489-23511) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 12:25, price just re-entered it",
+      "Also sits inside an active IFVG 23511-23548 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23489-23511",
+    "price": 23499.85,
+    "triggeredAt": 1788944700000,
+    "id": "CONFLUENCE_1788944700000_13",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23489-23511) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 12:25, price just re-entered it",
+      "Also sits inside an active IFVG 23511-23548 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23489-23511",
+    "price": 23499.85,
+    "triggeredAt": 1789011900000,
+    "id": "CONFLUENCE_1789011900000_14",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23275-23280) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 10:05, price just re-entered it",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23275-23280",
+    "price": 23277.574999999997,
+    "triggeredAt": 1789102500000,
+    "id": "CONFLUENCE_1789102500000_15",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23275-23280) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 10:05, price just re-entered it",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23275-23280",
+    "price": 23277.574999999997,
+    "triggeredAt": 1789104300000,
+    "id": "CONFLUENCE_1789104300000_16",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23300-23324)",
+    "reasoning": [
+      "IFVG zone formed at 11:10, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23300-23324",
+    "price": 23311.699999999997,
+    "triggeredAt": 1789108800000,
+    "id": "ZONE_REACTION_1789108800000_17",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23300-23324)",
+    "reasoning": [
+      "IFVG zone formed at 11:10, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23300-23324",
+    "price": 23311.699999999997,
+    "triggeredAt": 1789112400000,
+    "id": "ZONE_REACTION_1789112400000_18",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23300-23324)",
+    "reasoning": [
+      "IFVG zone formed at 11:10, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23300-23324",
+    "price": 23311.699999999997,
+    "triggeredAt": 1789114200000,
+    "id": "ZONE_REACTION_1789114200000_19",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23390-23409)",
+    "reasoning": [
+      "IFVG zone formed at 14:00, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23390-23409",
+    "price": 23399.9,
+    "triggeredAt": 1789119000000,
+    "id": "ZONE_REACTION_1789119000000_20",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23390-23409)",
+    "reasoning": [
+      "IFVG zone formed at 14:00, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23390-23409",
+    "price": 23399.9,
+    "triggeredAt": 1789120500000,
+    "id": "ZONE_REACTION_1789120500000_21",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23489-23511) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 12:25, price just re-entered it",
+      "Also sits inside an active IFVG 23511-23548 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23489-23511",
+    "price": 23499.85,
+    "triggeredAt": 1789443900000,
+    "id": "CONFLUENCE_1789443900000_22",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23511-23548)",
+    "reasoning": [
+      "IFVG zone formed at 12:30, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23511-23548",
+    "price": 23529.6,
+    "triggeredAt": 1789443900000,
+    "id": "ZONE_REACTION_1789443900000_23",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23552-23555) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 14:00, price just re-entered it",
+      "Also sits inside an active IFVG 23511-23548 zone",
+      "Also sits inside an active OB 23551-23562 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23552-23555",
+    "price": 23553.375,
+    "triggeredAt": 1789443900000,
+    "id": "CONFLUENCE_1789443900000_24",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to OB zone (23551-23562) - with confluence",
+    "reasoning": [
+      "OB zone formed at 14:00, price just re-entered it",
+      "Also sits inside an active IFVG 23511-23548 zone",
+      "Also sits inside an active IFVG 23552-23555 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "OB 23551-23562",
+    "price": 23556.375,
+    "triggeredAt": 1789443900000,
+    "id": "CONFLUENCE_1789443900000_25",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23390-23409)",
+    "reasoning": [
+      "IFVG zone formed at 14:00, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23390-23409",
+    "price": 23399.9,
+    "triggeredAt": 1789446000000,
+    "id": "ZONE_REACTION_1789446000000_26",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23300-23324)",
+    "reasoning": [
+      "IFVG zone formed at 11:10, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23300-23324",
+    "price": 23311.699999999997,
+    "triggeredAt": 1789450800000,
+    "id": "ZONE_REACTION_1789450800000_27",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23300-23324)",
+    "reasoning": [
+      "IFVG zone formed at 11:10, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23300-23324",
+    "price": 23311.699999999997,
+    "triggeredAt": 1789453200000,
+    "id": "ZONE_REACTION_1789453200000_28",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23300-23324)",
+    "reasoning": [
+      "IFVG zone formed at 11:10, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23300-23324",
+    "price": 23311.699999999997,
+    "triggeredAt": 1789455600000,
+    "id": "ZONE_REACTION_1789455600000_29",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23293-23296) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 11:05, price just re-entered it",
+      "Also sits inside an active IFVG 23275-23280 zone",
+      "Also sits inside an active IFVG 23300-23324 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23293-23296",
+    "price": 23294.875,
+    "triggeredAt": 1789458000000,
+    "id": "CONFLUENCE_1789458000000_30",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23275-23280) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 10:05, price just re-entered it",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23275-23280",
+    "price": 23277.574999999997,
+    "triggeredAt": 1789458600000,
+    "id": "CONFLUENCE_1789458600000_31",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23252-23257) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 09:55, price just re-entered it",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23252-23257",
+    "price": 23254.8,
+    "triggeredAt": 1789459800000,
+    "id": "CONFLUENCE_1789459800000_32",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23275-23280) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 10:05, price just re-entered it",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23275-23280",
+    "price": 23277.574999999997,
+    "triggeredAt": 1789460400000,
+    "id": "CONFLUENCE_1789460400000_33",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23252-23257) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 09:55, price just re-entered it",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23252-23257",
+    "price": 23254.8,
+    "triggeredAt": 1789461600000,
+    "id": "CONFLUENCE_1789461600000_34",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bullish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23220-23229) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 14:15, price just re-entered it",
+      "Also sits inside an active IFVG 23196-23212 zone",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "IFVG 23220-23229",
+    "price": 23224.775,
+    "triggeredAt": 1789463100000,
+    "id": "CONFLUENCE_1789463100000_35",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23252-23257) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 09:55, price just re-entered it",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23252-23257",
+    "price": 23254.8,
+    "triggeredAt": 1789530300000,
+    "id": "CONFLUENCE_1789530300000_36",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23275-23280) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 10:05, price just re-entered it",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23275-23280",
+    "price": 23277.574999999997,
+    "triggeredAt": 1789530300000,
+    "id": "CONFLUENCE_1789530300000_37",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to OB zone (23262-23275) - with confluence",
+    "reasoning": [
+      "OB zone formed at 13:55, price just re-entered it",
+      "Also sits inside an active IFVG 23252-23257 zone",
+      "Also sits inside an active IFVG 23275-23280 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "OB 23262-23275",
+    "price": 23268.6,
+    "triggeredAt": 1789530300000,
+    "id": "CONFLUENCE_1789530300000_38",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bullish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23220-23229) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 14:15, price just re-entered it",
+      "Also sits inside an active IFVG 23196-23212 zone",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "IFVG 23220-23229",
+    "price": 23224.775,
+    "triggeredAt": 1789530300000,
+    "id": "CONFLUENCE_1789530300000_39",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23196-23212)",
+    "reasoning": [
+      "IFVG zone formed at 14:45, price just re-entered it",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "IFVG 23196-23212",
+    "price": 23204,
+    "triggeredAt": 1789530300000,
+    "id": "ZONE_REACTION_1789530300000_40",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23549-23555",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23549-23555",
+    "price": 23554.75,
+    "triggeredAt": 1788937200000,
+    "id": "SWEEP_REVERSAL_1788937200000_41",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23549-23563",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23549-23563",
+    "price": 23563.15,
+    "triggeredAt": 1788938400000,
+    "id": "SWEEP_REVERSAL_1788938400000_42",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23549-23570",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23549-23570",
+    "price": 23569.6,
+    "triggeredAt": 1788939000000,
+    "id": "SWEEP_REVERSAL_1788939000000_43",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23549-23561",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23549-23561",
+    "price": 23561.35,
+    "triggeredAt": 1788939300000,
+    "id": "SWEEP_REVERSAL_1788939300000_44",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23549-23551",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23549-23551",
+    "price": 23550.6,
+    "triggeredAt": 1788939600000,
+    "id": "SWEEP_REVERSAL_1788939600000_45",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23549-23557",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23549-23557",
+    "price": 23557.1,
+    "triggeredAt": 1788940200000,
+    "id": "SWEEP_REVERSAL_1788940200000_46",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23549-23561",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23549-23561",
+    "price": 23560.6,
+    "triggeredAt": 1788940800000,
+    "id": "SWEEP_REVERSAL_1788940800000_47",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23403-23404",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23403-23404",
+    "price": 23403.05,
+    "triggeredAt": 1789017900000,
+    "id": "SWEEP_REVERSAL_1789017900000_48",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23451-23460",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23451-23460",
+    "price": 23460.3,
+    "triggeredAt": 1789023600000,
+    "id": "SWEEP_REVERSAL_1789023600000_49",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23451-23453",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23451-23453",
+    "price": 23453,
+    "triggeredAt": 1789023900000,
+    "id": "SWEEP_REVERSAL_1789023900000_50",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23451-23456",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23451-23456",
+    "price": 23455.55,
+    "triggeredAt": 1789025100000,
+    "id": "SWEEP_REVERSAL_1789025100000_51",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23423-23423",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23423-23423",
+    "price": 23423.05,
+    "triggeredAt": 1789028700000,
+    "id": "SWEEP_REVERSAL_1789028700000_52",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23410-23423",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23410-23423",
+    "price": 23409.7,
+    "triggeredAt": 1789030200000,
+    "id": "SWEEP_REVERSAL_1789030200000_53",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23405-23405",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23405-23405",
+    "price": 23404.5,
+    "triggeredAt": 1789031100000,
+    "id": "SWEEP_REVERSAL_1789031100000_54",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23398-23405",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23398-23405",
+    "price": 23397.8,
+    "triggeredAt": 1789031400000,
+    "id": "SWEEP_REVERSAL_1789031400000_55",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23414-23423",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23414-23423",
+    "price": 23413.9,
+    "triggeredAt": 1789031700000,
+    "id": "SWEEP_REVERSAL_1789031700000_56",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23420-23423",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23420-23423",
+    "price": 23420.25,
+    "triggeredAt": 1789032000000,
+    "id": "SWEEP_REVERSAL_1789032000000_57",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23389-23423",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23389-23423",
+    "price": 23389.25,
+    "triggeredAt": 1789034100000,
+    "id": "SWEEP_REVERSAL_1789034100000_58",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23361-23361",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23361-23361",
+    "price": 23361.1,
+    "triggeredAt": 1789110600000,
+    "id": "SWEEP_REVERSAL_1789110600000_59",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23321-23324",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23321-23324",
+    "price": 23320.7,
+    "triggeredAt": 1789112400000,
+    "id": "SWEEP_REVERSAL_1789112400000_60",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23314-23324",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23314-23324",
+    "price": 23314,
+    "triggeredAt": 1789114200000,
+    "id": "SWEEP_REVERSAL_1789114200000_61",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23320-23324",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23320-23324",
+    "price": 23320.3,
+    "triggeredAt": 1789114500000,
+    "id": "SWEEP_REVERSAL_1789114500000_62",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23361-23381",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23361-23381",
+    "price": 23380.6,
+    "triggeredAt": 1789114800000,
+    "id": "SWEEP_REVERSAL_1789114800000_63",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23372-23387",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23372-23387",
+    "price": 23371.85,
+    "triggeredAt": 1789446300000,
+    "id": "SWEEP_REVERSAL_1789446300000_64",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23375-23387",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23375-23387",
+    "price": 23375.25,
+    "triggeredAt": 1789447500000,
+    "id": "SWEEP_REVERSAL_1789447500000_65",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "LEVEL_BREAK",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "R1 broken to the downside",
+    "reasoning": [
+      "Candle closed at 23431.50, below R1 (23434.77)",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "R1",
+    "price": 23434.77,
+    "triggeredAt": 1788947700000,
+    "id": "LEVEL_BREAK_1788947700000_53",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Opening range high broken to the downside - with confluence",
+    "reasoning": [
+      "Candle closed at 23258.60, below Opening range high (23281.15)",
+      "Also sits inside an active IFVG 23275-23280 zone",
+      "Also sits inside an active IFVG 23293-23296 zone",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Opening range high",
+    "price": 23281.15,
+    "triggeredAt": 1789098300000,
+    "id": "CONFLUENCE_1789098300000_54",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Pivot broken to the downside - with confluence",
+    "reasoning": [
+      "Candle closed at 23258.60, below Pivot (23276.68)",
+      "Also sits inside an active IFVG 23275-23280 zone",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Pivot",
+    "price": 23276.68,
+    "triggeredAt": 1789098300000,
+    "id": "CONFLUENCE_1789098300000_55",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Round 23300 broken to the downside - with confluence",
+    "reasoning": [
+      "Candle closed at 23258.60, below Round 23300 (23300.00)",
+      "Also sits inside an active IFVG 23293-23296 zone",
+      "Also sits inside an active IFVG 23300-23324 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Round 23300",
+    "price": 23300,
+    "triggeredAt": 1789098300000,
+    "id": "CONFLUENCE_1789098300000_56",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Round 23250 broken to the downside - with confluence",
+    "reasoning": [
+      "Candle closed at 23248.20, below Round 23250 (23250.00)",
+      "Also sits inside an active IFVG 23252-23257 zone",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Round 23250",
+    "price": 23250,
+    "triggeredAt": 1789099800000,
+    "id": "CONFLUENCE_1789099800000_57",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Opening range low broken to the downside - with confluence",
+    "reasoning": [
+      "Candle closed at 23164.00, below Opening range low (23186.55)",
+      "Also sits inside an active IFVG 23196-23212 zone",
+      "Also sits inside an active OB 23119-23172 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Opening range low",
+    "price": 23186.55,
+    "triggeredAt": 1789463700000,
+    "id": "CONFLUENCE_1789463700000_58",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "RETEST_FAIL",
+    "direction": "bullish",
+    "confidence": "high",
+    "headline": "R1 break failed - likely fakeout",
+    "reasoning": [
+      "Price returned to R1 (23434.77) and closed at 23459.45, back through the level against the original break",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "R1",
+    "price": 23434.77,
+    "triggeredAt": 1789011900000,
+    "id": "RETEST_FAIL_1789011900000_59",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Round 23250 retested and held - with confluence",
+    "reasoning": [
+      "Price returned to Round 23250 (23250.00) and closed at 23246.55, staying on the breakout side",
+      "Also sits inside an active IFVG 23252-23257 zone",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Round 23250",
+    "price": 23250,
+    "triggeredAt": 1789100100000,
+    "id": "CONFLUENCE_1789100100000_60",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Opening range low retested and held - with confluence",
+    "reasoning": [
+      "Price returned to Opening range low (23186.55) and closed at 23177.75, staying on the breakout side",
+      "Also sits inside an active IFVG 23196-23212 zone",
+      "Also sits inside an active OB 23119-23172 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Opening range low",
+    "price": 23186.55,
+    "triggeredAt": 1789464000000,
+    "id": "CONFLUENCE_1789464000000_61",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23511-23548)",
+    "reasoning": [
+      "IFVG zone formed at 12:30, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23511-23548",
+    "price": 23529.6,
+    "triggeredAt": 1788938400000,
+    "id": "ZONE_REACTION_1788938400000_62",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23511-23548)",
+    "reasoning": [
+      "IFVG zone formed at 12:30, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23511-23548",
+    "price": 23529.6,
+    "triggeredAt": 1788942000000,
+    "id": "ZONE_REACTION_1788942000000_63",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23511-23548)",
+    "reasoning": [
+      "IFVG zone formed at 12:30, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23511-23548",
+    "price": 23529.6,
+    "triggeredAt": 1788943200000,
+    "id": "ZONE_REACTION_1788943200000_64",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23489-23511) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 12:25, price just re-entered it",
+      "Also sits inside an active IFVG 23511-23548 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23489-23511",
+    "price": 23499.85,
+    "triggeredAt": 1788944700000,
+    "id": "CONFLUENCE_1788944700000_65",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23489-23511) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 12:25, price just re-entered it",
+      "Also sits inside an active IFVG 23511-23548 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23489-23511",
+    "price": 23499.85,
+    "triggeredAt": 1789011900000,
+    "id": "CONFLUENCE_1789011900000_66",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23275-23280) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 10:05, price just re-entered it",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23275-23280",
+    "price": 23277.574999999997,
+    "triggeredAt": 1789102500000,
+    "id": "CONFLUENCE_1789102500000_67",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23275-23280) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 10:05, price just re-entered it",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23275-23280",
+    "price": 23277.574999999997,
+    "triggeredAt": 1789104300000,
+    "id": "CONFLUENCE_1789104300000_68",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23300-23324)",
+    "reasoning": [
+      "IFVG zone formed at 11:10, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23300-23324",
+    "price": 23311.699999999997,
+    "triggeredAt": 1789108800000,
+    "id": "ZONE_REACTION_1789108800000_69",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23300-23324)",
+    "reasoning": [
+      "IFVG zone formed at 11:10, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23300-23324",
+    "price": 23311.699999999997,
+    "triggeredAt": 1789112400000,
+    "id": "ZONE_REACTION_1789112400000_70",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23300-23324)",
+    "reasoning": [
+      "IFVG zone formed at 11:10, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23300-23324",
+    "price": 23311.699999999997,
+    "triggeredAt": 1789114200000,
+    "id": "ZONE_REACTION_1789114200000_71",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23390-23409)",
+    "reasoning": [
+      "IFVG zone formed at 14:00, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23390-23409",
+    "price": 23399.9,
+    "triggeredAt": 1789119000000,
+    "id": "ZONE_REACTION_1789119000000_72",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23390-23409)",
+    "reasoning": [
+      "IFVG zone formed at 14:00, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23390-23409",
+    "price": 23399.9,
+    "triggeredAt": 1789120500000,
+    "id": "ZONE_REACTION_1789120500000_73",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23489-23511) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 12:25, price just re-entered it",
+      "Also sits inside an active IFVG 23511-23548 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23489-23511",
+    "price": 23499.85,
+    "triggeredAt": 1789443900000,
+    "id": "CONFLUENCE_1789443900000_74",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23511-23548)",
+    "reasoning": [
+      "IFVG zone formed at 12:30, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23511-23548",
+    "price": 23529.6,
+    "triggeredAt": 1789443900000,
+    "id": "ZONE_REACTION_1789443900000_75",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23552-23555) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 14:00, price just re-entered it",
+      "Also sits inside an active IFVG 23511-23548 zone",
+      "Also sits inside an active OB 23551-23562 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23552-23555",
+    "price": 23553.375,
+    "triggeredAt": 1789443900000,
+    "id": "CONFLUENCE_1789443900000_76",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to OB zone (23551-23562) - with confluence",
+    "reasoning": [
+      "OB zone formed at 14:00, price just re-entered it",
+      "Also sits inside an active IFVG 23511-23548 zone",
+      "Also sits inside an active IFVG 23552-23555 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "OB 23551-23562",
+    "price": 23556.375,
+    "triggeredAt": 1789443900000,
+    "id": "CONFLUENCE_1789443900000_77",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23390-23409)",
+    "reasoning": [
+      "IFVG zone formed at 14:00, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23390-23409",
+    "price": 23399.9,
+    "triggeredAt": 1789446000000,
+    "id": "ZONE_REACTION_1789446000000_78",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23300-23324)",
+    "reasoning": [
+      "IFVG zone formed at 11:10, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23300-23324",
+    "price": 23311.699999999997,
+    "triggeredAt": 1789450800000,
+    "id": "ZONE_REACTION_1789450800000_79",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23300-23324)",
+    "reasoning": [
+      "IFVG zone formed at 11:10, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23300-23324",
+    "price": 23311.699999999997,
+    "triggeredAt": 1789453200000,
+    "id": "ZONE_REACTION_1789453200000_80",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23300-23324)",
+    "reasoning": [
+      "IFVG zone formed at 11:10, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23300-23324",
+    "price": 23311.699999999997,
+    "triggeredAt": 1789455600000,
+    "id": "ZONE_REACTION_1789455600000_81",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23293-23296) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 11:05, price just re-entered it",
+      "Also sits inside an active IFVG 23275-23280 zone",
+      "Also sits inside an active IFVG 23300-23324 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23293-23296",
+    "price": 23294.875,
+    "triggeredAt": 1789458000000,
+    "id": "CONFLUENCE_1789458000000_82",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23275-23280) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 10:05, price just re-entered it",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23275-23280",
+    "price": 23277.574999999997,
+    "triggeredAt": 1789458600000,
+    "id": "CONFLUENCE_1789458600000_83",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23252-23257) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 09:55, price just re-entered it",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23252-23257",
+    "price": 23254.8,
+    "triggeredAt": 1789459800000,
+    "id": "CONFLUENCE_1789459800000_84",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23275-23280) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 10:05, price just re-entered it",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23275-23280",
+    "price": 23277.574999999997,
+    "triggeredAt": 1789460400000,
+    "id": "CONFLUENCE_1789460400000_85",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23252-23257) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 09:55, price just re-entered it",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23252-23257",
+    "price": 23254.8,
+    "triggeredAt": 1789461600000,
+    "id": "CONFLUENCE_1789461600000_86",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bullish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23220-23229) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 14:15, price just re-entered it",
+      "Also sits inside an active IFVG 23196-23212 zone",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "IFVG 23220-23229",
+    "price": 23224.775,
+    "triggeredAt": 1789463100000,
+    "id": "CONFLUENCE_1789463100000_87",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23252-23257) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 09:55, price just re-entered it",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23252-23257",
+    "price": 23254.8,
+    "triggeredAt": 1789530300000,
+    "id": "CONFLUENCE_1789530300000_88",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23275-23280) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 10:05, price just re-entered it",
+      "Also sits inside an active OB 23262-23275 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23275-23280",
+    "price": 23277.574999999997,
+    "triggeredAt": 1789530300000,
+    "id": "CONFLUENCE_1789530300000_89",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to OB zone (23262-23275) - with confluence",
+    "reasoning": [
+      "OB zone formed at 13:55, price just re-entered it",
+      "Also sits inside an active IFVG 23252-23257 zone",
+      "Also sits inside an active IFVG 23275-23280 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "OB 23262-23275",
+    "price": 23268.6,
+    "triggeredAt": 1789530300000,
+    "id": "CONFLUENCE_1789530300000_90",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bullish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23220-23229) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 14:15, price just re-entered it",
+      "Also sits inside an active IFVG 23196-23212 zone",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "IFVG 23220-23229",
+    "price": 23224.775,
+    "triggeredAt": 1789530300000,
+    "id": "CONFLUENCE_1789530300000_91",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23196-23212)",
+    "reasoning": [
+      "IFVG zone formed at 14:45, price just re-entered it",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "IFVG 23196-23212",
+    "price": 23204,
+    "triggeredAt": 1789530300000,
+    "id": "ZONE_REACTION_1789530300000_92",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23549-23555",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23549-23555",
+    "price": 23554.75,
+    "triggeredAt": 1788937200000,
+    "id": "SWEEP_REVERSAL_1788937200000_93",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23549-23563",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23549-23563",
+    "price": 23563.15,
+    "triggeredAt": 1788938400000,
+    "id": "SWEEP_REVERSAL_1788938400000_94",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23549-23570",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23549-23570",
+    "price": 23569.6,
+    "triggeredAt": 1788939000000,
+    "id": "SWEEP_REVERSAL_1788939000000_95",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23549-23561",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23549-23561",
+    "price": 23561.35,
+    "triggeredAt": 1788939300000,
+    "id": "SWEEP_REVERSAL_1788939300000_96",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23549-23551",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23549-23551",
+    "price": 23550.6,
+    "triggeredAt": 1788939600000,
+    "id": "SWEEP_REVERSAL_1788939600000_97",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23549-23557",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23549-23557",
+    "price": 23557.1,
+    "triggeredAt": 1788940200000,
+    "id": "SWEEP_REVERSAL_1788940200000_98",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23549-23561",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23549-23561",
+    "price": 23560.6,
+    "triggeredAt": 1788940800000,
+    "id": "SWEEP_REVERSAL_1788940800000_99",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23403-23404",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23403-23404",
+    "price": 23403.05,
+    "triggeredAt": 1789017900000,
+    "id": "SWEEP_REVERSAL_1789017900000_100",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23451-23460",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23451-23460",
+    "price": 23460.3,
+    "triggeredAt": 1789023600000,
+    "id": "SWEEP_REVERSAL_1789023600000_101",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23451-23453",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23451-23453",
+    "price": 23453,
+    "triggeredAt": 1789023900000,
+    "id": "SWEEP_REVERSAL_1789023900000_102",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23451-23456",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23451-23456",
+    "price": 23455.55,
+    "triggeredAt": 1789025100000,
+    "id": "SWEEP_REVERSAL_1789025100000_103",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23423-23423",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23423-23423",
+    "price": 23423.05,
+    "triggeredAt": 1789028700000,
+    "id": "SWEEP_REVERSAL_1789028700000_104",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23410-23423",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23410-23423",
+    "price": 23409.7,
+    "triggeredAt": 1789030200000,
+    "id": "SWEEP_REVERSAL_1789030200000_105",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23405-23405",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23405-23405",
+    "price": 23404.5,
+    "triggeredAt": 1789031100000,
+    "id": "SWEEP_REVERSAL_1789031100000_106",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23398-23405",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23398-23405",
+    "price": 23397.8,
+    "triggeredAt": 1789031400000,
+    "id": "SWEEP_REVERSAL_1789031400000_107",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23414-23423",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23414-23423",
+    "price": 23413.9,
+    "triggeredAt": 1789031700000,
+    "id": "SWEEP_REVERSAL_1789031700000_108",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23420-23423",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23420-23423",
+    "price": 23420.25,
+    "triggeredAt": 1789032000000,
+    "id": "SWEEP_REVERSAL_1789032000000_109",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23389-23423",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23389-23423",
+    "price": 23389.25,
+    "triggeredAt": 1789034100000,
+    "id": "SWEEP_REVERSAL_1789034100000_110",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23361-23361",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23361-23361",
+    "price": 23361.1,
+    "triggeredAt": 1789110600000,
+    "id": "SWEEP_REVERSAL_1789110600000_111",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23321-23324",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23321-23324",
+    "price": 23320.7,
+    "triggeredAt": 1789112400000,
+    "id": "SWEEP_REVERSAL_1789112400000_112",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23314-23324",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23314-23324",
+    "price": 23314,
+    "triggeredAt": 1789114200000,
+    "id": "SWEEP_REVERSAL_1789114200000_113",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23320-23324",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23320-23324",
+    "price": 23320.3,
+    "triggeredAt": 1789114500000,
+    "id": "SWEEP_REVERSAL_1789114500000_114",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23361-23381",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Sweep 23361-23381",
+    "price": 23380.6,
+    "triggeredAt": 1789114800000,
+    "id": "SWEEP_REVERSAL_1789114800000_115",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23372-23387",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23372-23387",
+    "price": 23371.85,
+    "triggeredAt": 1789446300000,
+    "id": "SWEEP_REVERSAL_1789446300000_116",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23375-23387",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Sweep 23375-23387",
+    "price": 23375.25,
+    "triggeredAt": 1789447500000,
+    "id": "SWEEP_REVERSAL_1789447500000_117",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "LEVEL_BREAK",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Opening range low broken to the downside",
+    "reasoning": [
+      "Candle closed at 23151.30, below Opening range low (23186.55)",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bearish (Moderate confidence)"
+    ],
+    "levelLabel": "Opening range low",
+    "price": 23186.55,
+    "triggeredAt": 1789531500000,
+    "id": "LEVEL_BREAK_1789531500000_2",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "LEVEL_BREAK",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Opening range low broken to the downside",
+    "reasoning": [
+      "Candle closed at 23151.30, below Opening range low (23186.55)",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bullish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Opening range low",
+    "price": 23186.55,
+    "triggeredAt": 1789531500000,
+    "id": "LEVEL_BREAK_1789531500000_1",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "contradicts",
+    "status": "active"
+  },
+  {
+    "kind": "RETEST_HOLD",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Opening range low retested and held",
+    "reasoning": [
+      "Price returned to Opening range low (23186.55) and closed at 23176.50, staying on the breakout side",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bullish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Opening range low",
+    "price": 23186.55,
+    "triggeredAt": 1789532400000,
+    "id": "RETEST_HOLD_1789532400000_2",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "contradicts",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23214-23228)",
+    "reasoning": [
+      "IFVG zone formed at 09:25, price just re-entered it",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bearish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "IFVG 23214-23228",
+    "price": 23221.050000000003,
+    "triggeredAt": 1789532700000,
+    "id": "ZONE_REACTION_1789532700000_5",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Opening range low broken to the downside - with confluence",
+    "reasoning": [
+      "Candle closed at 23151.30, below Opening range low (23186.55)",
+      "Also sits inside an active IFVG 23156-23176 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bullish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Opening range low",
+    "price": 23186.55,
+    "triggeredAt": 1789531500000,
+    "id": "CONFLUENCE_1789531500000_5",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "contradicts",
+    "status": "active"
+  },
+  {
+    "kind": "RETEST_FAIL",
+    "direction": "bullish",
+    "confidence": "high",
+    "headline": "Opening range low break failed - likely fakeout",
+    "reasoning": [
+      "Price returned to Opening range low (23186.55) and closed at 23212.80, back through the level against the original break",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bullish (Moderate confidence)"
+    ],
+    "levelLabel": "Opening range low",
+    "price": 23186.55,
+    "triggeredAt": 1789532400000,
+    "id": "RETEST_FAIL_1789532400000_6",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "confirms",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23156-23176)",
+    "reasoning": [
+      "IFVG zone formed at 09:35, price just re-entered it",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bullish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23156-23176",
+    "price": 23165.725,
+    "triggeredAt": 1789532400000,
+    "id": "ZONE_REACTION_1789532400000_7",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "confirms",
+    "status": "active"
+  },
+  {
+    "kind": "LEVEL_BREAK",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Round 23250 broken to the upside",
+    "reasoning": [
+      "Candle closed at 23253.20, above Round 23250 (23250.00)",
+      "Put writers active - bullish OI positioning"
+    ],
+    "levelLabel": "Round 23250",
+    "price": 23250,
+    "triggeredAt": 1789535700000,
+    "id": "LEVEL_BREAK_1789535700000_8",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "RETEST_HOLD",
+    "direction": "bullish",
+    "confidence": "high",
+    "headline": "Round 23250 retested and held",
+    "reasoning": [
+      "Price returned to Round 23250 (23250.00) and closed at 23254.35, staying on the breakout side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bullish (Moderate confidence)"
+    ],
+    "levelLabel": "Round 23250",
+    "price": 23250,
+    "triggeredAt": 1789536000000,
+    "id": "RETEST_HOLD_1789536000000_9",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "confirms",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Opening range low broken to the downside - with confluence",
+    "reasoning": [
+      "Candle closed at 23151.30, below Opening range low (23186.55)",
+      "Also sits inside an active IFVG 23156-23176 zone",
+      "Also sits inside an active IFVG 23191-23202 zone"
+    ],
+    "levelLabel": "Opening range low",
+    "price": 23186.55,
+    "triggeredAt": 1789531500000,
+    "id": "CONFLUENCE_1789531500000_1",
+    "trendContext": "",
+    "optionChainAgreement": "no-data",
+    "status": "active"
+  },
+  {
+    "kind": "LEVEL_BREAK",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Round 23250 broken to the upside",
+    "reasoning": [
+      "Candle closed at 23260.10, above Round 23250 (23250.00)"
+    ],
+    "levelLabel": "Round 23250",
+    "price": 23250,
+    "triggeredAt": 1789535700000,
+    "id": "LEVEL_BREAK_1789535700000_2",
+    "trendContext": "",
+    "optionChainAgreement": "no-data",
+    "status": "active"
+  },
+  {
+    "kind": "RETEST_FAIL",
+    "direction": "bullish",
+    "confidence": "high",
+    "headline": "Opening range low break failed - likely fakeout",
+    "reasoning": [
+      "Price returned to Opening range low (23186.55) and closed at 23212.80, back through the level against the original break"
+    ],
+    "levelLabel": "Opening range low",
+    "price": 23186.55,
+    "triggeredAt": 1789532400000,
+    "id": "RETEST_FAIL_1789532400000_3",
+    "trendContext": "",
+    "optionChainAgreement": "no-data",
+    "status": "active"
+  },
+  {
+    "kind": "RETEST_HOLD",
+    "direction": "bullish",
+    "confidence": "high",
+    "headline": "Round 23250 retested and held",
+    "reasoning": [
+      "Price returned to Round 23250 (23250.00) and closed at 23254.30, staying on the breakout side"
+    ],
+    "levelLabel": "Round 23250",
+    "price": 23250,
+    "triggeredAt": 1789536000000,
+    "id": "RETEST_HOLD_1789536000000_4",
+    "trendContext": "",
+    "optionChainAgreement": "no-data",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23156-23176)",
+    "reasoning": [
+      "IFVG zone formed at 09:35, price just re-entered it"
+    ],
+    "levelLabel": "IFVG 23156-23176",
+    "price": 23165.725,
+    "triggeredAt": 1789532400000,
+    "id": "ZONE_REACTION_1789532400000_5",
+    "trendContext": "",
+    "optionChainAgreement": "no-data",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23214-23228)",
+    "reasoning": [
+      "IFVG zone formed at 09:25, price just re-entered it"
+    ],
+    "levelLabel": "IFVG 23214-23228",
+    "price": 23221.050000000003,
+    "triggeredAt": 1789532700000,
+    "id": "ZONE_REACTION_1789532700000_6",
+    "trendContext": "",
+    "optionChainAgreement": "no-data",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23156-23176)",
+    "reasoning": [
+      "IFVG zone formed at 09:35, price just re-entered it"
+    ],
+    "levelLabel": "IFVG 23156-23176",
+    "price": 23165.725,
+    "triggeredAt": 1789533300000,
+    "id": "ZONE_REACTION_1789533300000_7",
+    "trendContext": "",
+    "optionChainAgreement": "no-data",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23214-23228)",
+    "reasoning": [
+      "IFVG zone formed at 09:25, price just re-entered it"
+    ],
+    "levelLabel": "IFVG 23214-23228",
+    "price": 23221.050000000003,
+    "triggeredAt": 1789533900000,
+    "id": "ZONE_REACTION_1789533900000_8",
+    "trendContext": "",
+    "optionChainAgreement": "no-data",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Opening range low broken to the downside - with confluence",
+    "reasoning": [
+      "Candle closed at 23151.30, below Opening range low (23186.55)",
+      "Also sits inside an active IFVG 23156-23176 zone",
+      "Also sits inside an active IFVG 23191-23202 zone",
+      "Put writers active - bullish OI positioning against this bearish signal",
+      "Market bias: Bullish (Moderate confidence) - against this signal"
+    ],
+    "levelLabel": "Opening range low",
+    "price": 23186.55,
+    "triggeredAt": 1789531500000,
+    "id": "CONFLUENCE_1789531500000_1",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "contradicts",
+    "status": "active"
+  },
+  {
+    "kind": "LEVEL_BREAK",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Round 23250 broken to the upside",
+    "reasoning": [
+      "Candle closed at 23260.10, above Round 23250 (23250.00)",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bullish (Moderate confidence)"
+    ],
+    "levelLabel": "Round 23250",
+    "price": 23250,
+    "triggeredAt": 1789535700000,
+    "id": "LEVEL_BREAK_1789535700000_2",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "confirms",
+    "status": "active"
+  },
+  {
+    "kind": "RETEST_FAIL",
+    "direction": "bullish",
+    "confidence": "high",
+    "headline": "Opening range low break failed - likely fakeout",
+    "reasoning": [
+      "Price returned to Opening range low (23186.55) and closed at 23212.80, back through the level against the original break",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bullish (Moderate confidence)"
+    ],
+    "levelLabel": "Opening range low",
+    "price": 23186.55,
+    "triggeredAt": 1789532400000,
+    "id": "RETEST_FAIL_1789532400000_3",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "confirms",
+    "status": "active"
+  },
+  {
+    "kind": "RETEST_HOLD",
+    "direction": "bullish",
+    "confidence": "high",
+    "headline": "Round 23250 retested and held",
+    "reasoning": [
+      "Price returned to Round 23250 (23250.00) and closed at 23254.30, staying on the breakout side",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bullish (Moderate confidence)"
+    ],
+    "levelLabel": "Round 23250",
+    "price": 23250,
+    "triggeredAt": 1789536000000,
+    "id": "RETEST_HOLD_1789536000000_4",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "confirms",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23156-23176)",
+    "reasoning": [
+      "IFVG zone formed at 09:35, price just re-entered it",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bullish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23156-23176",
+    "price": 23165.725,
+    "triggeredAt": 1789532400000,
+    "id": "ZONE_REACTION_1789532400000_5",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "confirms",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23214-23228)",
+    "reasoning": [
+      "IFVG zone formed at 09:25, price just re-entered it",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bullish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23214-23228",
+    "price": 23221.050000000003,
+    "triggeredAt": 1789532700000,
+    "id": "ZONE_REACTION_1789532700000_6",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "confirms",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23156-23176)",
+    "reasoning": [
+      "IFVG zone formed at 09:35, price just re-entered it",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bullish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23156-23176",
+    "price": 23165.725,
+    "triggeredAt": 1789533300000,
+    "id": "ZONE_REACTION_1789533300000_7",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "confirms",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23214-23228)",
+    "reasoning": [
+      "IFVG zone formed at 09:25, price just re-entered it",
+      "Put writers active - bullish OI positioning",
+      "Market bias: Bullish (Moderate confidence)"
+    ],
+    "levelLabel": "IFVG 23214-23228",
+    "price": 23221.050000000003,
+    "triggeredAt": 1789533900000,
+    "id": "ZONE_REACTION_1789533900000_8",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "confirms",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Price reacting to IFVG zone (23240-23250) - with confluence",
+    "reasoning": [
+      "IFVG zone formed at 12:30, price just re-entered it",
+      "Also sits inside an active IFVG 23258-23274 zone",
+      "Put writers active - bullish OI positioning against this bearish signal"
+    ],
+    "levelLabel": "IFVG 23240-23250",
+    "price": 23244.625,
+    "triggeredAt": 1789548300000,
+    "id": "CONFLUENCE_1789548300000_14",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bearish",
+    "confidence": "high",
+    "headline": "Opening range low broken to the downside - with confluence",
+    "reasoning": [
+      "Candle closed at 23151.30, below Opening range low (23186.55)",
+      "Also sits inside an active IFVG 23156-23176 zone",
+      "Also sits inside an active IFVG 23191-23202 zone",
+      "Put writers active - bullish OI positioning against this bearish signal"
+    ],
+    "levelLabel": "Opening range low",
+    "price": 23186.55,
+    "triggeredAt": 1789531500000,
+    "id": "CONFLUENCE_1789531500000_1",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bullish",
+    "confidence": "high",
+    "headline": "Round 23250 broken to the upside - with confluence",
+    "reasoning": [
+      "Candle closed at 23260.10, above Round 23250 (23250.00)",
+      "Also sits inside an active IFVG 23240-23244 zone",
+      "Put writers active - bullish OI positioning"
+    ],
+    "levelLabel": "Round 23250",
+    "price": 23250,
+    "triggeredAt": 1789535700000,
+    "id": "CONFLUENCE_1789535700000_2",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "RETEST_FAIL",
+    "direction": "bullish",
+    "confidence": "high",
+    "headline": "Opening range low break failed - likely fakeout",
+    "reasoning": [
+      "Price returned to Opening range low (23186.55) and closed at 23212.80, back through the level against the original break",
+      "Put writers active - bullish OI positioning"
+    ],
+    "levelLabel": "Opening range low",
+    "price": 23186.55,
+    "triggeredAt": 1789532400000,
+    "id": "RETEST_FAIL_1789532400000_3",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "CONFLUENCE",
+    "direction": "bullish",
+    "confidence": "high",
+    "headline": "Round 23250 retested and held - with confluence",
+    "reasoning": [
+      "Price returned to Round 23250 (23250.00) and closed at 23254.30, staying on the breakout side",
+      "Also sits inside an active IFVG 23240-23244 zone",
+      "Put writers active - bullish OI positioning"
+    ],
+    "levelLabel": "Round 23250",
+    "price": 23250,
+    "triggeredAt": 1789536000000,
+    "id": "CONFLUENCE_1789536000000_4",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23156-23176)",
+    "reasoning": [
+      "IFVG zone formed at 09:35, price just re-entered it",
+      "Put writers active - bullish OI positioning"
+    ],
+    "levelLabel": "IFVG 23156-23176",
+    "price": 23165.725,
+    "triggeredAt": 1789532400000,
+    "id": "ZONE_REACTION_1789532400000_5",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bullish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23156-23176)",
+    "reasoning": [
+      "IFVG zone formed at 09:35, price just re-entered it",
+      "Put writers active - bullish OI positioning"
+    ],
+    "levelLabel": "IFVG 23156-23176",
+    "price": 23165.725,
+    "triggeredAt": 1789533300000,
+    "id": "ZONE_REACTION_1789533300000_6",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23240-23244)",
+    "reasoning": [
+      "IFVG zone formed at 12:30, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal"
+    ],
+    "levelLabel": "IFVG 23240-23244",
+    "price": 23241.800000000003,
+    "triggeredAt": 1789543500000,
+    "id": "ZONE_REACTION_1789543500000_7",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23240-23244)",
+    "reasoning": [
+      "IFVG zone formed at 12:30, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal"
+    ],
+    "levelLabel": "IFVG 23240-23244",
+    "price": 23241.800000000003,
+    "triggeredAt": 1789545300000,
+    "id": "ZONE_REACTION_1789545300000_8",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23240-23244)",
+    "reasoning": [
+      "IFVG zone formed at 12:30, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal"
+    ],
+    "levelLabel": "IFVG 23240-23244",
+    "price": 23241.800000000003,
+    "triggeredAt": 1789548300000,
+    "id": "ZONE_REACTION_1789548300000_9",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "ZONE_REACTION",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Price reacting to IFVG zone (23240-23244)",
+    "reasoning": [
+      "IFVG zone formed at 12:30, price just re-entered it",
+      "Put writers active - bullish OI positioning against this bearish signal"
+    ],
+    "levelLabel": "IFVG 23240-23244",
+    "price": 23241.800000000003,
+    "triggeredAt": 1789550100000,
+    "id": "ZONE_REACTION_1789550100000_10",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  },
+  {
+    "kind": "SWEEP_REVERSAL",
+    "direction": "bearish",
+    "confidence": "medium",
+    "headline": "Liquidity sweep near 23279-23285",
+    "reasoning": [
+      "Price wicked through a recent swing point and closed back on the original side",
+      "Put writers active - bullish OI positioning against this bearish signal"
+    ],
+    "levelLabel": "Sweep 23279-23285",
+    "price": 23284.75,
+    "triggeredAt": 1789544100000,
+    "id": "SWEEP_REVERSAL_1789544100000_11",
+    "trendContext": "Bullish",
+    "optionChainAgreement": "mixed",
+    "status": "active"
+  }
+]

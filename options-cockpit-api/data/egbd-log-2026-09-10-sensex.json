@@ -1,0 +1,48 @@
+[
+  {
+    "strike": 25000,
+    "side": "CE",
+    "fromStage": "WATCHING",
+    "toStage": "TRIGGER_ARMED",
+    "currentPremium": 50,
+    "referenceEntryPrice": 50,
+    "peakPremiumSinceEntry": 50,
+    "multipleFromEntry": 1,
+    "pullbackFromPeakPercent": 0,
+    "oiConcentration": 1,
+    "momentumScore": 9.2,
+    "premiumStrength": 3,
+    "volumeStrength": 3,
+    "oiStrength": 3,
+    "gammaStrength": 2,
+    "ivStrength": 2,
+    "evidence": [
+      "test"
+    ],
+    "timestamp": 1789065123195,
+    "timeLabel": "12:02:03 am"
+  },
+  {
+    "strike": 25000,
+    "side": "CE",
+    "fromStage": "WATCHING",
+    "toStage": "TRIGGER_ARMED",
+    "currentPremium": 50,
+    "referenceEntryPrice": 50,
+    "peakPremiumSinceEntry": 50,
+    "multipleFromEntry": 1,
+    "pullbackFromPeakPercent": 0,
+    "oiConcentration": 1,
+    "momentumScore": 9.2,
+    "premiumStrength": 3,
+    "volumeStrength": 3,
+    "oiStrength": 3,
+    "gammaStrength": 2,
+    "ivStrength": 2,
+    "evidence": [
+      "test"
+    ],
+    "timestamp": 1789065159554,
+    "timeLabel": "12:02:39 am"
+  }
+]
