@@ -49,12 +49,24 @@ function SpotPriceCard({ niftySpot,
     sensexDayRange,
 
     indiaVix, marketHealth, vixHealth }: SpotPriceCardProps) {
+
+    function formatChange(value: number): string {
+        const sign = value > 0 ? "+" : value < 0 ? "-" : "";
+        return `${sign}${Math.abs(value).toFixed(2)}`;
+    }
+
+    function changeClass(value: number): string {
+        if (value > 0) return "value-delta decision-positive";
+        if (value < 0) return "value-delta decision-negative";
+        return "value-delta text-muted";
+    }
+
     function observationClass(value: string): string {
 
         const positive = [
             "Bullish",
             "Gap Up",
-            "Above VWAP",
+            "Above Open",
             "Strong Buying",
             "Moderate Buying"
         ];
@@ -62,7 +74,7 @@ function SpotPriceCard({ niftySpot,
         const negative = [
             "Bearish",
             "Gap Down",
-            "Below VWAP",
+            "Below Open",
             "Strong Selling",
             "Moderate Selling"
         ];
@@ -149,7 +161,12 @@ function SpotPriceCard({ niftySpot,
 
                     </div>
                     <div className="label">NIFTY SPOT</div>
-                    <div className="value">{niftySpot.toFixed(2)}</div>
+                    <div className="value">
+                        {niftySpot.toFixed(2)}{" "}
+                        <span className={changeClass(niftySpot - niftyPreviousClose)}>
+                            ({formatChange(niftySpot - niftyPreviousClose)})
+                        </span>
+                    </div>
 
                     <div className="oc-observation-row">
                         <span className="oc-observation-label">Trend</span>
@@ -255,7 +272,12 @@ function SpotPriceCard({ niftySpot,
 
                     </div>
                     <div className="label">SENSEX SPOT</div>
-                    <div className="value">{sensexSpot.toFixed(2)}</div>
+                    <div className="value">
+                        {sensexSpot.toFixed(2)}{" "}
+                        <span className={changeClass(sensexSpot - sensexPreviousClose)}>
+                            ({formatChange(sensexSpot - sensexPreviousClose)})
+                        </span>
+                    </div>
 
                     <div className="oc-observation-row">
                         <span className="oc-observation-label">Trend</span>

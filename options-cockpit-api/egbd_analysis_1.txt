@@ -1,0 +1,256 @@
+Total transition entries today: 1390
+First entry time: 09:16:03 am ts: 1789443963058
+Last entry time: 02:40:55 pm ts: 1789463455519
+Transitions by toStage: {
+  "TRIGGER_ARMED": 696,
+  "WATCHING": 694
+}
+Distinct strike/side that ever got a transition: 49
+Max stage reached per strike/side:
+{
+  "23450_PE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "09:16:03 am",
+    "ts": 1789443963058
+  },
+  "23500_PE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "09:16:03 am",
+    "ts": 1789443963062
+  },
+  "23650_CE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "09:16:06 am",
+    "ts": 1789443966296
+  },
+  "23400_PE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "09:16:09 am",
+    "ts": 1789443969510
+  },
+  "23450_CE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "09:17:03 am",
+    "ts": 1789444023805
+  },
+  "24000_CE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "09:17:07 am",
+    "ts": 1789444027032
+  },
+  "23400_CE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "09:17:10 am",
+    "ts": 1789444030222
+  },
+  "23300_CE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "09:18:07 am",
+    "ts": 1789444087521
+  },
+  "23550_CE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "09:18:07 am",
+    "ts": 1789444087525
+  },
+  "23350_PE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "09:18:10 am",
+    "ts": 1789444090743
+  },
+  "23700_CE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "09:19:08 am",
+    "ts": 1789444148081
+  },
+  "23750_CE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "09:19:11 am",
+    "ts": 1789444151326
+  },
+  "23300_PE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "09:20:08 am",
+    "ts": 1789444208707
+  },
+  "23600_CE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "09:20:08 am",
+    "ts": 1789444208709
+  },
+  "23500_CE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "09:22:06 am",
+    "ts": 1789444326407
+  },
+  "23200_PE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "09:23:07 am",
+    "ts": 1789444387076
+  },
+  "23250_PE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "09:23:07 am",
+    "ts": 1789444387078
+  },
+  "23900_CE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "09:23:07 am",
+    "ts": 1789444387080
+  },
+  "23550_PE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "09:24:08 am",
+    "ts": 1789444448410
+  },
+  "23700_PE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "09:24:11 am",
+    "ts": 1789444451622
+  },
+  "23100_PE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "09:26:06 am",
+    "ts": 1789444566478
+  },
+  "22950_PE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "09:32:12 am",
+    "ts": 1789444932923
+  },
+  "23800_PE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "09:34:10 am",
+    "ts": 1789445050432
+  },
+  "23000_PE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "09:34:13 am",
+    "ts": 1789445053607
+  },
+  "23850_PE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "09:41:14 am",
+    "ts": 1789445474059
+  },
+  "23800_CE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "09:42:11 am",
+    "ts": 1789445531793
+  },
+  "23050_CE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "09:43:22 am",
+    "ts": 1789445602605
+  },
+  "23000_CE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "09:45:18 am",
+    "ts": 1789445718581
+  },
+  "23050_PE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "09:45:44 am",
+    "ts": 1789445744240
+  },
+  "23150_PE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "09:47:16 am",
+    "ts": 1789445836557
+  },
+  "23100_CE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "09:48:14 am",
+    "ts": 1789445894462
+  },
+  "23850_CE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "09:56:17 am",
+    "ts": 1789446377020
+  },
+  "23750_PE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "09:58:23 am",
+    "ts": 1789446503283
+  },
+  "22900_PE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "10:06:20 am",
+    "ts": 1789446980499
+  },
+  "23650_PE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "10:15:26 am",
+    "ts": 1789447526725
+  },
+  "23600_PE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "10:34:30 am",
+    "ts": 1789448670151
+  },
+  "23350_CE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "10:37:31 am",
+    "ts": 1789448851608
+  },
+  "22850_PE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "10:39:31 am",
+    "ts": 1789448971449
+  },
+  "22900_CE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "10:41:31 am",
+    "ts": 1789449091544
+  },
+  "23150_CE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "11:08:36 am",
+    "ts": 1789450716795
+  },
+  "23250_CE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "11:15:40 am",
+    "ts": 1789451140259
+  },
+  "22950_CE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "12:40:18 pm",
+    "ts": 1789456218638
+  },
+  "23200_CE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "12:54:07 pm",
+    "ts": 1789457047958
+  },
+  "22800_PE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "01:06:13 pm",
+    "ts": 1789457773675
+  },
+  "22850_CE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "01:17:31 pm",
+    "ts": 1789458451295
+  },
+  "22800_CE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "01:33:21 pm",
+    "ts": 1789459401303
+  },
+  "22750_CE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "02:22:07 pm",
+    "ts": 1789462327776
+  },
+  "22700_CE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "02:34:51 pm",
+    "ts": 1789463091937
+  },
+  "22750_PE": {
+    "stage": "TRIGGER_ARMED",
+    "time": "02:39:38 pm",
+    "ts": 1789463378824
+  }
+}

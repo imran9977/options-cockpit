@@ -14,6 +14,12 @@ interface OIFlowPopoverProps {
     netFlow: "Building" | "Unwinding" | "Balanced";
 
     contribution: number;
+
+    // Whether this net flow is bullish/bearish depends on which side
+    // (Call vs Put) is building/unwinding - the caller knows that,
+    // this component doesn't, so it's passed in rather than guessed
+    // from netFlow alone (that guess was wrong for the Call side).
+    flowDotClass: "green" | "red" | "gray";
 }
 
 function OIFlowPopover({
@@ -25,19 +31,8 @@ function OIFlowPopover({
     largestExitStrike,
     netFlow,
     contribution,
+    flowDotClass,
 }: OIFlowPopoverProps) {
-    const getNetFlowClass = () => {
-    switch (netFlow) {
-        case "Building":
-            return "green";
-
-        case "Unwinding":
-            return "red";
-
-        default:
-            return "gray";
-    }
-};
     return (
         <div className="metric-popover">
 
@@ -71,7 +66,7 @@ function OIFlowPopover({
             <div className="metric-row">
     <span>Net Flow</span>
 
-    <span className={`flow-status ${getNetFlowClass()}`}>
+    <span className={`flow-status ${flowDotClass}`}>
         <span className="flow-dot" />
         {netFlow}
     </span>

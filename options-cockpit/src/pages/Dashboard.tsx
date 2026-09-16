@@ -6,81 +6,142 @@ import PositionBuildUpCard from "../components/dashboard/PositionBuildUpCard";
 import GreeksCard from "../components/dashboard/GreeksCard";
 import ConfirmationCard from "../components/dashboard/ConfirmationCard";
 import { useEffect, useState } from "react";
-import { getMarketSnapshot } from "../services/dhanApi";
+import { getMarketSnapshot, getSMCAnalysis, getPriceStructureSignals } from "../services/dhanApi";
 import type { MarketSnapshot } from "../models/MarketSnapshot";
 import type { MarketMetrics } from "../models/MarketMetrics";
-import type { OptionAnalysis } from "../models/OptionAnalysis";
+import type { OptionAnalysis, OptionAnalysisByIndex } from "../models/OptionAnalysis";
 import type { MarketHealth } from "../models/MarketHealth";
 import type { VixHealth } from "../models/VixHealth";
-import MarketObservationsPanel from "../components/MarketObservationsPanel";
-import MarketRibbon from "../components/MarketRibbon";
+import type { Underlying } from "../models/Underlying";
+import type { SMCAnalysis, SMCAnalysisByIndex } from "../models/SMCAnalysis";
+import type { PriceStructureSignalsByIndex } from "../models/PriceStructureSignal";
+import IndexTabs from "../components/IndexTabs";
 import EGBDCard from "../components/dashboard/EGBDCard";
+import PriceStructureTable from "../components/PriceStructureTable";
+import SuggestionsPanel from "../components/SuggestionsPanel";
+
+const emptyOptionAnalysis: OptionAnalysis = {
+  spotPrice: 0,
+  atmStrike: 0,
+  pcr: 0,
+
+  primarySupport: 0,
+  secondarySupport: 0,
+
+  primaryResistance: 0,
+  secondaryResistance: 0,
+
+  pivotPoint: 0,
+  weeklyPrimarySupport: null,
+  weeklyPrimaryResistance: null,
+
+  maxCallOI: 0,
+  maxCallOIStrike: null,
+
+  maxPutOI: 0,
+  maxPutOIStrike: null,
+
+  maxPain: null,
+
+  totalCallOIChange: 0,
+  totalPutOIChange: 0,
+  maxCallOIAddition: 0,
+  maxCallOIAdditionStrike: null,
+  maxCallOIExit: 0,
+  maxCallOIExitStrike: null,
+  maxPutOIAddition: 0,
+  maxPutOIAdditionStrike: null,
+  maxPutOIExit: 0,
+  maxPutOIExitStrike: null,
+
+  oiFlowVerdict: "Balanced Positioning",
+
+  callNetFlow: "Balanced",
+  putNetFlow: "Balanced",
+
+  callContribution: 0,
+  putContribution: 0,
+
+  longBuildUp: "Low",
+  longBuildUpCount: 0,
+  longBuildUpPercentage: 0,
+
+  shortBuildUp: "Low",
+  shortBuildUpCount: 0,
+  shortBuildUpPercentage: 0,
+
+  shortCovering: "Low",
+  shortCoveringCount: 0,
+  shortCoveringPercentage: 0,
+
+  longUnwinding: "Low",
+  longUnwindingCount: 0,
+  longUnwindingPercentage: 0,
+
+  callPositionBuildUp: {
+    longBuildUp: "Low", longBuildUpCount: 0, longBuildUpPercentage: 0,
+    shortBuildUp: "Low", shortBuildUpCount: 0, shortBuildUpPercentage: 0,
+    shortCovering: "Low", shortCoveringCount: 0, shortCoveringPercentage: 0,
+    longUnwinding: "Low", longUnwindingCount: 0, longUnwindingPercentage: 0,
+  },
+  putPositionBuildUp: {
+    longBuildUp: "Low", longBuildUpCount: 0, longBuildUpPercentage: 0,
+    shortBuildUp: "Low", shortBuildUpCount: 0, shortBuildUpPercentage: 0,
+    shortCovering: "Low", shortCoveringCount: 0, shortCoveringPercentage: 0,
+    longUnwinding: "Low", longUnwindingCount: 0, longUnwindingPercentage: 0,
+  },
+  positionBuildUpHint: "NO CLEAR SETUP",
+
+  atmIV: 0,
+  atmDelta: 0,
+  atmGamma: 0,
+  atmTheta: 0,
+
+  atmPutIV: 0,
+  atmPutDelta: 0,
+  atmPutGamma: 0,
+  atmPutTheta: 0,
+  ivSkew: 0,
+  expectedMove: 0,
+
+  greeksPremiumLabel: "Fair Premium",
+  greeksMovementLabel: "Steady Conditions",
+  greeksEnvironment: "Fair Premium · Steady Conditions",
+
+  marketBias: "Neutral",
+  confidence: "Low",
+
+  observations: [],
+  strikeObservations: [],
+  isExpiryDay: false,
+};
+
+const emptySMCAnalysis: SMCAnalysis = {
+  underlying: "NIFTY",
+  intervalMinutes: 5,
+  candles: [],
+  zones: [],
+  lastUpdated: 0,
+};
 
 function Dashboard() {
 
+  const [activeIndex, setActiveIndex] = useState<Underlying>("NIFTY");
+
   const [optionAnalysis, setOptionAnalysis] =
-    useState<OptionAnalysis>({
-      spotPrice: 0,
-      atmStrike: 0,
-      pcr: 0,
-
-      primarySupport: null,
-      secondarySupport: null,
-
-      primaryResistance: null,
-      secondaryResistance: null,
-
-      maxCallOI: 0,
-      maxCallOIStrike: null,
-
-      maxPutOI: 0,
-      maxPutOIStrike: null,
-
-      maxPain: null,
-
-      totalCallOIChange: 0,
-      totalPutOIChange: 0,
-      maxCallOIAddition: 0,
-      maxCallOIAdditionStrike: null,
-      maxCallOIExit: 0,
-      maxCallOIExitStrike: null,
-      maxPutOIAddition: 0,
-      maxPutOIAdditionStrike: null,
-      maxPutOIExit: 0,
-      maxPutOIExitStrike: null,
-
-      callNetFlow: "Balanced",
-      putNetFlow: "Balanced",
-
-      callContribution: 0,
-      putContribution: 0,
-
-      longBuildUp: "Low",
-      longBuildUpCount: 0,
-      longBuildUpPercentage: 0,
-
-      shortBuildUp: "Low",
-      shortBuildUpCount: 0,
-      shortBuildUpPercentage: 0,
-
-      shortCovering: "Low",
-      shortCoveringCount: 0,
-      shortCoveringPercentage: 0,
-
-      longUnwinding: "Low",
-      longUnwindingCount: 0,
-      longUnwindingPercentage: 0,
-
-      atmIV: 0,
-      atmDelta: 0,
-      atmGamma: 0,
-      atmTheta: 0,
-
-      marketBias: "Neutral",
-      confidence: "Low",
-
-      observations: [],
-      strikeObservations: [],
+    useState<OptionAnalysisByIndex>({
+      nifty: emptyOptionAnalysis,
+      sensex: emptyOptionAnalysis,
+    });
+  const [smcAnalysis, setSMCAnalysis] =
+    useState<SMCAnalysisByIndex>({
+      nifty: emptySMCAnalysis,
+      sensex: { ...emptySMCAnalysis, underlying: "SENSEX" },
+    });
+  const [priceStructureSignals, setPriceStructureSignals] =
+    useState<PriceStructureSignalsByIndex>({
+      nifty: [],
+      sensex: [],
     });
   const [showEGBD, setShowEGBD] = useState(false);
   const [marketSnapshot, setMarketSnapshot] =
@@ -155,14 +216,14 @@ function Dashboard() {
         setVixHealth(response.vixHealth);
         setOptionAnalysis(response.optionAnalysis);
       } catch (error) {
-        console.error("Failed to load market snapshot:", error);
       }
     }
 
     // Initial load
     loadMarketSnapshot();
 
-    // Refresh every 5 seconds
+    // Refresh every 3 seconds - matches the backend's own poll
+    // interval (also 3s, Dhan's option-chain rate-limit floor).
     const intervalId = setInterval(() => {
       loadMarketSnapshot();
     }, 3000);
@@ -171,10 +232,67 @@ function Dashboard() {
     return () => clearInterval(intervalId);
   }, []);
 
+  useEffect(() => {
+    async function loadSMCAnalysis() {
+      try {
+        const response = await getSMCAnalysis();
+
+        setSMCAnalysis(response);
+      } catch (error) {
+      }
+    }
+
+    loadSMCAnalysis();
+
+    // 5-minute candles don't need 3-second polling - a slower,
+    // independent interval from the option-snapshot poll above.
+    const intervalId = setInterval(() => {
+      loadSMCAnalysis();
+    }, 20000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
+  useEffect(() => {
+    async function loadPriceStructureSignals() {
+      try {
+        const response = await getPriceStructureSignals();
+
+        setPriceStructureSignals(response);
+      } catch (error) {
+      }
+    }
+
+    loadPriceStructureSignals();
+
+    // Same cadence as the SMC poll above - signals derive from the
+    // same 5-minute candles, no need for faster polling.
+    const intervalId = setInterval(() => {
+      loadPriceStructureSignals();
+    }, 20000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
+  const activeAnalysis =
+    activeIndex === "NIFTY"
+      ? optionAnalysis.nifty
+      : optionAnalysis.sensex;
+
+  const activeSMCAnalysis =
+    activeIndex === "NIFTY"
+      ? smcAnalysis.nifty
+      : smcAnalysis.sensex;
+
+  const activePriceStructureSignals =
+    activeIndex === "NIFTY"
+      ? priceStructureSignals.nifty
+      : priceStructureSignals.sensex;
+
   return (
     <>
       <Header />
-      {/* <MarketRibbon /> */}
+      <IndexTabs active={activeIndex} onChange={setActiveIndex} />
       <main className="flex gap-6 p-6">
 
         <div className="flex-1">
@@ -194,7 +312,8 @@ function Dashboard() {
                 }`}
             >
               <EGBDCard
-                optionAnalysis={optionAnalysis}
+                optionAnalysis={activeAnalysis}
+                indexLabel={activeIndex}
               />
             </div>
 
@@ -232,41 +351,50 @@ function Dashboard() {
           <section>
             <h2 className="custom-title"><span>02. Price Structure</span></h2>
 
-            <PriceStructureCard optionAnalysis={optionAnalysis} />
+            <PriceStructureCard optionAnalysis={activeAnalysis} />
           </section>
 
           <section>
             <h2 className="custom-title"><span>03. Option Chain Intelligence</span></h2>
 
-            <OptionChainCard optionAnalysis={optionAnalysis} />
+            <OptionChainCard optionAnalysis={activeAnalysis} />
           </section>
 
           <section>
             <h2 className="custom-title"><span>04. Position Build-up</span></h2>
 
-            <PositionBuildUpCard optionAnalysis={optionAnalysis} />
+            <PositionBuildUpCard optionAnalysis={activeAnalysis} />
           </section>
 
           <section>
             <h2 className="custom-title"><span>05. Greeks</span></h2>
 
-            <GreeksCard optionAnalysis={optionAnalysis} />
+            <GreeksCard optionAnalysis={activeAnalysis} indexLabel={activeIndex} />
           </section>
 
           <section>
             <h2 className="custom-title"><span>06. Confirmation</span></h2>
 
-            <ConfirmationCard optionAnalysis={optionAnalysis} />
+            <ConfirmationCard optionAnalysis={activeAnalysis} signals={activePriceStructureSignals} />
           </section>
 
         </div>
 
-        <aside className="w-[340px] shrink-0">
+        <aside className="w-[357px] shrink-0">
 
-          <MarketObservationsPanel
-            observations={optionAnalysis.observations}
-            strikeObservations={optionAnalysis.strikeObservations}
-          />
+          <div className="sidebar-stack">
+
+            <SuggestionsPanel
+              signals={activePriceStructureSignals}
+              underlying={activeIndex}
+            />
+
+            <PriceStructureTable
+              data={activeSMCAnalysis}
+              underlying={activeIndex}
+            />
+
+          </div>
 
         </aside>
 

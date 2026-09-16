@@ -25,16 +25,23 @@ export function getSpotHistory(
     );
 }
 
+// ~60s at the poller's 5s interval. A raw tick-to-tick (2-sample)
+// diff is dominated by quote jitter, not real short-term momentum -
+// this window smooths that out while still being short enough to
+// mean something for a same-day option buyer.
+const MOMENTUM_LOOKBACK = 12;
+
 export function calculateSpotVelocity(
-    history: readonly MarketSnapshotResponse[]
+    history: readonly MarketSnapshotResponse[],
+    lookback: number = MOMENTUM_LOOKBACK
 ): number {
-    const spots = getSpotHistory(history, 2);
+    const spots = getSpotHistory(history, lookback);
 
     if (spots.length < 2) {
         return 0;
     }
 
-    return spots[1] - spots[0];
+    return spots[spots.length - 1] - spots[0];
 }
 
 export function calculateSpotAcceleration(

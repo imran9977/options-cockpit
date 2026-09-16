@@ -31,16 +31,30 @@ function calculateMomentum(
     };
 }
 
+// ~15s at the poller's 5s interval. A single-tick (adjacent-sample)
+// velocity is dominated by quote jitter on a fast-moving quantity
+// like option premium during a squeeze - averaging over a short
+// window fixes that without adding so much lag that a genuinely
+// fast blast gets missed early. Not the same window as Market
+// Health's spot-velocity fix (60s) - that's a slower-moving index
+// value, this is option premium/OI/volume/gamma during a squeeze,
+// which the whole point of EGBD is to catch early.
+const MOMENTUM_LOOKBACK = 3;
+
+// Exported so callers can gate on the real minimum instead of a
+// stale, separately-hardcoded number.
+export const MOMENTUM_MIN_HISTORY = 2 * MOMENTUM_LOOKBACK + 1;
+
 export function analyzeStrikeMomentum(
     history: readonly StrikeWindowSnapshot[]
 ): StrikeLegMomentum[] {
 
-    if (history.length < 3) {
+    if (history.length < MOMENTUM_MIN_HISTORY) {
         return [];
     }
 
-    const previous = history[history.length - 3];
-    const current = history[history.length - 2];
+    const previous = history[history.length - 1 - 2 * MOMENTUM_LOOKBACK];
+    const current = history[history.length - 1 - MOMENTUM_LOOKBACK];
     const latest = history[history.length - 1];
 
     const momentum: StrikeLegMomentum[] = [];

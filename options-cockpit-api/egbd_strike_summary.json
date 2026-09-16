@@ -1,0 +1,443 @@
+[
+  {
+    "key": "23300_PE",
+    "strike": 23300,
+    "side": "PE",
+    "timesArmed": 37,
+    "firstArmed": "09:20:08 am",
+    "lastArmed": "01:36:23 pm",
+    "maxMomentumAtArming": 1074.02
+  },
+  {
+    "key": "23350_PE",
+    "strike": 23350,
+    "side": "PE",
+    "timesArmed": 33,
+    "firstArmed": "09:18:10 am",
+    "lastArmed": "02:30:42 pm",
+    "maxMomentumAtArming": 1227.57
+  },
+  {
+    "key": "23250_PE",
+    "strike": 23250,
+    "side": "PE",
+    "timesArmed": 33,
+    "firstArmed": "09:23:07 am",
+    "lastArmed": "02:35:39 pm",
+    "maxMomentumAtArming": 1539.36
+  },
+  {
+    "key": "23200_PE",
+    "strike": 23200,
+    "side": "PE",
+    "timesArmed": 30,
+    "firstArmed": "09:23:07 am",
+    "lastArmed": "02:40:39 pm",
+    "maxMomentumAtArming": 56980.85
+  },
+  {
+    "key": "23050_PE",
+    "strike": 23050,
+    "side": "PE",
+    "timesArmed": 28,
+    "firstArmed": "09:45:44 am",
+    "lastArmed": "02:22:10 pm",
+    "maxMomentumAtArming": 16298
+  },
+  {
+    "key": "23550_CE",
+    "strike": 23550,
+    "side": "CE",
+    "timesArmed": 27,
+    "firstArmed": "09:18:07 am",
+    "lastArmed": "02:37:40 pm",
+    "maxMomentumAtArming": 973.73
+  },
+  {
+    "key": "23600_CE",
+    "strike": 23600,
+    "side": "CE",
+    "timesArmed": 27,
+    "firstArmed": "09:20:08 am",
+    "lastArmed": "01:40:26 pm",
+    "maxMomentumAtArming": 872.75
+  },
+  {
+    "key": "23100_PE",
+    "strike": 23100,
+    "side": "PE",
+    "timesArmed": 27,
+    "firstArmed": "09:26:06 am",
+    "lastArmed": "02:22:10 pm",
+    "maxMomentumAtArming": 29082.93
+  },
+  {
+    "key": "23650_CE",
+    "strike": 23650,
+    "side": "CE",
+    "timesArmed": 26,
+    "firstArmed": "09:16:06 am",
+    "lastArmed": "01:47:31 pm",
+    "maxMomentumAtArming": 788.3
+  },
+  {
+    "key": "23150_PE",
+    "strike": 23150,
+    "side": "PE",
+    "timesArmed": 25,
+    "firstArmed": "09:47:16 am",
+    "lastArmed": "02:37:37 pm",
+    "maxMomentumAtArming": 35230.85
+  },
+  {
+    "key": "23700_CE",
+    "strike": 23700,
+    "side": "CE",
+    "timesArmed": 24,
+    "firstArmed": "09:19:08 am",
+    "lastArmed": "02:38:44 pm",
+    "maxMomentumAtArming": 401.37
+  },
+  {
+    "key": "23500_CE",
+    "strike": 23500,
+    "side": "CE",
+    "timesArmed": 23,
+    "firstArmed": "09:22:06 am",
+    "lastArmed": "02:23:32 pm",
+    "maxMomentumAtArming": 1250.25
+  },
+  {
+    "key": "23300_CE",
+    "strike": 23300,
+    "side": "CE",
+    "timesArmed": 22,
+    "firstArmed": "09:18:07 am",
+    "lastArmed": "02:40:42 pm",
+    "maxMomentumAtArming": 605.16
+  },
+  {
+    "key": "23400_CE",
+    "strike": 23400,
+    "side": "CE",
+    "timesArmed": 20,
+    "firstArmed": "09:17:10 am",
+    "lastArmed": "02:40:45 pm",
+    "maxMomentumAtArming": 1710.51
+  },
+  {
+    "key": "23000_PE",
+    "strike": 23000,
+    "side": "PE",
+    "timesArmed": 20,
+    "firstArmed": "09:34:13 am",
+    "lastArmed": "02:36:43 pm",
+    "maxMomentumAtArming": 18880.39
+  },
+  {
+    "key": "23350_CE",
+    "strike": 23350,
+    "side": "CE",
+    "timesArmed": 20,
+    "firstArmed": "10:37:31 am",
+    "lastArmed": "01:34:25 pm",
+    "maxMomentumAtArming": 1796.07
+  },
+  {
+    "key": "23450_CE",
+    "strike": 23450,
+    "side": "CE",
+    "timesArmed": 19,
+    "firstArmed": "09:17:03 am",
+    "lastArmed": "02:33:35 pm",
+    "maxMomentumAtArming": 938.84
+  },
+  {
+    "key": "23000_CE",
+    "strike": 23000,
+    "side": "CE",
+    "timesArmed": 19,
+    "firstArmed": "09:45:18 am",
+    "lastArmed": "02:38:44 pm",
+    "maxMomentumAtArming": 53.99
+  },
+  {
+    "key": "23750_CE",
+    "strike": 23750,
+    "side": "CE",
+    "timesArmed": 16,
+    "firstArmed": "09:19:11 am",
+    "lastArmed": "01:35:32 pm",
+    "maxMomentumAtArming": 265.54
+  },
+  {
+    "key": "23050_CE",
+    "strike": 23050,
+    "side": "CE",
+    "timesArmed": 16,
+    "firstArmed": "09:43:22 am",
+    "lastArmed": "01:51:33 pm",
+    "maxMomentumAtArming": 51.63
+  },
+  {
+    "key": "23500_PE",
+    "strike": 23500,
+    "side": "PE",
+    "timesArmed": 15,
+    "firstArmed": "09:16:03 am",
+    "lastArmed": "01:51:24 pm",
+    "maxMomentumAtArming": 3202.24
+  },
+  {
+    "key": "23400_PE",
+    "strike": 23400,
+    "side": "PE",
+    "timesArmed": 14,
+    "firstArmed": "09:16:09 am",
+    "lastArmed": "01:03:16 pm",
+    "maxMomentumAtArming": 1276.08
+  },
+  {
+    "key": "22950_PE",
+    "strike": 22950,
+    "side": "PE",
+    "timesArmed": 13,
+    "firstArmed": "09:32:12 am",
+    "lastArmed": "02:25:38 pm",
+    "maxMomentumAtArming": 9422.59
+  },
+  {
+    "key": "22900_PE",
+    "strike": 22900,
+    "side": "PE",
+    "timesArmed": 13,
+    "firstArmed": "10:06:20 am",
+    "lastArmed": "02:38:47 pm",
+    "maxMomentumAtArming": 10634.08
+  },
+  {
+    "key": "23450_PE",
+    "strike": 23450,
+    "side": "PE",
+    "timesArmed": 12,
+    "firstArmed": "09:16:03 am",
+    "lastArmed": "02:26:33 pm",
+    "maxMomentumAtArming": 1438.71
+  },
+  {
+    "key": "23550_PE",
+    "strike": 23550,
+    "side": "PE",
+    "timesArmed": 12,
+    "firstArmed": "09:24:08 am",
+    "lastArmed": "01:43:25 pm",
+    "maxMomentumAtArming": 155.13
+  },
+  {
+    "key": "23650_PE",
+    "strike": 23650,
+    "side": "PE",
+    "timesArmed": 12,
+    "firstArmed": "10:15:26 am",
+    "lastArmed": "02:22:11 pm",
+    "maxMomentumAtArming": 329.58
+  },
+  {
+    "key": "23700_PE",
+    "strike": 23700,
+    "side": "PE",
+    "timesArmed": 11,
+    "firstArmed": "09:24:11 am",
+    "lastArmed": "02:22:12 pm",
+    "maxMomentumAtArming": 265.23
+  },
+  {
+    "key": "23600_PE",
+    "strike": 23600,
+    "side": "PE",
+    "timesArmed": 10,
+    "firstArmed": "10:34:30 am",
+    "lastArmed": "01:08:13 pm",
+    "maxMomentumAtArming": 130.6
+  },
+  {
+    "key": "23800_CE",
+    "strike": 23800,
+    "side": "CE",
+    "timesArmed": 9,
+    "firstArmed": "09:42:11 am",
+    "lastArmed": "10:53:38 am",
+    "maxMomentumAtArming": 253.13
+  },
+  {
+    "key": "23750_PE",
+    "strike": 23750,
+    "side": "PE",
+    "timesArmed": 9,
+    "firstArmed": "09:58:23 am",
+    "lastArmed": "12:34:08 pm",
+    "maxMomentumAtArming": 155.04
+  },
+  {
+    "key": "22900_CE",
+    "strike": 22900,
+    "side": "CE",
+    "timesArmed": 9,
+    "firstArmed": "10:41:31 am",
+    "lastArmed": "01:45:27 pm",
+    "maxMomentumAtArming": 165.26
+  },
+  {
+    "key": "22850_PE",
+    "strike": 22850,
+    "side": "PE",
+    "timesArmed": 8,
+    "firstArmed": "10:39:31 am",
+    "lastArmed": "02:37:37 pm",
+    "maxMomentumAtArming": 3249.72
+  },
+  {
+    "key": "23800_PE",
+    "strike": 23800,
+    "side": "PE",
+    "timesArmed": 7,
+    "firstArmed": "09:34:10 am",
+    "lastArmed": "12:51:10 pm",
+    "maxMomentumAtArming": 118.36
+  },
+  {
+    "key": "22950_CE",
+    "strike": 22950,
+    "side": "CE",
+    "timesArmed": 7,
+    "firstArmed": "12:40:18 pm",
+    "lastArmed": "02:36:40 pm",
+    "maxMomentumAtArming": 58.12
+  },
+  {
+    "key": "23850_PE",
+    "strike": 23850,
+    "side": "PE",
+    "timesArmed": 6,
+    "firstArmed": "09:41:14 am",
+    "lastArmed": "12:51:23 pm",
+    "maxMomentumAtArming": 134.5
+  },
+  {
+    "key": "23250_CE",
+    "strike": 23250,
+    "side": "CE",
+    "timesArmed": 6,
+    "firstArmed": "11:15:40 am",
+    "lastArmed": "02:26:37 pm",
+    "maxMomentumAtArming": 193.42
+  },
+  {
+    "key": "23150_CE",
+    "strike": 23150,
+    "side": "CE",
+    "timesArmed": 5,
+    "firstArmed": "11:08:36 am",
+    "lastArmed": "02:32:37 pm",
+    "maxMomentumAtArming": 55.07
+  },
+  {
+    "key": "23900_CE",
+    "strike": 23900,
+    "side": "CE",
+    "timesArmed": 4,
+    "firstArmed": "09:23:07 am",
+    "lastArmed": "10:24:42 am",
+    "maxMomentumAtArming": 83.52
+  },
+  {
+    "key": "23100_CE",
+    "strike": 23100,
+    "side": "CE",
+    "timesArmed": 4,
+    "firstArmed": "09:48:14 am",
+    "lastArmed": "01:27:17 pm",
+    "maxMomentumAtArming": 18.82
+  },
+  {
+    "key": "22800_PE",
+    "strike": 22800,
+    "side": "PE",
+    "timesArmed": 4,
+    "firstArmed": "01:06:13 pm",
+    "lastArmed": "02:22:08 pm",
+    "maxMomentumAtArming": 4481.6
+  },
+  {
+    "key": "23200_CE",
+    "strike": 23200,
+    "side": "CE",
+    "timesArmed": 3,
+    "firstArmed": "12:54:07 pm",
+    "lastArmed": "02:28:38 pm",
+    "maxMomentumAtArming": 167.32
+  },
+  {
+    "key": "22850_CE",
+    "strike": 22850,
+    "side": "CE",
+    "timesArmed": 3,
+    "firstArmed": "01:17:31 pm",
+    "lastArmed": "02:40:39 pm",
+    "maxMomentumAtArming": 186.8
+  },
+  {
+    "key": "23850_CE",
+    "strike": 23850,
+    "side": "CE",
+    "timesArmed": 2,
+    "firstArmed": "09:56:17 am",
+    "lastArmed": "11:07:41 am",
+    "maxMomentumAtArming": 139.32
+  },
+  {
+    "key": "22750_CE",
+    "strike": 22750,
+    "side": "CE",
+    "timesArmed": 2,
+    "firstArmed": "02:22:07 pm",
+    "lastArmed": "02:33:38 pm",
+    "maxMomentumAtArming": 128.7
+  },
+  {
+    "key": "24000_CE",
+    "strike": 24000,
+    "side": "CE",
+    "timesArmed": 1,
+    "firstArmed": "09:17:07 am",
+    "lastArmed": "09:17:07 am",
+    "maxMomentumAtArming": 327.82
+  },
+  {
+    "key": "22800_CE",
+    "strike": 22800,
+    "side": "CE",
+    "timesArmed": 1,
+    "firstArmed": "01:33:21 pm",
+    "lastArmed": "01:33:21 pm",
+    "maxMomentumAtArming": 17.18
+  },
+  {
+    "key": "22700_CE",
+    "strike": 22700,
+    "side": "CE",
+    "timesArmed": 1,
+    "firstArmed": "02:34:51 pm",
+    "lastArmed": "02:34:51 pm",
+    "maxMomentumAtArming": 228.63
+  },
+  {
+    "key": "22750_PE",
+    "strike": 22750,
+    "side": "PE",
+    "timesArmed": 1,
+    "firstArmed": "02:39:38 pm",
+    "lastArmed": "02:39:38 pm",
+    "maxMomentumAtArming": 21.39
+  }
+]

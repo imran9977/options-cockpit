@@ -24,11 +24,30 @@ export interface EGBDSignal {
 
   momentumScore: number;
 
+  currentPremium: number;
+  referenceEntryPrice: number | null;
+  peakPremiumSinceEntry: number | null;
+  multipleFromEntry: number | null;
+  pullbackFromPeakPercent: number | null;
+  oiConcentration: number;
+
+  // True once this strike's IV has dropped far enough from its own
+  // peak-since-armed, sustained for long enough, to count as a real
+  // crash - forces EGBD's own exit and separately feeds the
+  // Suggestions Panel's IV_CRASH signal.
+  ivCrashed: boolean;
+
   evidence: string[];
 }
 
 export interface GammaExposureRow {
   strike: number;
+  callPremium: number;
+  putPremium: number;
+  callOIChange: number;
+  putOIChange: number;
+  callVolumeChange: number;
+  putVolumeChange: number;
   callGamma: number;
   putGamma: number;
   isATM: boolean;
@@ -38,12 +57,6 @@ export interface EGBDResult {
     signals: EGBDSignal[];
 
     activeSignal?: EGBDSignal;
-
-    primaryTrigger: number;
-
-    secondaryTrigger: number;
-
-    invalidation: number;
 
     observation: string;
 
