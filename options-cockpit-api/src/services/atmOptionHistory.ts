@@ -1,12 +1,19 @@
 import type { ATMOptionSnapshot } from "../models/ATMOptionSnapshot.js";
+import type { Underlying } from "../config/instruments.js";
 
-const history: ATMOptionSnapshot[] = [];
+const historyByUnderlying: Record<Underlying, ATMOptionSnapshot[]> = {
+    NIFTY: [],
+    SENSEX: [],
+};
 
 const MAX_HISTORY = 60;
 
 export function addATMOptionSnapshot(
+    underlying: Underlying,
     snapshot: ATMOptionSnapshot
 ): void {
+    const history = historyByUnderlying[underlying];
+
     history.push(snapshot);
 
     if (history.length > MAX_HISTORY) {
@@ -14,14 +21,16 @@ export function addATMOptionSnapshot(
     }
 }
 
-export function getATMOptionHistory(): readonly ATMOptionSnapshot[] {
-    return history;
+export function getATMOptionHistory(
+    underlying: Underlying
+): readonly ATMOptionSnapshot[] {
+    return historyByUnderlying[underlying];
 }
 
-export function getATMHistorySize(): number {
-    return history.length;
+export function getATMHistorySize(underlying: Underlying): number {
+    return historyByUnderlying[underlying].length;
 }
 
-export function clearATMOptionHistory(): void {
-    history.length = 0;
+export function clearATMOptionHistory(underlying: Underlying): void {
+    historyByUnderlying[underlying].length = 0;
 }

@@ -19,7 +19,6 @@ function getHistoricalDateRange(days: number) {
 
 export async function getMarketQuote() {
     const url = `${config.dhan.baseUrl}/v2/marketfeed/ohlc`;
-// console.log("[getMarketQuote] Called", new Date().toISOString());
     const response = await fetch(url, {
         method: "POST",
         headers: {
@@ -40,15 +39,10 @@ export async function getMarketQuote() {
    if (!response.ok) {
     const errorBody = await response.text();
 
-    console.error("Dhan Market Quote Error");
-    console.error("Status:", response.status);
-    console.error("Body:", errorBody);
-
-    throw new Error(`Dhan API Error: ${response.status}`);
+    throw new Error(`Dhan API Error: ${response.status}: ${errorBody}`);
 }
 
     const data = await response.json();
-// console.log("[getMarketQuote] Success");
     return data;
 }
 

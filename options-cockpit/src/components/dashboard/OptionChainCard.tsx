@@ -6,38 +6,42 @@ interface OptionChainCardProps {
     optionAnalysis: OptionAnalysis;
 }
 
+function verdictClassFor(verdict: string): string {
+    if (verdict === "Put Writers Active") return "bullish";
+    if (verdict === "Call Writers Active") return "bearish";
+    return "neutral";
+}
+
+// Core principle: green = bullish, red = bearish, applied to what the
+// change actually means, not a fixed side-color.
+// Call OI building = resistance strengthening = bearish (red).
+// Call OI unwinding = resistance clearing = bullish (green).
+function callOIChangeClass(totalChange: number): string {
+    if (totalChange > 0) return "decision-negative";
+    if (totalChange < 0) return "decision-positive";
+    return "decision-neutral";
+}
+
+// Put OI building = support strengthening = bullish (green).
+// Put OI unwinding = support weakening = bearish (red).
+function putOIChangeClass(totalChange: number): string {
+    if (totalChange > 0) return "decision-positive";
+    if (totalChange < 0) return "decision-negative";
+    return "decision-neutral";
+}
+
+function toFlowDotClass(decisionClass: string): "green" | "red" | "gray" {
+    if (decisionClass === "decision-positive") return "green";
+    if (decisionClass === "decision-negative") return "red";
+    return "gray";
+}
+
 function OptionChainCard({
     optionAnalysis,
 }: OptionChainCardProps) {
-    let verdict = "Balanced Positioning";
-    let verdictClass = "neutral";
+    const verdict = optionAnalysis.oiFlowVerdict;
+    const verdictClass = verdictClassFor(verdict);
 
-    const callFlow = Number(optionAnalysis.callNetFlow ?? 0);
-    const putFlow = Number(optionAnalysis.putNetFlow ?? 0);
-
-    const threshold = 50000;
-
-    if (
-        putFlow > threshold &&
-        putFlow > callFlow
-    ) {
-        verdict = "Put Writers Active";
-        verdictClass = "bullish";
-    }
-    else if (
-        callFlow > threshold &&
-        callFlow > putFlow
-    ) {
-        verdict = "Call Writers Active";
-        verdictClass = "bearish";
-    }
-    else if (
-        Math.abs(callFlow) < threshold &&
-        Math.abs(putFlow) < threshold
-    ) {
-        verdict = "Low Writer Activity";
-        verdictClass = "neutral";
-    }
     return (
         <section className="section section-yellow">
             <div className="section-header">
@@ -59,8 +63,7 @@ function OptionChainCard({
                     {/* <div className="info">i</div> */}
                     <div className="label">CALL OI</div>
                     <div className="value">
-                        {/* {optionAnalysis.maxCallOI.toLocaleString()} */}
-                           {formatNumber(optionAnalysis.maxPutOI)}
+                        {formatNumber(optionAnalysis.maxCallOI)}
                     </div>
                     <div className="caption">
                         Max @ {optionAnalysis.maxCallOIStrike ?? "-"}
@@ -80,16 +83,14 @@ function OptionChainCard({
                             largestExitStrike={optionAnalysis.maxCallOIExitStrike}
                             netFlow={optionAnalysis.callNetFlow}
                             contribution={optionAnalysis.callContribution}
+                            flowDotClass={toFlowDotClass(callOIChangeClass(optionAnalysis.totalCallOIChange))}
                         />
                     </div>
 
                     <div className="label">CHANGE IN CALL OI</div>
 
                     <div
-                        className={`value decision-value ${optionAnalysis.callContribution >= 0
-                            ? "decision-negative"
-                            : "decision-positive"
-                            }`}
+                        className={`value decision-value ${callOIChangeClass(optionAnalysis.totalCallOIChange)}`}
                     >
                         {formatNumber(optionAnalysis.totalCallOIChange)}
                     </div>
@@ -108,7 +109,7 @@ function OptionChainCard({
                         Exited :
                         <span
                             className={
-                                optionAnalysis.maxCallOIExit > optionAnalysis.maxCallOIAddition
+                                Math.abs(optionAnalysis.maxCallOIExit) > optionAnalysis.maxCallOIAddition
                                     ? "support-value decision-positive"
                                     : "reference-value text-muted"
                             }
@@ -167,16 +168,14 @@ function OptionChainCard({
                             largestExitStrike={optionAnalysis.maxPutOIExitStrike}
                             netFlow={optionAnalysis.putNetFlow}
                             contribution={optionAnalysis.putContribution}
+                            flowDotClass={toFlowDotClass(putOIChangeClass(optionAnalysis.totalPutOIChange))}
                         />
                     </div>
 
                     <div className="label">CHANGE IN PUT OI</div>
 
                     <div
-                        className={`value decision-value ${optionAnalysis.putContribution >= 0
-                                ? "decision-positive"
-                                : "decision-negative"
-                            }`}
+                        className={`value decision-value ${putOIChangeClass(optionAnalysis.totalPutOIChange)}`}
                     >
                         {formatNumber(optionAnalysis.totalPutOIChange)}
                     </div>
@@ -195,7 +194,7 @@ function OptionChainCard({
                         Exited :
                         <span
                             className={
-                                (optionAnalysis.maxPutOIExit ?? 0) >
+                                Math.abs(optionAnalysis.maxPutOIExit ?? 0) >
                                     (optionAnalysis.maxPutOIAddition ?? 0)
                                     ? "support-value decision-negative"
                                     : "reference-value text-muted"

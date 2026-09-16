@@ -1,16 +1,18 @@
 import type { MarketSnapshot } from "../models/MarketSnapshot";
 import { MarketMetrics } from "../models/MarketMetrics";
-import type { OptionAnalysis } from "../models/OptionAnalysis";
+import type { OptionAnalysisByIndex } from "../models/OptionAnalysis";
 import type { MarketHealth } from "../models/MarketHealth";
 import type { VixHealth } from "../models/VixHealth";
 import type { CommodityRibbon } from "../models/CommodityRibbon";
+import type { SMCAnalysisByIndex } from "../models/SMCAnalysis";
+import type { PriceStructureSignalsByIndex } from "../models/PriceStructureSignal";
 
 export interface MarketQuoteResponse {
     marketSnapshot: MarketSnapshot;
     marketMetrics: MarketMetrics;
     marketHealth: MarketHealth;
     vixHealth: VixHealth;
-    optionAnalysis: OptionAnalysis;
+    optionAnalysis: OptionAnalysisByIndex;
 }
 
 export interface CommodityRibbonResponse {
@@ -42,6 +44,28 @@ export async function getCommodityRibbon(): Promise<CommodityRibbonResponse> {
         throw new Error(
             "Failed to fetch commodity ribbon"
         );
+    }
+
+    return response.json();
+}
+
+export async function getSMCAnalysis(): Promise<SMCAnalysisByIndex> {
+
+    const response = await fetch("http://localhost:3000/smc-analysis");
+
+    if (!response.ok) {
+        throw new Error("Failed to fetch price structure analysis");
+    }
+
+    return response.json();
+}
+
+export async function getPriceStructureSignals(): Promise<PriceStructureSignalsByIndex> {
+
+    const response = await fetch("http://localhost:3000/price-structure-signals");
+
+    if (!response.ok) {
+        throw new Error("Failed to fetch price structure signals");
     }
 
     return response.json();

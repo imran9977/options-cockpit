@@ -1,0 +1,124 @@
+Total resolved arm events: 694
+Top 10 longest-armed-before-resolving:
+[
+  {
+    "key": "23850_PE",
+    "armedAt": "12:51:23 pm",
+    "resolvedAt": "12:55:31 pm",
+    "durationSec": 249,
+    "resolvedTo": "WATCHING"
+  },
+  {
+    "key": "22750_CE",
+    "armedAt": "02:22:07 pm",
+    "resolvedAt": "02:25:25 pm",
+    "durationSec": 198,
+    "resolvedTo": "WATCHING"
+  },
+  {
+    "key": "22700_CE",
+    "armedAt": "02:34:51 pm",
+    "resolvedAt": "02:38:00 pm",
+    "durationSec": 188,
+    "resolvedTo": "WATCHING"
+  },
+  {
+    "key": "22950_CE",
+    "armedAt": "12:48:40 pm",
+    "resolvedAt": "12:50:53 pm",
+    "durationSec": 133,
+    "resolvedTo": "WATCHING"
+  },
+  {
+    "key": "22900_CE",
+    "armedAt": "12:07:19 pm",
+    "resolvedAt": "12:09:14 pm",
+    "durationSec": 115,
+    "resolvedTo": "WATCHING"
+  },
+  {
+    "key": "23150_CE",
+    "armedAt": "02:32:37 pm",
+    "resolvedAt": "02:33:57 pm",
+    "durationSec": 80,
+    "resolvedTo": "WATCHING"
+  },
+  {
+    "key": "22900_CE",
+    "armedAt": "10:41:31 am",
+    "resolvedAt": "10:42:49 am",
+    "durationSec": 78,
+    "resolvedTo": "WATCHING"
+  },
+  {
+    "key": "23050_CE",
+    "armedAt": "11:42:54 am",
+    "resolvedAt": "11:44:10 am",
+    "durationSec": 76,
+    "resolvedTo": "WATCHING"
+  },
+  {
+    "key": "23050_CE",
+    "armedAt": "12:42:14 pm",
+    "resolvedAt": "12:43:29 pm",
+    "durationSec": 74,
+    "resolvedTo": "WATCHING"
+  },
+  {
+    "key": "23500_PE",
+    "armedAt": "11:28:44 am",
+    "resolvedAt": "11:29:55 am",
+    "durationSec": 70,
+    "resolvedTo": "WATCHING"
+  }
+]
+Duration stats (sec) - min: 6 median: 10 max: 249 mean: 14.8
+All resolved to WATCHING (i.e. none advanced further)? true
+Wrote per-strike summary, top 5 by re-arm frequency:
+[
+  {
+    "key": "23300_PE",
+    "strike": 23300,
+    "side": "PE",
+    "timesArmed": 37,
+    "firstArmed": "09:20:08 am",
+    "lastArmed": "01:36:23 pm",
+    "maxMomentumAtArming": 1074.02
+  },
+  {
+    "key": "23350_PE",
+    "strike": 23350,
+    "side": "PE",
+    "timesArmed": 33,
+    "firstArmed": "09:18:10 am",
+    "lastArmed": "02:30:42 pm",
+    "maxMomentumAtArming": 1227.57
+  },
+  {
+    "key": "23250_PE",
+    "strike": 23250,
+    "side": "PE",
+    "timesArmed": 33,
+    "firstArmed": "09:23:07 am",
+    "lastArmed": "02:35:39 pm",
+    "maxMomentumAtArming": 1539.36
+  },
+  {
+    "key": "23200_PE",
+    "strike": 23200,
+    "side": "PE",
+    "timesArmed": 30,
+    "firstArmed": "09:23:07 am",
+    "lastArmed": "02:40:39 pm",
+    "maxMomentumAtArming": 56980.85
+  },
+  {
+    "key": "23050_PE",
+    "strike": 23050,
+    "side": "PE",
+    "timesArmed": 28,
+    "firstArmed": "09:45:44 am",
+    "lastArmed": "02:22:10 pm",
+    "maxMomentumAtArming": 16298
+  }
+]

@@ -1,0 +1,37 @@
+{
+  "trades": [
+    {
+      "serialNo": 1,
+      "strike": 23250,
+      "side": "CE",
+      "lots": 3,
+      "units": 195,
+      "entryPrice": 178.85,
+      "exitPrice": 163.00,
+      "totalInvestment": 34875.75,
+      "totalPnl": -3090.75,
+      "entryTime": "2026-09-16T05:40:00.000Z",
+      "exitTime": "2026-09-16T05:51:00.000Z",
+      "reason": "RETEST_HOLD (bullish, high confidence) - \"Round 23250 retested and held\": price returned to Round 23250 and closed at 23254.30, staying on the breakout side. optionChainAgreement=confirms (Put writers active - bullish OI positioning; Market bias: Bullish, Moderate confidence).",
+      "exitReason": "Stop loss hit: premium fell to 163.00, -8.86% from entry 178.85 (stop set at -8% / 164.54). No opposing high-confidence signal was involved - pure stop discipline as spot pulled back from 23264 to 23234.85."
+    },
+    {
+      "serialNo": 2,
+      "strike": 23250,
+      "side": "PE",
+      "lots": 3,
+      "units": 195,
+      "entryPrice": 147.00,
+      "exitPrice": 146.75,
+      "totalInvestment": 28665.00,
+      "totalPnl": -48.75,
+      "entryTime": "2026-09-16T08:47:00.000Z",
+      "exitTime": "2026-09-16T10:28:00.000Z",
+      "reason": "CONFLUENCE (bearish, high confidence) - \"Price reacting to IFVG zone (23240-23250) - with confluence\": price re-entered an active IFVG zone that also sits inside another overlapping zone. optionChainAgreement=mixed (no active contradiction).",
+      "exitReason": "Forced exit at market close (15:30 IST) - position was still open, never hit the +10% target (peaked at +9.6%, ₹161.10) or the -8% stop. Closed flat, essentially breakeven, at the last live premium before the session ended."
+    }
+  ],
+  "position": null,
+  "startedAt": "2026-09-16T05:40:00.000Z",
+  "lastError": null
+}

@@ -121,8 +121,8 @@ body {
     padding: 24px;
 }
 
-.w-\[340px\] {
-    width: 340px;
+.w-\[357px\] {
+    width: 357px;
 }
 
 .section {
@@ -263,6 +263,44 @@ h2.custom-title::before {
 }
 
 /* ==========================================================
+   HEADER - COMMODITY CHIPS
+========================================================== */
+
+.header-commodities {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+}
+
+.commodity-chip {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: #f8fafc;
+    border: 1px solid var(--border);
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.commodity-chip-name {
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.commodity-chip-price {
+    color: #4b5563;
+}
+
+.commodity-chip-change {
+    font-weight: 600;
+    font-size: 12px;
+}
+
+/* ==========================================================
    DESIGN SYSTEM - DECISION UTILITIES
 ========================================================== */
 
@@ -310,6 +348,46 @@ h2.custom-title::before {
 
 .reference-value {
     font-weight: 500;
+}
+
+.value-delta {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.build-up-side-label {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #6b7280;
+    margin: 16px 0 10px;
+}
+
+/* ---------- Pivot Weekly Tiles ---------- */
+
+.pivot-weekly-tiles {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.pivot-weekly-tile {
+    flex: 1;
+    border-radius: 10px;
+    padding: 8px 6px;
+}
+
+.pivot-weekly-tile-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #6b7280;
+    margin-bottom: 4px;
+}
+
+.pivot-weekly-tile-value {
+    font-size: 15px;
 }
 
 /* ---------- Background Tints ---------- */
@@ -431,6 +509,331 @@ h2.custom-title::before {
     .grid-5 {
         grid-template-columns: 1fr;
     }
+}
+
+/* ==========================================================
+   PRICE STRUCTURE PANEL (Order Blocks / FVG / IFVG / Sweeps)
+========================================================== */
+
+/* The aside stacks Suggestions above Price Structure. Suggestions
+   owns the sticky/max-height behavior directly (grows up to the
+   viewport, then scrolls internally); Price Structure is a plain
+   block below it that scrolls with the page - it doesn't need to
+   fight Suggestions for a shared, fixed-height split. */
+.sidebar-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.smc-panel {
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 16px;
+    gap: 12px;
+    position: relative;
+    z-index: 2;
+}
+
+.smc-panel-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.smc-panel-title {
+    font-weight: 600;
+    font-size: 16px;
+    color: #1f2937;
+}
+
+.smc-panel-subtitle {
+    font-size: 12px;
+    color: #64748b;
+}
+
+.smc-legend {
+    display: flex;
+    gap: 14px;
+    font-size: 12px;
+    color: #64748b;
+    align-items: center;
+}
+
+.smc-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.smc-legend-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.smc-legend-bullish {
+    background: var(--bullish);
+}
+
+.smc-legend-bearish {
+    background: var(--bearish);
+}
+
+.smc-zone-table {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.smc-zone-table-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 0 10px 6px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    border-bottom: 1px solid var(--border);
+}
+
+.smc-zone-table-header span:first-child {
+    min-width: 36px;
+}
+
+.smc-zone-table-header span:nth-child(2) {
+    min-width: 40px;
+}
+
+.smc-zone-table-header span:nth-child(3) {
+    flex: 1;
+    text-align: center;
+}
+
+.smc-zone-empty {
+    font-size: 12px;
+    color: #94a3b8;
+    text-align: center;
+    padding: 24px 0;
+}
+
+.smc-zone-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0px;
+    padding: 10px 10px;
+    border-radius: 8px;
+    font-size: 13px;
+    background: #f8fafc;
+    border: 1px solid transparent;
+}
+
+.smc-zone-row-strongest {
+    position: relative;
+    overflow: hidden;
+    border-color: #f59e0b;
+    background: #fffbeb;
+}
+
+.smc-zone-row-strongest::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top: 16px solid #f59e0b;
+    border-left: 16px solid transparent;
+}
+
+.suggestions-panel {
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 18px;
+    margin-top: -55px;
+    max-height: calc(100vh - 48px);
+    min-height: 0;
+    overflow: hidden;
+    padding: 16px;
+    gap: 12px;
+}
+
+.suggestions-panel-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.suggestions-panel-title {
+    font-weight: 600;
+    font-size: 16px;
+    color: #1f2937;
+}
+
+.suggestions-panel-subtitle {
+    font-size: 12px;
+    color: #64748b;
+}
+
+.suggestions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    overflow-y: auto;
+    flex: 1;
+    /* Without this, a flex column's default min-height:auto lets this
+       list grow to fit its content instead of shrinking to the
+       available space - overflow-y:auto then never actually engages,
+       and the PARENT's overflow:hidden hard-clips content mid-card
+       instead of this list scrolling internally like it should. */
+    min-height: 0;
+}
+
+.suggestions-empty {
+    font-size: 12px;
+    color: #94a3b8;
+    text-align: center;
+    padding: 24px 0;
+}
+
+.suggestion-row {
+    padding: 10px 12px;
+    border-radius: 10px;
+    font-size: 13px;
+    background: #f8fafc;
+    border: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.suggestion-row-strong {
+    border-color: #f59e0b;
+    background: #fffbeb;
+}
+
+.suggestion-row-strong::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top: 14px solid #f59e0b;
+    border-left: 14px solid transparent;
+}
+
+.suggestion-row-top {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: #94a3b8;
+    margin-bottom: 4px;
+}
+
+.suggestion-headline {
+    font-weight: 600;
+    font-size: 13px;
+    color: #1f2937;
+    margin-bottom: 4px;
+}
+
+.suggestion-reasoning {
+    margin: 0;
+    padding-left: 16px;
+    font-size: 12px;
+    color: #64748b;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.suggestion-counter-trend {
+    margin-top: 6px;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--neutral);
+}
+
+.suggestion-agreement {
+    margin-top: 4px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+/* Deliberately not --bullish/--bearish here - "confirms"/"contradicts"
+   is agreement, not direction, and a confirmed BEARISH signal must
+   not render green just because green usually means bullish
+   elsewhere in this app. */
+.suggestion-agreement-confirms {
+    color: var(--informational);
+}
+
+.suggestion-agreement-contradicts {
+    color: var(--neutral);
+}
+
+.confirmation-notes {
+    list-style: none;
+    margin: 10px 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+.confirmation-notes li {
+    padding-left: 14px;
+    position: relative;
+}
+
+.confirmation-notes li::before {
+    content: "\2022";
+    position: absolute;
+    left: 0;
+    color: var(--text-muted);
+}
+
+.smc-zone-time {
+    font-size: 12px;
+    color: #94a3b8;
+    min-width: 36px;
+}
+
+.smc-zone-type {
+    font-weight: 600;
+    min-width: 40px;
+}
+
+.smc-zone-range {
+    flex: 1;
+    text-align: center;
+    font-weight: 500;
+}
+
+.smc-zone-status {
+    text-transform: capitalize;
+    color: #64748b;
+    font-size: 12px;
+}
+
+.smc-zone-distance {
+    font-size: 12px;
+    color: #64748b;
+    min-width: 60px;
+    text-align: right;
 }
 
 /* ==========================================================
@@ -756,6 +1159,55 @@ h2.custom-title::before {
    POSITION BUILD-UP VERDICT
    ========================================================== */
 
+.tile-info {
+    position: absolute;
+    right: 14px;
+    top: 14px;
+    width: 16px;
+    height: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #bfc7d3;
+    border-radius: 50%;
+    font-size: 10px;
+    font-weight: 700;
+    color: #6b7280;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.tile-info-popover {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    width: 200px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    background: #ffffff;
+    border: 1px solid #d9dee7;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .35);
+    font-size: 12px;
+    line-height: 1.4;
+    color: #374151;
+    text-align: left;
+    cursor: default;
+    z-index: 1000;
+}
+
+.tile-info:hover .tile-info-popover {
+    display: block;
+}
+
+/* Right-half tiles open the popover leftward instead of rightward,
+   so it stays inside the grid instead of overflowing the page edge. */
+.grid-4 .card:nth-child(3) .tile-info-popover,
+.grid-4 .card:nth-child(4) .tile-info-popover {
+    left: auto;
+    right: 0;
+}
+
 .position-summary {
     padding: 8px 16px;
     border-radius: 999px;
@@ -971,6 +1423,11 @@ h2.custom-title::before {
     display: block;
 }
 
+.buildup-glossary {
+    left: 0;
+    right: auto;
+}
+
 .info-popover-title {
     font-size: 14px;
     font-weight: 700;
@@ -1085,10 +1542,10 @@ h2.custom-title::before {
     background: #ffffff;
     border: 1px solid var(--border);
     border-radius: 18px;
-    padding: 24px;
+    padding: 12px 24px;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 8px;
 }
 
 .egbd-header {
@@ -1137,6 +1594,57 @@ h2.custom-title::before {
     color: var(--bullish);
 }
 
+.egbd-chip.oi-backing {
+    background: var(--bg-greeks);
+    color: #7c3aed;
+}
+
+.egbd-chip.inactive {
+    background: #f1f5f9;
+    color: #64748b;
+}
+
+/* ==========================================================
+   Index Tabs (Nifty / Sensex)
+   ========================================================== */
+
+.index-tabs {
+    display: flex;
+    gap: 8px;
+    padding: 12px 24px 0;
+}
+
+.index-tab {
+    padding: 8px 20px;
+    border: 1px solid #d9dee7;
+    border-radius: 999px;
+    background: #ffffff;
+    color: #64748b;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.index-tab:hover {
+    border-color: #2563eb;
+    color: #2563eb;
+}
+
+.index-tab.active {
+    background: #2563eb;
+    border-color: #2563eb;
+    color: #ffffff;
+}
+
+.egbd-inactive-message {
+    padding: 24px;
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
 /* ==========================================================
    Candidate + Trigger Summary
    ========================================================== */
@@ -1154,10 +1662,10 @@ h2.custom-title::before {
 }
 
 .egbd-candidate {
-    font-size: 34px;
+    font-size: 20px;
     font-weight: 800;
     color: var(--text-primary);
-    line-height: 1;
+    line-height: 1.2;
     margin-top: 6px;
 }
 
@@ -1176,7 +1684,7 @@ h2.custom-title::before {
 
 .egbd-content {
     display: grid;
-    grid-template-columns: 340px 1fr;
+    grid-template-columns: 170px 1fr;
     gap: 28px;
     align-items: start;
 }
@@ -1200,6 +1708,32 @@ h2.custom-title::before {
     background: #ffffff;
 }
 
+.egbd-price-row {
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    margin-top: 8px;
+    gap: 1px;
+}
+
+.egbd-price-row span:first-child {
+    color: #9ca3af;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 10px;
+}
+
+.egbd-price-row span:last-child {
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.egbd-price-placeholder {
+    font-size: 12px;
+    color: #9ca3af;
+    margin-top: 6px;
+}
+
 .egbd-trigger-value {
     font-size: 28px;
     font-weight: 700;
@@ -1208,9 +1742,9 @@ h2.custom-title::before {
 }
 
 .egbd-candidate {
-    font-size: 34px;
+    font-size: 20px;
     font-weight: 800;
-    line-height: 1;
+    line-height: 1.2;
     margin-top: 6px;
 }
 
@@ -1244,23 +1778,39 @@ h2.custom-title::before {
 .egbd-gamma-header,
 .egbd-gamma-row {
     display: grid;
-    grid-template-columns: 1fr 110px 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 70px 1fr 1fr 1fr 1fr;
+    gap: 3px;
     align-items: center;
     text-align: center;
 }
 
+.egbd-premium {
+    color: #6b7280;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+/* Volume has no inherent bullish/bearish direction the way OI does
+   (it measures participation, not positioning) - styled neutrally,
+   not with the green/red decision colors. */
+.egbd-volume-change {
+    color: #475569;
+    font-weight: 600;
+    font-size: 11px;
+}
+
 .egbd-gamma-header {
     background: #f8fafc;
-    padding: 14px 18px;
-    font-size: 12px;
+    padding: 12px 10px;
+    font-size: 10px;
     font-weight: 700;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     text-transform: uppercase;
     border-bottom: 1px solid var(--border);
 }
 
 .egbd-gamma-row {
-    padding: 16px 18px;
+    padding: 12px 10px;
     border-bottom: 1px solid #eef2f7;
 }
 
@@ -1276,16 +1826,24 @@ h2.custom-title::before {
 .gamma-call {
     color: #2563eb;
     font-weight: 700;
+    font-size: 13px;
 }
 
 .gamma-put {
     color: #7c3aed;
     font-weight: 700;
+    font-size: 13px;
+}
+
+.egbd-oi-change {
+    font-size: 11px;
+    font-weight: 600;
 }
 
 .gamma-strike {
     font-weight: 700;
     color: #111827;
+    font-size: 13px;
 }
 
 /* ==========================================================

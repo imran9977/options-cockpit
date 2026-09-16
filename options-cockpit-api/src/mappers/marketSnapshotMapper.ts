@@ -1,7 +1,11 @@
 import type { MarketSnapshot } from "../models/MarketSnapshot.js";
 import { INSTRUMENTS } from "../config/instruments.js";
 
-export function toMarketSnapshot(dhanResponse: any): MarketSnapshot {
+export function toMarketSnapshot(
+    dhanResponse: any,
+    niftyPreviousClose: number,
+    sensexPreviousClose: number
+): MarketSnapshot {
     return {
         niftySpot:
             dhanResponse.data.IDX_I[
@@ -43,19 +47,19 @@ export function toMarketSnapshot(dhanResponse: any): MarketSnapshot {
                 INSTRUMENTS.NIFTY
             ].ohlc.open,
 
-        niftyPreviousClose:
-            dhanResponse.data.IDX_I[
-                INSTRUMENTS.NIFTY
-            ].ohlc.close,
+        // Dhan's live ohlc.close for an index quote tracks the
+        // still-forming current price during market hours (it was
+        // observed identical to last_price intraday), not yesterday's
+        // settled close - the real previous close instead comes from
+        // classicalLevelsService's actual daily-candle history, which
+        // buildOptionAnalysisFor already computes per underlying.
+        niftyPreviousClose,
 
         sensexOpen:
             dhanResponse.data.IDX_I[
                 INSTRUMENTS.SENSEX
             ].ohlc.open,
 
-        sensexPreviousClose:
-            dhanResponse.data.IDX_I[
-                INSTRUMENTS.SENSEX
-            ].ohlc.close,
+        sensexPreviousClose,
     };
 }

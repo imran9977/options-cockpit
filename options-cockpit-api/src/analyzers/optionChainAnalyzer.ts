@@ -13,10 +13,14 @@ import type { StrikeWindowSnapshot } from "../models/StrikeWindowSnapshot.js";
 import { addStrikeWindowSnapshot } from "../services/strikeWindowHistory.js";
 import { analyzeStrikeWindow } from "../analyzers/strikeIntelligenceEngine.js";
 import { getStrikeWindowHistory } from "../services/strikeWindowHistory.js";
+import { stabilizeMarketBias, stabilizePositionBuildUpHint } from "../services/marketReadStabilizer.js";
 import { buildStrikeObservations } from "../services/strikeObservationEngine.js";
-import { analyzeStrikeMomentum } from "../services/strikeMomentumEngine.js";
+import { analyzeStrikeMomentum, MOMENTUM_MIN_HISTORY } from "../services/strikeMomentumEngine.js";
 import { analyzeEGBD } from "../services/egbdEngine.js";
 import { buildEGBDObservations } from "../services/egbdObservationEngine.js";
+import { logSignalIfNew, updatePendingSignals } from "../services/signalLogger.js";
+import type { ClassicalLevels } from "../models/ClassicalLevels.js";
+import type { Underlying } from "../config/instruments.js";
 
 export function findATMStrike(
     spotPrice: number,
@@ -41,7 +45,10 @@ export function findATMStrike(
         atmStrike,
     };
 }
-const ACTIVE_WINDOW_SIZE = 6;
+// ATM ± 10 strikes (10 below + ATM + 10 above = 21), matching what
+// the UI has always claimed. Previously 6 (~ATM ± 2-3), which made
+// PCR/OI-flow/EGBD noisy and narrower than displayed.
+const ACTIVE_WINDOW_SIZE = 21;
 function extractATMRange(
     optionChain: OptionChain,
     atmStrike: number
@@ -109,45 +116,64 @@ export function calculatePCR(
         pcr: totalCEOI === 0
             ? 0
             : Number((totalPEOI / totalCEOI).toFixed(2)),
+
+        totalCallOI: totalCEOI,
+        totalPutOI: totalPEOI,
     };
 }
 
-export function calculateSupports(
-    atmRangeData: Array<{
-        strike: number;
-        data: OptionStrike;
-    }>
-) {
-    const supports = atmRangeData
-        .map((item) => ({
-            strike: item.strike,
-            oi: item.data?.pe?.oi ?? 0,
-        }))
-        .sort((a, b) => b.oi - a.oi);
+// "Significant" = a change worth calling out, sized against how much
+// OI actually sits in this window - not a fixed lot count, so this
+// stays meaningful regardless of window size or lot-size changes.
+// previous_oi is Dhan's prior-day-close OI, so this change is
+// cumulative since yesterday's close (matches NSE's own "Chng in OI"),
+// not a single poll's noise. Not empirically tuned yet - a reasoned
+// starting point, same caveat as other thresholds in this codebase.
+const OI_FLOW_SIGNIFICANCE_PERCENT = 3;
 
-    return {
-        primarySupport: supports[0]?.strike ?? null,
-        secondarySupport: supports[1]?.strike ?? null,
-    };
-}
+export function determineOIFlowVerdict(
+    totalCallOIChange: number,
+    totalPutOIChange: number,
+    totalWindowOI: number
+): string {
 
-export function calculateResistances(
-    atmRangeData: Array<{
-        strike: number;
-        data: OptionStrike;
-    }>
-) {
-    const resistances = atmRangeData
-        .map((item) => ({
-            strike: item.strike,
-            oi: item.data?.ce?.oi ?? 0,
-        }))
-        .sort((a, b) => b.oi - a.oi);
+    if (totalWindowOI <= 0) {
+        return "Balanced Positioning";
+    }
 
-    return {
-        primaryResistance: resistances[0]?.strike ?? null,
-        secondaryResistance: resistances[1]?.strike ?? null,
-    };
+    const callChangePercent =
+        (Math.abs(totalCallOIChange) / totalWindowOI) * 100;
+
+    const putChangePercent =
+        (Math.abs(totalPutOIChange) / totalWindowOI) * 100;
+
+    const callBuilding = totalCallOIChange > 0;
+    const putBuilding = totalPutOIChange > 0;
+
+    if (
+        putBuilding &&
+        putChangePercent >= OI_FLOW_SIGNIFICANCE_PERCENT &&
+        putChangePercent > callChangePercent
+    ) {
+        return "Put Writers Active";
+    }
+
+    if (
+        callBuilding &&
+        callChangePercent >= OI_FLOW_SIGNIFICANCE_PERCENT &&
+        callChangePercent > putChangePercent
+    ) {
+        return "Call Writers Active";
+    }
+
+    if (
+        callChangePercent < OI_FLOW_SIGNIFICANCE_PERCENT &&
+        putChangePercent < OI_FLOW_SIGNIFICANCE_PERCENT
+    ) {
+        return "Low Writer Activity";
+    }
+
+    return "Balanced Positioning";
 }
 
 export function calculateMaxOI(
@@ -288,12 +314,33 @@ export function calculateOIFlow(
     };
 }
 
-export function calculatePositionBuildUp(
-    atmRangeData: Array<{
-        strike: number;
-        data: OptionStrike;
-    }>
-) {
+interface LegChange {
+    priceChange: number;
+    oiChange: number;
+}
+
+interface BuildUpBreakdown {
+    longBuildUp: string;
+    longBuildUpCount: number;
+    longBuildUpPercentage: number;
+
+    shortBuildUp: string;
+    shortBuildUpCount: number;
+    shortBuildUpPercentage: number;
+
+    shortCovering: string;
+    shortCoveringCount: number;
+    shortCoveringPercentage: number;
+
+    longUnwinding: string;
+    longUnwindingCount: number;
+    longUnwindingPercentage: number;
+}
+
+function classifyBuildUp(
+    changes: LegChange[]
+): BuildUpBreakdown {
+
     let longBuildUp = 0;
     let shortBuildUp = 0;
     let shortCovering = 0;
@@ -301,10 +348,7 @@ export function calculatePositionBuildUp(
 
     let totalObservations = 0;
 
-    const classify = (
-        priceChange: number,
-        oiChange: number
-    ) => {
+    for (const { priceChange, oiChange } of changes) {
 
         totalObservations++;
 
@@ -320,71 +364,141 @@ export function calculatePositionBuildUp(
         else if (priceChange < 0 && oiChange < 0) {
             longUnwinding++;
         }
-
-    };
-
-    for (const item of atmRangeData) {
-
-        // CALL SIDE
-        const cePriceChange =
-            (item.data?.ce?.last_price ?? 0) -
-            (item.data?.ce?.previous_close_price ?? 0);
-
-        const ceOIChange =
-            (item.data?.ce?.oi ?? 0) -
-            (item.data?.ce?.previous_oi ?? 0);
-
-        classify(cePriceChange, ceOIChange);
-
-        // PUT SIDE
-        const pePriceChange =
-            (item.data?.pe?.last_price ?? 0) -
-            (item.data?.pe?.previous_close_price ?? 0);
-
-        const peOIChange =
-            (item.data?.pe?.oi ?? 0) -
-            (item.data?.pe?.previous_oi ?? 0);
-
-        classify(pePriceChange, peOIChange);
     }
 
-
     const getStrength = (count: number) => {
-        const percentage =
-            (count / totalObservations) * 100;
+
+        if (totalObservations === 0) {
+            return "Low";
+        }
+
+        const percentage = (count / totalObservations) * 100;
 
         if (percentage >= 60) return "Strong";
         if (percentage >= 30) return "Moderate";
         return "Low";
     };
 
+    const getPercentage = (count: number) =>
+        totalObservations === 0
+            ? 0
+            : Number(((count / totalObservations) * 100).toFixed(1));
+
     return {
 
         longBuildUp: getStrength(longBuildUp),
         longBuildUpCount: longBuildUp,
-        longBuildUpPercentage: Number(
-            ((longBuildUp / totalObservations) * 100).toFixed(1)
-        ),
+        longBuildUpPercentage: getPercentage(longBuildUp),
 
         shortBuildUp: getStrength(shortBuildUp),
         shortBuildUpCount: shortBuildUp,
-        shortBuildUpPercentage: Number(
-            ((shortBuildUp / totalObservations) * 100).toFixed(1)
-        ),
+        shortBuildUpPercentage: getPercentage(shortBuildUp),
 
         shortCovering: getStrength(shortCovering),
         shortCoveringCount: shortCovering,
-        shortCoveringPercentage: Number(
-            ((shortCovering / totalObservations) * 100).toFixed(1)
-        ),
+        shortCoveringPercentage: getPercentage(shortCovering),
 
         longUnwinding: getStrength(longUnwinding),
         longUnwindingCount: longUnwinding,
-        longUnwindingPercentage: Number(
-            ((longUnwinding / totalObservations) * 100).toFixed(1)
-        ),
-
+        longUnwindingPercentage: getPercentage(longUnwinding),
     };
+}
+
+function toCallChanges(
+    atmRangeData: Array<{ strike: number; data: OptionStrike }>
+): LegChange[] {
+    return atmRangeData.map(item => ({
+        priceChange:
+            (item.data?.ce?.last_price ?? 0) -
+            (item.data?.ce?.previous_close_price ?? 0),
+        oiChange:
+            (item.data?.ce?.oi ?? 0) -
+            (item.data?.ce?.previous_oi ?? 0),
+    }));
+}
+
+function toPutChanges(
+    atmRangeData: Array<{ strike: number; data: OptionStrike }>
+): LegChange[] {
+    return atmRangeData.map(item => ({
+        priceChange:
+            (item.data?.pe?.last_price ?? 0) -
+            (item.data?.pe?.previous_close_price ?? 0),
+        oiChange:
+            (item.data?.pe?.oi ?? 0) -
+            (item.data?.pe?.previous_oi ?? 0),
+    }));
+}
+
+// Unchanged behavior - pools Call and Put legs together. Kept as-is
+// because calculateMarketBias/generateMarketEvidence still consume
+// this pooled version; splitting those is a separate, not-yet-audited
+// piece of work. New call/put-specific breakdowns are below.
+export function calculatePositionBuildUp(
+    atmRangeData: Array<{
+        strike: number;
+        data: OptionStrike;
+    }>
+): BuildUpBreakdown {
+    return classifyBuildUp([
+        ...toCallChanges(atmRangeData),
+        ...toPutChanges(atmRangeData),
+    ]);
+}
+
+export function calculateCallPositionBuildUp(
+    atmRangeData: Array<{ strike: number; data: OptionStrike }>
+): BuildUpBreakdown {
+    return classifyBuildUp(toCallChanges(atmRangeData));
+}
+
+export function calculatePutPositionBuildUp(
+    atmRangeData: Array<{ strike: number; data: OptionStrike }>
+): BuildUpBreakdown {
+    return classifyBuildUp(toPutChanges(atmRangeData));
+}
+
+// Same weighting as the pooled score below, applied per leg so a
+// squeeze/build-up on one side can be told apart from the other -
+// the whole reason the pooled version couldn't answer "which side."
+const POSITION_BUILDUP_HINT_THRESHOLD = 40;
+
+function positionBuildUpScore(breakdown: BuildUpBreakdown): number {
+    return (
+        breakdown.longBuildUpPercentage * 4 +
+        breakdown.shortCoveringPercentage * 2 -
+        breakdown.shortBuildUpPercentage * 4 -
+        breakdown.longUnwindingPercentage * 2
+    );
+}
+
+// A hint, not a recommendation: which side (if either) shows enough
+// fresh buying/squeeze activity to be worth a closer look. Thresholds
+// are a starting estimate, same caveat as every other threshold in
+// this codebase - not yet validated against real outcomes.
+export function determinePositionBuildUpHint(
+    callBreakdown: BuildUpBreakdown,
+    putBreakdown: BuildUpBreakdown
+): string {
+
+    const callScore = positionBuildUpScore(callBreakdown);
+    const putScore = positionBuildUpScore(putBreakdown);
+
+    if (
+        callScore >= POSITION_BUILDUP_HINT_THRESHOLD &&
+        callScore > putScore
+    ) {
+        return "BUY CE";
+    }
+
+    if (
+        putScore >= POSITION_BUILDUP_HINT_THRESHOLD &&
+        putScore > callScore
+    ) {
+        return "BUY PE";
+    }
+
+    return "NO CLEAR SETUP";
 }
 export function calculateMaxPain(
     optionChain: OptionChain
@@ -433,6 +547,9 @@ export function calculateMaxPain(
     };
 }
 
+// atmIV/atmDelta/atmGamma/atmTheta stay Call-only and unchanged in
+// meaning - calculateMarketBias and generateMarketEvidence still
+// consume them as-is. Put-side greeks and skew are new, additive.
 export function calculateATMGreeks(
     optionChain: OptionChain,
     atmStrike: number
@@ -440,11 +557,28 @@ export function calculateATMGreeks(
     const atmData: OptionStrike | undefined =
         optionChain[atmStrike.toFixed(6)];
 
+    const atmCallIV = Number(
+        (atmData?.ce?.implied_volatility ?? 0).toFixed(2)
+    );
+
+    const atmPutIV = Number(
+        (atmData?.pe?.implied_volatility ?? 0).toFixed(2)
+    );
+
+    // ATM straddle price (Call premium + Put premium) - the market's
+    // own implied "expected move" by expiry. Uses data already on
+    // hand, no extra API calls.
+    const expectedMove = Number(
+        (
+            (atmData?.ce?.last_price ?? 0) +
+            (atmData?.pe?.last_price ?? 0)
+        ).toFixed(2)
+    );
+
     return {
-        atmIV: Number(
-            (atmData?.ce?.implied_volatility ?? 0)
-                .toFixed(2)
-        ),
+        expectedMove,
+
+        atmIV: atmCallIV,
 
         atmDelta: Number(
             (atmData?.ce?.greeks?.delta ?? 0)
@@ -460,6 +594,60 @@ export function calculateATMGreeks(
             (atmData?.ce?.greeks?.theta ?? 0)
                 .toFixed(2)
         ),
+
+        atmPutIV,
+
+        atmPutDelta: Number(
+            (atmData?.pe?.greeks?.delta ?? 0)
+                .toFixed(2)
+        ),
+
+        atmPutGamma: Number(
+            (atmData?.pe?.greeks?.gamma ?? 0)
+                .toFixed(4)
+        ),
+
+        atmPutTheta: Number(
+            (atmData?.pe?.greeks?.theta ?? 0)
+                .toFixed(2)
+        ),
+
+        // Put IV minus Call IV. Positive = puts pricier than calls,
+        // relative to each other = more fear/downside hedging demand
+        // priced in. Near zero = calm. This is a real, standard
+        // metric (volatility skew) that wasn't shown anywhere before.
+        ivSkew: Number((atmPutIV - atmCallIV).toFixed(2)),
+    };
+}
+
+// Answers "is this a good time to buy options", not "which
+// direction" - Greeks are direction-agnostic, so this deliberately
+// does not use bullish/bearish framing. Thresholds mirror the
+// existing IV/Gamma/Theta guides already shown in the UI popovers.
+export function determineGreeksEnvironment(
+    atmIV: number,
+    atmGamma: number,
+    atmTheta: number
+): { premiumLabel: string; movementLabel: string; environment: string } {
+
+    const premiumLabel =
+        atmIV <= 12
+            ? "Cheap Premium"
+            : atmIV > 25
+                ? "Expensive Premium"
+                : "Fair Premium";
+
+    const movementLabel =
+        atmGamma >= 0.006
+            ? "Fast-Moving Setup"
+            : Math.abs(atmTheta) >= 40
+                ? "Heavy Time Decay"
+                : "Steady Conditions";
+
+    return {
+        premiumLabel,
+        movementLabel,
+        environment: `${premiumLabel} · ${movementLabel}`,
     };
 }
 
@@ -703,8 +891,11 @@ export function calculateMarketBias(
 }
 
 export function analyzeOptionChain(
+    underlying: Underlying,
     spotPrice: number,
-    optionChain: OptionChain
+    optionChain: OptionChain,
+    classicalLevels: ClassicalLevels,
+    isExpiryDayToday: boolean
 ) {
     const { atmStrike } = findATMStrike(
         spotPrice,
@@ -729,10 +920,11 @@ export function analyzeOptionChain(
         );
 
     addStrikeWindowSnapshot(
+        underlying,
         strikeWindowSnapshot
     );
 
-    const strikeHistory = getStrikeWindowHistory();
+    const strikeHistory = getStrikeWindowHistory(underlying);
 
     let strikeObservations: ReturnType<typeof buildStrikeObservations> = [];
 
@@ -761,7 +953,7 @@ export function analyzeOptionChain(
                 strikeAnalysis
             );
 
-        if (strikeHistory.length >= 3) {
+        if (isExpiryDayToday && strikeHistory.length >= MOMENTUM_MIN_HISTORY) {
 
             const strikeMomentum =
                 analyzeStrikeMomentum(
@@ -770,6 +962,7 @@ export function analyzeOptionChain(
 
             egbd =
                 analyzeEGBD(
+                    underlying,
                     strikeAnalysis,
                     strikeMomentum
                 );
@@ -781,33 +974,31 @@ export function analyzeOptionChain(
                 );
 
         }
-
-        console.dir(
-            strikeObservations,
-            { depth: null }
-        );
-
-        if (egbd) {
-            console.dir(
-                egbd,
-                { depth: null }
-            );
-        }
     }
 
-    const { pcr } = calculatePCR(
+    const { pcr, totalCallOI, totalPutOI } = calculatePCR(
         atmRangeData
     );
 
-    const {
-        primarySupport,
-        secondarySupport,
-    } = calculateSupports(atmRangeData);
+    // Support/resistance come from classical daily pivot points
+    // (previous session's high/low/close), not from options OI.
+    // Max-OI-as-S/R is a lagging, easily-overwhelmed heuristic - see
+    // discussion history. Pivots are deterministic and verifiable
+    // against any charting platform, which OI-based levels weren't.
+    const primarySupport = Math.round(classicalLevels.daily.s1);
+    const secondarySupport = Math.round(classicalLevels.daily.s2);
+    const primaryResistance = Math.round(classicalLevels.daily.r1);
+    const secondaryResistance = Math.round(classicalLevels.daily.r2);
+    const pivotPoint = Math.round(classicalLevels.daily.pivot);
+    const previousClose = classicalLevels.daily.previousClose;
 
-    const {
-        primaryResistance,
-        secondaryResistance,
-    } = calculateResistances(atmRangeData);
+    const weeklyPrimarySupport = classicalLevels.weekly
+        ? Math.round(classicalLevels.weekly.s1)
+        : null;
+
+    const weeklyPrimaryResistance = classicalLevels.weekly
+        ? Math.round(classicalLevels.weekly.r1)
+        : null;
 
     const {
         maxCallOI,
@@ -842,6 +1033,12 @@ export function analyzeOptionChain(
         putContribution,
     } = calculateOIFlow(atmRangeData);
 
+    const oiFlowVerdict = determineOIFlowVerdict(
+        totalCallOIChange,
+        totalPutOIChange,
+        totalCallOI + totalPutOI
+    );
+
     const {
 
         longBuildUp,
@@ -867,9 +1064,25 @@ export function analyzeOptionChain(
         atmDelta,
         atmGamma,
         atmTheta,
+        atmPutIV,
+        atmPutDelta,
+        atmPutGamma,
+        atmPutTheta,
+        ivSkew,
+        expectedMove,
     } = calculateATMGreeks(
         optionChain,
         atmStrike
+    );
+
+    const {
+        premiumLabel: greeksPremiumLabel,
+        movementLabel: greeksMovementLabel,
+        environment: greeksEnvironment,
+    } = determineGreeksEnvironment(
+        atmIV,
+        atmGamma,
+        atmTheta
     );
 
     const atmOptionSnapshot = extractATMOptionSnapshot(
@@ -878,17 +1091,29 @@ export function analyzeOptionChain(
         atmStrike
     );
 
-    addATMOptionSnapshot(atmOptionSnapshot);
+    addATMOptionSnapshot(underlying, atmOptionSnapshot);
 
     const optionMomentum = analyzeOptionMomentum(
-        getATMOptionHistory()
+        getATMOptionHistory(underlying)
     );
 
+    const callPositionBuildUp = calculateCallPositionBuildUp(
+        atmRangeData
+    );
 
-    const {
-        marketBias,
-        confidence,
-    } = calculateMarketBias(
+    const putPositionBuildUp = calculatePutPositionBuildUp(
+        atmRangeData
+    );
+
+    const positionBuildUpHint = stabilizePositionBuildUpHint(
+        underlying,
+        determinePositionBuildUpHint(
+            callPositionBuildUp,
+            putPositionBuildUp
+        )
+    );
+
+    const rawBias = calculateMarketBias(
         spotPrice,
         atmStrike,
         pcr,
@@ -898,6 +1123,12 @@ export function analyzeOptionChain(
         primarySupport,
         primaryResistance,
         maxPain
+    );
+
+    const { bias: marketBias, confidence } = stabilizeMarketBias(
+        underlying,
+        rawBias.marketBias,
+        rawBias.confidence
     );
 
     const evidence = generateMarketEvidence({
@@ -930,6 +1161,19 @@ export function analyzeOptionChain(
         ? [generateObservation(qualified)]
         : [];
 
+    // Evidence logging: records every new Bullish/Bearish signal the
+    // observation panel would show, then fills in what price actually
+    // did 5/15/30/60 minutes later on every subsequent poll.
+    logSignalIfNew(
+        underlying,
+        qualified?.direction ?? null,
+        qualified?.confidence ?? 0,
+        spotPrice,
+        atmStrike
+    );
+
+    updatePendingSignals(underlying, spotPrice);
+
     return {
         spotPrice,
         atmStrike,
@@ -940,6 +1184,11 @@ export function analyzeOptionChain(
 
         primaryResistance,
         secondaryResistance,
+
+        pivotPoint,
+        previousClose,
+        weeklyPrimarySupport,
+        weeklyPrimaryResistance,
 
         maxCallOI,
         maxCallOIStrike,
@@ -970,6 +1219,8 @@ export function analyzeOptionChain(
         callContribution,
         putContribution,
 
+        oiFlowVerdict,
+
         longBuildUp,
         longBuildUpCount,
         longBuildUpPercentage,
@@ -986,10 +1237,34 @@ export function analyzeOptionChain(
         longUnwindingCount,
         longUnwindingPercentage,
 
+        callPositionBuildUp,
+        putPositionBuildUp,
+        positionBuildUpHint,
+
         atmIV,
         atmDelta,
         atmGamma,
         atmTheta,
+
+        atmPutIV,
+        atmPutDelta,
+        atmPutGamma,
+        atmPutTheta,
+        ivSkew,
+        expectedMove,
+
+        atmCallPremium: atmOptionSnapshot.ceLastPrice,
+        atmPutPremium: atmOptionSnapshot.peLastPrice,
+
+        nearbyStrikePremiums: atmRangeData.map(item => ({
+            strike: item.strike,
+            callPremium: item.data?.ce?.last_price ?? 0,
+            putPremium: item.data?.pe?.last_price ?? 0,
+        })),
+
+        greeksPremiumLabel,
+        greeksMovementLabel,
+        greeksEnvironment,
 
         marketBias,
         confidence,
@@ -1000,5 +1275,6 @@ export function analyzeOptionChain(
         ],
         strikeObservations,
         egbd,
+        isExpiryDay: isExpiryDayToday,
     };
 }

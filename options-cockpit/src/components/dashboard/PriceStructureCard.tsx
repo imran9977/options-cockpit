@@ -1,5 +1,4 @@
 import type { OptionAnalysis } from "../../models/OptionAnalysis";
-import { getDailyLevels } from "../../services/dailyLevelsStorage";
 
 interface PriceStructureCardProps {
     optionAnalysis: OptionAnalysis;
@@ -12,20 +11,6 @@ function PriceStructureCard({
     const support = optionAnalysis.primarySupport;
     const resistance = optionAnalysis.primaryResistance;
     const atm = optionAnalysis.atmStrike;
-
-    const dailyLevels = getDailyLevels();
-
-    const displayPrimarySupport =
-        dailyLevels?.nifty.primarySupport;
-
-    const displaySecondarySupport =
-        dailyLevels?.nifty.secondarySupport;
-
-    const displayPrimaryResistance =
-        dailyLevels?.nifty.primaryResistance;
-
-    const displaySecondaryResistance =
-        dailyLevels?.nifty.secondaryResistance;
 
     let verdict = "Inside Trading Range";
     let verdictClass = "neutral";
@@ -76,14 +61,14 @@ function PriceStructureCard({
                         PRIMARY SUPPORT
                     </div>
                     <div className="value decision-value decision-positive">
-                        {displayPrimarySupport ?? "-"}
+                        {optionAnalysis.primarySupport}
                     </div>
                     <div className="sub text-secondary">
                         Secondary:{" "}
-                        {displaySecondarySupport ?? "-"}
+                        {optionAnalysis.secondarySupport}
                     </div>
                     <div className="caption text-muted">
-                        SUPPORT ZONE
+                        DAILY PIVOT S1/S2
                     </div>
                 </div>
 
@@ -93,32 +78,50 @@ function PriceStructureCard({
                         PRIMARY RESISTANCE
                     </div>
                     <div className="value decision-value decision-negative">
-                        {displayPrimaryResistance ?? "-"}
+                        {optionAnalysis.primaryResistance}
                     </div>
 
                     <div className="sub text-secondary">
                         Secondary:{" "}
-                        {displaySecondaryResistance ?? "-"}
+                        {optionAnalysis.secondaryResistance}
                     </div>
 
                     <div className="caption text-muted">
-                        RESISTANCE ZONE
+                        DAILY PIVOT R1/R2
                     </div>
                 </div>
 
                 <div className="card">
                     {/* <div className="info">i</div> */}
-                    <div className="label">ATM STRIKE</div>
+                    <div className="label">
+                        PIVOT POINT
+                    </div>
                     <div className="value decision-value">
-                        {optionAnalysis.atmStrike}
+                        {optionAnalysis.pivotPoint}
                     </div>
 
-                    <div className="sub text-secondary">
-                        Spot: {optionAnalysis.spotPrice}
+                    <div className="pivot-weekly-tiles">
+                        <div className="pivot-weekly-tile bg-bullish">
+                            <div className="pivot-weekly-tile-label">
+                                S1 (WEEKLY)
+                            </div>
+                            <div className="pivot-weekly-tile-value support-value decision-positive">
+                                {optionAnalysis.weeklyPrimarySupport ?? "-"}
+                            </div>
+                        </div>
+
+                        <div className="pivot-weekly-tile bg-bearish">
+                            <div className="pivot-weekly-tile-label">
+                                R1 (WEEKLY)
+                            </div>
+                            <div className="pivot-weekly-tile-value support-value decision-negative">
+                                {optionAnalysis.weeklyPrimaryResistance ?? "-"}
+                            </div>
+                        </div>
                     </div>
 
                     <div className="caption text-muted">
-                        CURRENT ATM
+                        PREV. DAY H/L/C
                     </div>
                 </div>
 

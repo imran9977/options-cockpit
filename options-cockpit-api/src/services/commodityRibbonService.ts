@@ -1,8 +1,13 @@
 import { getCommodityQuote } from "./dhanApi.js";
+import {
+    ensureInstrumentMasterLoaded,
+    getNearestFuture,
+} from "./instrumentMasterService.js";
 
 interface CommodityConfig {
     name: string;
-    securityId: number;
+    // Must match Dhan's SM_SYMBOL_NAME column exactly.
+    symbolName: string;
 }
 
 interface CommodityRibbonItem {
@@ -15,25 +20,48 @@ interface CommodityRibbonItem {
 const COMMODITIES: CommodityConfig[] = [
     {
         name: "Gold",
-        securityId: 466583,
+        symbolName: "GOLD",
     },
     {
         name: "Silver",
-        securityId: 471725,
+        symbolName: "SILVER",
     },
     {
         name: "Crude Oil",
-        securityId: 560977,
+        symbolName: "CRUDEOIL",
     },
     {
         name: "Natural Gas",
-        securityId: 538685,
+        symbolName: "NATURALGAS",
     },
 ];
 
 export async function getCommodityRibbon() {
 
-    const securityIds = COMMODITIES.map(
+    await ensureInstrumentMasterLoaded();
+
+    const resolved = COMMODITIES
+        .map(commodity => {
+
+            const contract = getNearestFuture(commodity.symbolName);
+
+            return {
+                name: commodity.name,
+                securityId: contract?.securityId ?? null,
+            };
+        })
+        .filter(
+            (commodity): commodity is { name: string; securityId: number } =>
+                commodity.securityId !== null
+        );
+
+    if (resolved.length === 0) {
+        return {
+            commodities: [],
+        };
+    }
+
+    const securityIds = resolved.map(
         commodity => commodity.securityId
     );
 
@@ -43,15 +71,12 @@ export async function getCommodityRibbon() {
 
     const marketData = data.data.MCX_COMM;
 
-    const commodities = COMMODITIES
+    const commodities = resolved
         .map((commodity) => {
 
             const quote = marketData[commodity.securityId];
 
             if (!quote) {
-             console.log(
-        `[CommodityRibbon] Missing quote for ${commodity.name} (${commodity.securityId})`
-    );
                 return null;
             }
 

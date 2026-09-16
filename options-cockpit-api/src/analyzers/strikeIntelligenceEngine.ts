@@ -8,6 +8,23 @@ import { analyzeOI } from "../analyzers/oiAnalyzer.js";
 import { analyzeGamma } from "../analyzers/gammaAnalyzer.js";
 import { analyzeIV } from "../analyzers/ivAnalyzer.js";
 
+// Below this, premiums are near-worthless (deep OTM) and a tiny
+// absolute move produces a huge, meaningless percentage - fall back
+// to absolute comparison rather than let noise decide dominantSide.
+const MIN_PREMIUM_FOR_RELATIVE_COMPARISON = 0.5;
+
+function relativeChange(
+    change: number,
+    previousValue: number
+): number | null {
+
+    if (previousValue < MIN_PREMIUM_FOR_RELATIVE_COMPARISON) {
+        return null;
+    }
+
+    return Math.abs(change) / previousValue;
+}
+
 export function analyzeStrikeWindow(
     previous: StrikeWindowSnapshot,
     current: StrikeWindowSnapshot
@@ -72,12 +89,40 @@ export function analyzeStrikeWindow(
             evidence
         );
 
-        const dominantSide =
-            Math.abs(delta.cePremiumChange) > Math.abs(delta.pePremiumChange)
-                ? "CE"
-                : Math.abs(delta.pePremiumChange) > Math.abs(delta.cePremiumChange)
-                    ? "PE"
-                    : "NEUTRAL";
+        // Relative (%) change, not absolute rupees - an absolute
+        // comparison structurally favors whichever leg has the
+        // higher premium (usually deeper ITM or higher IV) rather
+        // than whichever leg is genuinely moving harder.
+        const ceRelativeChange = relativeChange(
+            delta.cePremiumChange,
+            previousStrike.ceLastPrice
+        );
+
+        const peRelativeChange = relativeChange(
+            delta.pePremiumChange,
+            previousStrike.peLastPrice
+        );
+
+        let dominantSide: "CE" | "PE" | "NEUTRAL";
+
+        if (ceRelativeChange !== null && peRelativeChange !== null) {
+
+            dominantSide =
+                ceRelativeChange > peRelativeChange
+                    ? "CE"
+                    : peRelativeChange > ceRelativeChange
+                        ? "PE"
+                        : "NEUTRAL";
+
+        } else {
+
+            dominantSide =
+                Math.abs(delta.cePremiumChange) > Math.abs(delta.pePremiumChange)
+                    ? "CE"
+                    : Math.abs(delta.pePremiumChange) > Math.abs(delta.cePremiumChange)
+                        ? "PE"
+                        : "NEUTRAL";
+        }
 
         analyses.push({
 
@@ -85,30 +130,11 @@ export function analyzeStrikeWindow(
 
             delta,
 
-            // Premium Intelligence
             premiumStrength,
-            premiumVelocity: 0,
-            premiumAcceleration: 0,
-
-            // Open Interest Intelligence
             oiStrength,
-            oiVelocity: 0,
-
-            // Volume Intelligence
             volumeStrength,
-            volumeVelocity: 0,
-
-            // Volatility Intelligence
             ivStrength,
-
-            // Gamma Intelligence
             gammaStrength,
-
-            // Trend Intelligence
-            trendAge: 0,
-
-            // Overall Assessment
-            totalStrength: premiumStrength,
 
             dominantSide,
 

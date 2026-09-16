@@ -1,7 +1,9 @@
 import type { OptionAnalysis } from "../../models/OptionAnalysis";
+import type { Underlying } from "../../models/Underlying";
 import MetricPopover from "../common/MetricPopover";
 interface GreeksCardProps {
     optionAnalysis: OptionAnalysis;
+    indexLabel: Underlying;
 }
 
 const IV_GUIDE = [
@@ -88,29 +90,34 @@ const THETA_GUIDE = [
     },
 ];
 
+function greeksVerdictClass(
+    premiumLabel: string,
+    movementLabel: string
+): string {
+    if (premiumLabel === "Cheap Premium" && movementLabel === "Fast-Moving Setup") {
+        return "bullish";
+    }
+    if (premiumLabel === "Expensive Premium" && movementLabel === "Heavy Time Decay") {
+        return "bearish";
+    }
+    return "neutral";
+}
+
+function skewReading(ivSkew: number): string {
+    if (ivSkew > 0.5) return "Puts pricier - fear/hedging rising";
+    if (ivSkew < -0.5) return "Calls pricier - unusual, check news";
+    return "Calls and Puts priced about the same";
+}
+
 function GreeksCard({
     optionAnalysis,
+    indexLabel,
 }: GreeksCardProps) {
 
-    let verdict = "Greeks Balanced";
-    let verdictClass = "neutral";
-
-    if (optionAnalysis.atmGamma >= 0.006) {
-        verdict = "Gamma Expansion";
-        verdictClass = "bullish";
-    }
-    else if (Math.abs(optionAnalysis.atmTheta) >= 40) {
-        verdict = "Theta Dominating";
-        verdictClass = "bearish";
-    }
-    else if (optionAnalysis.atmIV >= 25) {
-        verdict = "Premium Expansion";
-        verdictClass = "bullish";
-    }
-    else if (optionAnalysis.atmIV <= 12) {
-        verdict = "Premium Compression";
-        verdictClass = "neutral";
-    }
+    const verdictClass = greeksVerdictClass(
+        optionAnalysis.greeksPremiumLabel,
+        optionAnalysis.greeksMovementLabel
+    );
 
     return (
         <section className="section section-purple">
@@ -121,10 +128,45 @@ function GreeksCard({
                 </div>
 
                 <div className={`position-summary ${verdictClass}`}>
-                    {verdict}
+                    {optionAnalysis.greeksEnvironment}
                 </div>
 
             </div>
+
+            <div className="build-up-side-label">
+                WHAT THE MARKET IS PRICING IN
+            </div>
+
+            <div className="grid-2">
+                <div className="card">
+                    <div className="label">IV SKEW (PUT − CALL)</div>
+                    <div className="value decision-value">
+                        {optionAnalysis.ivSkew >= 0 ? "+" : ""}
+                        {optionAnalysis.ivSkew}
+                    </div>
+                    <div className="sub text-secondary">
+                        {skewReading(optionAnalysis.ivSkew)}
+                    </div>
+                    <div className="caption text-muted">
+                        WHO'S PAYING MORE FOR PROTECTION
+                    </div>
+                </div>
+
+                <div className="card">
+                    <div className="label">EXPECTED MOVE</div>
+                    <div className="value decision-value">
+                        ± {optionAnalysis.expectedMove}
+                    </div>
+                    <div className="sub text-secondary">
+                        ATM Call + Put premium - market's own guess at the swing by expiry
+                    </div>
+                    <div className="caption text-muted">
+                        ATM STRADDLE PRICE
+                    </div>
+                </div>
+            </div>
+
+            <div className="build-up-side-label">CALL GREEKS</div>
 
             <div className="grid-4">
 
@@ -136,14 +178,13 @@ function GreeksCard({
                             currentValue={optionAnalysis.atmIV}
                             ranges={IV_GUIDE}
                         />
-
                     </div>
                     <div className="label">IV</div>
                     <div className="value decision-value">
                         {optionAnalysis.atmIV}
                     </div>
                     <div className="sub text-secondary">
-                        ATM Call IV
+                        How pricey this Call is right now
                     </div>
                     <div className="caption text-muted">
                         LIVE
@@ -158,14 +199,13 @@ function GreeksCard({
                             currentValue={optionAnalysis.atmDelta}
                             ranges={DELTA_GUIDE}
                         />
-
                     </div>
                     <div className="label">DELTA</div>
                     <div className="value decision-value">
                         {optionAnalysis.atmDelta}
                     </div>
                     <div className="sub text-secondary">
-                        ATM Call
+                        Moves ₹{optionAnalysis.atmDelta} for every ₹1 {indexLabel} moves
                     </div>
                     <div className="caption text-muted">
                         LIVE
@@ -180,14 +220,13 @@ function GreeksCard({
                             currentValue={optionAnalysis.atmGamma}
                             ranges={GAMMA_GUIDE}
                         />
-
                     </div>
                     <div className="label">GAMMA</div>
                     <div className="value decision-value">
                         {optionAnalysis.atmGamma}
                     </div>
                     <div className="sub text-secondary">
-                        ATM Call
+                        How fast that Delta itself can change
                     </div>
                     <div className="caption text-muted">
                         LIVE
@@ -202,14 +241,13 @@ function GreeksCard({
                             currentValue={Math.abs(optionAnalysis.atmTheta)}
                             ranges={THETA_GUIDE}
                         />
-
                     </div>
                     <div className="label">THETA</div>
                     <div className="value decision-value">
                         {optionAnalysis.atmTheta}
                     </div>
                     <div className="sub text-secondary">
-                        Per Day
+                        Loses ₹{Math.abs(optionAnalysis.atmTheta)} in value per day, doing nothing
                     </div>
                     <div className="caption text-muted">
                         LIVE
@@ -217,6 +255,97 @@ function GreeksCard({
                 </div>
 
             </div>
+
+            <div className="build-up-side-label">PUT GREEKS</div>
+
+            <div className="grid-4">
+
+                <div className="card">
+                    <div className="info metric-info">
+                        i
+                        <MetricPopover
+                            title="ATM PUT IV"
+                            currentValue={optionAnalysis.atmPutIV}
+                            ranges={IV_GUIDE}
+                        />
+                    </div>
+                    <div className="label">IV</div>
+                    <div className="value decision-value">
+                        {optionAnalysis.atmPutIV}
+                    </div>
+                    <div className="sub text-secondary">
+                        How pricey this Put is right now
+                    </div>
+                    <div className="caption text-muted">
+                        LIVE
+                    </div>
+                </div>
+
+                <div className="card">
+                    <div className="info metric-info">
+                        i
+                        <MetricPopover
+                            title="ATM PUT DELTA"
+                            currentValue={Math.abs(optionAnalysis.atmPutDelta)}
+                            ranges={DELTA_GUIDE}
+                        />
+                    </div>
+                    <div className="label">DELTA</div>
+                    <div className="value decision-value">
+                        {optionAnalysis.atmPutDelta}
+                    </div>
+                    <div className="sub text-secondary">
+                        Moves ₹{Math.abs(optionAnalysis.atmPutDelta)} for every ₹1 {indexLabel} moves
+                    </div>
+                    <div className="caption text-muted">
+                        LIVE
+                    </div>
+                </div>
+
+                <div className="card">
+                    <div className="info metric-info">
+                        i
+                        <MetricPopover
+                            title="ATM PUT GAMMA"
+                            currentValue={optionAnalysis.atmPutGamma}
+                            ranges={GAMMA_GUIDE}
+                        />
+                    </div>
+                    <div className="label">GAMMA</div>
+                    <div className="value decision-value">
+                        {optionAnalysis.atmPutGamma}
+                    </div>
+                    <div className="sub text-secondary">
+                        How fast that Delta itself can change
+                    </div>
+                    <div className="caption text-muted">
+                        LIVE
+                    </div>
+                </div>
+
+                <div className="card">
+                    <div className="info metric-info">
+                        i
+                        <MetricPopover
+                            title="ATM PUT THETA"
+                            currentValue={Math.abs(optionAnalysis.atmPutTheta)}
+                            ranges={THETA_GUIDE}
+                        />
+                    </div>
+                    <div className="label">THETA</div>
+                    <div className="value decision-value">
+                        {optionAnalysis.atmPutTheta}
+                    </div>
+                    <div className="sub text-secondary">
+                        Loses ₹{Math.abs(optionAnalysis.atmPutTheta)} in value per day, doing nothing
+                    </div>
+                    <div className="caption text-muted">
+                        LIVE
+                    </div>
+                </div>
+
+            </div>
+
         </section>
     );
 }

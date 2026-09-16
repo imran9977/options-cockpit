@@ -1,0 +1,34 @@
+Highest momentumScore any signal ever reached today: {"score":57408.15,"strike":23200,"side":"PE","time":"02:22:23 pm","toStage":"WATCHING"}
+Armed-moment momentumScore: min 0.65 median 93.63 max 56980.85
+Total distinct arming events (WATCHING->ARMED occurrences, incl re-arms): 696
+Longest consecutive same-direction TRIGGER_ARMED re-affirmations for one key: 1 23450_PE
+Strikes that armed more than once today: 45 out of 49
+Evidence at max-momentum moment: {"score":57408.15,"strike":23200,"side":"PE","time":"02:22:23 pm","toStage":"WATCHING"}
+{
+  "strike": 23200,
+  "side": "PE",
+  "fromStage": "TRIGGER_ARMED",
+  "toStage": "WATCHING",
+  "currentPremium": 41.35,
+  "referenceEntryPrice": 42.5,
+  "peakPremiumSinceEntry": 42.5,
+  "multipleFromEntry": 0.97,
+  "pullbackFromPeakPercent": 2.7,
+  "oiConcentration": 1,
+  "momentumScore": 57408.15,
+  "premiumStrength": 3,
+  "volumeStrength": 3,
+  "oiStrength": 0,
+  "gammaStrength": 0,
+  "ivStrength": 2,
+  "evidence": [
+    "CE Premium +0.05",
+    "PE Premium +0.20",
+    "Participation increasing on both sides (PE leading)",
+    "Low OI activity",
+    "Stable gamma",
+    "Put IV increasing"
+  ],
+  "timestamp": 1789462343869,
+  "timeLabel": "02:22:23 pm"
+}
